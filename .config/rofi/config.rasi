@@ -1,0 +1,56 @@
+// https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/slate.rasi
+
+configuration {
+    icon-theme: "Papirus";
+    show-icons: true;
+    font: "CaskaydiaCove Nerd Font 9";
+    location: north;
+}
+
+* {
+	background-color: #282C33;
+	border-color: #2e343f;
+	text-color: #8ca0aa;
+	spacing: 0;
+	width: 256px;
+}
+
+inputbar {
+	border: 0 0 1px 0;
+	children: [prompt,entry];
+}
+
+prompt {
+    padding: 16px;
+    border: 0 3px 0 0;
+}
+
+textbox {
+    background-color: #2e343f;
+    border: 0 0 1px 0;
+    border-color: #282C33;
+    padding: 8px 16px;
+}
+
+entry {
+    padding: 16px;
+}
+
+listview {
+    cycle: false;
+    margin: 0 0 -1px 0;
+    scrollbar: false;
+}
+
+element {
+    border: 0 0 1px 0;
+    padding: 12px;
+}
+
+element selected {
+    background-color: #2e343f;
+}
+
+element-icon {
+    padding: 0px 10px 0px 10px;
+}

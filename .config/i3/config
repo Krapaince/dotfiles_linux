@@ -72,7 +72,10 @@ Bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-bindsym mod4+Right exec "i3lock -ti ~/Picture/avatar.png"
+bindsym mod4+Right exec "setxkbmap us && i3lock -ti ~/Picture/avatar.png"
+
+# Switch keyboard layout
+bindsym mod4+space exec "~/.config/i3/scripts/keyboard_switcher.sh"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

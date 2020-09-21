@@ -1,7 +1,7 @@
 "Configure Plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rhysd/vim-clang-format'
 Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'

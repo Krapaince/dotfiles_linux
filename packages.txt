@@ -48,3 +48,5 @@ networkmanager
 base
 linux
 linux-firmware
+python-pillow
+ranger

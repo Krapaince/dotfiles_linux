@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lock.sh
+~/.config/i3/scripts/lock.sh
 
 # Prevent the screen flash when exiting the suspend mode
 /usr/bin/sleep 1

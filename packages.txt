@@ -52,3 +52,6 @@ linux
 linux-firmware
 python-pillow
 ranger
+zahura
+zahura-cb
+zahura-pdf-poppler

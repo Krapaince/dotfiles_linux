@@ -5,10 +5,12 @@ bc
 blih
 clang
 discord
+dunst
 feh
 firefox
 fuzzy
 gimp
+gnome-icon-theme
 gnome-keyrings
 htop
 i3-gaps

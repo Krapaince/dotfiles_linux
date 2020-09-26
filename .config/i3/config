@@ -47,6 +47,9 @@ for_window [class="^.*"] border pixel 0
 # floating
 for_window [class="Rofi"] floating enable
 
+#Fix teams notifications
+for_window [title="Microsoft Teams Notification"] floating enable
+
 # function keybindings {#
 
 # Use pactl to adjust volume in PulseAudio.

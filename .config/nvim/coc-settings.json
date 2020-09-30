@@ -27,6 +27,6 @@
     "snippets.snipmate.enable": true,
     "snippets.ultisnips.enable": false,
     "snippets.textmateSnippetsRoots": [
-        "/home/mpointec/.config/nvim/snippets"
+        "/home/krapaince/.config/nvim/coc/snippets"
     ]
 }

@@ -4,7 +4,7 @@ export ZSH="/home/$USER_HOME/.oh-my-zsh"
 export EDITOR=nvim
 export DRAIN=~/Desktop/GIT/config/scripts/drain/my_radar
 
-export PAGER='most'
+export PAGER='less'
 # Color for man
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'

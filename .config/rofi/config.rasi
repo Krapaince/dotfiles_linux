@@ -4,7 +4,7 @@ configuration {
     icon-theme: "Papirus";
     show-icons: true;
     font: "CaskaydiaCove Nerd Font 9";
-    location: north;
+    location: 0;
 }
 
 * {

@@ -19,6 +19,10 @@ Plug 'chrisbra/unicode.vim'
 Plug 'godlygeek/tabular' | Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
+
+Plug 'junegunn/fzf', { 'dir':'~/.fzf','do':'./install --all' }
+Plug 'junegunn/fzf.vim',
+
 call plug#end()
 
 " Snippet
@@ -177,3 +181,12 @@ let NERDTreeIgnore=['\.o$', '\.gcno$', '\.gcda$']
 
 " iamcco/markdown-preview/nvim
 let g:mkdp_markdown_css='/home/krapaince/.config/nvim/github-markdown.css'
+
+
+" Show FZF when pressing ctrl-p
+noremap <c-p> :call fzf#vim#files('', fzf#vim#with_preview('right'))<CR>
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore deps -g ""'
+" Fzf search in file
+nnoremap / :BLines<CR>
+" Search in current project
+nnoremap <c-j> :Ag<CR>

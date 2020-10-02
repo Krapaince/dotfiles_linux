@@ -29,23 +29,3 @@ function WriteHeader()
     endif
 endfunction
 nnoremap <C-s> :call WriteHeader()<CR>
-
-"Class CPP
-"function WriteClass()
-"    let className = input("Class Name : ")
-"    call append(line('.'), ["class " . className,
-"            \"{",
-"            \"public:",
-"            \"    " . className . "() = default;",
-"            \"    " . className . "(" . className . " const& to_copy) = default;",
-"            \"    " . className . "(" . className . "&& to_move) = default;",
-"            \"",
-"            \"    ~" . className . "() = default;",
-"            \"",
-"            \"    " . className . "& operator=(" . className . " const& to_copy) = default;",
-"            \"",
-"            \"private:",
-"            \"};"])
-"    "echo join(classContent, '\n')
-"endfunction
-"nnoremap <C-d> :call WriteClass()<CR>

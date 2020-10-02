@@ -16,6 +16,9 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/unicode.vim'
 
+Plug 'godlygeek/tabular' | Plug 'tpope/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+
 call plug#end()
 
 " Snippet
@@ -171,3 +174,6 @@ let NERDTreeIgnore=['\.o$', '\.gcno$', '\.gcda$']
 "if exists('g:loaded_webdevicons')
 "    call webdevicons#refresh()
 "endif
+
+" iamcco/markdown-preview/nvim
+let g:mkdp_markdown_css='/home/krapaince/.config/nvim/github-markdown.css'

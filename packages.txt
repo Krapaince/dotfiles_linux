@@ -17,6 +17,7 @@ i3-gaps
 i3lock
 keepassxc
 kitty
+libldac
 lsd
 most
 nautilus

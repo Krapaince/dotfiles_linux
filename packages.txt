@@ -23,6 +23,7 @@ most
 nautilus
 neovim
 npm
+pacman-contrib
 papirus-icon-theme
 picom
 polybar

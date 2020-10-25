@@ -8,12 +8,8 @@ Open `nvim` and install the plugin with the following command
 ```
 :PlugInstall
 ```
-Install `coc-snippets`
-```
-:CocInstall coc-snippets
-```
+
 Install `xclip` to copy in/out of vim
 ```bash
-yay xclip
-1
+yay -S xclip
 ```

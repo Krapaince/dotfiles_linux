@@ -20,7 +20,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export PATH=$PATH:~/Desktop/GIT/config/scripts:
+export PATH=$PATH:~/Desktop/GIT/scripts:~/Application:
 
 
 ## Utilities
@@ -35,10 +35,12 @@ alias ls="lsd"
 alias firefox="/usr/bin/firefox"
 
 ## Go to
-alias cde="cd ~/Desktop/EPITECH/"
-alias cdg="cd ~/Desktop/GIT/"
-alias cdw="cd ~/Desktop/EPITECH/delivery"
-alias cdd="cd ~/Desktop"
+REPO_LOCATION="$HOME/Desktop"
+alias cde="cd $REPO_LOCATION/EPITECH/"
+alias cdg="cd $REPO_LOCATION/GIT/"
+alias cdw="cd $REPO_LOCATION/EPITECH/delivery"
+alias cdd="cd $REPO_LOCATION"
+alias cdc="cd ~/.config"
 
 ## Git
 alias gs="git status"
@@ -76,4 +78,3 @@ function bat()
 
 #clang-format
 alias clang-format-all="find . -name \"*.hpp\" -print -o -name \"*.cpp\" -print -o -name \"*.c\" -print -o -name \"*.h\" -print | xargs clang-format -i --verbose"
-

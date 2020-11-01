@@ -37,6 +37,7 @@ teams
 tree
 trilium
 valgrind
+vifm
 vim-plug
 vlc
 xclip

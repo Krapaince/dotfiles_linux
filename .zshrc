@@ -15,7 +15,10 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 ZSH_THEME="agnoster"
-plugins=(git)
+plugins=(
+    git
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -1,0 +1,5 @@
+*.o
+*.gcno
+*.gcda
+.git/
+.clangd/

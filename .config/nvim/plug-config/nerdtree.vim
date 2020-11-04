@@ -1,7 +1,7 @@
 " Nerd tree toggle
-nmap <C-b> :NERDTreeToggle<CR>
+nmap <C-b> :NERDTreeToggleVCS<CR>
 " Nerd tree Mirror
-nmap <C-m> :NERDTreeMirror<CR>
+nmap <C-m> :NERDTreeMirrorVCS<CR>
 " Nerd Tree ignore files
 let NERDTreeIgnore=['\.o$', '\.gcno$', '\.gcda$']
 

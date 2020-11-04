@@ -28,4 +28,4 @@ function WriteHeader()
         call HeaderGuard(expand("%:t"))
     endif
 endfunction
-nnoremap <C-s> :call WriteHeader()<CR>
+"nnoremap <C-s> :call WriteHeader()<CR>

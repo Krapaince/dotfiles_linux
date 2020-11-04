@@ -10,6 +10,7 @@ let g:coc_global_extensions = [
     \ 'coc-prettier',
     \ 'coc-json',
     \ 'coc-marketplace',
+    \ 'coc-vetur',
 \ ]
 
 "Configure coc.nvim to use tab to navigate completions and enter to confirm

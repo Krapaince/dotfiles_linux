@@ -1,0 +1,25 @@
+set clipboard=unamedplus
+
+set clipboard+=ideaput
+
+nnoremap zc :action CollapseBlock<CR>
+nnoremap zo :action ExpandBlock<CR>
+
+nnoremap [ zo
+nnoremap ] zc
+
+nnoremap <C-Space> :action AutoIndentLines<CR>
+
+nnoremap <Space> :action CodeCompletion<CR>
+
+nnoremap <Space>/ :action CommentByLineComment<CR>
+vnoremap <Space>/ :action CommentByLineComment<CR>
+
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap ge :action GotoNextError<CR>
+
+nnoremap <C-p> :action SearchEverywhere<CR>
+
+nnoremap <S-h> gT
+nnoremap <S-l> gt

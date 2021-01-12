@@ -21,21 +21,28 @@ font pango:monospace 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 
+exec --no-startup-id /home/krapaince/.config/i3/scripts/setup_screen.sh
+
 # Compositor
 exec --no-startup-id picom --config /home/krapaince/.config/picom/config.ini --experimental-backends -b
 
 #Background image
-exec --no-startup-id feh --bg-fill $wallpaper
-
+exec --no-startup-id feh /home/krapaince/.config/i3/scripts/set_wallpaper.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 exec --no-startup-id nm-applet
+
+# Launch blueman applet
+exec --no-startup-id blueman-applet
+
+# Notification daemon
+exec dunst -config ~/.config/dunst/dunstrc
+
 
 # gaps
 gaps inner $igaps
@@ -64,22 +71,18 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 #bindcode 69 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
 #bindcode 70 exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Brightness setting
-Bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
-Bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
-
-#bindcode 71 exec "xbacklight -dec 5"
-#bindcode 72 exec "xbacklight -inc 5"
 # }
 
-
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id "~/.config/polybar/launch.sh"
 
 bindsym mod4+Right exec "~/.config/i3/scripts/lock.sh"
 bindsym mod4+Up exec "~/.config/i3/scripts/suspend.sh"
 
 # Switch keyboard layout
 bindsym mod4+space exec "~/.config/i3/scripts/keyboard_switcher.sh"
+
+# Disable/Enable screen on DVI port
+bindsym mod4+Down exec "~/.config/i3/scripts/reload_screen_setup.sh"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -91,12 +94,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec rofi -show drun -theme /home/krapaince/.config/rofi/config.rasi
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Set the keyboard rate
 exec "xset r rate 200 50"
@@ -117,10 +115,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym mod4+shift+s split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym mod4+shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -156,7 +154,7 @@ bindsym $mod+a focus parent
     set $ws8 "8"
     set $ws9 "9"
     set $ws10 "10"
-    
+
     # switch to workspace
     bindsym $mod+1 workspace number $ws1
     bindsym $mod+2 workspace number $ws2
@@ -168,11 +166,11 @@ bindsym $mod+a focus parent
     bindsym $mod+8 workspace number $ws8
     bindsym $mod+9 workspace number $ws9
     bindsym $mod+0 workspace number $ws10
-    
+
     # switch to left/right workspace
     bindsym Control+$mod+l workspace next
     bindsym Control+$mod+h workspace prev
-    
+
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number $ws1
     bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -184,6 +182,17 @@ bindsym $mod+a focus parent
     bindsym $mod+Shift+8 move container to workspace number $ws8
     bindsym $mod+Shift+9 move container to workspace number $ws9
     bindsym $mod+Shift+0 move container to workspace number $ws10
+
+    workspace $ws1  output DP5
+    workspace $ws2  output DP5
+    workspace $ws3  output DP5
+    workspace $ws4  output HDMI-0
+    workspace $ws5  output HDMI-0
+    workspace $ws6  output HDMI-0
+    workspace $ws7  output DVI-D-0
+    workspace $ws8  output DVI-D-0
+    workspace $ws9  output DVI-D-0
+    workspace $ws10 output DVI-D-0
 
 #: }}}
 

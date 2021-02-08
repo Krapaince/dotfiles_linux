@@ -239,6 +239,9 @@ dotfiles:
   f_config_nvim_plug-config_vim-code-dark.vim:
     src: config/nvim/plug-config/vim-code-dark.vim
     dst: ~/.config/nvim/plug-config/vim-code-dark.vim
+  f_ignore:
+    src: ignore
+    dst: ~/.ignore
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig

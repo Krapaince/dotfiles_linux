@@ -259,6 +259,7 @@ profiles:
     - f_config_i3_scripts_soundboard.sh
     - f_config_i3_wallpapers_krapaince_avatar.png
     - f_config_rofi_soundboard.rasi
+    - f_config_i3_scripts_egnime_notif_answer.sh
   krapaince_tty:
     dotfiles:
     - f_zshrc

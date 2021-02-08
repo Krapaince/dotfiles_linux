@@ -134,18 +134,6 @@ dotfiles:
   f_config_picom_config.ini:
     src: config/picom/config.ini
     dst: ~/.config/picom/config.ini
-  f_config_polybar_bars_krapaince-master-arch_left_top.ini:
-    src: config/polybar/bars/Krapaince-MASTER-arch/left/top.ini
-    dst: ~/.config/polybar/bars/Krapaince-MASTER-arch/left/top.ini
-  f_config_polybar_bars_krapaince-master-arch_mid_bot.ini:
-    src: config/polybar/bars/Krapaince-MASTER-arch/mid/bot.ini
-    dst: ~/.config/polybar/bars/Krapaince-MASTER-arch/mid/bot.ini
-  f_config_polybar_bars_krapaince-master-arch_mid_top.ini:
-    src: config/polybar/bars/Krapaince-MASTER-arch/mid/top.ini
-    dst: ~/.config/polybar/bars/Krapaince-MASTER-arch/mid/top.ini
-  f_config_polybar_bars_krapaince-master-arch_right_top.ini:
-    src: config/polybar/bars/Krapaince-MASTER-arch/right/top.ini
-    dst: ~/.config/polybar/bars/Krapaince-MASTER-arch/right/top.ini
   f_config_polybar_modules_custom_pulseaudio-control.ini:
     src: config/polybar/modules/custom/pulseaudio-control.ini
     dst: ~/.config/polybar/modules/custom/pulseaudio-control.ini
@@ -229,6 +217,22 @@ dotfiles:
   f_config_zsh_zshenv:
     src: config/zsh/.zshenv
     dst: ~/.config/zsh/.zshenv
+  f_config_i3_scripts_egnime_notif_answer.sh:
+    src: config/i3/scripts/egnime_notif_answer.sh
+    dst: ~/.config/i3/scripts/egnime_notif_answer.sh
+    chmod: '755'
+  f_config_polybar_bars_main_top.ini:
+    src: config/polybar/bars/main/top.ini
+    dst: ~/.config/polybar/bars/main/top.ini
+  f_config_polybar_bars_main_bottom.ini:
+    src: config/polybar/bars/main/bottom.ini
+    dst: ~/.config/polybar/bars/main/bottom.ini
+  f_config_polybar_bars_secondary_top.ini:
+    src: config/polybar/bars/secondary/top.ini
+    dst: ~/.config/polybar/bars/secondary/top.ini
+  f_config_polybar_bars_tertiary_top.ini:
+    src: config/polybar/bars/tertiary/top.ini
+    dst: ~/.config/polybar/bars/tertiary/top.ini
 profiles:
   Krapaince-MASTER-arch:
     variables:
@@ -242,6 +246,7 @@ profiles:
     - f_config_i3_scripts_monitor_reload_screen_setup.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
     - f_config_zsh_zshenv
+    - f_config_polybar_bars_tertiary_top.ini
   Krapaince-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
@@ -296,10 +301,9 @@ profiles:
     - f_config_i3_scripts_set_wallpaper.sh
     - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
-    - f_config_polybar_bars_krapaince-master-arch_left_top.ini
-    - f_config_polybar_bars_krapaince-master-arch_mid_bot.ini
-    - f_config_polybar_bars_krapaince-master-arch_mid_top.ini
-    - f_config_polybar_bars_krapaince-master-arch_right_top.ini
+    - f_config_polybar_bars_main_top.ini
+    - f_config_polybar_bars_main_bottom.ini
+    - f_config_polybar_bars_secondary_top.ini
     - f_config_polybar_modules_custom_pulseaudio-control.ini
     - f_config_polybar_modules_battery.ini
     - f_config_polybar_modules_cpu.ini

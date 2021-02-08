@@ -27,8 +27,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id ~/.config/i3/scripts/monitor/setup_screen.sh
 {%@@ endif @@%}
 
-#Background image
-exec --no-startup-id feh ~/.config/i3/scripts/set_wallpaper.sh
+# Set background image
+exec --no-startup-id ~/.config/i3/scripts/set_wallpaper.sh
 
 # Compositor
 exec --no-startup-id picom --config ~/.config/picom/config.ini --experimental-backends -b

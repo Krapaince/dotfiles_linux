@@ -220,24 +220,31 @@ dotfiles:
   f_config_i3_scripts_egnime_notif_answer.sh:
     src: config/i3/scripts/egnime_notif_answer.sh
     dst: ~/.config/i3/scripts/egnime_notif_answer.sh
-    chmod: '755'
+    chmod: '744'
   f_config_polybar_bars_main_top.ini:
     src: config/polybar/bars/main/top.ini
     dst: ~/.config/polybar/bars/main/top.ini
-  f_config_polybar_bars_main_bottom.ini:
-    src: config/polybar/bars/main/bottom.ini
-    dst: ~/.config/polybar/bars/main/bottom.ini
+  f_config_polybar_bars_main_bot.ini:
+    src: config/polybar/bars/main/bot.ini
+    dst: ~/.config/polybar/bars/main/bot.ini
   f_config_polybar_bars_secondary_top.ini:
     src: config/polybar/bars/secondary/top.ini
     dst: ~/.config/polybar/bars/secondary/top.ini
   f_config_polybar_bars_tertiary_top.ini:
     src: config/polybar/bars/tertiary/top.ini
     dst: ~/.config/polybar/bars/tertiary/top.ini
+  f_config_zathura_zathurarc:
+    src: config/zathura/zathurarc
+    dst: ~/.config/zathura/zathurarc
+  f_config_nvim_plug-config_vim-code-dark.vim:
+    src: config/nvim/plug-config/vim-code-dark.vim
+    dst: ~/.config/nvim/plug-config/vim-code-dark.vim
 profiles:
   Krapaince-MASTER-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
-      picom-blur-method: gaussian
+      picom_blur_method: gaussian
+      polybar_wired_network_interface: enp5s0
     include:
     - krapaince_tty
     - krapaince_gui
@@ -251,7 +258,8 @@ profiles:
   Krapaince-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
-      picom-blur-method: dual_kawase
+      picom_blur_method: dual_kawase
+      polybar_wired_network_interface: enp0s31f6
     include:
     - krapaince_tty
     - krapaince_gui
@@ -289,10 +297,11 @@ profiles:
     - f_config_nvim_github-markdown.css
     - f_config_nvim_init.vim
     - f_config_nvim_snippet.vim
-    - f_config_picom_config.ini
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf
     - f_vim_plugged_vim-code-dark_colors_codedark.vim
+    - f_config_vifm_vifmrc
+    - f_config_nvim_plug-config_vim-code-dark.vim
   krapaince_gui:
     dotfiles:
     - f_ideavimrc
@@ -305,7 +314,7 @@ profiles:
     - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
     - f_config_polybar_bars_main_top.ini
-    - f_config_polybar_bars_main_bottom.ini
+    - f_config_polybar_bars_main_bot.ini
     - f_config_polybar_bars_secondary_top.ini
     - f_config_polybar_modules_custom_pulseaudio-control.ini
     - f_config_polybar_modules_battery.ini
@@ -324,4 +333,5 @@ profiles:
     - f_config_polybar_config.ini
     - f_config_polybar_launch.sh
     - f_config_rofi_config.rasi
-    - f_config_vifm_vifmrc
+    - f_config_zathura_zathurarc
+    - f_config_picom_config.ini

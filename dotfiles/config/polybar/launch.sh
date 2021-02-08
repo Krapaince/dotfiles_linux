@@ -18,8 +18,8 @@ MONITOR=$MON_DVI polybar secondary_top -c ~/.config/polybar/config.ini &
 {%@@ elif profile == "Krapaince-arch" @@%}
 for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
   if [[ ${m:0:3} == "eDP" ]]; then
-    MONITOR=$m polybar top -c ~/.config/polybar/config.ini &
-    MONITOR=$m polybar bottom -c ~/.config/polybar/config.ini &
+    MONITOR=$m polybar main_top -c ~/.config/polybar/config.ini &
+    MONITOR=$m polybar main_bot -c ~/.config/polybar/config.ini &
   else
     MONITOR=$m polybar secondary_top -c ~/.config/polybar/config.ini &
   fi

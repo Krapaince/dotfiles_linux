@@ -237,6 +237,7 @@ profiles:
   Krapaince-MASTER-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
+      picom-blur-method: gaussian
     include:
     - krapaince_tty
     - krapaince_gui
@@ -250,6 +251,7 @@ profiles:
   Krapaince-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
+      picom-blur-method: dual_kawase
     include:
     - krapaince_tty
     - krapaince_gui

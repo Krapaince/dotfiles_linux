@@ -239,6 +239,13 @@ dotfiles:
   f_config_nvim_plug-config_vim-code-dark.vim:
     src: config/nvim/plug-config/vim-code-dark.vim
     dst: ~/.config/nvim/plug-config/vim-code-dark.vim
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+    chmod: '644'
+variables:
+  git_name: Krapaince
+  git_email: mathieu.pointecouteau@epitech.eu
 profiles:
   Krapaince-MASTER-arch:
     variables:
@@ -302,6 +309,8 @@ profiles:
     - f_vim_plugged_vim-code-dark_colors_codedark.vim
     - f_config_vifm_vifmrc
     - f_config_nvim_plug-config_vim-code-dark.vim
+    - f_ignore
+    - f_gitconfig
   krapaince_gui:
     dotfiles:
     - f_ideavimrc

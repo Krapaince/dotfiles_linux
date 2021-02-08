@@ -1,0 +1,42 @@
+{
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "args": ["--background-index", "-clang-tidy"],
+      "rootPatterns": [
+        "compile_flags.txt",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "filetypes": ["c", "cpp", "objc", "objcpp"]
+    },
+    "cmake": {
+      "command": "cmake-language-server",
+      "filetypes": ["cmake"],
+      "rootPatterns": [".git", "CMakeLists.txt"],
+      "initializationOptions": {
+        "buildDirectory": "build"
+      }
+    }
+  },
+
+  "diagnostic.virtualText": true,
+
+  "coc.preferences.snippets.enable": false,
+  "snippets.loadFromExtensions": true,
+  "snippets.snipmate.enable": true,
+  "snippets.ultisnips.enable": false,
+  "snippets.textmateSnippetsRoots": [
+    "/home/krapaince/.config/nvim/coc/snippets"
+  ],
+
+  "vetur.format.enable": true,
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+
+  "cmake.cmakePath": "/usr/bin/cmake",
+  "cmake.lsp.enable": true,
+  "cmake.lsp.serverPath": "/home/krapaince/.local/bin/cmake-language-server"
+}

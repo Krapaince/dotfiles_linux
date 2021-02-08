@@ -47,5 +47,3 @@ alias fighter="man"
 #clang-format
 alias clang-format-all="find . -name \"*.hpp\" -print -o -name \"*.cpp\" -print -o -name \"*.c\" -print -o -name \"*.h\" -print | xargs clang-format -i --verbose"
 alias formatter="/usr/bin/clang-format -style=file -fallback-style=none -assume-filename="
-
-

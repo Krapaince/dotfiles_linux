@@ -27,7 +27,8 @@ Plug 'Konfekt/FastFold'
 
 
 Plug 'godlygeek/tabular'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 
 Plug 'junegunn/fzf', { 'dir':'~/.fzf','do':'./install --all' }
 Plug 'junegunn/fzf.vim',

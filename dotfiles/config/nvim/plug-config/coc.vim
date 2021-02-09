@@ -9,7 +9,7 @@ let g:coc_global_extensions = [
     \ 'coc-cssmodules',
     \ 'coc-yaml',
     \ 'coc-prettier',
-    \ 'coc-jedi',
+    \ 'coc-pyright',
     \ 'coc-json',
     \ 'coc-marketplace',
     \ 'coc-vetur',

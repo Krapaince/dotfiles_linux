@@ -119,18 +119,24 @@ dotfiles:
   f_config_nvim_vim-plug_plugins.vim:
     src: config/nvim/vim-plug/plugins.vim
     dst: ~/.config/nvim/vim-plug/plugins.vim
+  f_config_nvim_plug-config_vim-code-dark.vim:
+    src: config/nvim/plug-config/vim-code-dark.vim
+    dst: ~/.config/nvim/plug-config/vim-code-dark.vim
   f_config_nvim_coc-settings.json:
     src: config/nvim/coc-settings.json
     dst: ~/.config/nvim/coc-settings.json
   f_config_nvim_github-markdown.css:
     src: config/nvim/github-markdown.css
     dst: ~/.config/nvim/github-markdown.css
-  f_config_nvim_init.vim:
-    src: config/nvim/init.vim
-    dst: ~/.config/nvim/init.vim
   f_config_nvim_snippet.vim:
     src: config/nvim/snippet.vim
     dst: ~/.config/nvim/snippet.vim
+  f_config_nvim_init.vim:
+    src: config/nvim/init.vim
+    dst: ~/.config/nvim/init.vim
+    actions:
+      - vim_install_plug
+      - vim_install_plugin
   f_config_picom_config.ini:
     src: config/picom/config.ini
     dst: ~/.config/picom/config.ini
@@ -233,9 +239,6 @@ dotfiles:
   f_config_zathura_zathurarc:
     src: config/zathura/zathurarc
     dst: ~/.config/zathura/zathurarc
-  f_config_nvim_plug-config_vim-code-dark.vim:
-    src: config/nvim/plug-config/vim-code-dark.vim
-    dst: ~/.config/nvim/plug-config/vim-code-dark.vim
   f_ignore:
     src: ignore
     dst: ~/.ignore
@@ -246,6 +249,11 @@ dotfiles:
 variables:
   git_name: Krapaince
   git_email: mathieu.pointecouteau@epitech.eu
+actions:
+  pre:
+    vim_install_plug: curl -Lo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  post:
+    vim_install_plugin: nvim --headless +PlugInstall '+qa!' &> /dev/null
 profiles:
   Krapaince-MASTER-arch:
     variables:
@@ -302,12 +310,12 @@ profiles:
     - f_config_nvim_vim-plug_plugins.vim
     - f_config_nvim_coc-settings.json
     - f_config_nvim_github-markdown.css
-    - f_config_nvim_init.vim
     - f_config_nvim_snippet.vim
+    - f_config_nvim_plug-config_vim-code-dark.vim
+    - f_config_nvim_init.vim
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf
     - f_config_vifm_vifmrc
-    - f_config_nvim_plug-config_vim-code-dark.vim
     - f_ignore
     - f_gitconfig
   krapaince_gui:

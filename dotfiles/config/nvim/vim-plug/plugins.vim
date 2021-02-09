@@ -13,7 +13,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'RRethy/vim-illuminate'
 Plug 'vim-airline/vim-airline'
-Plug 'tomasiser/vim-code-dark'
+Plug 'Krapaince/vim-code-dark'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 

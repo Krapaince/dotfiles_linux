@@ -199,9 +199,6 @@ dotfiles:
   f_config_vifm_vifmrc:
     src: config/vifm/vifmrc
     dst: ~/.config/vifm/vifmrc
-  f_vim_plugged_vim-code-dark_colors_codedark.vim:
-    src: vim/plugged/vim-code-dark/colors/codedark.vim
-    dst: ~/.vim/plugged/vim-code-dark/colors/codedark.vim
   f_config_i3_scripts_monitor_setup_screen.sh:
     src: config/i3/scripts/monitor/setup_screen.sh
     dst: ~/.config/i3/scripts/monitor/setup_screen.sh
@@ -309,7 +306,6 @@ profiles:
     - f_config_nvim_snippet.vim
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf
-    - f_vim_plugged_vim-code-dark_colors_codedark.vim
     - f_config_vifm_vifmrc
     - f_config_nvim_plug-config_vim-code-dark.vim
     - f_ignore

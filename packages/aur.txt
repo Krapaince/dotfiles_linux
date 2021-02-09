@@ -1,0 +1,15 @@
+bear
+blih
+criterion
+csfml
+dotdrop
+jetbrains-toolbox
+oh-my-zsh-git
+polybar
+pulseaudio-modules-bt
+shutter
+silver-searcher-git
+teams
+teams-for-linux
+ttf-material-design-icons
+zeal

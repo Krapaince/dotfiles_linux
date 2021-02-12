@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # {{@@ header() @@}}
 
 VAR='e'

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # {{@@ header() @@}}
 
 layout=`setxkbmap -query | grep 'layout' | tr -s [:space:] | cut -d" " -f 2`

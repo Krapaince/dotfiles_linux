@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # {{@@ header() @@}}
 
 xrandr  --output $MON_DVI --off \

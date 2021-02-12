@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # {{@@ header() @@}}
 
 # Terminate already running bar instances

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # {{@@ header() @@}}
 
 xrandr  --output $MON_DVI  --mode 1920x1080 --pos 3200x0 --rotate normal --primary \

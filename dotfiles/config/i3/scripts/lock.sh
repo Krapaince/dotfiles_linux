@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # {{@@ header() @@}}
 
 # Reset the main keyboard layout

@@ -21,10 +21,10 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 vnoremap <C-j> :m '>+1<CR>gv=gv
 
 
-nnoremap <Up> <Right>
-nnoremap <Right> <Down>
-nnoremap <Down> <Left>
-nnoremap <Left> <Up>
+" nnoremap <Up> <Right>
+" nnoremap <Right> <Down>
+" nnoremap <Down> <Left>
+" nnoremap <Left> <Up>
 
 nnoremap T :tabnew <cr>
 nnoremap H :tabprev <cr>

@@ -27,7 +27,8 @@ nnoremap <silent> K :call CocActionAsync('doHover')<CR>
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gR <Plug>(coc-references)
+nmap <silent> gr <Plug>(coc-rename)
 
 set completeopt+=preview
 autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')

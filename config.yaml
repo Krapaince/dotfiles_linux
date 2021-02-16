@@ -122,6 +122,19 @@ dotfiles:
   f_config_nvim_plug-config_vim-code-dark.vim:
     src: config/nvim/plug-config/vim-code-dark.vim
     dst: ~/.config/nvim/plug-config/vim-code-dark.vim
+  f_config_nvim_plug-config_animate.vim:
+    src: config/nvim/plug-config/animate.vim
+    dst: ~/.config/nvim/plug-config/animate.vim
+  f_config_nvim_plug-config_vimspector.vim:
+    src: config/nvim/plug-config/vimspector.vim
+    dst: ~/.config/nvim/plug-config/vimspector.vim
+  f_config_nvim_scripts_get_vimspector_conf.sh:
+    src: config/nvim/scripts/get_vimspector_conf.sh
+    dst: ~/.config/nvim/scripts/get_vimspector_conf.sh
+    chmod: '744'
+  f_config_nvim_scripts_vimspector_conf_c_vimspector.json:
+    src: config/nvim/scripts/vimspector/conf/c/.vimspector.json
+    dst: ~/.config/nvim/scripts/vimspector/conf/c/.vimspector.json
   f_config_nvim_coc-settings.json:
     src: config/nvim/coc-settings.json
     dst: ~/.config/nvim/coc-settings.json
@@ -307,6 +320,10 @@ profiles:
     - f_config_nvim_plug-config_vim-cpp-enhanced-highlight.vim
     - f_config_nvim_plug-config_vim-illuminate.vim
     - f_config_nvim_plug-config_vista.vim
+    - f_config_nvim_plug-config_animate.vim
+    - f_config_nvim_plug-config_vimspector.vim
+    - f_config_nvim_scripts_get_vimspector_conf.sh
+    - f_config_nvim_scripts_vimspector_conf_c_vimspector.json
     - f_config_nvim_vim-plug_plugins.vim
     - f_config_nvim_coc-settings.json
     - f_config_nvim_github-markdown.css

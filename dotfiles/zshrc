@@ -34,8 +34,9 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 export ANDROID_SDK=/opt/Android/platform-tools
 export DOTNET_PATH=~/.dotnet/tools
 LOCAL_BIN=~/.local/bin
+VIM_SCRIPT=~/.config/nvim/scripts/
 
-PATH=$PATH:$DOTNET_PATH:$LOCAL_BIN:$ANDROID_SDK
+PATH=$PATH:$DOTNET_PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT
 {%@@ endif @@%}
 
 CUSTOM_SCRIPT=$REPO_LOCATION/GIT/scripts

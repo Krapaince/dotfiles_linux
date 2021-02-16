@@ -40,8 +40,6 @@ alias repo_list="blih -u mathieu.pointecouteau@epitech.eu repository list"
 alias valgrindf="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --dsymutil=yes --num-callers=500 --log-file=valgrind.txt"
 alias valgrind-colour="cat valgrind.txt | colout -t valgrind | less"
 
-alias dotdrop="dotdrop -c $REPO_LOCATION/GIT/dotfiles_linux/config.yaml"
-
 alias fighter="man"
 
 #clang-format

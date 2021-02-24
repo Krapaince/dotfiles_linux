@@ -48,4 +48,6 @@ Plug 'AndrewRadev/tagalong.vim'
 let g:vimspector_enable_mappings = 'HUMAN'
 Plug 'puremourning/vimspector'
 
+Plug 'vim-scripts/DrawIt'
+
 call plug#end()

@@ -43,9 +43,6 @@ CUSTOM_SCRIPT=$REPO_LOCATION/GIT/scripts
 
 PATH=$PATH:$CUSTOM_SCRIPT
 
-# Alias
-source ~/.zsh_alias
-
 # Include part
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -53,6 +50,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
 
+# Alias
+source ~/.zsh_alias
 
 {%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" @@%}
 # zsh parameter completion for the dotnet CLI

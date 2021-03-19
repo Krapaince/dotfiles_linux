@@ -259,7 +259,7 @@ bindsym $mod+r mode "resize"
 #: Soundboard {{{
 
 set $sound_path ~/Music/Soundboard
-set $quiz_awnser ~/Soundboard/Egnime/script.sh
+set $quiz_awnser ~/.config/i3/scripts/egnime_notif_answer.sh
 
 mode "soundboard" {
 

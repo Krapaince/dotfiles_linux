@@ -148,8 +148,8 @@ dotfiles:
     src: config/nvim/init.vim
     dst: ~/.config/nvim/init.vim
     actions:
-      - vim_install_plug
-      - vim_install_plugin
+    - vim_install_plug
+    - vim_install_plugin
   f_config_picom_config.ini:
     src: config/picom/config.ini
     dst: ~/.config/picom/config.ini
@@ -259,12 +259,19 @@ dotfiles:
     src: gitconfig
     dst: ~/.gitconfig
     chmod: '644'
+  f_xinitrc:
+    src: xinitrc
+    dst: ~/.xinitrc
+  f_config_kvantum_kvantum.kvconfig:
+    src: config/Kvantum/kvantum.kvconfig
+    dst: ~/.config/Kvantum/kvantum.kvconfig
 variables:
   git_name: Krapaince
   git_email: mathieu.pointecouteau@epitech.eu
 actions:
   pre:
-    vim_install_plug: curl -Lo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    vim_install_plug: curl -Lo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   post:
     vim_install_plugin: nvim --headless +PlugInstall '+qa!' &> /dev/null
 profiles:
@@ -296,6 +303,7 @@ profiles:
     - f_config_i3_wallpapers_krapaince_avatar.png
     - f_config_rofi_soundboard.rasi
     - f_config_i3_scripts_egnime_notif_answer.sh
+    - f_xinitrc
   krapaince_tty:
     dotfiles:
     - f_zshrc
@@ -368,3 +376,6 @@ profiles:
     - f_config_rofi_config.rasi
     - f_config_zathura_zathurarc
     - f_config_picom_config.ini
+  krapaince-gui:
+    dotfiles:
+    - f_config_kvantum_kvantum.kvconfig

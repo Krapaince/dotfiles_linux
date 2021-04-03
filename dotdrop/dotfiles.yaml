@@ -1,12 +1,13 @@
 config:
-  backup: true
+  backup: false
   banner: true
   create: true
-  dotpath: dotfiles
-  keepdot: false
+  dotpath: ../dotfiles
   link_dotfile_default: nolink
   link_on_import: nolink
+  keepdot: false
   longkey: true
+profiles:
 dotfiles:
   f_zshrc:
     src: zshrc
@@ -265,117 +266,3 @@ dotfiles:
   f_config_kvantum_kvantum.kvconfig:
     src: config/Kvantum/kvantum.kvconfig
     dst: ~/.config/Kvantum/kvantum.kvconfig
-variables:
-  git_name: Krapaince
-  git_email: mathieu.pointecouteau@epitech.eu
-actions:
-  pre:
-    vim_install_plug: curl -Lo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  post:
-    vim_install_plugin: nvim --headless +PlugInstall '+qa!' &> /dev/null
-profiles:
-  Krapaince-MASTER-arch:
-    variables:
-      wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
-      picom_blur_method: gaussian
-      polybar_wired_network_interface: enp5s0
-    include:
-    - krapaince_tty
-    - krapaince_gui
-    dotfiles:
-    - f_config_i3_wallpapers_krapaince-master_avatar.png
-    - f_config_i3_scripts_monitor_setup_screen.sh
-    - f_config_i3_scripts_monitor_reload_screen_setup.sh
-    - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
-    - f_config_zsh_zshenv
-    - f_config_polybar_bars_tertiary_top.ini
-  Krapaince-arch:
-    variables:
-      wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
-      picom_blur_method: dual_kawase
-      polybar_wired_network_interface: enp0s31f6
-    include:
-    - krapaince_tty
-    - krapaince_gui
-    dotfiles:
-    - f_config_i3_scripts_soundboard.sh
-    - f_config_i3_wallpapers_krapaince_avatar.png
-    - f_config_rofi_soundboard.rasi
-    - f_config_i3_scripts_egnime_notif_answer.sh
-    - f_xinitrc
-  krapaince_tty:
-    dotfiles:
-    - f_zshrc
-    - f_zsh_alias
-    - f_clang-format_c
-    - f_clang-format_cpp
-    - f_clang-tidy
-    - f_config_nvim_coc_snippets_c.json
-    - f_config_nvim_coc_snippets_cpp.json
-    - f_config_nvim_general_settings.vim
-    - f_config_nvim_keys_mappings.vim
-    - f_config_nvim_lua_plug-colorizer.lua
-    - f_config_nvim_plug-config_airline.vim
-    - f_config_nvim_plug-config_coc.vim
-    - f_config_nvim_plug-config_fzf.vim
-    - f_config_nvim_plug-config_git-messenger.vim
-    - f_config_nvim_plug-config_markdown-preview.vim
-    - f_config_nvim_plug-config_nerdtree.vim
-    - f_config_nvim_plug-config_rnvimr.vim
-    - f_config_nvim_plug-config_vim-clang-format.vim
-    - f_config_nvim_plug-config_vim-commentary.vim
-    - f_config_nvim_plug-config_vim-cpp-enhanced-highlight.vim
-    - f_config_nvim_plug-config_vim-illuminate.vim
-    - f_config_nvim_plug-config_vista.vim
-    - f_config_nvim_plug-config_animate.vim
-    - f_config_nvim_plug-config_vimspector.vim
-    - f_config_nvim_scripts_get_vimspector_conf.sh
-    - f_config_nvim_scripts_vimspector_conf_c_vimspector.json
-    - f_config_nvim_vim-plug_plugins.vim
-    - f_config_nvim_coc-settings.json
-    - f_config_nvim_github-markdown.css
-    - f_config_nvim_snippet.vim
-    - f_config_nvim_plug-config_vim-code-dark.vim
-    - f_config_nvim_init.vim
-    - f_config_ranger_rc.conf
-    - f_config_ranger_rifle.conf
-    - f_config_vifm_vifmrc
-    - f_ignore
-    - f_gitconfig
-  krapaince_gui:
-    dotfiles:
-    - f_ideavimrc
-    - f_config_dunst_dunstrc
-    - f_config_dunst_reload.sh
-    - f_config_i3_config
-    - f_config_i3_scripts_keyboard_switcher.sh
-    - f_config_i3_scripts_lock.sh
-    - f_config_i3_scripts_set_wallpaper.sh
-    - f_config_i3_scripts_suspend.sh
-    - f_config_kitty_kitty.conf
-    - f_config_polybar_bars_main_top.ini
-    - f_config_polybar_bars_main_bot.ini
-    - f_config_polybar_bars_secondary_top.ini
-    - f_config_polybar_modules_custom_pulseaudio-control.ini
-    - f_config_polybar_modules_battery.ini
-    - f_config_polybar_modules_cpu.ini
-    - f_config_polybar_modules_date.ini
-    - f_config_polybar_modules_filesystem.ini
-    - f_config_polybar_modules_i3.ini
-    - f_config_polybar_modules_memory.ini
-    - f_config_polybar_modules_network.ini
-    - f_config_polybar_modules_pulseaudio.ini
-    - f_config_polybar_modules_temperature.ini
-    - f_config_polybar_modules_xkeyboard.ini
-    - f_config_polybar_modules_xwindow.ini
-    - f_config_polybar_scripts_pulseaudio-control.bash
-    - f_config_polybar_colors.ini
-    - f_config_polybar_config.ini
-    - f_config_polybar_launch.sh
-    - f_config_rofi_config.rasi
-    - f_config_zathura_zathurarc
-    - f_config_picom_config.ini
-  krapaince-gui:
-    dotfiles:
-    - f_config_kvantum_kvantum.kvconfig

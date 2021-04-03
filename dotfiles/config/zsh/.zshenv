@@ -1,2 +1,2 @@
 #!/bin/sh
-[[ -f ~/.config/zsh/.zshenv ]] && source ~/.config/zsh/.monitorenv
+[[ -f ~/.config/zsh/.zshenv ]] && . ~/.config/zsh/.monitorenv

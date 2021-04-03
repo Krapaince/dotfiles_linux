@@ -4,7 +4,7 @@
 SCREENS=( $(xrandr -q | grep " connected" | cut -d ' ' -f 1 | tr '\n' ' ' | rev | cut -c 1- | rev) )
 NAMES=('MON_DVI' 'MON_HDMI' 'MON_DP')
 NB_SCREENS=3
-FILE=/home/krapaince/.config/zsh/.monitorenv
+FILE=~/.config/zsh/.monitorenv
 
 rm -rf $FILE
 

@@ -1,0 +1,18 @@
+config:
+  backup: false
+  banner: true
+  create: true
+  dotpath: ../dotfiles
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  keepdot: false
+  longkey: true
+  import_configs:
+    - profiles.yaml
+    - dotfiles.yaml
+  import_variables:
+    - variables.yaml
+  import_actions:
+    - actions.yaml
+profiles:
+dotfiles:

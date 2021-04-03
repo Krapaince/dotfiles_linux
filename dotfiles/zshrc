@@ -32,11 +32,10 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 # Path
 {%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" @@%}
 export ANDROID_SDK=/opt/Android/platform-tools
-export DOTNET_PATH=~/.dotnet/tools
 LOCAL_BIN=~/.local/bin
 VIM_SCRIPT=~/.config/nvim/scripts/
 
-PATH=$PATH:$DOTNET_PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT
+PATH=$PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT
 {%@@ endif @@%}
 
 CUSTOM_SCRIPT=$REPO_LOCATION/GIT/scripts
@@ -52,14 +51,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias
 source ~/.zsh_alias
-
-{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" @@%}
-# zsh parameter completion for the dotnet CLI
-_dotnet_zsh_complete()
-{
-  local completions=("$(dotnet complete "$words")")
-
-  reply=( "${(ps:\n:)completions}" )
-}
-compctl -K _dotnet_zsh_complete dotnet
-{%@@ endif @@%}

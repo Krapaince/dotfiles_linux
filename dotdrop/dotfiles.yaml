@@ -194,6 +194,9 @@ dotfiles:
     src: config/polybar/scripts/pulseaudio-control.bash
     dst: ~/.config/polybar/scripts/pulseaudio-control.bash
     chmod: '744'
+  f_config_polybar_bars.ini:
+    src: config/polybar/bars.ini
+    dst: ~/.config/polybar/bars.ini
   f_config_polybar_colors.ini:
     src: config/polybar/colors.ini
     dst: ~/.config/polybar/colors.ini
@@ -238,18 +241,6 @@ dotfiles:
     src: config/i3/scripts/egnime_notif_answer.sh
     dst: ~/.config/i3/scripts/egnime_notif_answer.sh
     chmod: '744'
-  f_config_polybar_bars_main_top.ini:
-    src: config/polybar/bars/main/top.ini
-    dst: ~/.config/polybar/bars/main/top.ini
-  f_config_polybar_bars_main_bot.ini:
-    src: config/polybar/bars/main/bot.ini
-    dst: ~/.config/polybar/bars/main/bot.ini
-  f_config_polybar_bars_secondary_top.ini:
-    src: config/polybar/bars/secondary/top.ini
-    dst: ~/.config/polybar/bars/secondary/top.ini
-  f_config_polybar_bars_tertiary_top.ini:
-    src: config/polybar/bars/tertiary/top.ini
-    dst: ~/.config/polybar/bars/tertiary/top.ini
   f_config_zathura_zathurarc:
     src: config/zathura/zathurarc
     dst: ~/.config/zathura/zathurarc

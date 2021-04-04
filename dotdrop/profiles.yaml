@@ -22,12 +22,12 @@ profiles:
     - f_config_i3_scripts_monitor_reload_screen_setup.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
     - f_config_zsh_zshenv
-    - f_config_polybar_bars_tertiary_top.ini
   Krapaince-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
       picom_blur_method: dual_kawase
       polybar_wired_network_interface: enp0s31f6
+      polybar_wireless_network_interface: wlp3s0
     include:
     - krapaince_tty
     - krapaince_gui
@@ -87,9 +87,7 @@ profiles:
     - f_config_i3_scripts_set_wallpaper.sh
     - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
-    - f_config_polybar_bars_main_top.ini
-    - f_config_polybar_bars_main_bot.ini
-    - f_config_polybar_bars_secondary_top.ini
+    - f_config_polybar_bars.ini
     - f_config_polybar_modules_custom_pulseaudio-control.ini
     - f_config_polybar_modules_battery.ini
     - f_config_polybar_modules_cpu.ini

@@ -38,5 +38,7 @@
 
   "cmake.cmakePath": "/usr/bin/cmake",
   "cmake.lsp.enable": true,
-  "cmake.lsp.serverPath": "~/.local/bin/cmake-language-server"
+  "cmake.lsp.serverPath": "~/.local/bin/cmake-language-server",
+
+  "coc.preferences.formatOnSaveFiletypes": ["rust"]
 }

@@ -1,2 +1,7 @@
+#!/bin/sh
+
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+blueman-applet &
+
 exec i3

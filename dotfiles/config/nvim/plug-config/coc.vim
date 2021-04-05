@@ -14,6 +14,7 @@ let g:coc_global_extensions = [
     \ 'coc-marketplace',
     \ 'coc-vetur',
     \ 'coc-cmake',
+    \ 'coc-rls',
 \ ]
 
 "Configure coc.nvim to use tab to navigate completions and enter to confirm

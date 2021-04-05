@@ -66,6 +66,7 @@ tree
 ttf-dejavu
 ttf-droid
 ttf-roboto
+rustup
 ueberzug
 unzip
 valgrind

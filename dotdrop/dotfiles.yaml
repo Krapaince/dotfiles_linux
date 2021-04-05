@@ -150,6 +150,7 @@ dotfiles:
     dst: ~/.config/nvim/init.vim
     actions:
     - vim_install_plug
+    - vim_install_rustup_components
     - vim_install_plugin
   f_config_picom_config.ini:
     src: config/picom/config.ini

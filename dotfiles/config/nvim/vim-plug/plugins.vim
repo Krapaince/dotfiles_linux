@@ -50,4 +50,6 @@ Plug 'puremourning/vimspector'
 
 Plug 'vim-scripts/DrawIt'
 
+Plug 'lervag/vimtex'
+
 call plug#end()

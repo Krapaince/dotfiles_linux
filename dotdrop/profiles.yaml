@@ -29,7 +29,7 @@ profiles:
       picom_blur_method: dual_kawase
       polybar_wired_network_interface: enp0s31f6
       polybar_wireless_network_interface: wlp3s0
-      kitty_font: Caskaydia Cove Nerd Font Complete
+      kitty_font: CaskaydiaCove Nerd Font Book
     include:
     - krapaince_tty
     - krapaince_gui

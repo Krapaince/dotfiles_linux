@@ -2,8 +2,14 @@
 # {{@@ header() @@}}
 
 SCREENS=( $(xrandr -q | grep " connected" | cut -d ' ' -f 1 | tr '\n' ' ' | rev | cut -c 1- | rev) )
+
+{%@@ if profile == "Krapaince-MASTER-arch" @@%}
 NAMES=('MON_DVI' 'MON_HDMI' 'MON_DP')
 NB_SCREENS=3
+{%@@ elif profile == "Krapaince-ubuntu" @@%}
+NAMES=('MON_HDMI' 'MON_DP')
+NB_SCREENS=2
+{%@@ endif @@%}
 FILE=~/.config/zsh/.monitorenv
 
 rm -rf $FILE

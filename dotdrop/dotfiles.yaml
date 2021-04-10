@@ -63,6 +63,9 @@ dotfiles:
   f_config_i3_wallpapers_krapaince-master_avatar.png:
     src: config/i3/wallpapers/Krapaince-MASTER/avatar.png
     dst: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
+  f_config_i3_wallpapers_krapaince-ubuntu_avatar.png:
+    src: config/i3/wallpapers/Krapaince-ubuntu/avatar.png
+    dst: ~/.config/i3/wallpapers/Krapaince-ubuntu/avatar.png
   f_config_kitty_kitty.conf:
     src: config/kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf

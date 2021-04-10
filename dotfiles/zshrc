@@ -30,12 +30,15 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 {%@@ endif @@%}
 
 # Path
-{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" @@%}
+{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" or profile == "Krapaince-ubuntu" @@%}
 export ANDROID_SDK=/opt/Android/platform-tools
 LOCAL_BIN=~/.local/bin
 VIM_SCRIPT=~/.config/nvim/scripts/
 
 PATH=$PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT
+{%@@ endif @@%}
+{%@@ if profile == "Krapaince-ubuntu" @@%}
+PATH=$PATH:/snap/bin
 {%@@ endif @@%}
 
 CUSTOM_SCRIPT=$REPO_LOCATION/GIT/scripts
@@ -45,8 +48,14 @@ PATH=$PATH:$CUSTOM_SCRIPT
 # Include part
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+{%@@ if profile == "Krapaince-ubuntu" @@%}
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+{%@@ else  @@%}
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+{%@@ endif @@%}
+
 source $ZSH/oh-my-zsh.sh
 
 # Alias

@@ -11,6 +11,6 @@ xrandr  --output $MON_HDMI --mode 1920x1080 --pos 0x0 --rotate normal
         --output $MON_DP --primary --mode 1920x1080 --pos 1920x0 --rotate normal
 
 {%@@ endif @@%}
-$HOME.config/i3/scripts/monitor/setup_screen.sh
-$HOME.config/i3/scripts/set_wallpaper.sh
+~/.config/i3/scripts/monitor/setup_screen.sh
+~/.config/i3/scripts/set_wallpaper.sh
 i3-msg restart

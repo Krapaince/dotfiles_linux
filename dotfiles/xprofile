@@ -2,8 +2,8 @@
 # {{@@ header() @@}}
 
 {%@@ if profile == "Krapaince-MASTER-arch" @@%}
-/home/krapaince/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
+~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
 [[ -f ~/.config/zsh/.zshenv ]] && . ~/.config/zsh/.zshenv
 
-sshfs krapaince@krapaince-nas:/home/krapaince/Document/ /home/krapaince/Document/Keepass -p 22 -o reconnect
+sshfs krapaince@krapaince-nas:/home/krapaince/Document/ ~/Document/Keepass -p 22 -o reconnect
 {%@@ endif @@%}

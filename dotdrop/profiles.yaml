@@ -126,3 +126,4 @@ profiles:
     - f_config_zathura_zathurarc
     - f_config_picom_config.ini
     - f_config_kvantum_kvantum.kvconfig
+    - f_xprofile

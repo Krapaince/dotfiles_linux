@@ -258,6 +258,9 @@ dotfiles:
   f_xinitrc:
     src: xinitrc
     dst: ~/.xinitrc
+  f_xprofile:
+    src: xprofile
+    dst: ~/.xprofile
   f_config_kvantum_kvantum.kvconfig:
     src: config/Kvantum/kvantum.kvconfig
     dst: ~/.config/Kvantum/kvantum.kvconfig

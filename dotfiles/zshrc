@@ -34,8 +34,9 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 export ANDROID_SDK=/opt/Android/platform-tools
 LOCAL_BIN=~/.local/bin
 VIM_SCRIPT=~/.config/nvim/scripts/
+CARGO_BIN=~/.cargo/bin
 
-PATH=$PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT
+PATH=$PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT:$CARGO_BIN
 {%@@ endif @@%}
 {%@@ if profile == "Krapaince-ubuntu" @@%}
 PATH=$PATH:/snap/bin

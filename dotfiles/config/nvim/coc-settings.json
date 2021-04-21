@@ -28,9 +28,7 @@
   "snippets.loadFromExtensions": true,
   "snippets.snipmate.enable": true,
   "snippets.ultisnips.enable": false,
-  "snippets.textmateSnippetsRoots": [
-    "~/.config/nvim/coc/snippets"
-  ],
+  "snippets.textmateSnippetsRoots": ["~/.config/nvim/coc/snippets"],
 
   "vetur.format.enable": true,
   "vetur.format.options.tabSize": 2,

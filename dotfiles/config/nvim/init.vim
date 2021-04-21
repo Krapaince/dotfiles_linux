@@ -9,6 +9,7 @@ source $HOME/.config/nvim/plug-config/vim-code-dark.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/vim-cpp-enhanced-highlight.vim
+source $HOME/.config/nvim/plug-config/vim-dadbod-ui.vim
 source $HOME/.config/nvim/plug-config/git-messenger.vim
 source $HOME/.config/nvim/plug-config/vim-clang-format.vim
 source $HOME/.config/nvim/plug-config/fzf.vim

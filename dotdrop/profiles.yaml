@@ -77,6 +77,7 @@ profiles:
     - f_config_nvim_plug-config_vim-clang-format.vim
     - f_config_nvim_plug-config_vim-commentary.vim
     - f_config_nvim_plug-config_vim-cpp-enhanced-highlight.vim
+    - f_config_nvim_plug-config_vim-dadbod-ui.vim
     - f_config_nvim_plug-config_vim-illuminate.vim
     - f_config_nvim_plug-config_vista.vim
     - f_config_nvim_plug-config_animate.vim

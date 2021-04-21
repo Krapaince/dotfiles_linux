@@ -114,6 +114,9 @@ dotfiles:
   f_config_nvim_plug-config_vim-cpp-enhanced-highlight.vim:
     src: config/nvim/plug-config/vim-cpp-enhanced-highlight.vim
     dst: ~/.config/nvim/plug-config/vim-cpp-enhanced-highlight.vim
+  f_config_nvim_plug-config_vim-dadbod-ui.vim:
+    src: config/nvim/plug-config/vim-dadbod-ui.vim
+    dst: ~/.config/nvim/plug-config/vim-dadbod-ui.vim
   f_config_nvim_plug-config_vim-illuminate.vim:
     src: config/nvim/plug-config/vim-illuminate.vim
     dst: ~/.config/nvim/plug-config/vim-illuminate.vim

@@ -52,4 +52,7 @@ Plug 'vim-scripts/DrawIt'
 
 Plug 'lervag/vimtex'
 
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+
 call plug#end()

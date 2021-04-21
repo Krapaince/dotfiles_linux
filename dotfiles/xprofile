@@ -2,6 +2,8 @@
 # {{@@ header() @@}}
 
 {%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-ubuntu" @@%}
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
 {%@@ endif @@%}
 {%@@ if profile == "Krapaince-MASTER-arch" @@%}

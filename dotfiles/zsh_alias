@@ -2,18 +2,20 @@
 
 ## Utilities
 alias v="nvim"
-alias autodebug_facile_comme_2_plus_2_egal_22="make CFLAGS+='-ggdb3' -j"
-alias autodebug_facile_comme_2_plus_2_egal_22_cpp="make CXXFLAGS+='-ggdb3' -j"
 alias c="clear"
-alias ro="rm *.o"
 alias ls="lsd"
 
 ## Go to
+alias cdd="cd $REPO_LOCATION"
+alias cdc="cd ~/.config"
+
+{%@@ if profile == "Krapaince-ubuntu" @@%}
+alias cdp="cd $REPO_LOCATION/Projects"
+{%@@ else @@%}
 alias cde="cd $REPO_LOCATION/EPITECH/"
 alias cdg="cd $REPO_LOCATION/GIT/"
 alias cdw="cd $REPO_LOCATION/EPITECH/delivery"
-alias cdd="cd $REPO_LOCATION"
-alias cdc="cd ~/.config"
+{%@@ endif @@%}
 
 ## Git
 alias gs="git status"

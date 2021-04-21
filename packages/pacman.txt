@@ -28,6 +28,7 @@ keepassxc
 kitty
 kolourpaint
 krita
+kvamtum-qt5
 libldac
 linux-headers
 lsd
@@ -36,8 +37,8 @@ man-pages
 most
 ncdu
 neovim
-network-manager-applet
 networkmanager
+network-manager-applet
 networkmanager-openvpn
 ninja
 nodejs
@@ -55,8 +56,10 @@ pkgconf
 pulseaudio
 pulseaudio-alsa
 pulseaudio-jack
+qt5ct
 ranger
 rofi
+rustup
 screenkey
 scrot
 sshfs
@@ -66,7 +69,6 @@ tree
 ttf-dejavu
 ttf-droid
 ttf-roboto
-rustup
 ueberzug
 unzip
 valgrind

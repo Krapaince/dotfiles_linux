@@ -1,8 +1,10 @@
 #!/usr/bin/env sh
 # {{@@ header() @@}}
 
-{%@@ if profile == "Krapaince-MASTER-arch" @@%}
+{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-ubuntu" @@%}
 ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
+{%@@ endif @@%}
+{%@@ if profile == "Krapaince-MASTER-arch" @@%}
 [[ -f ~/.config/zsh/.zshenv ]] && . ~/.config/zsh/.zshenv
 
 sshfs krapaince@krapaince-nas:/home/krapaince/Document/ ~/Document/Keepass -p 22 -o reconnect

@@ -83,6 +83,7 @@ profiles:
     - f_config_nvim_plug-config_animate.vim
     - f_config_nvim_plug-config_vimspector.vim
     - f_config_nvim_scripts_get_vimspector_conf.sh
+    - f_config_nvim_plig-config_vim-easy-align.vim
     - f_config_nvim_scripts_vimspector_conf_c_vimspector.json
     - f_config_nvim_vim-plug_plugins.vim
     - f_config_nvim_coc-settings.json

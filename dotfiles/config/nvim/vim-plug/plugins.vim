@@ -55,4 +55,6 @@ Plug 'lervag/vimtex'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 
+Plug 'junegunn/vim-easy-align'
+
 call plug#end()

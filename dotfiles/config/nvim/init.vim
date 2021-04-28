@@ -19,6 +19,7 @@ source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/vim-illuminate.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
+source $HOME/.config/nvim/plug-config/vim-easy-align.vim
 source $HOME/.config/nvim/plug-config/animate.vim
 
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua

@@ -142,6 +142,9 @@ dotfiles:
   f_config_nvim_scripts_vimspector_conf_c_vimspector.json:
     src: config/nvim/scripts/vimspector/conf/c/.vimspector.json
     dst: ~/.config/nvim/scripts/vimspector/conf/c/.vimspector.json
+  f_config_nvim_plig-config_vim-easy-align.vim:
+    src: config/nvim/plug-config/vim-easy-align.vim
+    dst: ~/.config/nvim/plug-config/vim-easy-align.vim
   f_config_nvim_coc-settings.json:
     src: config/nvim/coc-settings.json
     dst: ~/.config/nvim/coc-settings.json

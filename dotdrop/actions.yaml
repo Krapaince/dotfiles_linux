@@ -1,7 +1,6 @@
 actions:
   pre:
-    vim_install_plug: curl -Lo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    vim_install_packer: git clone https://github.com/wbthomason/packer.nvim
+      ~/.local/share/nvim/site/pack/packer/start/packer.nvim || echo "Already install packer"
     vim_install_rustup_components: rustup default stable && rustup component add rls rust-analysis rust-src
-  post:
-    vim_install_plugin: nvim --headless +PlugInstall '+qa!' &> /dev/null
+    vim_install_language_server: ./dotdrop/scripts/install_language_server.sh

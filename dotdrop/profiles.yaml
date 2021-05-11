@@ -62,35 +62,12 @@ profiles:
     - f_clang-format_c
     - f_clang-format_cpp
     - f_clang-tidy
-    - f_config_nvim_coc_snippets_c.json
-    - f_config_nvim_coc_snippets_cpp.json
-    - f_config_nvim_general_settings.vim
-    - f_config_nvim_keys_mappings.vim
-    - f_config_nvim_lua_plug-colorizer.lua
-    - f_config_nvim_plug-config_airline.vim
-    - f_config_nvim_plug-config_coc.vim
-    - f_config_nvim_plug-config_fzf.vim
-    - f_config_nvim_plug-config_git-messenger.vim
-    - f_config_nvim_plug-config_markdown-preview.vim
-    - f_config_nvim_plug-config_nerdtree.vim
-    - f_config_nvim_plug-config_rnvimr.vim
-    - f_config_nvim_plug-config_vim-clang-format.vim
-    - f_config_nvim_plug-config_vim-commentary.vim
-    - f_config_nvim_plug-config_vim-cpp-enhanced-highlight.vim
-    - f_config_nvim_plug-config_vim-dadbod-ui.vim
-    - f_config_nvim_plug-config_vim-illuminate.vim
-    - f_config_nvim_plug-config_vista.vim
-    - f_config_nvim_plug-config_animate.vim
-    - f_config_nvim_plug-config_vimspector.vim
-    - f_config_nvim_scripts_get_vimspector_conf.sh
-    - f_config_nvim_plig-config_vim-easy-align.vim
-    - f_config_nvim_scripts_vimspector_conf_c_vimspector.json
-    - f_config_nvim_vim-plug_plugins.vim
-    - f_config_nvim_coc-settings.json
-    - f_config_nvim_github-markdown.css
-    - f_config_nvim_snippet.vim
-    - f_config_nvim_plug-config_vim-code-dark.vim
+    - f_config_nvim_lua_config.lua
+    - f_config_nvim_lua_highlights.lua
+    - f_config_nvim_lua_mappings.lua
+    - f_config_nvim_lua_utils.lua
     - f_config_nvim_init.vim
+    - f_config_nvim_settings.vim
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf
     - f_config_vifm_vifmrc

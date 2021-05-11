@@ -69,98 +69,28 @@ dotfiles:
   f_config_kitty_kitty.conf:
     src: config/kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
-  f_config_nvim_coc_snippets_c.json:
-    src: config/nvim/coc/snippets/c.json
-    dst: ~/.config/nvim/coc/snippets/c.json
-  f_config_nvim_coc_snippets_cpp.json:
-    src: config/nvim/coc/snippets/cpp.json
-    dst: ~/.config/nvim/coc/snippets/cpp.json
-  f_config_nvim_general_settings.vim:
-    src: config/nvim/general/settings.vim
-    dst: ~/.config/nvim/general/settings.vim
-  f_config_nvim_keys_mappings.vim:
-    src: config/nvim/keys/mappings.vim
-    dst: ~/.config/nvim/keys/mappings.vim
-  f_config_nvim_lua_plug-colorizer.lua:
-    src: config/nvim/lua/plug-colorizer.lua
-    dst: ~/.config/nvim/lua/plug-colorizer.lua
-  f_config_nvim_plug-config_airline.vim:
-    src: config/nvim/plug-config/airline.vim
-    dst: ~/.config/nvim/plug-config/airline.vim
-  f_config_nvim_plug-config_coc.vim:
-    src: config/nvim/plug-config/coc.vim
-    dst: ~/.config/nvim/plug-config/coc.vim
-  f_config_nvim_plug-config_fzf.vim:
-    src: config/nvim/plug-config/fzf.vim
-    dst: ~/.config/nvim/plug-config/fzf.vim
-  f_config_nvim_plug-config_git-messenger.vim:
-    src: config/nvim/plug-config/git-messenger.vim
-    dst: ~/.config/nvim/plug-config/git-messenger.vim
-  f_config_nvim_plug-config_markdown-preview.vim:
-    src: config/nvim/plug-config/markdown-preview.vim
-    dst: ~/.config/nvim/plug-config/markdown-preview.vim
-  f_config_nvim_plug-config_nerdtree.vim:
-    src: config/nvim/plug-config/nerdtree.vim
-    dst: ~/.config/nvim/plug-config/nerdtree.vim
-  f_config_nvim_plug-config_rnvimr.vim:
-    src: config/nvim/plug-config/rnvimr.vim
-    dst: ~/.config/nvim/plug-config/rnvimr.vim
-  f_config_nvim_plug-config_vim-clang-format.vim:
-    src: config/nvim/plug-config/vim-clang-format.vim
-    dst: ~/.config/nvim/plug-config/vim-clang-format.vim
-  f_config_nvim_plug-config_vim-commentary.vim:
-    src: config/nvim/plug-config/vim-commentary.vim
-    dst: ~/.config/nvim/plug-config/vim-commentary.vim
-  f_config_nvim_plug-config_vim-cpp-enhanced-highlight.vim:
-    src: config/nvim/plug-config/vim-cpp-enhanced-highlight.vim
-    dst: ~/.config/nvim/plug-config/vim-cpp-enhanced-highlight.vim
-  f_config_nvim_plug-config_vim-dadbod-ui.vim:
-    src: config/nvim/plug-config/vim-dadbod-ui.vim
-    dst: ~/.config/nvim/plug-config/vim-dadbod-ui.vim
-  f_config_nvim_plug-config_vim-illuminate.vim:
-    src: config/nvim/plug-config/vim-illuminate.vim
-    dst: ~/.config/nvim/plug-config/vim-illuminate.vim
-  f_config_nvim_plug-config_vista.vim:
-    src: config/nvim/plug-config/vista.vim
-    dst: ~/.config/nvim/plug-config/vista.vim
-  f_config_nvim_vim-plug_plugins.vim:
-    src: config/nvim/vim-plug/plugins.vim
-    dst: ~/.config/nvim/vim-plug/plugins.vim
-  f_config_nvim_plug-config_vim-code-dark.vim:
-    src: config/nvim/plug-config/vim-code-dark.vim
-    dst: ~/.config/nvim/plug-config/vim-code-dark.vim
-  f_config_nvim_plug-config_animate.vim:
-    src: config/nvim/plug-config/animate.vim
-    dst: ~/.config/nvim/plug-config/animate.vim
-  f_config_nvim_plug-config_vimspector.vim:
-    src: config/nvim/plug-config/vimspector.vim
-    dst: ~/.config/nvim/plug-config/vimspector.vim
-  f_config_nvim_scripts_get_vimspector_conf.sh:
-    src: config/nvim/scripts/get_vimspector_conf.sh
-    dst: ~/.config/nvim/scripts/get_vimspector_conf.sh
-    chmod: '744'
-  f_config_nvim_scripts_vimspector_conf_c_vimspector.json:
-    src: config/nvim/scripts/vimspector/conf/c/.vimspector.json
-    dst: ~/.config/nvim/scripts/vimspector/conf/c/.vimspector.json
-  f_config_nvim_plig-config_vim-easy-align.vim:
-    src: config/nvim/plug-config/vim-easy-align.vim
-    dst: ~/.config/nvim/plug-config/vim-easy-align.vim
-  f_config_nvim_coc-settings.json:
-    src: config/nvim/coc-settings.json
-    dst: ~/.config/nvim/coc-settings.json
-  f_config_nvim_github-markdown.css:
-    src: config/nvim/github-markdown.css
-    dst: ~/.config/nvim/github-markdown.css
-  f_config_nvim_snippet.vim:
-    src: config/nvim/snippet.vim
-    dst: ~/.config/nvim/snippet.vim
+    actions:
+  f_config_nvim_lua_config.lua:
+    src: config/nvim/lua/config.lua
+    dst: ~/.config/nvim/lua/config.lua
+  f_config_nvim_lua_highlights.lua:
+    src: config/nvim/lua/highlights.lua
+    dst: ~/.config/nvim/lua/highlights.lua
+  f_config_nvim_lua_mappings.lua:
+    src: config/nvim/lua/mappings.lua
+    dst: ~/.config/nvim/lua/mappings.lua
+  f_config_nvim_lua_utils.lua:
+    src: config/nvim/lua/utils.lua
+    dst: ~/.config/nvim/lua/utils.lua
   f_config_nvim_init.vim:
     src: config/nvim/init.vim
     dst: ~/.config/nvim/init.vim
     actions:
-    - vim_install_plug
+    - vim_install_packer
     - vim_install_rustup_components
-    - vim_install_plugin
+  f_config_nvim_settings.vim:
+    src: config/nvim/settings.vim
+    dst: ~/.config/nvim/settings.vim
   f_config_picom_config.ini:
     src: config/picom/config.ini
     dst: ~/.config/picom/config.ini

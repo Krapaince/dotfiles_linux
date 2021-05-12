@@ -62,10 +62,24 @@ profiles:
     - f_clang-format_c
     - f_clang-format_cpp
     - f_clang-tidy
+    - f_config_nvim_lua_config_lsp_clangd.lua
+    - f_config_nvim_lua_config_lsp_init.lua
+    - f_config_nvim_lua_config_lsp_rust-analyzer.lua
+    - f_config_nvim_lua_config_lsp_sumneko_lua.lua
+    - f_config_nvim_lua_config_lualine.lua
+    - f_config_nvim_lua_config_nvim-tree.lua
+    - f_config_nvim_lua_config_telescope.lua
+    - f_config_nvim_lua_config_treesitter.lua
+    - f_config_nvim_lua_config_vim_commentary.lua
+    - f_config_nvim_lua_config_vsnip.lua
+    - f_config_nvim_lua_config_compe.lua
     - f_config_nvim_lua_config.lua
     - f_config_nvim_lua_highlights.lua
     - f_config_nvim_lua_mappings.lua
+    - f_config_nvim_lua_plugins.lua
     - f_config_nvim_lua_utils.lua
+    - f_config_nvim_snippets_c.json
+    - f_config_nvim_snippets_cpp.json
     - f_config_nvim_init.vim
     - f_config_nvim_settings.vim
     - f_config_ranger_rc.conf

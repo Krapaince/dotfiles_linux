@@ -30,6 +30,11 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 {%@@ endif @@%}
 
 # Path
+{%@@ if profile == "Krapaince-arch" @@%}
+NPM_PACKAGES=~/.npm-global/bin
+
+PATH=$PATH:$NPM_PACKAGES
+{%@@ endif @@%}
 {%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" or profile == "Krapaince-ubuntu" @@%}
 export ANDROID_SDK=/opt/Android/platform-tools
 LOCAL_BIN=~/.local/bin

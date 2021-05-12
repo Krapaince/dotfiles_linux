@@ -40,11 +40,12 @@ return function ()
       lualine_c = { 'filename' },
       lualine_x = { 'encoding', 'fileformat' },
       lualine_y = { 'filetype' },
-      lualine_z = { 'location' }
+      lualine_z = { 'location', 'progress' }
     },
 
     options = {
       theme = theme,
     },
+    extensions = { 'nvim-tree' },
   }
 end

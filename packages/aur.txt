@@ -4,6 +4,7 @@ criterion
 csfml
 dotdrop
 jetbrains-toolbox
+lua-language-server
 oh-my-zsh-git
 polybar
 pulseaudio-modules-bt

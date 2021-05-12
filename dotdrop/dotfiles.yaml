@@ -69,7 +69,39 @@ dotfiles:
   f_config_kitty_kitty.conf:
     src: config/kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
-    actions:
+  f_config_nvim_lua_config_lsp_clangd.lua:
+    src: config/nvim/lua/config/lsp/clangd.lua
+    dst: ~/.config/nvim/lua/config/lsp/clangd.lua
+  f_config_nvim_lua_config_lsp_init.lua:
+    src: config/nvim/lua/config/lsp/init.lua
+    dst: ~/.config/nvim/lua/config/lsp/init.lua
+  f_config_nvim_lua_config_lsp_rust-analyzer.lua:
+    src: config/nvim/lua/config/lsp/rust-analyzer.lua
+    dst: ~/.config/nvim/lua/config/lsp/rust-analyzer.lua
+  f_config_nvim_lua_config_lsp_sumneko_lua.lua:
+    src: config/nvim/lua/config/lsp/sumneko_lua.lua
+    dst: ~/.config/nvim/lua/config/lsp/sumneko_lua.lua
+  f_config_nvim_lua_config_compe.lua:
+    src: config/nvim/lua/config/compe.lua
+    dst: ~/.config/nvim/lua/config/compe.lua
+  f_config_nvim_lua_config_lualine.lua:
+    src: config/nvim/lua/config/lualine.lua
+    dst: ~/.config/nvim/lua/config/lualine.lua
+  f_config_nvim_lua_config_nvim-tree.lua:
+    src: config/nvim/lua/config/nvim-tree.lua
+    dst: ~/.config/nvim/lua/config/nvim-tree.lua
+  f_config_nvim_lua_config_telescope.lua:
+    src: config/nvim/lua/config/telescope.lua
+    dst: ~/.config/nvim/lua/config/telescope.lua
+  f_config_nvim_lua_config_treesitter.lua:
+    src: config/nvim/lua/config/treesitter.lua
+    dst: ~/.config/nvim/lua/config/treesitter.lua
+  f_config_nvim_lua_config_vim_commentary.lua:
+    src: config/nvim/lua/config/vim-commentary.lua
+    dst: ~/.config/nvim/lua/config/vim-commentary.lua
+  f_config_nvim_lua_config_vsnip.lua:
+    src: config/nvim/lua/config/vsnip.lua
+    dst: ~/.config/nvim/lua/config/vsnip.lua
   f_config_nvim_lua_config.lua:
     src: config/nvim/lua/config.lua
     dst: ~/.config/nvim/lua/config.lua
@@ -79,15 +111,25 @@ dotfiles:
   f_config_nvim_lua_mappings.lua:
     src: config/nvim/lua/mappings.lua
     dst: ~/.config/nvim/lua/mappings.lua
+  f_config_nvim_lua_plugins.lua:
+    src: config/nvim/lua/plugins.lua
+    dst: ~/.config/nvim/lua/plugins.lua
   f_config_nvim_lua_utils.lua:
     src: config/nvim/lua/utils.lua
     dst: ~/.config/nvim/lua/utils.lua
+  f_config_nvim_snippets_c.json:
+    src: config/nvim/snippets/c.json
+    dst: ~/.config/nvim/snippets/c.json
+  f_config_nvim_snippets_cpp.json:
+    src: config/nvim/snippets/cpp.json
+    dst: ~/.config/nvim/snippets/cpp.json
   f_config_nvim_init.vim:
     src: config/nvim/init.vim
     dst: ~/.config/nvim/init.vim
     actions:
     - vim_install_packer
     - vim_install_rustup_components
+    - vim_install_language_server
   f_config_nvim_settings.vim:
     src: config/nvim/settings.vim
     dst: ~/.config/nvim/settings.vim

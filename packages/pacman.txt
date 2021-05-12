@@ -58,13 +58,16 @@ pulseaudio-alsa
 pulseaudio-jack
 qt5ct
 ranger
+ripgrep
 rofi
+rust-analyzer
 rustup
 screenkey
 scrot
 sshfs
 sudo
 teamspeak3
+texlab
 tree
 ttf-dejavu
 ttf-droid

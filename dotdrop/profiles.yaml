@@ -67,6 +67,7 @@ profiles:
     - f_config_nvim_lua_config_lsp_rust-analyzer.lua
     - f_config_nvim_lua_config_lsp_sumneko_lua.lua
     - f_config_nvim_lua_config_lualine.lua
+    - f_config_nvim_lua_config_nvim-colorizer.lua
     - f_config_nvim_lua_config_nvim-tree.lua
     - f_config_nvim_lua_config_telescope.lua
     - f_config_nvim_lua_config_treesitter.lua

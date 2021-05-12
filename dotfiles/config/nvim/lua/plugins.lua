@@ -42,6 +42,10 @@ return require('packer').startup(function (use)
         config = require('config.telescope')
     }
 
+    -- Color highlighter
+    use { 'norcalli/nvim-colorizer.lua' }
+    require('config.nvim-colorizer')
+
     -- Icons
     use 'kyazdani42/nvim-web-devicons'
 

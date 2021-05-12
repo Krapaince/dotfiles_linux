@@ -87,6 +87,9 @@ dotfiles:
   f_config_nvim_lua_config_lualine.lua:
     src: config/nvim/lua/config/lualine.lua
     dst: ~/.config/nvim/lua/config/lualine.lua
+  f_config_nvim_lua_config_nvim-colorizer.lua:
+    src: config/nvim/lua/config/nvim-colorizer.lua
+    dst: ~/.config/nvim/lua/config/nvim-colorizer.lua
   f_config_nvim_lua_config_nvim-tree.lua:
     src: config/nvim/lua/config/nvim-tree.lua
     dst: ~/.config/nvim/lua/config/nvim-tree.lua

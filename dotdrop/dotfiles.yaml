@@ -81,6 +81,9 @@ dotfiles:
   f_config_nvim_lua_config_lsp_sumneko_lua.lua:
     src: config/nvim/lua/config/lsp/sumneko_lua.lua
     dst: ~/.config/nvim/lua/config/lsp/sumneko_lua.lua
+  f_config_nvim_lua_config_animate.lua:
+    src: config/nvim/lua/config/animate.lua
+    dst: ~/.config/nvim/lua/config/animate.lua
   f_config_nvim_lua_config_compe.lua:
     src: config/nvim/lua/config/compe.lua
     dst: ~/.config/nvim/lua/config/compe.lua
@@ -126,6 +129,9 @@ dotfiles:
   f_config_nvim_snippets_cpp.json:
     src: config/nvim/snippets/cpp.json
     dst: ~/.config/nvim/snippets/cpp.json
+  f_config_nvim_vim_plugin.vim:
+    src: config/nvim/vim/plugin.vim
+    dst: ~/.config/nvim/vim/plugin.vim
   f_config_nvim_init.vim:
     src: config/nvim/init.vim
     dst: ~/.config/nvim/init.vim

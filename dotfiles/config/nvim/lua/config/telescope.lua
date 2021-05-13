@@ -5,8 +5,6 @@ return function ()
   local telescope = require('telescope')
   local actions = require('telescope.actions')
 
-  telescope.load_extension('fzy_native')
-
   require('telescope').setup {
     defaults = {
       mappings = {
@@ -16,8 +14,16 @@ return function ()
           ["<esc>"] = actions.close,
         },
       }
+    },
+    extensions = {
+      fzf = {
+        override_generic_sorter = true,
+        override_file_sorter = true,
+      }
     }
   }
+
+  telescope.load_extension('fzy_native')
 
   map('n', '<C-p>', ':Telescope find_files<CR>')
   map('n', '/',     ':Telescope live_grep<CR>')

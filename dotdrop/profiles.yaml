@@ -66,6 +66,7 @@ profiles:
     - f_config_nvim_lua_config_lsp_init.lua
     - f_config_nvim_lua_config_lsp_rust-analyzer.lua
     - f_config_nvim_lua_config_lsp_sumneko_lua.lua
+    - f_config_nvim_lua_config_animate.lua
     - f_config_nvim_lua_config_lualine.lua
     - f_config_nvim_lua_config_nvim-colorizer.lua
     - f_config_nvim_lua_config_nvim-tree.lua
@@ -81,6 +82,7 @@ profiles:
     - f_config_nvim_lua_utils.lua
     - f_config_nvim_snippets_c.json
     - f_config_nvim_snippets_cpp.json
+    - f_config_nvim_vim_plugin.vim
     - f_config_nvim_init.vim
     - f_config_nvim_settings.vim
     - f_config_ranger_rc.conf

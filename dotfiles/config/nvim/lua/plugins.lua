@@ -51,4 +51,7 @@ return require('packer').startup(function (use)
 
     -- Commentary
     use { 'tpope/vim-commentary', config = require('config.vim-commentary') }
+
+    use { 'camspiers/animate.vim', config = require('config.animate') }
+
 end)

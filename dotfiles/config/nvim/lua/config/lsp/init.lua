@@ -26,21 +26,24 @@ return function()
       buf_set_keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
       vim.cmd 'autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()'
     end
+
+    require('folding').on_attach()
   end
 
   local servers = {
     require('config.lsp.clangd'),
     require('config.lsp.rust-analyzer'),
     require('config.lsp.sumneko_lua'),
+
+    -- Require default config:
+    require'lspconfig'.bashls.setup{},
+    require'lspconfig'.cssls.setup{},
+    require'lspconfig'.dockerls.setup{},
+    require'lspconfig'.html.setup{},
+    require'lspconfig'.jsonls.setup{},
+    require'lspconfig'.texlab.setup{},
+    require'lspconfig'.yamlls.setup{},
   }
-  -- Require default config:
-  require'lspconfig'.bashls.setup{}
-  require'lspconfig'.cssls.setup{}
-  require'lspconfig'.dockerls.setup{}
-  require'lspconfig'.html.setup{}
-  require'lspconfig'.jsonls.setup{}
-  require'lspconfig'.texlab.setup{}
-  require'lspconfig'.yamlls.setup{}
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true
 

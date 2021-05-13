@@ -25,3 +25,6 @@ map('n', '<C-k>', ':m-2 <CR>==')
 map('n', '<C-j>', ':m+ <CR>==')
 map('v', '<C-k>', ':m \'<-2<CR>gv=gv')
 map('v', '<C-j>', '::m \'>+1<CR>gv=gv')
+
+-- Fold
+map('n', '<Space>', 'za')

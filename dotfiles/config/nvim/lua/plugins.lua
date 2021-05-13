@@ -42,6 +42,9 @@ return require('packer').startup(function (use)
         config = require('config.telescope')
     }
 
+    -- Fold
+    use { 'pierreglaser/folding-nvim' }
+
     -- Color highlighter
     use { 'norcalli/nvim-colorizer.lua' }
     require('config.nvim-colorizer')

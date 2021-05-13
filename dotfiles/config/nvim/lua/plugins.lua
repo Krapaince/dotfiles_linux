@@ -31,6 +31,9 @@ return require('packer').startup(function (use)
 
     use { 'hrsh7th/vim-vsnip', config = require('config.vsnip') }
 
+    -- Symbol tree
+    use { 'liuchengxu/vista.vim' }
+
     -- Finder
     use {
         'nvim-telescope/telescope.nvim',

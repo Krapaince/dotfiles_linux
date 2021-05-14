@@ -60,4 +60,5 @@ return require('packer').startup(function (use)
 
     use { 'camspiers/animate.vim', config = require('config.animate') }
 
+    use { 'RRethy/vim-illuminate' }
 end)

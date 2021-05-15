@@ -8,6 +8,9 @@ return require('packer').startup(function (use)
     -- use 'doums/darcula'
     use 'kjwon15/vim-transparent'
 
+    -- Icons
+    use 'kyazdani42/nvim-web-devicons'
+
     -- File Explorer
     use { 'kyazdani42/nvim-tree.lua', config = require('config.nvim-tree') }
 
@@ -45,32 +48,20 @@ return require('packer').startup(function (use)
         config = require('config.telescope')
     }
 
-    -- Fold
-    use { 'pierreglaser/folding-nvim' }
-
-    -- Color highlighter
-    use { 'norcalli/nvim-colorizer.lua' }
-    require('config.nvim-colorizer')
-
-    -- Icons
-    use 'kyazdani42/nvim-web-devicons'
-
-    -- Commentary
-    use { 'tpope/vim-commentary', config = require('config.vim-commentary') }
-
-    use { 'camspiers/animate.vim', config = require('config.animate') }
-
-    use { 'RRethy/vim-illuminate' }
-
     use {
         'iamcco/markdown-preview.nvim',
         run = function() vim.fn['mkdp#util#install']() end,
         ft = {'markdown'}
     }
 
-    use { 'ntpeters/vim-better-whitespace' }
-
+    -- Utility plugins
+    use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
     use { 'wesQ3/vim-windowswap' }
-
     use { 'vim-scripts/DrawIt' }
+    use { 'RRethy/vim-illuminate' } -- Highlight similar word
+    use { 'camspiers/animate.vim', config = require('config.animate') }
+    use { 'norcalli/nvim-colorizer.lua' } -- Color highlighter
+    require('config.nvim-colorizer')
+    use { 'tpope/vim-commentary', config = require('config.vim-commentary') }
+    use { 'pierreglaser/folding-nvim' }
 end)

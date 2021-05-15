@@ -70,4 +70,5 @@ return require('packer').startup(function (use)
     require('config.nvim-colorizer')
     use { 'tpope/vim-commentary', config = require('config.vim-commentary') }
     use { 'pierreglaser/folding-nvim' }
+    use { 'junegunn/vim-easy-align' }
 end)

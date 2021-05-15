@@ -35,3 +35,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring']
 let g:completion_matching_ignore_case = 1
 let g:db_ui_use_nerd_fonts = 1
 {%@@ endif @@%}
+
+" vim-easy-align
+" Align GitHub/Lab-flavored Markdown tables
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>

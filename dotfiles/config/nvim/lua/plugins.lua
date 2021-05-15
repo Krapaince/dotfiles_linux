@@ -61,4 +61,10 @@ return require('packer').startup(function (use)
     use { 'camspiers/animate.vim', config = require('config.animate') }
 
     use { 'RRethy/vim-illuminate' }
+
+    use {
+        'iamcco/markdown-preview.nvim',
+        run = function() vim.fn['mkdp#util#install']() end,
+        ft = {'markdown'}
+    }
 end)

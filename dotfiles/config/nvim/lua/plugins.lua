@@ -54,6 +54,12 @@ return require('packer').startup(function (use)
         ft = {'markdown'}
     }
 
+    {%@@ if profile == "Krapaince-ubuntu" @@%}
+    use { 'kristijanhusak/vim-dadbod-ui',
+        requires = {{ 'tpope/vim-dadbod' }}
+    }
+    {%@@ endif @@%}
+
     -- Utility plugins
     use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
     use { 'wesQ3/vim-windowswap' }

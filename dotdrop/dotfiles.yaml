@@ -9,12 +9,7 @@ config:
   longkey: true
 profiles:
 dotfiles:
-  f_zshrc:
-    src: zshrc
-    dst: ~/.zshrc
-  f_zsh_alias:
-    src: zsh_alias
-    dst: ~/.zsh_alias
+  # clang
   f_clang-format_c:
     src: clang-format_c
     dst: ~/.clang-format_c
@@ -24,9 +19,9 @@ dotfiles:
   f_clang-tidy:
     src: clang-tidy
     dst: ~/.clang-tidy
-  f_ideavimrc:
-    src: ideavimrc
-    dst: ~/.ideavimrc
+
+
+  # dunst
   f_config_dunst_dunstrc:
     src: config/dunst/dunstrc
     dst: ~/.config/dunst/dunstrc
@@ -34,12 +29,16 @@ dotfiles:
     src: config/dunst/reload.sh
     dst: ~/.config/dunst/reload.sh
     chmod: '744'
+
+
+  # i3
   f_config_i3_config:
     src: config/i3/config
     dst: ~/.config/i3/config
-  f_config_i3_scripts_soundboard.sh:
-    src: config/i3/scripts/soundboard.sh
-    dst: ~/.config/i3/scripts/soundboard.sh
+
+  f_config_i3_scripts_egnime_notif_answer.sh:
+    src: config/i3/scripts/egnime_notif_answer.sh
+    dst: ~/.config/i3/scripts/egnime_notif_answer.sh
     chmod: '744'
   f_config_i3_scripts_keyboard_switcher.sh:
     src: config/i3/scripts/keyboard_switcher.sh
@@ -49,14 +48,31 @@ dotfiles:
     src: config/i3/scripts/lock.sh
     dst: ~/.config/i3/scripts/lock.sh
     chmod: '744'
+  f_config_i3_scripts_monitor_export_monitor_name_to_file.sh:
+    src: config/i3/scripts/monitor/export_monitor_name_to_file.sh
+    dst: ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
+    chmod: '744'
+  f_config_i3_scripts_monitor_reload_screen_setup.sh:
+    src: config/i3/scripts/monitor/reload_screen_setup.sh
+    dst: ~/.config/i3/scripts/monitor/reload_screen_setup.sh
+    chmod: '744'
+  f_config_i3_scripts_monitor_setup_screen.sh:
+    src: config/i3/scripts/monitor/setup_screen.sh
+    dst: ~/.config/i3/scripts/monitor/setup_screen.sh
+    chmod: '744'
   f_config_i3_scripts_set_wallpaper.sh:
     src: config/i3/scripts/set_wallpaper.sh
     dst: ~/.config/i3/scripts/set_wallpaper.sh
+    chmod: '744'
+  f_config_i3_scripts_soundboard.sh:
+    src: config/i3/scripts/soundboard.sh
+    dst: ~/.config/i3/scripts/soundboard.sh
     chmod: '744'
   f_config_i3_scripts_suspend.sh:
     src: config/i3/scripts/suspend.sh
     dst: ~/.config/i3/scripts/suspend.sh
     chmod: '744'
+
   f_config_i3_wallpapers_krapaince_avatar.png:
     src: config/i3/wallpapers/Krapaince/avatar.png
     dst: ~/.config/i3/wallpapers/Krapaince/avatar.png
@@ -66,21 +82,50 @@ dotfiles:
   f_config_i3_wallpapers_krapaince-ubuntu_avatar.png:
     src: config/i3/wallpapers/Krapaince-ubuntu/avatar.png
     dst: ~/.config/i3/wallpapers/Krapaince-ubuntu/avatar.png
+
+
+  # Kitty
   f_config_kitty_kitty.conf:
     src: config/kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
-  f_config_nvim_lua_config_lsp_clangd.lua:
-    src: config/nvim/lua/config/lsp/clangd.lua
-    dst: ~/.config/nvim/lua/config/lsp/clangd.lua
-  f_config_nvim_lua_config_lsp_init.lua:
-    src: config/nvim/lua/config/lsp/init.lua
-    dst: ~/.config/nvim/lua/config/lsp/init.lua
-  f_config_nvim_lua_config_lsp_rust-analyzer.lua:
-    src: config/nvim/lua/config/lsp/rust-analyzer.lua
-    dst: ~/.config/nvim/lua/config/lsp/rust-analyzer.lua
-  f_config_nvim_lua_config_lsp_sumneko_lua.lua:
-    src: config/nvim/lua/config/lsp/sumneko_lua.lua
-    dst: ~/.config/nvim/lua/config/lsp/sumneko_lua.lua
+
+
+  # Kvantum
+  f_config_kvantum_kvantum.kvconfig:
+    src: config/Kvantum/kvantum.kvconfig
+    dst: ~/.config/Kvantum/kvantum.kvconfig
+
+
+  # Neovim
+  f_config_nvim_init.vim:
+    src: config/nvim/init.vim
+    dst: ~/.config/nvim/init.vim
+    actions:
+    - vim_install_packer
+    - vim_install_rustup_components
+    - vim_install_language_server
+
+  # Neovim core
+  f_config_nvim_lua_config.lua:
+    src: config/nvim/lua/config.lua
+    dst: ~/.config/nvim/lua/config.lua
+  f_config_nvim_lua_highlights.lua:
+    src: config/nvim/lua/highlights.lua
+    dst: ~/.config/nvim/lua/highlights.lua
+  f_config_nvim_lua_mappings.lua:
+    src: config/nvim/lua/mappings.lua
+    dst: ~/.config/nvim/lua/mappings.lua
+  f_config_nvim_lua_plugins.lua:
+    src: config/nvim/lua/plugins.lua
+    dst: ~/.config/nvim/lua/plugins.lua
+  f_config_nvim_lua_utils.lua:
+    src: config/nvim/lua/utils.lua
+    dst: ~/.config/nvim/lua/utils.lua
+  f_config_nvim_settings.vim:
+    src: config/nvim/settings.vim
+    dst: ~/.config/nvim/settings.vim
+
+  # Neovim plugins
   f_config_nvim_lua_config_animate.lua:
     src: config/nvim/lua/config/animate.lua
     dst: ~/.config/nvim/lua/config/animate.lua
@@ -108,52 +153,64 @@ dotfiles:
   f_config_nvim_lua_config_vsnip.lua:
     src: config/nvim/lua/config/vsnip.lua
     dst: ~/.config/nvim/lua/config/vsnip.lua
-  f_config_nvim_lua_config.lua:
-    src: config/nvim/lua/config.lua
-    dst: ~/.config/nvim/lua/config.lua
-  f_config_nvim_lua_highlights.lua:
-    src: config/nvim/lua/highlights.lua
-    dst: ~/.config/nvim/lua/highlights.lua
-  f_config_nvim_lua_mappings.lua:
-    src: config/nvim/lua/mappings.lua
-    dst: ~/.config/nvim/lua/mappings.lua
-  f_config_nvim_lua_plugins.lua:
-    src: config/nvim/lua/plugins.lua
-    dst: ~/.config/nvim/lua/plugins.lua
-  f_config_nvim_lua_utils.lua:
-    src: config/nvim/lua/utils.lua
-    dst: ~/.config/nvim/lua/utils.lua
+
+  # Neovim lsp
+  f_config_nvim_lua_config_lsp_clangd.lua:
+    src: config/nvim/lua/config/lsp/clangd.lua
+    dst: ~/.config/nvim/lua/config/lsp/clangd.lua
+  f_config_nvim_lua_config_lsp_init.lua:
+    src: config/nvim/lua/config/lsp/init.lua
+    dst: ~/.config/nvim/lua/config/lsp/init.lua
+  f_config_nvim_lua_config_lsp_rust-analyzer.lua:
+    src: config/nvim/lua/config/lsp/rust-analyzer.lua
+    dst: ~/.config/nvim/lua/config/lsp/rust-analyzer.lua
+  f_config_nvim_lua_config_lsp_sumneko_lua.lua:
+    src: config/nvim/lua/config/lsp/sumneko_lua.lua
+    dst: ~/.config/nvim/lua/config/lsp/sumneko_lua.lua
+
+
+  f_config_nvim_vim_plugin.vim:
+    src: config/nvim/vim/plugin.vim
+    dst: ~/.config/nvim/vim/plugin.vim
+
   f_config_nvim_snippets_c.json:
     src: config/nvim/snippets/c.json
     dst: ~/.config/nvim/snippets/c.json
   f_config_nvim_snippets_cpp.json:
     src: config/nvim/snippets/cpp.json
     dst: ~/.config/nvim/snippets/cpp.json
-  f_config_nvim_vim_plugin.vim:
-    src: config/nvim/vim/plugin.vim
-    dst: ~/.config/nvim/vim/plugin.vim
-  f_config_nvim_init.vim:
-    src: config/nvim/init.vim
-    dst: ~/.config/nvim/init.vim
-    actions:
-    - vim_install_packer
-    - vim_install_rustup_components
-    - vim_install_language_server
-  f_config_nvim_settings.vim:
-    src: config/nvim/settings.vim
-    dst: ~/.config/nvim/settings.vim
+
+
+  # Picom
   f_config_picom_config.ini:
     src: config/picom/config.ini
     dst: ~/.config/picom/config.ini
-  f_config_polybar_modules_custom_pulseaudio-control.ini:
-    src: config/polybar/modules/custom/pulseaudio-control.ini
-    dst: ~/.config/polybar/modules/custom/pulseaudio-control.ini
+
+  # Polybar
+  f_config_polybar_bars.ini:
+    src: config/polybar/bars.ini
+    dst: ~/.config/polybar/bars.ini
+  f_config_polybar_colors.ini:
+    src: config/polybar/colors.ini
+    dst: ~/.config/polybar/colors.ini
+  f_config_polybar_config.ini:
+    src: config/polybar/config.ini
+    dst: ~/.config/polybar/config.ini
+  f_config_polybar_launch.sh:
+    src: config/polybar/launch.sh
+    dst: ~/.config/polybar/launch.sh
+    chmod: '744'
+
+  # Polybar modules
   f_config_polybar_modules_battery.ini:
     src: config/polybar/modules/battery.ini
     dst: ~/.config/polybar/modules/battery.ini
   f_config_polybar_modules_cpu.ini:
     src: config/polybar/modules/cpu.ini
     dst: ~/.config/polybar/modules/cpu.ini
+  f_config_polybar_modules_custom_pulseaudio-control.ini:
+    src: config/polybar/modules/custom/pulseaudio-control.ini
+    dst: ~/.config/polybar/modules/custom/pulseaudio-control.ini
   f_config_polybar_modules_date.ini:
     src: config/polybar/modules/date.ini
     dst: ~/.config/polybar/modules/date.ini
@@ -181,73 +238,80 @@ dotfiles:
   f_config_polybar_modules_xwindow.ini:
     src: config/polybar/modules/xwindow.ini
     dst: ~/.config/polybar/modules/xwindow.ini
+
+  # Polybar module's script
   f_config_polybar_scripts_pulseaudio-control.bash:
     src: config/polybar/scripts/pulseaudio-control.bash
     dst: ~/.config/polybar/scripts/pulseaudio-control.bash
     chmod: '744'
-  f_config_polybar_bars.ini:
-    src: config/polybar/bars.ini
-    dst: ~/.config/polybar/bars.ini
-  f_config_polybar_colors.ini:
-    src: config/polybar/colors.ini
-    dst: ~/.config/polybar/colors.ini
-  f_config_polybar_config.ini:
-    src: config/polybar/config.ini
-    dst: ~/.config/polybar/config.ini
-  f_config_polybar_launch.sh:
-    src: config/polybar/launch.sh
-    dst: ~/.config/polybar/launch.sh
-    chmod: '744'
+
+
+  # Ranger
   f_config_ranger_rc.conf:
     src: config/ranger/rc.conf
     dst: ~/.config/ranger/rc.conf
   f_config_ranger_rifle.conf:
     src: config/ranger/rifle.conf
     dst: ~/.config/ranger/rifle.conf
+
+
+  # Rofi
   f_config_rofi_config.rasi:
     src: config/rofi/config.rasi
     dst: ~/.config/rofi/config.rasi
   f_config_rofi_soundboard.rasi:
     src: config/rofi/soundboard.rasi
     dst: ~/.config/rofi/soundboard.rasi
+
+
+  # Vifm
   f_config_vifm_vifmrc:
     src: config/vifm/vifmrc
     dst: ~/.config/vifm/vifmrc
-  f_config_i3_scripts_monitor_setup_screen.sh:
-    src: config/i3/scripts/monitor/setup_screen.sh
-    dst: ~/.config/i3/scripts/monitor/setup_screen.sh
-    chmod: '744'
-  f_config_i3_scripts_monitor_reload_screen_setup.sh:
-    src: config/i3/scripts/monitor/reload_screen_setup.sh
-    dst: ~/.config/i3/scripts/monitor/reload_screen_setup.sh
-    chmod: '744'
-  f_config_i3_scripts_monitor_export_monitor_name_to_file.sh:
-    src: config/i3/scripts/monitor/export_monitor_name_to_file.sh
-    dst: ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
-    chmod: '744'
-  f_config_zsh_zshenv:
-    src: config/zsh/.zshenv
-    dst: ~/.config/zsh/.zshenv
-  f_config_i3_scripts_egnime_notif_answer.sh:
-    src: config/i3/scripts/egnime_notif_answer.sh
-    dst: ~/.config/i3/scripts/egnime_notif_answer.sh
-    chmod: '744'
+
+
+  # Zathura
   f_config_zathura_zathurarc:
     src: config/zathura/zathurarc
     dst: ~/.config/zathura/zathurarc
-  f_ignore:
-    src: ignore
-    dst: ~/.ignore
+
+
+  f_config_zsh_zshenv:
+    src: config/zsh/.zshenv
+    dst: ~/.config/zsh/.zshenv
+
+
+  # Git
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
     chmod: '644'
+
+
+  # Jetbrain vim plugin
+  f_ideavimrc:
+    src: ideavimrc
+    dst: ~/.ideavimrc
+
+
+  f_ignore:
+    src: ignore
+    dst: ~/.ignore
+
+
+  # Xorg
   f_xinitrc:
     src: xinitrc
     dst: ~/.xinitrc
   f_xprofile:
     src: xprofile
     dst: ~/.xprofile
-  f_config_kvantum_kvantum.kvconfig:
-    src: config/Kvantum/kvantum.kvconfig
-    dst: ~/.config/Kvantum/kvantum.kvconfig
+
+
+  # zsh
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_zsh_alias:
+    src: zsh_alias
+    dst: ~/.zsh_alias

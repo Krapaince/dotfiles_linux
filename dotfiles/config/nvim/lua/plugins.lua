@@ -17,7 +17,14 @@ return require('packer').startup(function (use)
     -- Status line
     use { 'hoob3rt/lualine.nvim', config = require('config.lualine') }
 
-    use { 'neovim/nvim-lspconfig', config = require('config.lsp') }
+    use { 'neovim/nvim-lspconfig',
+        requires = {
+            { 'RishabhRD/nvim-lsputils',
+                requires = 'RishabhRD/popfix',
+            },
+        },
+        config = require('config.lsp')
+    }
 
     -- Treesitter
     use {

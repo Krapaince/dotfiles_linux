@@ -71,4 +71,6 @@ return require('packer').startup(function (use)
     use { 'ntpeters/vim-better-whitespace' }
 
     use { 'wesQ3/vim-windowswap' }
+
+    use { 'vim-scripts/DrawIt' }
 end)

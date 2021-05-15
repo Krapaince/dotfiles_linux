@@ -67,4 +67,6 @@ return require('packer').startup(function (use)
         run = function() vim.fn['mkdp#util#install']() end,
         ft = {'markdown'}
     }
+
+    use { 'ntpeters/vim-better-whitespace' }
 end)

@@ -21,6 +21,10 @@ The files stored in this repository are managed thanks to [dotdrop](https://dotd
 
 ## Installation
 
+The install script requires that the default directory of npm is writable by the
+user. See [here](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally#manually-change-npms-default-directory)
+for a how to.
+
 ```
 dotdrop install -p Krapaince-arch -D -c dotdrop/config/yaml
 ```

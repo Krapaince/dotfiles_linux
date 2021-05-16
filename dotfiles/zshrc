@@ -30,18 +30,14 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 {%@@ endif @@%}
 
 # Path
-{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" @@%}
-NPM_PACKAGES=~/.npm-global/bin
-
-PATH=$PATH:$NPM_PACKAGES
-{%@@ endif @@%}
 {%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" or profile == "Krapaince-ubuntu" @@%}
 export ANDROID_SDK=/opt/Android/platform-tools
+NPM_PACKAGES=~/.npm-global/bin
 LOCAL_BIN=~/.local/bin
 VIM_SCRIPT=~/.config/nvim/scripts/
 CARGO_BIN=~/.cargo/bin
 
-PATH=$PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT:$CARGO_BIN
+PATH=$PATH:$LOCAL_BIN:$ANDROID_SDK:$VIM_SCRIPT:$CARGO_BIN:$NPM_PACKAGES
 {%@@ endif @@%}
 {%@@ if profile == "Krapaince-ubuntu" @@%}
 PATH=$PATH:/snap/bin

@@ -88,6 +88,8 @@ dotfiles:
   f_config_kitty_kitty.conf:
     src: config/kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
+    actions:
+      - kitty_install_fonts
 
 
   # Kvantum

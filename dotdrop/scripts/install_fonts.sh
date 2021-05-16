@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # {{@@ header() @@}}
 
-FONT_PATH = fonts
+FONT_PATH=fonts
 
 sudo cp $FONT_PATH/* /usr/local/share/fonts
 

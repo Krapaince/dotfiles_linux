@@ -30,7 +30,7 @@ export SOUNDBOARD_LOCATION=~/Music/Soundboard/
 {%@@ endif @@%}
 
 # Path
-{%@@ if profile == "Krapaince-arch" @@%}
+{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-arch" @@%}
 NPM_PACKAGES=~/.npm-global/bin
 
 PATH=$PATH:$NPM_PACKAGES

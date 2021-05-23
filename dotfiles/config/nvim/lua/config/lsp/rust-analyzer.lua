@@ -5,7 +5,7 @@ local root_pattern = require("utils").root_pattern
 return {
     name = 'rust_analyzer',
     filetypes = { "rust" },
-    root_dir = root_pattern("Cargo.tonl"),
+    root_dir = root_pattern("Cargo.toml"),
     settings = {
         ["rust-analyzer"] = {
             cargo = {

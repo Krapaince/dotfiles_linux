@@ -20,6 +20,11 @@ return function ()
         override_generic_sorter = true,
         override_file_sorter = true,
       }
+    },
+    file_ignore_patterns = {
+        "nodes_modules/.*",
+        ".git/.*",
+        "target/.*"
     }
   }
 

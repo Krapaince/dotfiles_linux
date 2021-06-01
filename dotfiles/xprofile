@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 # {{@@ header() @@}}
 
+# Disable system beep
+xset -b
+
 {%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-ubuntu" @@%}
 export QT_QPA_PLATFORMTHEME=qt5ct
 

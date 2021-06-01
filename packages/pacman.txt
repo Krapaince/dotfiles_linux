@@ -15,6 +15,7 @@ dunst
 efibootmgr
 feh
 firefox
+flameshot
 gcc
 gimp
 git

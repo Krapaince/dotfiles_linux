@@ -110,8 +110,11 @@ bindsym $mod+Return exec kitty
 # Kill focused window
 bindsym $mod+Shift+q kill
 
-# Program launcher)
+# Program launcher
 bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi
+
+# Screenshot tools
+bindsym Print exec flameshot gui
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload

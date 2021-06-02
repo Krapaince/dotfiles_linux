@@ -169,6 +169,9 @@ dotfiles:
   f_config_nvim_lua_config_lsp_sumneko_lua.lua:
     src: config/nvim/lua/config/lsp/sumneko_lua.lua
     dst: ~/.config/nvim/lua/config/lsp/sumneko_lua.lua
+  f_config_nvim_lua_config_lsp_texlab.lua:
+    src: config/nvim/lua/config/lsp/texlab.lua
+    dst: ~/.config/nvim/lua/config/lsp/texlab.lua
 
 
   f_config_nvim_vim_plugin.vim:

@@ -1,19 +1,19 @@
 return {
-  name = "texlab",
-  cmd = "texlab",
-  filetypes = { "tex", "bib" },
+  name = 'texlab',
+  cmd = 'texlab',
+  filetypes = { 'tex', 'bib' },
   settings = {
     texlab = {
-      auxDirectory = ".",
-      bibtexFormatter = "texlab",
+      auxDirectory = '.',
+      bibtexFormatter = 'texlab',
       build = {
         args = {
-          "%f",
-          "--synctex",
-          "--keep-logs",
-          "--keep-intermediates"
+          '%f',
+          '--synctex',
+          '--keep-logs',
+          '--keep-intermediates'
         },
-        executable = "tectonic",
+        executable = 'tectonic',
         isContinuous = false
       },
       chktex = {

@@ -62,6 +62,7 @@ profiles:
     - f_clang-format_c
     - f_clang-format_cpp
     - f_clang-tidy
+    - f_config_gitui_key_config.ron
     - f_config_nvim_lua_config_lsp_clangd.lua
     - f_config_nvim_lua_config_lsp_init.lua
     - f_config_nvim_lua_config_lsp_rust-analyzer.lua

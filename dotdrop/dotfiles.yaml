@@ -31,6 +31,12 @@ dotfiles:
     chmod: '744'
 
 
+  # gitui
+  f_config_gitui_key_config.ron:
+    src: config/gitui/key_config.ron
+    dst: ~/.config/gitui/key_config.ron
+
+
   # i3
   f_config_i3_config:
     src: config/i3/config

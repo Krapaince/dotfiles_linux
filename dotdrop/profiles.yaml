@@ -77,6 +77,7 @@ profiles:
     - f_config_nvim_lua_config_vim_commentary.lua
     - f_config_nvim_lua_config_vsnip.lua
     - f_config_nvim_lua_config_compe.lua
+    - f_config_nvim_lua_config_git-messenger.lua
     - f_config_nvim_lua_config.lua
     - f_config_nvim_lua_highlights.lua
     - f_config_nvim_lua_mappings.lua

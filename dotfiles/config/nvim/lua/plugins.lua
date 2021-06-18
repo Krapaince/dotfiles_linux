@@ -78,4 +78,5 @@ return require('packer').startup(function (use)
     use { 'tpope/vim-commentary', config = require('config.vim-commentary') }
     use { 'pierreglaser/folding-nvim' }
     use { 'junegunn/vim-easy-align' }
+    use { 'rhysd/git-messenger.vim', config = require('config.git-messenger') }
 end)

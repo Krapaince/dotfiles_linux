@@ -140,6 +140,9 @@ dotfiles:
   f_config_nvim_lua_config_compe.lua:
     src: config/nvim/lua/config/compe.lua
     dst: ~/.config/nvim/lua/config/compe.lua
+  f_config_nvim_lua_config_git-messenger.lua:
+    src: config/nvim/lua/config/git-messenger.lua
+    dst: ~/.config/nvim/lua/config/git-messenger.lua
   f_config_nvim_lua_config_lualine.lua:
     src: config/nvim/lua/config/lualine.lua
     dst: ~/.config/nvim/lua/config/lualine.lua

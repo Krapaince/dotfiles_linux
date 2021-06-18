@@ -1,30 +1,17 @@
 return {
   name = 'texlab',
-  cmd = 'texlab',
-  filetypes = { 'tex', 'bib' },
   settings = {
     texlab = {
-      auxDirectory = '.',
-      bibtexFormatter = 'texlab',
       build = {
+        executable = 'tectonic',
         args = {
           '%f',
           '--synctex',
           '--keep-logs',
-          '--keep-intermediates'
+          '--keep-intermediates',
         },
-        executable = 'tectonic',
-        isContinuous = false
+        onSave = true,
       },
-      chktex = {
-        onEdit = false,
-        onOpenAndSave = false
-      },
-      diagnosticsDelay = 300,
-      formatterLineLength = 80,
-      forwardSearch = {
-        args = {}
-      }
-    }
-  }
+    },
+  },
 }

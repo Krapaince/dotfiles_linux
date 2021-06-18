@@ -26,6 +26,13 @@ return require('packer').startup(function (use)
         config = require('config.lsp')
     }
 
+    -- Lsp Diagnostics window
+    use {
+      'folke/lsp-trouble.nvim',
+      requires = 'kyazdani42/nvim-web-devicons',
+      config = require('config.lsp-trouble'),
+    }
+
     -- Treesitter
     use {
       {

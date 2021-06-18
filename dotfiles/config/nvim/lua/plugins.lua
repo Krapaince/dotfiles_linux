@@ -78,7 +78,6 @@ return require('packer').startup(function (use)
     use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
     use { 'wesQ3/vim-windowswap' }
     use { 'vim-scripts/DrawIt' }
-    use { 'RRethy/vim-illuminate' } -- Highlight similar word
     use { 'camspiers/animate.vim', config = require('config.animate') }
     use { 'norcalli/nvim-colorizer.lua' } -- Color highlighter
     require('config.nvim-colorizer')

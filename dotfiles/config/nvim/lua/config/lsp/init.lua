@@ -28,7 +28,6 @@ return function()
     end
 
     require('folding').on_attach()
-    require('illuminate').on_attach(client)
   end
 
   local servers = {

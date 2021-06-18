@@ -34,5 +34,4 @@ return function ()
   map('n', '/',     ':Telescope live_grep<CR>')
   map('n', '<C-s>', ':Telescope lsp_document_symbols<CR>')
   map('n', '<C-f>', ':Telescope current_buffer_fuzzy_find<CR>')
-  map('n', '<C-d>', ':Telescope lsp_document_diagnostics<CR>')
 end

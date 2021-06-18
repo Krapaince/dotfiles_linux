@@ -10,7 +10,6 @@ return {
           '--keep-logs',
           '--keep-intermediates',
         },
-        onSave = true,
       },
     },
   },

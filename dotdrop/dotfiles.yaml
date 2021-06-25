@@ -158,6 +158,9 @@ dotfiles:
   f_config_nvim_lua_config_telescope.lua:
     src: config/nvim/lua/config/telescope.lua
     dst: ~/.config/nvim/lua/config/telescope.lua
+  f_config_nvim_lua_config_todo-comments.lua:
+    src: config/nvim/lua/config/todo-comments.lua
+    dst: ~/.config/nvim/lua/config/todo-comments.lua
   f_config_nvim_lua_config_treesitter.lua:
     src: config/nvim/lua/config/treesitter.lua
     dst: ~/.config/nvim/lua/config/treesitter.lua

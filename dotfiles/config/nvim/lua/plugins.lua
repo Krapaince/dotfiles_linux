@@ -86,6 +86,11 @@ return require('packer').startup({
         use { 'pierreglaser/folding-nvim' }
         use { 'junegunn/vim-easy-align' }
         use { 'rhysd/git-messenger.vim', config = require('config.git-messenger') }
+        use {
+            'folke/todo-comments.nvim',
+            requires = "nvim-lua/plenary.nvim",
+            config = require('config.todo-comments')
+        }
     end,
     config = {
         display = {

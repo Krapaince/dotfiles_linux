@@ -231,6 +231,12 @@ dotfiles:
   f_config_polybar_modules_custom_pulseaudio-control.ini:
     src: config/polybar/modules/custom/pulseaudio-control.ini
     dst: ~/.config/polybar/modules/custom/pulseaudio-control.ini
+  f_config_polybar_modules_custom_temperature-cpu.ini:
+    src: config/polybar/modules/custom/temperature-cpu.ini
+    dst: ~/.config/polybar/modules/custom/temperature-cpu.ini
+  f_config_polybar_modules_custom_temperature-gpu.ini:
+    src: config/polybar/modules/custom/temperature-gpu.ini
+    dst: ~/.config/polybar/modules/custom/temperature-gpu.ini
   f_config_polybar_modules_date.ini:
     src: config/polybar/modules/date.ini
     dst: ~/.config/polybar/modules/date.ini
@@ -249,9 +255,6 @@ dotfiles:
   f_config_polybar_modules_pulseaudio.ini:
     src: config/polybar/modules/pulseaudio.ini
     dst: ~/.config/polybar/modules/pulseaudio.ini
-  f_config_polybar_modules_temperature.ini:
-    src: config/polybar/modules/temperature.ini
-    dst: ~/.config/polybar/modules/temperature.ini
   f_config_polybar_modules_xkeyboard.ini:
     src: config/polybar/modules/xkeyboard.ini
     dst: ~/.config/polybar/modules/xkeyboard.ini
@@ -263,6 +266,14 @@ dotfiles:
   f_config_polybar_scripts_pulseaudio-control.bash:
     src: config/polybar/scripts/pulseaudio-control.bash
     dst: ~/.config/polybar/scripts/pulseaudio-control.bash
+    chmod: '744'
+  f_config_polybar_scripts_temperature-cpu.sh:
+    src: config/polybar/scripts/temperature-cpu.sh
+    dst: ~/.config/polybar/scripts/temperature-cpu.sh
+    chmod: '744'
+  f_config_polybar_scripts_temperature-gpu.sh:
+    src: config/polybar/scripts/temperature-gpu.sh
+    dst: ~/.config/polybar/scripts/temperature-gpu.sh
     chmod: '744'
 
 

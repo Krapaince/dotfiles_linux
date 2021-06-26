@@ -108,6 +108,8 @@ profiles:
     - f_config_kitty_kitty.conf
     - f_config_polybar_bars.ini
     - f_config_polybar_modules_custom_pulseaudio-control.ini
+    - f_config_polybar_modules_custom_temperature-cpu.ini
+    - f_config_polybar_modules_custom_temperature-gpu.ini
     - f_config_polybar_modules_battery.ini
     - f_config_polybar_modules_cpu.ini
     - f_config_polybar_modules_date.ini
@@ -116,10 +118,11 @@ profiles:
     - f_config_polybar_modules_memory.ini
     - f_config_polybar_modules_network.ini
     - f_config_polybar_modules_pulseaudio.ini
-    - f_config_polybar_modules_temperature.ini
     - f_config_polybar_modules_xkeyboard.ini
     - f_config_polybar_modules_xwindow.ini
     - f_config_polybar_scripts_pulseaudio-control.bash
+    - f_config_polybar_scripts_temperature-cpu.sh
+    - f_config_polybar_scripts_temperature-gpu.sh
     - f_config_polybar_colors.ini
     - f_config_polybar_config.ini
     - f_config_polybar_launch.sh

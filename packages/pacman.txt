@@ -13,6 +13,7 @@ docker
 docker-compose
 dunst
 efibootmgr
+exa
 feh
 firefox
 fish
@@ -33,7 +34,6 @@ krita
 kvamtum-qt5
 libldac
 linux-headers
-lsd
 make
 man-pages
 most

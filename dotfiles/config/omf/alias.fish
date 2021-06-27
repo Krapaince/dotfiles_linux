@@ -2,7 +2,7 @@
 
 alias v="nvim"
 alias c="clear"
-alias ls="lsd"
+alias ls="exa --icons"
 
 ## Go to
 alias cdd="cd $REPO_LOCATION"

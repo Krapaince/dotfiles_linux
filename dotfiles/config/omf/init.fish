@@ -1,5 +1,8 @@
 # {{@@ header() @@}}
 
+# Disable welcome message
+set -U fish_greeting
+
 set -x EDITOR 'nvim'
 
 set -g REPO_LOCATION "$HOME/Desktop"

@@ -15,6 +15,7 @@ dunst
 efibootmgr
 feh
 firefox
+fish
 flameshot
 gcc
 gimp
@@ -87,6 +88,3 @@ yarn
 youtube-dl
 zathura
 zathura-pdf-poppler
-zsh
-zsh-autosuggestions
-zsh-syntax-highlighting

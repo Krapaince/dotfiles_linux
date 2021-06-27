@@ -55,10 +55,14 @@ profiles:
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
     - f_config_zsh_zshenv
+
   krapaince_tty:
     dotfiles:
-    - f_zshrc
-    - f_zsh_alias
+    - f_config_omf_alias.fish
+    - f_config_omf_bundle
+    - f_config_omf_channel
+    - f_config_omf_theme
+    - f_config_omf_init.fish
     - f_clang-format_c
     - f_clang-format_cpp
     - f_clang-tidy

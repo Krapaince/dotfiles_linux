@@ -1,6 +1,9 @@
 #!/bin/sh
 # {{@@ header() @@}}
 
+# Disable system beep
+xset b off
+
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 blueman-applet &

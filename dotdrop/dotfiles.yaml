@@ -31,6 +31,26 @@ dotfiles:
     chmod: '744'
 
 
+  # fish
+  f_config_omf_alias.fish:
+    src: config/omf/alias.fish
+    dst: ~/.config/omf/alias.fish
+  f_config_omf_bundle:
+    src: config/omf/bundle
+    dst: ~/.config/omf/bundle
+  f_config_omf_channel:
+    src: config/omf/channel
+    dst: ~/.config/omf/channel
+  f_config_omf_init.fish:
+    src: config/omf/init.fish
+    dst: ~/.config/omf/init.fish
+    actions:
+      - fish_install
+  f_config_omf_theme:
+    src: config/omf/theme
+    dst: ~/.config/omf/theme
+
+
   # gitui
   f_config_gitui_key_config.ron:
     src: config/gitui/key_config.ron
@@ -337,12 +357,3 @@ dotfiles:
   f_xprofile:
     src: xprofile
     dst: ~/.xprofile
-
-
-  # zsh
-  f_zshrc:
-    src: zshrc
-    dst: ~/.zshrc
-  f_zsh_alias:
-    src: zsh_alias
-    dst: ~/.zsh_alias

@@ -1,6 +1,5 @@
 # {{@@ header() @@}}
 
-## Utilities
 alias v="nvim"
 alias c="clear"
 alias ls="lsd"
@@ -9,40 +8,23 @@ alias ls="lsd"
 alias cdd="cd $REPO_LOCATION"
 alias cdc="cd ~/.config"
 
-{%@@ if profile == "Krapaince-ubuntu" @@%}
-alias cdp="cd $REPO_LOCATION/Projects"
-{%@@ else @@%}
 alias cde="cd $REPO_LOCATION/EPITECH/"
 alias cdg="cd $REPO_LOCATION/GIT/"
 alias cdw="cd $REPO_LOCATION/EPITECH/delivery"
-{%@@ endif @@%}
 
 ## Git
 alias gs="git status"
 alias gl="git log"
-alias gaa="git add --all"
-alias gc="git commit"
-alias gpu="git pull"
-alias gp="git push"
-alias gpo="git push origin"
-alias gpom="git push origin master"
 
 ## Makefile
 alias m="make -j"
 alias mc="make clean"
 alias mf="make fclean"
 alias mt="make tests_run -j"
-alias mg="make gcovr -j"
-
-#Blih
-alias blih='blih -u mathieu.pointecouteau@epitech.eu'
-alias repo_list="blih -u mathieu.pointecouteau@epitech.eu repository list"
 
 ##Valgrind
 alias valgrindf="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --dsymutil=yes --num-callers=500 --log-file=valgrind.txt"
 alias valgrind-colour="cat valgrind.txt | colout -t valgrind | less"
-
-alias fighter="man"
 
 #clang-format
 alias clang-format-all="find . -name \"*.hpp\" -print -o -name \"*.cpp\" -print -o -name \"*.c\" -print -o -name \"*.h\" -print | xargs clang-format -i --verbose"

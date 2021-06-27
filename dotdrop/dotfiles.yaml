@@ -62,6 +62,7 @@ dotfiles:
     src: config/i3/config
     dst: ~/.config/i3/config
 
+  # i3 scripts
   f_config_i3_scripts_egnime_notif_answer.sh:
     src: config/i3/scripts/egnime_notif_answer.sh
     dst: ~/.config/i3/scripts/egnime_notif_answer.sh
@@ -108,6 +109,11 @@ dotfiles:
   f_config_i3_wallpapers_krapaince-ubuntu_avatar.png:
     src: config/i3/wallpapers/Krapaince-ubuntu/avatar.png
     dst: ~/.config/i3/wallpapers/Krapaince-ubuntu/avatar.png
+
+  # i3 env
+  f_config_i3_env_env.sh:
+    src: config/i3/env/env.sh
+    dst: ~/.config/i3/env/env.sh
 
 
   # Kitty
@@ -325,11 +331,6 @@ dotfiles:
   f_config_zathura_zathurarc:
     src: config/zathura/zathurarc
     dst: ~/.config/zathura/zathurarc
-
-
-  f_config_zsh_zshenv:
-    src: config/zsh/.zshenv
-    dst: ~/.config/zsh/.zshenv
 
 
   # Git

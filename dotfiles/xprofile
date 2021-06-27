@@ -10,7 +10,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
 {%@@ endif @@%}
 {%@@ if profile == "Krapaince-MASTER-arch" @@%}
-[[ -f ~/.config/zsh/.zshenv ]] && . ~/.config/zsh/.zshenv
+[[ -f ~/.config/zsh/.zshenv ]] && . ~/.config/i3/env/env.sh
 
 sshfs krapaince@krapaince-nas:/home/krapaince/Document/ ~/Document/Keepass -p 22 -o reconnect
 {%@@ endif @@%}

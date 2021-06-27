@@ -9,6 +9,7 @@ config:
   longkey: true
 dotfiles:
 profiles:
+
   Krapaince-MASTER-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
@@ -22,7 +23,8 @@ profiles:
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_reload_screen_setup.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
-    - f_config_zsh_zshenv
+    - f_config_i3_env_env.sh
+
   Krapaince-arch:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
@@ -39,6 +41,7 @@ profiles:
     - f_config_rofi_soundboard.rasi
     - f_config_i3_scripts_egnime_notif_answer.sh
     - f_xinitrc
+
   Krapaince-ubuntu:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince-ubuntu/avatar.png
@@ -54,7 +57,7 @@ profiles:
     - f_config_i3_wallpapers_krapaince-ubuntu_avatar.png
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
-    - f_config_zsh_zshenv
+    - f_config_i3_env_env.sh
 
   krapaince_tty:
     dotfiles:
@@ -99,6 +102,7 @@ profiles:
     - f_config_vifm_vifmrc
     - f_ignore
     - f_gitconfig
+
   krapaince_gui:
     dotfiles:
     - f_ideavimrc

@@ -1,4 +1,4 @@
 #!/bin/sh
 # {{@@ header() @@}}
 
-[ -f ~/.config/zsh/.zshenv ] && . ~/.config/zsh/.monitors
+[ -f ~/.config/i3/env/monitors.sh ] && . ~/.config/i3/env/monitors.sh

@@ -10,7 +10,7 @@ NB_SCREENS=3
 NAMES=('MON_HDMI' 'MON_DP')
 NB_SCREENS=2
 {%@@ endif @@%}
-FILE=~/.config/i3/env/monitors
+FILE=~/.config/i3/env/monitors.sh
 
 rm -rf $FILE
 

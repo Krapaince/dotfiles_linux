@@ -12,7 +12,7 @@ profiles:
 
   Krapaince-MASTER-arch:
     variables:
-      wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
+      wallpaper_url: https://www.dropbox.com/s/a4u245cd1gc56ji/Krapaince-MASTER-arch.png
       polybar_wired_network_interface: enp5s0
       polybar_wireless_network_interface: wlp3s0
       kitty_font: CaskaydiaCove Nerd Font Book
@@ -26,7 +26,6 @@ profiles:
     - krapaince_tty
     - krapaince_gui
     dotfiles:
-    - f_config_i3_wallpapers_krapaince-master_avatar.png
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_reload_screen_setup.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
@@ -34,7 +33,7 @@ profiles:
 
   Krapaince-arch:
     variables:
-      wallpaper: ~/.config/i3/wallpapers/Krapaince/avatar.png
+      wallpaper_url: https://www.dropbox.com/s/zm48ldtbubrc5s0/Krapaince-arch.png
       picom_blur_method: dual_kawase
       polybar_wired_network_interface: enp0s31f6
       polybar_wireless_network_interface: wlp3s0
@@ -44,14 +43,13 @@ profiles:
     - krapaince_gui
     dotfiles:
     - f_config_i3_scripts_soundboard.sh
-    - f_config_i3_wallpapers_krapaince_avatar.png
     - f_config_rofi_soundboard.rasi
     - f_config_i3_scripts_egnime_notif_answer.sh
     - f_xinitrc
 
   Krapaince-ubuntu:
     variables:
-      wallpaper: ~/.config/i3/wallpapers/Krapaince-ubuntu/avatar.png
+      wallpaper_url: https://www.dropbox.com/s/m77iu1jajeehg8d/Krapaince-ubuntu.png
       picom_blur_method: gaussian
       polybar_wired_network_interface: enp1s0
       git_name: Mathieu Pointecouteau
@@ -61,7 +59,6 @@ profiles:
     - krapaince_tty
     - krapaince_gui
     dotfiles:
-    - f_config_i3_wallpapers_krapaince-ubuntu_avatar.png
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
     - f_config_i3_env_env.sh

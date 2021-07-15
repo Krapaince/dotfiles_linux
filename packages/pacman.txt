@@ -8,6 +8,7 @@ breeze-gtk
 breeze-icons
 clang
 clementine
+curl
 discord
 docker
 docker-compose

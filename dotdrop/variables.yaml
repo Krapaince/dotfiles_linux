@@ -1,4 +1,6 @@
 variables:
+  wallpaper_destination: ~/Pictures/wallpapers
+  wallpaper_filename: avatar.png
   git_name: Krapaince
   git_email: mathieu.pointecouteau@epitech.eu
   picom_blur_method: gaussian

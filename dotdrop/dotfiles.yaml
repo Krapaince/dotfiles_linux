@@ -61,6 +61,8 @@ dotfiles:
   f_config_i3_config:
     src: config/i3/config
     dst: ~/.config/i3/config
+    actions:
+      - download_wallpaper
 
   # i3 scripts
   f_config_i3_scripts_egnime_notif_answer.sh:
@@ -99,16 +101,6 @@ dotfiles:
     src: config/i3/scripts/suspend.sh
     dst: ~/.config/i3/scripts/suspend.sh
     chmod: '744'
-
-  f_config_i3_wallpapers_krapaince_avatar.png:
-    src: config/i3/wallpapers/Krapaince/avatar.png
-    dst: ~/.config/i3/wallpapers/Krapaince/avatar.png
-  f_config_i3_wallpapers_krapaince-master_avatar.png:
-    src: config/i3/wallpapers/Krapaince-MASTER/avatar.png
-    dst: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
-  f_config_i3_wallpapers_krapaince-ubuntu_avatar.png:
-    src: config/i3/wallpapers/Krapaince-ubuntu/avatar.png
-    dst: ~/.config/i3/wallpapers/Krapaince-ubuntu/avatar.png
 
   # i3 env
   f_config_i3_env_env.sh:

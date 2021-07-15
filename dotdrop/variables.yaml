@@ -5,3 +5,4 @@ variables:
   polybar_wired_network_interface:
   polybar_wireless_network_interface:
   kitty_font_bold: CaskaydiaCove Nerd Font Bold
+  i3lock_screen_number: 1

@@ -15,6 +15,7 @@ profiles:
       wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
       polybar_wired_network_interface: enp5s0
       kitty_font: CaskaydiaCove Nerd Font Book
+      i3lock_screen_number: 2
     include:
     - krapaince_tty
     - krapaince_gui

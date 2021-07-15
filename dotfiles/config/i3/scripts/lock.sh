@@ -8,6 +8,7 @@ killall -SIGUSR1 dunst
 i3lock \
     -ti {{@@ wallpaper @@}} \
     -n \
+    -S {{@@ i3lock_screen_number @@}} \
     --clock \
     --time-str="%H:%M" \
     --time-color="AAAAAA" \

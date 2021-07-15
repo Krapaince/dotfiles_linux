@@ -8,12 +8,12 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 {%@@ if profile == "Krapaince-MASTER-arch" @@%}
-MONITOR=$MON_DP polybar tertiary_top -c ~/.config/polybar/config.ini &
+MONITOR=$MON_DVI polybar tertiary_top -c ~/.config/polybar/config.ini &
 
 MONITOR=$MON_HDMI polybar main_top -c ~/.config/polybar/config.ini &
 MONITOR=$MON_HDMI polybar main_bot -l info -c ~/.config/polybar/config.ini &
 
-MONITOR=$MON_DVI polybar secondary_top -c ~/.config/polybar/config.ini &
+MONITOR=$MON_DP polybar secondary_top -c ~/.config/polybar/config.ini &
 
 {%@@ elif profile == "Krapaince-ubuntu" @@%}
 

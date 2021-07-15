@@ -210,16 +210,16 @@ bindsym $mod+a focus parent
     bindsym $mod+Shift+0 move container to workspace number $ws10
 
     {%@@ if profile == "Krapaince-MASTER-arch" @@%}
-    workspace $ws1  output DP-1-5
-    workspace $ws2  output DP-1-5
-    workspace $ws3  output DP-1-5
-    workspace $ws4  output HDMI-0
-    workspace $ws5  output HDMI-0
-    workspace $ws6  output HDMI-0
-    workspace $ws7  output DVI-D-0
-    workspace $ws8  output DVI-D-0
-    workspace $ws9  output DVI-D-0
-    workspace $ws10 output DVI-D-0
+    workspace $ws1  output {{@@ monitor_01 @@}}
+    workspace $ws2  output {{@@ monitor_01 @@}}
+    workspace $ws3  output {{@@ monitor_01 @@}}
+    workspace $ws4  output {{@@ monitor_02 @@}}
+    workspace $ws5  output {{@@ monitor_02 @@}}
+    workspace $ws6  output {{@@ monitor_02 @@}}
+    workspace $ws7  output {{@@ monitor_03 @@}}
+    workspace $ws8  output {{@@ monitor_03 @@}}
+    workspace $ws9  output {{@@ monitor_03 @@}}
+    workspace $ws10 output {{@@ monitor_03 @@}}
     {%@@ elif profile == "Krapaince-ubuntu" @@%}
     workspace $ws1  output HDMI-1
     workspace $ws2  output HDMI-1

@@ -6,3 +6,5 @@ variables:
   polybar_wireless_network_interface:
   kitty_font_bold: CaskaydiaCove Nerd Font Bold
   i3lock_screen_number: 1
+  dunst_monitor: 0
+  dunst_geometry: "300x10-20+40"

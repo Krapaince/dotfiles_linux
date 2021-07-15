@@ -14,8 +14,14 @@ profiles:
     variables:
       wallpaper: ~/.config/i3/wallpapers/Krapaince-MASTER/avatar.png
       polybar_wired_network_interface: enp5s0
+      polybar_wireless_network_interface: wlp3s0
       kitty_font: CaskaydiaCove Nerd Font Book
       i3lock_screen_number: 2
+      dunst_monitor: 2
+      dunst_geometry: "300x10+20+40"
+      monitor_01: DVI-D-0
+      monitor_02: HDMI-0
+      monitor_03: DP-1-5
     include:
     - krapaince_tty
     - krapaince_gui

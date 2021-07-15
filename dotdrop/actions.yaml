@@ -7,4 +7,4 @@ actions:
     kitty_install_fonts: ./dotdrop/scripts/install_fonts.sh
   post:
     fish_install: >
-      cd /tmp && curl -L https://get.oh-my.fish > install && fish install --path=~/.local/share/omf --config=~/.config/omf --noninteractive -y
+      cd /tmp && curl -L https://get.oh-my.fish > install && fish install --path=~/.local/share/omf --config=~/.config/omf --noninteractive -y && rm /tmp/install

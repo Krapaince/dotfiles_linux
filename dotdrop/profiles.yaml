@@ -63,6 +63,27 @@ profiles:
     - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
     - f_config_i3_env_env.sh
 
+  krapaince_min:
+    dotfiles:
+      - f_config_omf_alias.fish
+      - f_config_omf_bundle
+      - f_config_omf_channel
+      - f_config_omf_theme
+      - f_config_omf_init.fish
+      - f_config_nvim_lua_config_lualine.lua
+      - f_config_nvim_lua_config_nvim-tree.lua
+      - f_config_nvim_lua_config_treesitter.lua
+      - f_config_nvim_lua_config_vim_commentary.lua
+      - f_config_nvim_lua_config.lua
+      - f_config_nvim_lua_highlights.lua
+      - f_config_nvim_lua_mappings.lua
+      - f_config_nvim_lua_plugins.lua
+      - f_config_nvim_lua_utils.lua
+      - f_config_nvim_vim_plugin.vim
+      - f_config_nvim_init_krapaince_min.vim
+      - f_config_nvim_settings.vim
+      - f_config_nvim_lua_config_treesitter.lua
+
   krapaince_tty:
     dotfiles:
     - f_config_omf_alias.fish

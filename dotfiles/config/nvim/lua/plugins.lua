@@ -18,6 +18,17 @@ return require('packer').startup({
         -- Status line
         use { 'hoob3rt/lualine.nvim', config = require('config.lualine') }
 
+        -- Treesitter
+        use {
+          {
+            'nvim-treesitter/nvim-treesitter',
+            run = ':TSUpdate',
+            config = require('config.treesitter'),
+          },
+          'nvim-treesitter/playground'
+        }
+
+        {%@@ if profile != "krapaince_min" @@%}
         use { 'neovim/nvim-lspconfig',
             requires = {
                 { 'RishabhRD/nvim-lsputils',
@@ -32,16 +43,6 @@ return require('packer').startup({
           'folke/lsp-trouble.nvim',
           requires = 'kyazdani42/nvim-web-devicons',
           config = require('config.lsp-trouble'),
-        }
-
-        -- Treesitter
-        use {
-          {
-            'nvim-treesitter/nvim-treesitter',
-            run = ':TSUpdate',
-            config = require('config.treesitter'),
-          },
-          'nvim-treesitter/playground'
         }
 
         -- Autocompletion
@@ -68,6 +69,7 @@ return require('packer').startup({
             run = function() vim.fn['mkdp#util#install']() end,
             ft = {'markdown'}
         }
+        {%@@ endif @@%}
 
         {%@@ if profile == "Krapaince-ubuntu" @@%}
         use { 'kristijanhusak/vim-dadbod-ui',
@@ -77,13 +79,14 @@ return require('packer').startup({
 
         -- Utility plugins
         use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
-        use { 'wesQ3/vim-windowswap' }
-        use { 'vim-scripts/DrawIt' }
-        use { 'camspiers/animate.vim', config = require('config.animate') }
-        use { 'norcalli/nvim-colorizer.lua' } -- Color highlighter
-        require('config.nvim-colorizer')
         use { 'tpope/vim-commentary', config = require('config.vim-commentary') }
         use { 'pierreglaser/folding-nvim' }
+        {%@@ if profile != "krapaince_min" @@%}
+        use { 'norcalli/nvim-colorizer.lua' } -- Color highlighter
+        require('config.nvim-colorizer')
+        use { 'wesQ3/vim-windowswap' }
+        use { 'camspiers/animate.vim', config = require('config.animate') }
+        use { 'vim-scripts/DrawIt' }
         use { 'junegunn/vim-easy-align' }
         use { 'rhysd/git-messenger.vim', config = require('config.git-messenger') }
         use {
@@ -91,6 +94,7 @@ return require('packer').startup({
             requires = "nvim-lua/plenary.nvim",
             config = require('config.todo-comments')
         }
+        {%@@ endif @@%}
     end,
     config = {
         display = {

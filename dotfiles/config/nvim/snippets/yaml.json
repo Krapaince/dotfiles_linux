@@ -1,0 +1,15 @@
+{
+    "card": {
+        "prefix": "card",
+        "body": [
+            "id: $1",
+            "title: $2",
+            "as: $3",
+            "iWantTo: $4",
+            "description: $5",
+            "definitionOfDone: $6",
+            "estimation: $7"
+        ],
+        "description": "Just kill me already"
+    }
+}

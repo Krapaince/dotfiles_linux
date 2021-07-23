@@ -13,7 +13,7 @@ return {
             },
             diagnostics = {
                 enable = true,
-                disabled = {},
+                disabled = {"unresolved-proc-macro"},
                 enableExperimental = true,
             },
         }

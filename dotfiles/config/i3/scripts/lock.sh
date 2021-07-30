@@ -6,7 +6,7 @@ setxkbmap us
 
 killall -SIGUSR1 dunst
 i3lock \
-    -ti {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}} \
+    -i {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}} \
     -n \
     -S {{@@ i3lock_screen_number @@}} \
     --clock \

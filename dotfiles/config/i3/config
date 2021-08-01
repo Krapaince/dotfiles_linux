@@ -220,17 +220,6 @@ bindsym $mod+a focus parent
     workspace $ws8  output {{@@ monitor_03 @@}}
     workspace $ws9  output {{@@ monitor_03 @@}}
     workspace $ws10 output {{@@ monitor_03 @@}}
-    {%@@ elif profile == "Krapaince-ubuntu" @@%}
-    workspace $ws1  output HDMI-1
-    workspace $ws2  output HDMI-1
-    workspace $ws3  output HDMI-1
-    workspace $ws4  output HDMI-1
-    workspace $ws5  output HDMI-1
-    workspace $ws6  output DP-2
-    workspace $ws7  output DP-2
-    workspace $ws8  output DP-2
-    workspace $ws9  output DP-2
-    workspace $ws10 output DP-2
     {%@@ endif @@%}
 
     # Assign app to workspace

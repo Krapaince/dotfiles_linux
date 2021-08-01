@@ -47,22 +47,6 @@ profiles:
     - f_config_i3_scripts_egnime_notif_answer.sh
     - f_xinitrc
 
-  Krapaince-ubuntu:
-    variables:
-      wallpaper_url: https://www.dropbox.com/s/m77iu1jajeehg8d/Krapaince-ubuntu.png
-      picom_blur_method: gaussian
-      polybar_wired_network_interface: enp1s0
-      git_name: Mathieu Pointecouteau
-      git_email: m.pointecouteau@alcom-tech.com
-      kitty_font: Caskaydia Cove Nerd Font Complete
-    include:
-    - krapaince_tty
-    - krapaince_gui
-    dotfiles:
-    - f_config_i3_scripts_monitor_setup_screen.sh
-    - f_config_i3_scripts_monitor_export_monitor_name_to_file.sh
-    - f_config_i3_env_env.sh
-
   krapaince_min:
     dotfiles:
       - f_config_omf_alias.fish

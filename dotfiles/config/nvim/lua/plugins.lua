@@ -71,12 +71,6 @@ return require('packer').startup({
         }
         {%@@ endif @@%}
 
-        {%@@ if profile == "Krapaince-ubuntu" @@%}
-        use { 'kristijanhusak/vim-dadbod-ui',
-            requires = {{ 'tpope/vim-dadbod' }}
-        }
-        {%@@ endif @@%}
-
         -- Utility plugins
         use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
         use { 'tpope/vim-commentary', config = require('config.vim-commentary') }

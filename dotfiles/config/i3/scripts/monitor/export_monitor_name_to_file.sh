@@ -6,9 +6,6 @@ SCREENS=( $(xrandr -q | grep " connected" | cut -d ' ' -f 1 | tr '\n' ' ' | rev 
 {%@@ if profile == "Krapaince-MASTER-arch" @@%}
 NAMES=('MON_DVI' 'MON_HDMI' 'MON_DP')
 NB_SCREENS=3
-{%@@ elif profile == "Krapaince-ubuntu" @@%}
-NAMES=('MON_HDMI' 'MON_DP')
-NB_SCREENS=2
 {%@@ endif @@%}
 FILE=~/.config/i3/env/monitors.sh
 

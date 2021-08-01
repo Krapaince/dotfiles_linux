@@ -4,7 +4,7 @@
 # Disable system beep
 xset b off
 
-{%@@ if profile == "Krapaince-MASTER-arch" or profile == "Krapaince-ubuntu" @@%}
+{%@@ if profile == "Krapaince-MASTER-arch" @@%}
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh

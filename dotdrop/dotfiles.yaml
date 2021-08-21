@@ -123,24 +123,21 @@ dotfiles:
 
 
   # Neovim
-  f_config_nvim_init.vim:
-    src: config/nvim/init.vim
-    dst: ~/.config/nvim/init.vim
+  f_config_nvim_init.lua:
+    src: config/nvim/init.lua
+    dst: ~/.config/nvim/init.lua
     actions:
     - vim_install_packer
     - vim_install_rustup_components
     - vim_install_language_server
 
-  f_config_nvim_init_krapaince_min.vim:
-    src: config/nvim/init.vim
-    dst: ~/.config/nvim/init.vim
+  f_config_nvim_init_krapaince_min.lua:
+    src: config/nvim/init.lua
+    dst: ~/.config/nvim/init.lua
     actions:
     - vim_install_packer
 
   # Neovim core
-  f_config_nvim_lua_config.lua:
-    src: config/nvim/lua/config.lua
-    dst: ~/.config/nvim/lua/config.lua
   f_config_nvim_lua_highlights.lua:
     src: config/nvim/lua/highlights.lua
     dst: ~/.config/nvim/lua/highlights.lua

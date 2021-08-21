@@ -54,17 +54,16 @@ profiles:
       - f_config_omf_channel
       - f_config_omf_theme
       - f_config_omf_init.fish
-      - f_config_nvim_lua_config_lualine.lua
-      - f_config_nvim_lua_config_nvim-tree.lua
-      - f_config_nvim_lua_config_treesitter.lua
-      - f_config_nvim_lua_config_vim_commentary.lua
+      - f_config_nvim_lua_plugins_lualine.lua
+      - f_config_nvim_lua_plugins_nvim-tree.lua
+      - f_config_nvim_lua_plugins_treesitter.lua
+      - f_config_nvim_lua_plugins_vim_commentary.lua
       - f_config_nvim_lua_highlights.lua
       - f_config_nvim_lua_mappings.lua
       - f_config_nvim_lua_options.lua
       - f_config_nvim_lua_plugins.lua
       - f_config_nvim_lua_utils.lua
       - f_config_nvim_init_krapaince_min.lua
-      - f_config_nvim_lua_config_treesitter.lua
 
   krapaince_tty:
     dotfiles:
@@ -78,24 +77,24 @@ profiles:
     - f_clang-tidy
     - f_config_gitui_key_config.ron
     - f_config_nvim_ftplugin_markdown.vim
-    - f_config_nvim_lua_config_lsp_clangd.lua
-    - f_config_nvim_lua_config_lsp_init.lua
-    - f_config_nvim_lua_config_lsp_rust-analyzer.lua
-    - f_config_nvim_lua_config_lsp_sumneko_lua.lua
-    - f_config_nvim_lua_config_lsp_texlab.lua
-    - f_config_nvim_lua_config_animate.lua
-    - f_config_nvim_lua_config_lualine.lua
-    - f_config_nvim_lua_config_nvim-colorizer.lua
-    - f_config_nvim_lua_config_nvim-tree.lua
-    - f_config_nvim_lua_config_telescope.lua
-    - f_config_nvim_lua_config_todo-comments.lua
-    - f_config_nvim_lua_config_treesitter.lua
-    - f_config_nvim_lua_config_vim_commentary.lua
-    - f_config_nvim_lua_config_vista.lua
-    - f_config_nvim_lua_config_vsnip.lua
-    - f_config_nvim_lua_config_compe.lua
-    - f_config_nvim_lua_config_git-messenger.lua
-    - f_config_nvim_lua_config_lsp-trouble.lua
+    - f_config_nvim_lua_plugins_lspconfig_clangd.lua
+    - f_config_nvim_lua_plugins_lspconfig_init.lua
+    - f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua
+    - f_config_nvim_lua_plugins_lspconfig_sumneko_lua.lua
+    - f_config_nvim_lua_plugins_lspconfig_texlab.lua
+    - f_config_nvim_lua_plugins_animate.lua
+    - f_config_nvim_lua_plugins_lualine.lua
+    - f_config_nvim_lua_plugins_nvim-colorizer.lua
+    - f_config_nvim_lua_plugins_nvim-tree.lua
+    - f_config_nvim_lua_plugins_telescope.lua
+    - f_config_nvim_lua_plugins_todo-comments.lua
+    - f_config_nvim_lua_plugins_treesitter.lua
+    - f_config_nvim_lua_plugins_vim_commentary.lua
+    - f_config_nvim_lua_plugins_vista.lua
+    - f_config_nvim_lua_plugins_vsnip.lua
+    - f_config_nvim_lua_plugins_compe.lua
+    - f_config_nvim_lua_plugins_git-messenger.lua
+    - f_config_nvim_lua_plugins_lsp-trouble.lua
     - f_config_nvim_lua_highlights.lua
     - f_config_nvim_lua_mappings.lua
     - f_config_nvim_lua_options.lua

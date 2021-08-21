@@ -147,15 +147,15 @@ dotfiles:
   f_config_nvim_lua_mappings.lua:
     src: config/nvim/lua/mappings.lua
     dst: ~/.config/nvim/lua/mappings.lua
+  f_config_nvim_lua_options.lua:
+    src: config/nvim/lua/options.lua
+    dst: ~/.config/nvim/lua/options.lua
   f_config_nvim_lua_plugins.lua:
     src: config/nvim/lua/plugins.lua
     dst: ~/.config/nvim/lua/plugins.lua
   f_config_nvim_lua_utils.lua:
     src: config/nvim/lua/utils.lua
     dst: ~/.config/nvim/lua/utils.lua
-  f_config_nvim_settings.vim:
-    src: config/nvim/settings.vim
-    dst: ~/.config/nvim/settings.vim
 
   # Neovim plugins
   f_config_nvim_lua_config_animate.lua:

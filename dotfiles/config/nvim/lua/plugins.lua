@@ -76,8 +76,7 @@ return require('packer').startup({
         use { 'tpope/vim-commentary', config = require('plugins.vim-commentary') }
         use { 'pierreglaser/folding-nvim' }
         {%@@ if profile != "krapaince_min" @@%}
-        use { 'norcalli/nvim-colorizer.lua' } -- Color highlighter
-        require('plugins.nvim-colorizer')
+        use { 'norcalli/nvim-colorizer.lua', config = require('plugins.nvim-colorizer') } -- Color highlighter
         use { 'wesQ3/vim-windowswap' }
         use { 'camspiers/animate.vim', config = require('plugins.animate') }
         use { 'vim-scripts/DrawIt' }

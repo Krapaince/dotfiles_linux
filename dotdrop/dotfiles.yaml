@@ -157,6 +157,11 @@ dotfiles:
     src: config/nvim/lua/utils.lua
     dst: ~/.config/nvim/lua/utils.lua
 
+  # Neovim filetype plugin
+  f_config_nvim_ftplugin_markdown.vim:
+    src: config/nvim/ftplugin/markdown.vim
+    dst: ~/.config/nvim/ftplugin/markdown.vim
+
   # Neovim plugins
   f_config_nvim_lua_config_animate.lua:
     src: config/nvim/lua/config/animate.lua
@@ -191,6 +196,9 @@ dotfiles:
   f_config_nvim_lua_config_vim_commentary.lua:
     src: config/nvim/lua/config/vim-commentary.lua
     dst: ~/.config/nvim/lua/config/vim-commentary.lua
+  f_config_nvim_lua_config_vista.lua:
+    src: config/nvim/lua/config/vista.lua
+    dst: ~/.config/nvim/lua/config/vista.lua
   f_config_nvim_lua_config_vsnip.lua:
     src: config/nvim/lua/config/vsnip.lua
     dst: ~/.config/nvim/lua/config/vsnip.lua
@@ -212,10 +220,6 @@ dotfiles:
     src: config/nvim/lua/config/lsp/texlab.lua
     dst: ~/.config/nvim/lua/config/lsp/texlab.lua
 
-
-  f_config_nvim_vim_plugin.vim:
-    src: config/nvim/vim/plugin.vim
-    dst: ~/.config/nvim/vim/plugin.vim
 
   f_config_nvim_snippets_c.json:
     src: config/nvim/snippets/c.json

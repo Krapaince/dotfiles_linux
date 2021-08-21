@@ -51,7 +51,7 @@ return require('packer').startup({
         use { 'hrsh7th/vim-vsnip', config = require('config.vsnip') }
 
         -- Symbol tree
-        use { 'liuchengxu/vista.vim' }
+        use { 'liuchengxu/vista.vim', config = require('config.vista') }
 
         -- Finder
         use {
@@ -82,6 +82,7 @@ return require('packer').startup({
         use { 'camspiers/animate.vim', config = require('config.animate') }
         use { 'vim-scripts/DrawIt' }
         use { 'junegunn/vim-easy-align' }
+
         use { 'rhysd/git-messenger.vim', config = require('config.git-messenger') }
         use {
             'folke/todo-comments.nvim',

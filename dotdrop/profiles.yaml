@@ -64,7 +64,6 @@ profiles:
       - f_config_nvim_lua_options.lua
       - f_config_nvim_lua_plugins.lua
       - f_config_nvim_lua_utils.lua
-      - f_config_nvim_vim_plugin.vim
       - f_config_nvim_init_krapaince_min.vim
       - f_config_nvim_lua_config_treesitter.lua
 
@@ -79,6 +78,7 @@ profiles:
     - f_clang-format_cpp
     - f_clang-tidy
     - f_config_gitui_key_config.ron
+    - f_config_nvim_ftplugin_markdown.vim
     - f_config_nvim_lua_config_lsp_clangd.lua
     - f_config_nvim_lua_config_lsp_init.lua
     - f_config_nvim_lua_config_lsp_rust-analyzer.lua
@@ -92,6 +92,7 @@ profiles:
     - f_config_nvim_lua_config_todo-comments.lua
     - f_config_nvim_lua_config_treesitter.lua
     - f_config_nvim_lua_config_vim_commentary.lua
+    - f_config_nvim_lua_config_vista.lua
     - f_config_nvim_lua_config_vsnip.lua
     - f_config_nvim_lua_config_compe.lua
     - f_config_nvim_lua_config_git-messenger.lua
@@ -105,7 +106,6 @@ profiles:
     - f_config_nvim_snippets_c.json
     - f_config_nvim_snippets_yaml.json
     - f_config_nvim_snippets_cpp.json
-    - f_config_nvim_vim_plugin.vim
     - f_config_nvim_init.vim
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf

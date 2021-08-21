@@ -8,4 +8,6 @@ return function ()
     map('n', '<Left>', ':call animate#window_delta_width(5)<CR>')
     map('n', '<Right>', ':call animate#window_delta_width(-5)<CR>')
 
+    vim.g['animate#duration'] = 50.1
+
 end

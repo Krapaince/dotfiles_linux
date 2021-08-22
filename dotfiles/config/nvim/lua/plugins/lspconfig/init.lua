@@ -37,12 +37,13 @@ return function()
     require('plugins.lspconfig.texlab'),
 
     -- Require default config:
-    require'lspconfig'.bashls.setup{},
-    require'lspconfig'.cssls.setup{},
-    require'lspconfig'.dockerls.setup{},
-    require'lspconfig'.html.setup{},
-    require'lspconfig'.jsonls.setup{},
-    require'lspconfig'.yamlls.setup{},
+    { name = 'bashls' },
+    { name = 'cssls' },
+    { name = 'dockerls' },
+    { name = 'html' },
+    { name = 'jsonls' },
+    { name = 'tsserver' },
+    { name = 'yamlls' },
   }
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true

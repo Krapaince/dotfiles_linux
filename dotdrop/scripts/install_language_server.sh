@@ -20,3 +20,6 @@ npm i -g bash-language-server
 
 # Yaml
 npm install -g yaml-language-server
+
+# Typescript
+npm install -g typescript

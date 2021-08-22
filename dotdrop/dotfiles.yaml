@@ -326,6 +326,11 @@ dotfiles:
     dst: ~/.config/rofi/soundboard.rasi
 
 
+  # Rustfmt
+  f_rustfmt.toml:
+    src: rustfmt.toml
+    dst: ~/.rustfmt.toml
+
   # Vifm
   f_config_vifm_vifmrc:
     src: config/vifm/vifmrc

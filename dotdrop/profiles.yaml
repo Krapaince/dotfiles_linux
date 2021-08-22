@@ -110,6 +110,7 @@ profiles:
     - f_config_vifm_vifmrc
     - f_ignore
     - f_gitconfig
+    - f_rustfmt.toml
 
   krapaince_gui:
     dotfiles:

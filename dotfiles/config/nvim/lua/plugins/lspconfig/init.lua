@@ -105,4 +105,8 @@ return function()
       capabilities = capabilities
     }
   end
+
+  -- Load prolog (who used that anyway)
+  require('plugins.lspconfig.prolog')
+  require('lspconfig').prolog.setup{}
 end

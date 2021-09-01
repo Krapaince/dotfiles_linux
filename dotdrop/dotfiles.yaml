@@ -210,6 +210,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_init.lua:
     src: config/nvim/lua/plugins/lspconfig/init.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/init.lua
+  f_config_nvim_lua_plugins_lspconfig_prolog.lua:
+    src: config/nvim/lua/plugins/lspconfig/prolog.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/prolog.lua
   f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua:
     src: config/nvim/lua/plugins/lspconfig/rust-analyzer.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/rust-analyzer.lua

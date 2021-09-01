@@ -22,4 +22,4 @@ npm i -g bash-language-server
 npm install -g yaml-language-server
 
 # Typescript
-npm install -g typescript
+npm install -g typescript-language-server

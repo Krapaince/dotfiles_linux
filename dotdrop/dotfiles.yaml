@@ -163,15 +163,18 @@ dotfiles:
   f_config_nvim_lua_plugins_animate.lua:
     src: config/nvim/lua/plugins/animate.lua
     dst: ~/.config/nvim/lua/plugins/animate.lua
-  f_config_nvim_lua_plugins_compe.lua:
-    src: config/nvim/lua/plugins/compe.lua
-    dst: ~/.config/nvim/lua/plugins/compe.lua
+  f_config_nvim_lua_plugins_cmp.lua:
+    src: config/nvim/lua/plugins/cmp.lua
+    dst: ~/.config/nvim/lua/plugins/cmp.lua
   f_config_nvim_lua_plugins_git-messenger.lua:
     src: config/nvim/lua/plugins/git-messenger.lua
     dst: ~/.config/nvim/lua/plugins/git-messenger.lua
   f_config_nvim_lua_plugins_lsp-trouble.lua:
     src: config/nvim/lua/plugins/lsp-trouble.lua
     dst: ~/.config/nvim/lua/plugins/lsp-trouble.lua
+  f_config_nvim_lua_plugins_lspkind.lua:
+    src: config/nvim/lua/plugins/lspkind.lua
+    dst: ~/.config/nvim/lua/plugins/lspkind.lua
   f_config_nvim_lua_plugins_lualine.lua:
     src: config/nvim/lua/plugins/lualine.lua
     dst: ~/.config/nvim/lua/plugins/lualine.lua

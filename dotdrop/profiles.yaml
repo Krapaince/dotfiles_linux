@@ -94,9 +94,10 @@ profiles:
     - f_config_nvim_lua_plugins_vim_commentary.lua
     - f_config_nvim_lua_plugins_vista.lua
     - f_config_nvim_lua_plugins_vsnip.lua
-    - f_config_nvim_lua_plugins_compe.lua
+    - f_config_nvim_lua_plugins_cmp.lua
     - f_config_nvim_lua_plugins_git-messenger.lua
     - f_config_nvim_lua_plugins_lsp-trouble.lua
+    - f_config_nvim_lua_plugins_lspkind.lua
     - f_config_nvim_lua_highlights.lua
     - f_config_nvim_lua_mappings.lua
     - f_config_nvim_lua_options.lua

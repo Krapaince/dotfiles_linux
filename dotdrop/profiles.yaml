@@ -124,8 +124,9 @@ profiles:
     - f_config_i3_scripts_set_wallpaper.sh
     - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
+    - f_config_pipewire_media-session.d_bluez-monitor.conf
     - f_config_polybar_bars.ini
-    - f_config_polybar_modules_custom_pulseaudio-control.ini
+    - f_config_polybar_modules_custom_pipewire-control.ini
     - f_config_polybar_modules_custom_temperature-cpu.ini
     - f_config_polybar_modules_custom_temperature-gpu.ini
     - f_config_polybar_modules_battery.ini
@@ -135,10 +136,9 @@ profiles:
     - f_config_polybar_modules_i3.ini
     - f_config_polybar_modules_memory.ini
     - f_config_polybar_modules_network.ini
-    - f_config_polybar_modules_pulseaudio.ini
     - f_config_polybar_modules_xkeyboard.ini
     - f_config_polybar_modules_xwindow.ini
-    - f_config_polybar_scripts_pulseaudio-control.bash
+    - f_config_polybar_scripts_pipewire-control.bash
     - f_config_polybar_scripts_temperature-cpu.sh
     - f_config_polybar_scripts_temperature-gpu.sh
     - f_config_polybar_colors.ini

@@ -55,10 +55,10 @@ pacman-contrib
 papirus-icon-theme
 pavucontrol
 picom
+pipewire
+pipewire-alsa
+pipewire-pulse
 pkgconf
-pulseaudio
-pulseaudio-alsa
-pulseaudio-jack
 qt5ct
 ranger
 ripgrep

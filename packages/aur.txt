@@ -10,7 +10,6 @@ jetbrains-toolbox
 lua-language-server
 oh-my-zsh-git
 polybar
-pulseaudio-modules-bt
 silver-searcher-git
 teams
 teams-for-linux

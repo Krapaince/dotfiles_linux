@@ -70,6 +70,8 @@ for_window [class="Rofi"] floating enable
 # Fix teams notifications
 for_window [title="Microsoft Teams Notification"] floating enable
 
+for_window [title="Zoom Cloud Meetings"] | floating enable
+for_window [title="zoom"] | floating enable
 
 # Keybindings {#
 

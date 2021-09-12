@@ -25,6 +25,6 @@ alias valgrind-colour="cat valgrind.txt | colout -t valgrind | less"
 alias clang-format-all="find . -name \"*.hpp\" -print -o -name \"*.cpp\" -print -o -name \"*.c\" -print -o -name \"*.h\" -print | xargs clang-format -i --verbose"
 alias formatter="/usr/bin/clang-format -style=file -fallback-style=none -assume-filename="
 
-if test -f custom_alias.fish.fish
+if test -f ~/.config/omf/custom_alias.fish
     source ~/.config/omf/custom_alias.fish
 end

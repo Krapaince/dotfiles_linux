@@ -184,9 +184,6 @@ dotfiles:
   f_config_nvim_lua_plugins_nvim-tree.lua:
     src: config/nvim/lua/plugins/nvim-tree.lua
     dst: ~/.config/nvim/lua/plugins/nvim-tree.lua
-  f_config_nvim_lua_plugins_pears.lua:
-    src: config/nvim/lua/plugins/pears.lua
-    dst: ~/.config/nvim/lua/plugins/pears.lua
   f_config_nvim_lua_plugins_telescope.lua:
     src: config/nvim/lua/plugins/telescope.lua
     dst: ~/.config/nvim/lua/plugins/telescope.lua

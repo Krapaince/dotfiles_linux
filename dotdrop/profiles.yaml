@@ -87,7 +87,6 @@ profiles:
     - f_config_nvim_lua_plugins_lualine.lua
     - f_config_nvim_lua_plugins_nvim-colorizer.lua
     - f_config_nvim_lua_plugins_nvim-tree.lua
-    - f_config_nvim_lua_plugins_pears.lua
     - f_config_nvim_lua_plugins_telescope.lua
     - f_config_nvim_lua_plugins_todo-comments.lua
     - f_config_nvim_lua_plugins_treesitter.lua

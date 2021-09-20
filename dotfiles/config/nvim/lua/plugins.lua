@@ -98,7 +98,6 @@ return require('packer').startup({
             requires = "nvim-lua/plenary.nvim",
             config = require('plugins.todo-comments')
         }
-        use { 'steelsojka/pears.nvim', config = require('plugins.pears') }
         {%@@ endif @@%}
     end,
     config = {

@@ -15,7 +15,7 @@ profiles:
       wallpaper_url: https://www.dropbox.com/s/a4u245cd1gc56ji/Krapaince-MASTER-arch.png
       polybar_wired_network_interface: enp5s0
       polybar_wireless_network_interface: wlp3s0
-      kitty_font: CaskaydiaCove Nerd Font Book
+      font: CaskaydiaCove Nerd Font Book
       i3lock_screen_number: 2
       dunst_monitor: 2
       dunst_geometry: "300x10+20+40"
@@ -37,7 +37,7 @@ profiles:
       picom_blur_method: dual_kawase
       polybar_wired_network_interface: enp0s31f6
       polybar_wireless_network_interface: wlp3s0
-      kitty_font: CaskaydiaCove Nerd Font Book
+      font: CaskaydiaCove Nerd Font Book
     include:
     - krapaince_tty
     - krapaince_gui
@@ -118,6 +118,7 @@ profiles:
     - f_ideavimrc
     - f_config_dunst_dunstrc
     - f_config_dunst_reload.sh
+    - f_config_gtk-3.0_settings.ini
     - f_config_i3_config
     - f_config_i3_scripts_keyboard_switcher.sh
     - f_config_i3_scripts_lock.sh

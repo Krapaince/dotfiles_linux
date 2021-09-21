@@ -56,6 +56,10 @@ dotfiles:
     src: config/gitui/key_config.ron
     dst: ~/.config/gitui/key_config.ron
 
+  # gtk3.0
+  f_config_gtk-3.0_settings.ini:
+    src: config/gtk-3.0/settings.ini
+    dst: ~/.config/gtk-3.0/settings.ini
 
   # i3
   f_config_i3_config:

@@ -7,11 +7,13 @@ alias ls="exa --icons"
 ## Go to
 alias cdc="cd ~/.config"
 
+{%@@ if profile == "Krapaince-arch" or profile == "Krapaince-MASTER-arch" @@%}
 alias cdd="cd $REPO_LOCATION"
 alias cde="cd $REPO_LOCATION/EPITECH/"
 alias cdg="cd $REPO_LOCATION/GIT/"
 alias cdw="cd $REPO_LOCATION/EPITECH/delivery"
 alias cdp="cd $REPO_LOCATION/EPITECH/EIP/Pizzi"
+{%@@ endif @@%}
 
 ## Git
 alias gs="git status"

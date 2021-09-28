@@ -83,6 +83,7 @@ profiles:
     - f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua
     - f_config_nvim_lua_plugins_lspconfig_sumneko_lua.lua
     - f_config_nvim_lua_plugins_lspconfig_texlab.lua
+    - f_config_nvim_lua_plugins_lspconfig_tsserver.lua
     - f_config_nvim_lua_plugins_animate.lua
     - f_config_nvim_lua_plugins_lualine.lua
     - f_config_nvim_lua_plugins_nvim-colorizer.lua

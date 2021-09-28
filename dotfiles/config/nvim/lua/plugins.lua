@@ -34,6 +34,8 @@ return require('packer').startup({
                 { 'RishabhRD/nvim-lsputils',
                     requires = 'RishabhRD/popfix',
                 },
+                'jose-elias-alvarez/null-ls.nvim',
+                'jose-elias-alvarez/nvim-lsp-ts-utils',
             },
             config = require('plugins.lspconfig')
         }

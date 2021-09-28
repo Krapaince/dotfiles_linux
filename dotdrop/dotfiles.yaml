@@ -226,6 +226,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_texlab.lua:
     src: config/nvim/lua/plugins/lspconfig/texlab.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/texlab.lua
+  f_config_nvim_lua_plugins_lspconfig_tsserver.lua:
+    src: config/nvim/lua/plugins/lspconfig/tsserver.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/tsserver.lua
 
 
   f_config_nvim_snippets_c.json:

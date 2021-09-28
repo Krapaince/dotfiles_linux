@@ -43,9 +43,13 @@ return function()
     { name = 'dockerls' },
     { name = 'html' },
     { name = 'jsonls' },
-    { name = 'tsserver' },
     { name = 'yamlls' },
   }
+  -- Load prolog
+  require('plugins.lspconfig.prolog')
+  require('lspconfig').prolog.setup{}
+
+  require('plugins.lspconfig.tsserver')
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true
 
@@ -68,7 +72,9 @@ return function()
   vim.fn.sign_define('LspDiagnosticsSignHint',
     { text = '', texthl = 'LspDiagnosticsSignHint' })
 
-  vim.lsp.handlers['textDocument/codeAction'] = require'lsputil.codeAction'.code_action_handler
+  vim.lsp.handlers['textDocument/codeAction'] = function(_, _, actions)
+      require('lsputil.codeAction').code_action_handler(nil, actions, nil, nil, nil)
+  end
 
   for _, server in ipairs(servers) do
     lsp[server.name].setup {
@@ -78,8 +84,4 @@ return function()
       capabilities = capabilities
     }
   end
-
-  -- Load prolog (who used that anyway)
-  require('plugins.lspconfig.prolog')
-  require('lspconfig').prolog.setup{}
 end

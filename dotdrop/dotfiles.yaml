@@ -164,9 +164,6 @@ dotfiles:
     dst: ~/.config/nvim/ftplugin/markdown.vim
 
   # Neovim plugins
-  f_config_nvim_lua_plugins_animate.lua:
-    src: config/nvim/lua/plugins/animate.lua
-    dst: ~/.config/nvim/lua/plugins/animate.lua
   f_config_nvim_lua_plugins_cmp.lua:
     src: config/nvim/lua/plugins/cmp.lua
     dst: ~/.config/nvim/lua/plugins/cmp.lua

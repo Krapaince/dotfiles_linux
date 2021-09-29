@@ -90,7 +90,6 @@ return require('packer').startup({
         {%@@ if profile != "krapaince_min" @@%}
         use { 'norcalli/nvim-colorizer.lua', config = require('plugins.nvim-colorizer') } -- Color highlighter
         use { 'wesQ3/vim-windowswap' }
-        use { 'camspiers/animate.vim', config = require('plugins.animate') }
         use { 'vim-scripts/DrawIt' }
         use { 'junegunn/vim-easy-align' }
 

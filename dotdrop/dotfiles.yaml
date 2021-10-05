@@ -345,6 +345,10 @@ dotfiles:
     src: config/vifm/vifmrc
     dst: ~/.config/vifm/vifmrc
 
+  # youtube-dl
+  f_config_youtube-dl_config:
+    src: config/youtube-dl/config
+    dst: ~/.config/youtube-dl/config
 
   # Zathura
   f_config_zathura_zathurarc:

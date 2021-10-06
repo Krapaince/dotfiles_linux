@@ -59,6 +59,7 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 pkgconf
+playerctl
 qt5ct
 ranger
 ripgrep

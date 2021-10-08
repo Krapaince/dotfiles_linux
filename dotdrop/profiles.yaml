@@ -112,7 +112,7 @@ profiles:
     - f_ignore
     - f_gitconfig
     - f_rustfmt.toml
-    - f_config_youtube-dl_config
+    - f_config_yt-dlp_config
 
   krapaince_gui:
     dotfiles:

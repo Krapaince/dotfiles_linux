@@ -87,6 +87,5 @@ xorg-server
 xss-lock
 xterm
 yarn
-youtube-dl
 zathura
 zathura-pdf-poppler

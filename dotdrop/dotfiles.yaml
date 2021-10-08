@@ -345,10 +345,10 @@ dotfiles:
     src: config/vifm/vifmrc
     dst: ~/.config/vifm/vifmrc
 
-  # youtube-dl
-  f_config_youtube-dl_config:
-    src: config/youtube-dl/config
-    dst: ~/.config/youtube-dl/config
+  # yt-dlp
+  f_config_yt-dlp_config:
+    src: config/yt-dlp/config
+    dst: ~/.config/yt-dlp/config
 
   # Zathura
   f_config_zathura_zathurarc:

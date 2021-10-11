@@ -15,7 +15,7 @@ return function()
   }
 
   require'nvim-tree'.setup {
-      open_on_tab = false,
+      open_on_tab = true,
       lsp_diagnostics = true,
       view = {
           side = 'left',

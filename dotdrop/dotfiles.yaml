@@ -9,6 +9,12 @@ config:
   longkey: true
 profiles:
 dotfiles:
+  f_local_bin_colorbalance2:
+    src: .local/bin/colorbalance2
+    dst: ~/.local/bin/colorbalance2
+    chmod: '744'
+
+
   # clang
   f_clang-format_c:
     src: clang-format_c
@@ -93,10 +99,30 @@ dotfiles:
     src: config/i3/scripts/monitor/setup_screen.sh
     dst: ~/.config/i3/scripts/monitor/setup_screen.sh
     chmod: '744'
-  f_config_i3_scripts_set_wallpaper.sh:
-    src: config/i3/scripts/set_wallpaper.sh
-    dst: ~/.config/i3/scripts/set_wallpaper.sh
+
+  # i3 wallpaper scripts
+  f_config_i3_scripts_wallpaper_change_wallpaper.sh:
+    src: config/i3/scripts/wallpaper/change_wallpaper.sh
+    dst: ~/.config/i3/scripts/wallpaper/change_wallpaper.sh
     chmod: '744'
+  f_config_i3_scripts_wallpaper_color_set.json:
+    src: config/i3/scripts/wallpaper/color_set.json
+    dst: ~/.config/i3/scripts/wallpaper/color_set.json
+  f_config_i3_scripts_wallpaper_common.sh:
+    src: config/i3/scripts/wallpaper/common.sh
+    dst: ~/.config/i3/scripts/wallpaper/common.sh
+  f_config_i3_scripts_wallpaper_generate_wallpaper.sh:
+    src: config/i3/scripts/wallpaper/generate_wallpaper.sh
+    dst: ~/.config/i3/scripts/wallpaper/generate_wallpaper.sh
+    chmod: '744'
+  f_config_i3_scripts_wallpaper_generate_wallpapers.sh:
+    src: config/i3/scripts/wallpaper/generate_wallpapers.sh
+    dst: ~/.config/i3/scripts/wallpaper/generate_wallpapers.sh
+    chmod: '744'
+  f_config_i3_scripts_wallpaper_settings.json:
+    src: config/i3/scripts/wallpaper/settings.json
+    dst: ~/.config/i3/scripts/wallpaper/settings.json
+
   f_config_i3_scripts_soundboard.sh:
     src: config/i3/scripts/soundboard.sh
     dst: ~/.config/i3/scripts/soundboard.sh

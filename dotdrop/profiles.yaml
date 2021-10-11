@@ -34,6 +34,7 @@ profiles:
   Krapaince-arch:
     variables:
       wallpaper_url: https://www.dropbox.com/s/zm48ldtbubrc5s0/Krapaince-arch.png
+      wallpaper_color_shifter: 'true'
       picom_blur_method: dual_kawase
       polybar_wired_network_interface: enp0s31f6
       polybar_wireless_network_interface: wlp3s0
@@ -116,6 +117,7 @@ profiles:
 
   krapaince_gui:
     dotfiles:
+    - f_local_bin_colorbalance2
     - f_ideavimrc
     - f_config_dunst_dunstrc
     - f_config_dunst_reload.sh
@@ -123,7 +125,12 @@ profiles:
     - f_config_i3_config
     - f_config_i3_scripts_keyboard_switcher.sh
     - f_config_i3_scripts_lock.sh
-    - f_config_i3_scripts_set_wallpaper.sh
+    - f_config_i3_scripts_wallpaper_common.sh
+    - f_config_i3_scripts_wallpaper_change_wallpaper.sh
+    - f_config_i3_scripts_wallpaper_color_set.json
+    - f_config_i3_scripts_wallpaper_generate_wallpaper.sh
+    - f_config_i3_scripts_wallpaper_generate_wallpapers.sh
+    - f_config_i3_scripts_wallpaper_settings.json
     - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
     - f_config_pipewire_media-session.d_bluez-monitor.conf

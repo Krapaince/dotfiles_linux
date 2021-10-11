@@ -5,8 +5,13 @@
 setxkbmap us
 
 killall -SIGUSR1 dunst
+
+WALLPAPER=$(~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh)
+
+~/.config/i3/scripts/wallpaper/toggle_shifting.sh
+
 i3lock \
-    -i {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}} \
+    -i $WALLPAPER \
     -n \
     -S {{@@ i3lock_screen_number @@}} \
     --clock \
@@ -31,4 +36,5 @@ i3lock \
     --inside-color="00000000" \
     --noinput-text=""
 
+~/.config/i3/scripts/wallpaper/toggle_shifting.sh
 killall -SIGUSR2 dunst

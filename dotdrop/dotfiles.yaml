@@ -119,9 +119,17 @@ dotfiles:
     src: config/i3/scripts/wallpaper/generate_wallpapers.sh
     dst: ~/.config/i3/scripts/wallpaper/generate_wallpapers.sh
     chmod: '744'
+  f_config_i3_scripts_wallpaper_get_current_wallpaper_filepath.sh:
+    src: config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh
+    dst: ~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh
+    chmod: '744'
   f_config_i3_scripts_wallpaper_settings.json:
     src: config/i3/scripts/wallpaper/settings.json
     dst: ~/.config/i3/scripts/wallpaper/settings.json
+  f_config_i3_scripts_wallpaper_toggle_shifting.sh:
+    src: config/i3/scripts/wallpaper/toggle_shifting.sh
+    dst: ~/.config/i3/scripts/wallpaper/toggle_shifting.sh
+    chmod: '744'
 
   f_config_i3_scripts_soundboard.sh:
     src: config/i3/scripts/soundboard.sh

@@ -46,6 +46,12 @@ do
     fi
 
     feh --bg-fill --no-xinerama $WALLPAPER_FILEPATH
+    sleep $SLEEP_TIME
+
+    while $(jq ".paused" $CURRENT_SETTING_PATH) == "true"
+    do
+        sleep $SLEEP_TIME
+    done
 
     if [[ $INDEX -lt $((COLOR_SET_LENGTH - 1)) ]]; then
         INDEX=$((INDEX + 1))
@@ -55,6 +61,4 @@ do
 
     CONTENT=$(jq ".index = $INDEX" $CURRENT_SETTING_PATH)
     echo -n $CONTENT > $CURRENT_SETTING_PATH
-
-    sleep $SLEEP_TIME
 done

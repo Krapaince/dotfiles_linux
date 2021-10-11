@@ -130,7 +130,9 @@ profiles:
     - f_config_i3_scripts_wallpaper_color_set.json
     - f_config_i3_scripts_wallpaper_generate_wallpaper.sh
     - f_config_i3_scripts_wallpaper_generate_wallpapers.sh
+    - f_config_i3_scripts_wallpaper_get_current_wallpaper_filepath.sh
     - f_config_i3_scripts_wallpaper_settings.json
+    - f_config_i3_scripts_wallpaper_toggle_shifting.sh
     - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
     - f_config_pipewire_media-session.d_bluez-monitor.conf

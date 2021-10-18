@@ -99,4 +99,6 @@
 
     open_file_tree:             ( code: Char('F'), modifiers: ( bits: 1,),),
     file_find:                  ( code: Char('f'), modifiers: ( bits: 0,),),
+
+    stage_unstage_item: ( code: Enter, modifiers: ( bits: 0,),),
 )

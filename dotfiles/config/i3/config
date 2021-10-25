@@ -99,6 +99,9 @@ Bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
 bindsym mod4+Right exec ~/.config/i3/scripts/lock.sh
 bindsym mod4+Up exec ~/.config/i3/scripts/suspend.sh
 
+# Notifications
+bindsym Control+space exec dunstctl close
+
 # Switch keyboard layout
 bindsym mod4+space exec ~/.config/i3/scripts/keyboard_switcher.sh
 

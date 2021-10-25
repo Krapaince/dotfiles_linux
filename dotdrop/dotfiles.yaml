@@ -31,10 +31,6 @@ dotfiles:
   f_config_dunst_dunstrc:
     src: config/dunst/dunstrc
     dst: ~/.config/dunst/dunstrc
-  f_config_dunst_reload.sh:
-    src: config/dunst/reload.sh
-    dst: ~/.config/dunst/reload.sh
-    chmod: '744'
 
 
   # fish

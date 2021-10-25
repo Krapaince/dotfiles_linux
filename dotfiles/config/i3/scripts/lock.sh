@@ -4,7 +4,7 @@
 # Reset the main keyboard layout
 setxkbmap us
 
-killall -SIGUSR1 dunst
+dunstctl set-paused true
 
 WALLPAPER=$(~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh)
 
@@ -37,4 +37,4 @@ i3lock \
     --noinput-text=""
 
 ~/.config/i3/scripts/wallpaper/toggle_shifting.sh
-killall -SIGUSR2 dunst
+dunstctl set-paused false

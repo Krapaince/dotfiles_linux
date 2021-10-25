@@ -18,7 +18,6 @@ profiles:
       font: CaskaydiaCove Nerd Font Book
       i3lock_screen_number: 2
       dunst_monitor: 2
-      dunst_geometry: "300x10+20+40"
       monitor_01: DVI-D-0
       monitor_02: HDMI-0
       monitor_03: DP-1-5
@@ -120,7 +119,6 @@ profiles:
     - f_local_bin_colorbalance2
     - f_ideavimrc
     - f_config_dunst_dunstrc
-    - f_config_dunst_reload.sh
     - f_config_gtk-3.0_settings.ini
     - f_config_i3_config
     - f_config_i3_scripts_keyboard_switcher.sh

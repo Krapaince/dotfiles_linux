@@ -15,6 +15,7 @@ docker-compose
 dunst
 efibootmgr
 exa
+fd
 feh
 firefox
 fish
@@ -22,12 +23,16 @@ flameshot
 gcc
 gimp
 git
+git-delta
 github-cli
+gitui
 gnome-icon-theme
 gnome-keyring
 htop
 i3-gaps
 i3lock
+imagemagick
+jq
 keepassxc
 kitty
 kolourpaint
@@ -84,6 +89,8 @@ vlc
 which
 xclip
 xorg-server
+xorg-xinit
+xorg-xkill
 xss-lock
 xterm
 yarn

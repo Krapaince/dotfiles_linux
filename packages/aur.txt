@@ -5,10 +5,8 @@ csfml
 dotdrop
 duf
 dust
-git-delta
 jetbrains-toolbox
 lua-language-server
-oh-my-zsh-git
 polybar
 silver-searcher-git
 teams

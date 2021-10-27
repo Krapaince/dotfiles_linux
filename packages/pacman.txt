@@ -30,7 +30,7 @@ gnome-icon-theme
 gnome-keyring
 htop
 i3-gaps
-i3lock
+i3lock-color
 imagemagick
 jq
 keepassxc

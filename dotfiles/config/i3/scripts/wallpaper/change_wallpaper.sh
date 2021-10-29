@@ -45,7 +45,11 @@ do
 
     fi
 
+    {%@@ if profile == "Krapaince-MASTER-arch" @@%}
+    feh --bg-fill --xinerama-index 0 $WALLPAPER_FILEPATH
+    {%@@ else @@%}
     feh --bg-fill --no-xinerama $WALLPAPER_FILEPATH
+    {%@@ endif @@%}
     sleep $SLEEP_TIME
 
     while $(jq ".paused" $CURRENT_SETTING_PATH) == "true"

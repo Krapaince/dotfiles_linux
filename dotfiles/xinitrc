@@ -3,6 +3,7 @@
 
 # Disable system beep
 xset b off
+xset s 300
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 

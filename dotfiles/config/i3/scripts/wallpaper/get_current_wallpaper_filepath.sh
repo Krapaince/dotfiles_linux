@@ -16,8 +16,12 @@ if [[ $(jq ".enable" $CURRENT_SETTING_PATH) == "true" ]]; then
     BLUE=$(         echo $JSON_SETTING | jq '.b')
     MAGENTA=$(      echo $JSON_SETTING | jq '.m')
 
-    FILENAME=$(make_img_filename_from_parameters $LOWTHRESH $HIGHTHRESH $RED $YELLOW $GREEN $CYAN $BLUE $MAGENTA)
-    echo $WALLPAPERS_DIR/$FILENAME
+    if [[ $(echo $LOWTHRESH+$HIGHTHRESH+$RED+$YELLOW+$GREEN+$CYAN+$BLUE+$MAGENTA | bc) = 0 ]]; then
+        echo "{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}"
+    else
+        FILENAME=$(make_img_filename_from_parameters $LOWTHRESH $HIGHTHRESH $RED $YELLOW $GREEN $CYAN $BLUE $MAGENTA)
+        echo $WALLPAPERS_DIR/$FILENAME
+    fi
 else
     echo {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
 fi

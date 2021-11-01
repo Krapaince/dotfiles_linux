@@ -1,18 +1,28 @@
 #!/usr/bin/env bash
 # {{@@ header() @@}}
 
+WALLPAPER=$(~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh)
+FORK="-n"
+
+while [[ "$1" =~ ^- ]]; do
+    case $1 in
+        --suspend | -s )
+            FORK=""
+    esac;
+    shift;
+done
+
 # Reset the main keyboard layout
 setxkbmap us
 
 dunstctl set-paused true
 
-WALLPAPER=$(~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh)
 
 ~/.config/i3/scripts/wallpaper/toggle_shifting.sh
 
 i3lock \
     -i $WALLPAPER \
-    -n \
+    $FORK \
     -S {{@@ i3lock_screen_number @@}} \
     --clock \
     --time-str="%H:%M" \

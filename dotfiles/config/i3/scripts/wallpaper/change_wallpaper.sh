@@ -45,7 +45,7 @@ do
 
     fi
 
-    {%@@ if profile == "Krapaince-MASTER-arch" @@%}
+    {%@@ if profile == "Krapaince-arch" @@%}
     feh --bg-fill --xinerama-index 0 $WALLPAPER_FILEPATH
     {%@@ else @@%}
     feh --bg-fill --no-xinerama $WALLPAPER_FILEPATH

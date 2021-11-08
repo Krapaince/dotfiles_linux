@@ -9,15 +9,14 @@ return function()
   vim.g.nvim_tree_indent_markers = 1
   vim.g.nvim_tree_group_empty = 0
 
-  vim.g.nvim_tree_ignore = {
-    '.git',
-    '*.o'
-  }
-
   require'nvim-tree'.setup {
       open_on_tab = true,
       diagnostics = {
           enable = true
+      },
+      filters = {
+          dotfiles = false,
+          custom = { '.git', '*.0' }
       },
       view = {
           side = 'left',

@@ -87,8 +87,8 @@ bindsym XF86AudioPause exec--no-startup-id playerctl play-pause
 
 {%@@ if profile == "Krapaince-arch" @@%}
 # Brightness setting
-Bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
-Bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
+Bindsym XF86MonBrightnessDown exec "brightnessctl -d intel_backlight s 10%-"
+Bindsym XF86MonBrightnessUp exec "brightnessctl -d intel_backlight s 10%+"
 {%@@ endif @@%}
 
 #bindcode 67 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle

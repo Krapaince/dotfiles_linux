@@ -3,6 +3,7 @@ blueman
 bluez-utils
 breeze-gtk
 breeze-icons
+brightnessctl
 discord
 dunst
 feh
@@ -38,7 +39,6 @@ ttf-roboto
 vlc
 xclip
 xorg-server
-xorg-xbacklight
 xorg-xinit
 xorg-xkill
 xss-lock

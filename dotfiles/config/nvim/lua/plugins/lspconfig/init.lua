@@ -45,9 +45,6 @@ return function()
     { name = 'jsonls' },
     { name = 'yamlls' },
   }
-  -- Load prolog
-  require('plugins.lspconfig.prolog')
-  require('lspconfig').prolog.setup{}
 
   require('plugins.lspconfig.tsserver')
 

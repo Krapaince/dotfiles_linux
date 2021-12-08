@@ -19,7 +19,7 @@ return function()
     buf_set_keymap('n', 'gr',        '<cmd>lua vim.lsp.buf.references()<CR>')
     buf_set_keymap('n', 'g0',        '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
     buf_set_keymap('n', 'gW',        '<cmd>lua vim.lsp.buf.workspace_symbol()<CR>')
-    buf_set_keymap('n', '<C-c>',     '<cmd>lua vim.lsp.buf.code_action()<CR>')
+    buf_set_keymap('n', '<C-c>',     '<cmd>CodeActionMenu<CR>')
     buf_set_keymap('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
     buf_set_keymap('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
@@ -66,8 +66,6 @@ return function()
     vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
     vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
     vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
-
-  vim.lsp.handlers['textDocument/codeAction'] = require'lsputil.codeAction'.code_action_handler
 
   for _, server in ipairs(servers) do
     lsp[server.name].setup {

@@ -31,9 +31,7 @@ return require('packer').startup({
         {%@@ if profile != "krapaince_min" @@%}
         use { 'neovim/nvim-lspconfig',
             requires = {
-                { 'RishabhRD/nvim-lsputils',
-                    requires = 'RishabhRD/popfix',
-                },
+                { 'filtsin/nvim-code-action-menu', cmd = 'CodeActionMenu' },
                 'jose-elias-alvarez/null-ls.nvim',
                 'jose-elias-alvarez/nvim-lsp-ts-utils',
             },

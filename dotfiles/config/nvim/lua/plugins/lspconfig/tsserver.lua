@@ -64,7 +64,7 @@ nvim_lsp.tsserver.setup {
         buf_set_keymap('n', 'gr',        '<cmd>lua vim.lsp.buf.references()<CR>')
         buf_set_keymap('n', 'g0',        '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
         buf_set_keymap('n', 'gW',        '<cmd>lua vim.lsp.buf.workspace_symbol()<CR>')
-        buf_set_keymap('n', '<C-c>',     '<cmd>lua vim.lsp.buf.code_action()<CR>')
+        buf_set_keymap('n', '<C-c>',     '<cmd>CodeActionMenu<CR>')
         buf_set_keymap('n', '<leader>d', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>')
         buf_set_keymap('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
 

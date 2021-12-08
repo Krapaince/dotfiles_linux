@@ -36,6 +36,7 @@ return function()
     require('plugins.lspconfig.rust-analyzer'),
     require('plugins.lspconfig.sumneko_lua'),
     require('plugins.lspconfig.texlab'),
+    require('plugins.lspconfig.volar'),
 
     -- Require default config:
     { name = 'bashls' },

@@ -253,6 +253,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_tsserver.lua:
     src: config/nvim/lua/plugins/lspconfig/tsserver.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/tsserver.lua
+  f_config_nvim_lua_plugins_lspconfig_volar.lua:
+    src: config/nvim/lua/plugins/lspconfig/volar.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/volar.lua
 
 
   f_config_nvim_snippets_c.json:

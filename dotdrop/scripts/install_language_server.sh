@@ -23,3 +23,6 @@ npm install -g yaml-language-server
 
 # Typescript
 npm install -g typescript-language-server
+
+# Vue
+npm install -g @volar/server

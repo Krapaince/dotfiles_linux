@@ -1,3 +1,4 @@
+-- {{@@ header() @@}}
 return {
   name = 'texlab',
   settings = {

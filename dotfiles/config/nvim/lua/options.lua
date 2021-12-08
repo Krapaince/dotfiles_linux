@@ -20,8 +20,8 @@ opt.timeoutlen = 200                                  -- Shorten key sequence ti
 
 opt.clipboard = 'unnamedplus'                         -- Copy paste between vim and everything else
 
-opt.tabstop = 4                                       -- Number of spaces that <Tab> in files uses
-opt.shiftwidth = 4                                    -- Number of spaces to use fir (auto)indent step
+opt.tabstop = 2                                       -- Number of spaces that <Tab> in files uses
+opt.shiftwidth = 2                                    -- Number of spaces to use fir (auto)indent step
 opt.expandtab = true                                  -- Use spaces when <Tab> is inserted
 opt.autoindent = true                                 -- Take indent for new line from previous line
 

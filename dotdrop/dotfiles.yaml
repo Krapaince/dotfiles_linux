@@ -238,6 +238,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_clangd.lua:
     src: config/nvim/lua/plugins/lspconfig/clangd.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/clangd.lua
+  f_config_nvim_lua_plugins_lspconfig_eslint.lua:
+    src: config/nvim/lua/plugins/lspconfig/eslint.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/eslint.lua
   f_config_nvim_lua_plugins_lspconfig_init.lua:
     src: config/nvim/lua/plugins/lspconfig/init.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/init.lua

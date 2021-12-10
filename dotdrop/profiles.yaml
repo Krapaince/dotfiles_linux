@@ -77,6 +77,7 @@ profiles:
     - f_config_gitui_key_config.ron
     - f_config_nvim_ftplugin_markdown.vim
     - f_config_nvim_lua_plugins_lspconfig_clangd.lua
+    - f_config_nvim_lua_plugins_lspconfig_eslint.lua
     - f_config_nvim_lua_plugins_lspconfig_init.lua
     - f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua
     - f_config_nvim_lua_plugins_lspconfig_sumneko_lua.lua

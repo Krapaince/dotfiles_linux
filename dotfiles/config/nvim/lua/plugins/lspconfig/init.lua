@@ -37,6 +37,7 @@ return function()
     require('plugins.lspconfig.sumneko_lua'),
     require('plugins.lspconfig.texlab'),
     require('plugins.lspconfig.volar'),
+    require('plugins.lspconfig.eslint'),
 
     -- Require default config:
     { name = 'bashls' },
@@ -45,8 +46,9 @@ return function()
     { name = 'html' },
     { name = 'jsonls' },
     { name = 'yamlls' },
-    { name = 'jedi_language_server'}
+    { name = 'jedi_language_server'},
   }
+
 
   require('plugins.lspconfig.tsserver')
 

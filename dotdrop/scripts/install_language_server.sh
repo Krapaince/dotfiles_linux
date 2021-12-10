@@ -6,14 +6,8 @@
 # Docker
 npm install -g dockerfile-language-server-nodejs
 
-# HTML
-npm install -g vscode-html-languageserver-bin
-
-# CSS
-npm install -g vscode-css-languageserver-bin
-
-# Json
-npm install -g vscode-json-languageserver
+# HTML / CSS / JSON / ESLINT
+npm install -g vscode-langservers-extracted
 
 # Bash
 npm i -g bash-language-server

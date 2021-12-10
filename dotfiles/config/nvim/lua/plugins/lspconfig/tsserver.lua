@@ -2,18 +2,6 @@
 local nvim_lsp = require("lspconfig")
 local null_ls = require("null-ls")
 
--- enable null-ls integration (optional)
-null_ls.config({
-  sources = {
-    require("null-ls.helpers").conditional(function(utils)
-      return utils.root_has_file(".eslintrc.js") and
-      null_ls.builtins.formatting.eslint_d or
-      null_ls.builtins.formatting.prettier
-    end),
-  }
-})
-require("lspconfig")["null-ls"].setup({})
-
 nvim_lsp.tsserver.setup ({
     init_options = require("nvim-lsp-ts-utils").init_options,
     on_attach = function(client, bufnr)
@@ -45,3 +33,17 @@ nvim_lsp.tsserver.setup ({
         vim.cmd 'autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()'
     end
 })
+
+-- enable null-ls integration (optional)
+null_ls.config({
+  debug = true,
+  default_timeout = 5000,
+  sources = {
+    require("null-ls.helpers").conditional(function(utils)
+      return utils.root_has_file(".prettierrc.json") and
+      null_ls.builtins.formatting.prettier.with({ filetypes = {"html", "typescript" }}) or
+      null_ls.builtins.formatting.eslint_d.with({ filetypes = {"javascript", "typescript"}})
+    end),
+  }
+})
+require("lspconfig")["null-ls"].setup({})

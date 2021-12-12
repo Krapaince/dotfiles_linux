@@ -54,9 +54,9 @@ dotfiles:
 
 
   # gitui
-  f_config_gitui_key_config.ron:
-    src: config/gitui/key_config.ron
-    dst: ~/.config/gitui/key_config.ron
+  f_config_gitui_key_bindings.ron:
+    src: config/gitui/key_bindings.ron
+    dst: ~/.config/gitui/key_bindings.ron
 
   # gtk3.0
   f_config_gtk-3.0_settings.ini:

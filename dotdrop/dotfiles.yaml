@@ -10,7 +10,7 @@ config:
 profiles:
 dotfiles:
   f_local_bin_colorbalance2:
-    src: .local/bin/colorbalance2
+    src: local/bin/colorbalance2
     dst: ~/.local/bin/colorbalance2
     chmod: '744'
 

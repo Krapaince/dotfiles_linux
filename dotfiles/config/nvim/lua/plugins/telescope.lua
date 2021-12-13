@@ -22,9 +22,9 @@ return function ()
       }
     },
     file_ignore_patterns = {
-        "nodes_modules/.*",
-        ".git/.*",
-        "target/.*"
+      "nodes_modules/.*",
+      ".git/.*",
+      "target/.*"
     }
   }
 

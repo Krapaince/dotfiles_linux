@@ -10,18 +10,18 @@ return function()
   vim.g.nvim_tree_group_empty = 0
 
   require'nvim-tree'.setup {
-      open_on_tab = true,
-      diagnostics = {
-          enable = true
-      },
-      filters = {
-          dotfiles = false,
-          custom = { '.git', '*.0' }
-      },
-      view = {
-          side = 'left',
-          auto_resize = false,
-      }
+    open_on_tab = true,
+    diagnostics = {
+      enable = true
+    },
+    filters = {
+      dotfiles = false,
+      custom = { '.git', '*.0' }
+    },
+    view = {
+      side = 'left',
+      auto_resize = false,
+    }
   }
 
   map('n', '<C-b>', ':NvimTreeToggle<CR>')

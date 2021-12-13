@@ -28,7 +28,8 @@ return require('packer').startup({
           'nvim-treesitter/playground'
         }
 
-        {%@@ if profile != "krapaince_min" @@%}
+        -- {%@@ if profile != "krapaince_min" @@%}
+
         use { 'neovim/nvim-lspconfig',
             requires = {
                 { 'filtsin/nvim-code-action-menu', cmd = 'CodeActionMenu' },
@@ -79,13 +80,15 @@ return require('packer').startup({
             run = function() vim.fn['mkdp#util#install']() end,
             ft = {'markdown'}
         }
-        {%@@ endif @@%}
+
+        -- {%@@ endif @@%}
 
         -- Utility plugins
         use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
         use { 'tpope/vim-commentary', config = require('plugins.vim-commentary') }
         use { 'pierreglaser/folding-nvim' }
-        {%@@ if profile != "krapaince_min" @@%}
+        -- {%@@ if profile != "krapaince_min" @@%}
+
         use { 'norcalli/nvim-colorizer.lua', config = require('plugins.nvim-colorizer') } -- Color highlighter
         use { 'wesQ3/vim-windowswap' }
         use { 'vim-scripts/DrawIt' }
@@ -97,7 +100,8 @@ return require('packer').startup({
             requires = "nvim-lua/plenary.nvim",
             config = require('plugins.todo-comments')
         }
-        {%@@ endif @@%}
+        -- {%@@ endif @@%}
+
     end,
     config = {
         display = {

@@ -20,3 +20,6 @@ npm install -g typescript-language-server
 
 # Vue
 npm install -g @volar/server
+
+# Tailwindcss
+npm install -g @tailwindcss/language-server

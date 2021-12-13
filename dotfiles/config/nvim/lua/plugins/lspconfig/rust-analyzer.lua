@@ -1,6 +1,6 @@
 -- {{@@ header() @@}}
 
-local root_pattern = require("utils").root_pattern
+local root_pattern = require'lspconfig/util'.root_pattern
 
 return {
     name = 'rust_analyzer',

@@ -1,6 +1,6 @@
-" {{@@ header() @@}}
+" This dotfile is managed using dotdrop
 
-let leader=","
+let mapleader=","
 
 " Plugin
 set NERDTree
@@ -9,26 +9,27 @@ set clipboard=unamedplus
 
 set clipboard+=ideaput
 
-nnoremap zc :action CollapseBlock<CR>
-nnoremap zo :action ExpandBlock<CR>
+nnoremap zc <Action>(CollapseBlock)
+nnoremap zo <Action>(ExpandBlock)
 
 nnoremap [ zo
 nnoremap ] zc
 
-nnoremap <C-Space> :action ReformatCode<CR>
+map <leader>f <Action>(ReformatCode)
+map <leader>d <Action>(ShowErrorDescription)
 
-nnoremap <Space> :action CodeCompletion<CR>
+map <C-Space> <Action>(CodeCompletion)
 
-nnoremap <Space>/ :action CommentByLineComment<CR>
-vnoremap <Space>/ :action CommentByLineComment<CR>
+nmap <Space>/ <Action>(CommentByLineComment)
+vmap <Space>/ <Action>(CommentByLineComment)
 
-nnoremap gd :action GotoDeclaration<CR>
-nnoremap gi :action GotoImplementation<CR>
-nnoremap ge :action GotoNextError<CR>
+nnoremap gd <Action>(GotoDeclaration)
+nnoremap gi <Action>(GotoImplementation)
+nnoremap ge <Action>(GotoNextError)
 
-nnoremap <C-p> :action SearchEverywhere<CR>
+nnoremap <C-p> <action>(SearchEverywhere)
 
 nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>
 
-nnoremap <C-w><t> :NERDTree<CR>
+nnoremap <C-w>t :NERDTree<CR>

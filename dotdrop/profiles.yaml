@@ -12,15 +12,15 @@ profiles:
 
   Krapaince-MASTER-arch:
     variables:
-      wallpaper_url: https://www.dropbox.com/s/a4u245cd1gc56ji/Krapaince-MASTER-arch.png
+      wallpaper_url: https://www.dropbox.com/s/2s2uu988vrgxzmc/Krapaince-MASTER-arch-reverse.png
       polybar_wired_network_interface: enp5s0
       polybar_wireless_network_interface: wlp3s0
       font: CaskaydiaCove Nerd Font Book
       i3lock_screen_number: 2
       dunst_monitor: 2
-      monitor_01: DVI-D-0
+      monitor_01: DP-1-5
       monitor_02: HDMI-0
-      monitor_03: DP-1-5
+      monitor_03: DVI-D-0
     include:
     - krapaince_tty
     - krapaince_gui

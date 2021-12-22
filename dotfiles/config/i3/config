@@ -9,7 +9,7 @@
 
 #: Variable {{{
     set $mod Mod1
-    set $igaps 20
+    set $igaps 10
     set $ogaps 0
 #: }}}
 

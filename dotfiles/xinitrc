@@ -5,6 +5,7 @@
 xset b off
 xset s 300
 
+eval $(gnome-keyring-daemon --start)
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 blueman-applet &

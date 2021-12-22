@@ -1,7 +1,7 @@
 variables:
   wallpaper_destination: ~/Pictures/wallpapers
   wallpaper_filename: avatar.png
-  wallpaper_color_shifter: false
+  wallpaper_color_shifter: "false"
   git_name: Krapaince
   git_email: mathieu.pointecouteau@epitech.eu
   polybar_wired_network_interface:

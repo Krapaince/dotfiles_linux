@@ -5,7 +5,7 @@ set -eu
 source ~/.config/i3/scripts/wallpaper/common.sh
 
 INDEX=$(jq '.index' $CURRENT_SETTING_PATH)
-if [[ $INDEX -ge $((COLOR_SET_PATH + 1)) ]]; then
+if [[ $INDEX -ge $((COLOR_SET_LENGTH + 1)) ]]; then
     INDEX=0
 fi
 

@@ -91,11 +91,6 @@ Bindsym XF86MonBrightnessDown exec "brightnessctl -d intel_backlight s 10%-"
 Bindsym XF86MonBrightnessUp exec "brightnessctl -d intel_backlight s 10%+"
 {%@@ endif @@%}
 
-#bindcode 67 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-#bindcode 68 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
-#bindcode 69 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
-#bindcode 70 exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
-
 bindsym mod4+Right exec ~/.config/i3/scripts/lock.sh
 bindsym mod4+Up exec ~/.config/i3/scripts/suspend.sh
 
@@ -109,9 +104,6 @@ bindsym mod4+space exec ~/.config/i3/scripts/keyboard_switcher.sh
 # Reload screen setup
 bindsym mod4+Down exec ~/.config/i3/scripts/monitor/reload_screen_setup.sh
 {%@@ endif @@%}
-
-# Take a screenshot
-bindsym --release Print exec "scrot ~/Picture/Screenshot/$(date --iso-8601='seconds').png -m -e 'xclip -selection c -t image/png < $f'"
 
 # Start a terminal
 bindsym $mod+Return exec kitty
@@ -132,7 +124,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Yes' 'i3-msg exit'"
 
 # }
 

@@ -227,6 +227,9 @@ dotfiles:
   f_config_nvim_lua_plugins_vim_commentary.lua:
     src: config/nvim/lua/plugins/vim-commentary.lua
     dst: ~/.config/nvim/lua/plugins/vim-commentary.lua
+  f_config_nvim_lua_plugins_vim-better-whitespace.lua:
+    src: config/nvim/lua/plugins/vim-better-whitespace.lua
+    dst: ~/.config/nvim/lua/plugins/vim-better-whitespace.lua
   f_config_nvim_lua_plugins_vista.lua:
     src: config/nvim/lua/plugins/vista.lua
     dst: ~/.config/nvim/lua/plugins/vista.lua

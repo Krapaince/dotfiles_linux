@@ -84,7 +84,7 @@ return require('packer').startup({
   -- {%@@ endif @@%}
 
   -- Utility plugins
-  use { 'ntpeters/vim-better-whitespace' } -- Highlight trailing space
+  use { 'ntpeters/vim-better-whitespace', config = require('plugins.vim-better-whitespace') } -- Highlight trailing space
   use { 'tpope/vim-commentary', config = require('plugins.vim-commentary') }
   use { 'pierreglaser/folding-nvim' }
   -- {%@@ if profile != "krapaince_min" @@%}

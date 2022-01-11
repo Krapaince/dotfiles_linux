@@ -8,4 +8,4 @@ actions:
     download_wallpaper: mkdir -p {{@@ wallpaper_destination @@}} && curl -L {{@@ wallpaper_url @@}} -o {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
   post:
     fish_install: >
-      cd /tmp && curl -L https://get.oh-my.fish > install && fish install --path=~/.local/share/omf --config=~/.config/omf --noninteractive -y && rm /tmp/install
+      cd /tmp && curl -L https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install && fish install --path=~/.local/share/omf --config=~/.config/omf --noninteractive -y && rm /tmp/install

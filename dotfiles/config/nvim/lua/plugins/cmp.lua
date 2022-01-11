@@ -10,7 +10,16 @@ return function()
     },
 
     mapping = {
-      ['<C-Space>'] = cmp.mapping.complete(),
+      ['<C-Space>'] = cmp.mapping.complete({
+        config = {
+          sources = {
+            { name = 'nvim_lsp' },
+            { name = 'vsnip' },
+            { name = 'path' },
+            { name = 'buffer' },
+          },
+        }
+      }),
       ['<C-e>'] = cmp.mapping.close(),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
       ['<Tab>'] = cmp.mapping.select_next_item(),

@@ -32,11 +32,13 @@ nvim_lsp.tsserver.setup ({
 require("null-ls").setup({
   default_timeout = 5000,
   sources = {
-    require("null-ls.helpers").conditional(function(utils)
-      return utils.root_has_file(".prettierrc.json") and
-      null_ls.builtins.formatting.prettier.with({ filetypes = {"html", "javascript", "typescript" }}) or
-      null_ls.builtins.formatting.eslint_d.with({ filetypes = {"javascript", "typescript"}})
-    end),
+    null_ls.builtins.formatting.prettier.with({
+      timeout = 5000,
+      filetypes = {"html", "javascript", "typescript", "vue"},
+      condition = function(utils)
+        return utils.root_has_file({".prettierrc.json"})
+      end,
+    }),
   },
   on_attach = function (client, bufnr)
     local buf_set_keymap = require('plugins.lspconfig.utils').buf_set_keymap

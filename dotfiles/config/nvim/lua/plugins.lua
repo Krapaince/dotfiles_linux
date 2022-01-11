@@ -32,7 +32,7 @@ return require('packer').startup({
 
     use { 'neovim/nvim-lspconfig',
     requires = {
-      { 'filtsin/nvim-code-action-menu', cmd = 'CodeActionMenu' },
+      { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' },
       'jose-elias-alvarez/null-ls.nvim',
       'jose-elias-alvarez/nvim-lsp-ts-utils',
     },

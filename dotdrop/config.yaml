@@ -2,6 +2,7 @@ config:
   backup: false
   banner: true
   create: true
+  diff_command: 'delta {0} {1}'
   dotpath: ../dotfiles
   link_dotfile_default: nolink
   link_on_import: nolink

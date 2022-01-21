@@ -77,11 +77,11 @@ dotfiles:
   f_config_i3_scripts_change_wallpaper.sh:
     src: config/i3/scripts/change_wallpaper.sh
     dst: ~/.config/i3/scripts/change_wallpaper.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_egnime_notif_answer.sh:
     src: config/i3/scripts/egnime_notif_answer.sh
     dst: ~/.config/i3/scripts/egnime_notif_answer.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_generate_wallpapers.sh:
     src: config/i3/scripts/generate_wallpapers.sh
     dst: ~/.config/i3/scripts/generate_wallpapers.sh
@@ -93,32 +93,32 @@ dotfiles:
   f_config_i3_scripts_keyboard_switcher.sh:
     src: config/i3/scripts/keyboard_switcher.sh
     dst: ~/.config/i3/scripts/keyboard_switcher.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_lock.sh:
     src: config/i3/scripts/lock.sh
     dst: ~/.config/i3/scripts/lock.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_monitor_export_monitor_name_to_file.sh:
     src: config/i3/scripts/monitor/export_monitor_name_to_file.sh
     dst: ~/.config/i3/scripts/monitor/export_monitor_name_to_file.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_monitor_reload_screen_setup.sh:
     src: config/i3/scripts/monitor/reload_screen_setup.sh
     dst: ~/.config/i3/scripts/monitor/reload_screen_setup.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_monitor_setup_screen.sh:
     src: config/i3/scripts/monitor/setup_screen.sh
     dst: ~/.config/i3/scripts/monitor/setup_screen.sh
-    chmod: '744'
+    chmod: '700'
 
   f_config_i3_scripts_soundboard.sh:
     src: config/i3/scripts/soundboard.sh
     dst: ~/.config/i3/scripts/soundboard.sh
-    chmod: '744'
+    chmod: '700'
   f_config_i3_scripts_suspend.sh:
     src: config/i3/scripts/suspend.sh
     dst: ~/.config/i3/scripts/suspend.sh
-    chmod: '744'
+    chmod: '700'
 
   # i3 env
   f_config_i3_env_env.sh:
@@ -286,7 +286,7 @@ dotfiles:
   f_config_polybar_launch.sh:
     src: config/polybar/launch.sh
     dst: ~/.config/polybar/launch.sh
-    chmod: '744'
+    chmod: '700'
 
   # Polybar modules
   f_config_polybar_modules_battery.ini:
@@ -330,15 +330,15 @@ dotfiles:
   f_config_polybar_scripts_pipewire-control.bash:
     src: config/polybar/scripts/pipewire-control.bash
     dst: ~/.config/polybar/scripts/pipewire-control.bash
-    chmod: '744'
+    chmod: '700'
   f_config_polybar_scripts_temperature-cpu.sh:
     src: config/polybar/scripts/temperature-cpu.sh
     dst: ~/.config/polybar/scripts/temperature-cpu.sh
-    chmod: '744'
+    chmod: '700'
   f_config_polybar_scripts_temperature-gpu.sh:
     src: config/polybar/scripts/temperature-gpu.sh
     dst: ~/.config/polybar/scripts/temperature-gpu.sh
-    chmod: '744'
+    chmod: '700'
 
 
   # Ranger
@@ -461,7 +461,7 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
-    chmod: '644'
+    chmod: '600'
 
 
   # Jetbrain vim plugin
@@ -478,7 +478,7 @@ dotfiles:
   f_local_bin_colorbalance2:
     src: local/bin/colorbalance2
     dst: ~/.local/bin/colorbalance2
-    chmod: '744'
+    chmod: '700'
   f_local_bin_change-sink.sh:
     src: local/bin/change-sink.sh
     dst: ~/.local/bin/change-sink.sh

@@ -1,4 +1,5 @@
 variables:
+  npm_default_dir: "{{@@ env['HOME'] @@}}/.npm-global"
   wallpaper_destination: "{{@@ env['HOME'] @@}}/Pictures/wallpapers"
   wallpaper_filename: avatar.png
   wallpaper_color_shifter: "false"

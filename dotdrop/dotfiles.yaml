@@ -141,6 +141,7 @@ dotfiles:
     src: config/nvim/init.lua
     dst: ~/.config/nvim/init.lua
     actions:
+    - setup_npm
     - vim_install_packer
     - vim_install_rustup_components
     - vim_install_language_server

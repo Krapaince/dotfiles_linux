@@ -2,31 +2,37 @@
 # {{@@ header() @@}}
 set -eu
 
-source ~/.config/i3/scripts/wallpaper/common.sh
+source ~/.local/bin/wallpaper/common.sh
 
 usage() {
     local PROGRAM=$(type $0 | awk '{print $3}')
     echo "USAGE:"
-    echo "  $PROGRAM COLOR_SET_ROW_INDEX"
+    echo "  $PROGRAM wallpaper_path color_set_row_index [subfolder]"
     echo ""
     echo "DESCRIPTION:"
     echo "  A script to generate an image from a color_set.json row."
     echo ""
     echo "PARAMETERS:"
-    echo "  COLOR_SET_ROW_INDEX: A row index from the colors array of color_set.json"
+    echo "  wallpaper_path: An absolute path to the wallpaper"
+    echo "  color_set_row_index: A row index from the colors array of color_set.json"
+    echo "  subfolder: Mainly for wayland to output each screen wallpaper in a subfolder"
 }
 
 if [ $# -eq 0 ]; then
     echo ""
     usage
     exit 1
-elif [ $# -ne 1 ]; then
+elif [ $# -gt 3 ]; then
     echo "Invalid number of arguments"
     echo ""
     usage
     exit 1
 else
+    WALLPAPER_PATH=$1; shift
     INDEX=$1; shift
+    if [ $# -eq 1 ]; then
+        WALLPAPERS_DIR="$WALLPAPERS_DIR/$1/"; shift
+    fi
     JSON_SETTING=$(jq ".colors[$INDEX]" $COLOR_SET_PATH)
 
     LOWTHRESH=$(    echo $JSON_SETTING | jq '.l')
@@ -38,7 +44,7 @@ else
     BLUE=$(         echo $JSON_SETTING | jq '.b')
     MAGENTA=$(      echo $JSON_SETTING | jq '.m')
 
-    INPUT_FILE=$SOURCE_FILE
+    INPUT_FILE=$WALLPAPER_PATH
     OUTPUT_FILE=$(make_img_filename_from_parameters $LOWTHRESH $HIGHTHRESH $RED $YELLOW $GREEN $CYAN $BLUE $MAGENTA)
 
     colors=('r' 'y' 'g' 'c' 'b'  'm')

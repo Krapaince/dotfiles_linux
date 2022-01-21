@@ -2,14 +2,15 @@
 # {{@@ header() @@}}
 set -eu
 
-source ~/.config/i3/scripts/wallpaper/common.sh
+source ~/.local/bin/wallpaper/common.sh
 
+WALLPAPER_PATH="{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}"
 INDEX=$(jq '.index' $CURRENT_SETTING_PATH)
 if [[ $INDEX -ge $((COLOR_SET_LENGTH + 1)) ]]; then
     INDEX=0
 fi
 
-if [[ $(jq ".enable" $CURRENT_SETTING_PATH) == "false" ]]; then
+if [[ $(jq ".enable" $CURRENT_SETTING_PATH) == "true" ]]; then
     if [[ ! -d $WALLPAPERS_DIR ]]; then
         mkdir -p $WALLPAPERS_DIR
     fi
@@ -18,7 +19,7 @@ fi
 while true
 do
     if [[ $(jq ".enable" $CURRENT_SETTING_PATH) == "false" ]]; then
-        feh --bg-fill {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}} --no-xinerama
+        feh --bg-fill "{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}" --no-xinerama
         exit 0
     fi
 
@@ -34,13 +35,13 @@ do
     MAGENTA=$(      jq ".colors[$INDEX].m" $COLOR_SET_PATH)
 
     if [[ $(echo $LOWTHRESH+$HIGHTHRESH+$RED+$YELLOW+$GREEN+$CYAN+$BLUE+$MAGENTA | bc) = 0 ]]; then
-        WALLPAPER_FILEPATH={{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
+        WALLPAPER_FILEPATH="{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}"
     else
       FILENAME=$(make_img_filename_from_parameters $LOWTHRESH $HIGHTHRESH $RED $YELLOW $GREEN $CYAN $BLUE $MAGENTA)
       WALLPAPER_FILEPATH="$WALLPAPERS_DIR/$FILENAME"
 
       if [[ ! -f $WALLPAPER_FILEPATH ]]; then
-          ~/.config/i3/scripts/wallpaper/generate_wallpaper.sh $INDEX
+          ~/.local/bin/wallpaper/generate_wallpaper.sh "$WALLPAPER_PATH" $INDEX
       fi
 
     fi

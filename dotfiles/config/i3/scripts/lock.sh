@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # {{@@ header() @@}}
 
-WALLPAPER=$(~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh)
+WALLPAPER=$(~/.local/bin/wallpaper/get_current_wallpaper_filepath.sh)
 FORK="-n"
 
 while [[ "$1" =~ ^- ]]; do

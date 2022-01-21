@@ -1,0 +1,38 @@
+#battery.full {
+  color: @grshade5;
+}
+
+#battery.good {
+  color: @green;
+}
+
+#battery.ok {
+  color: @lime;
+}
+
+#battery.warning {
+  color: @yellow;
+}
+
+#battery.bad {
+  color: @amber;
+}
+
+#battery.critical {
+  color: @orange;
+}
+
+@keyframes blink {
+    to {
+        color: transparent;
+    }
+}
+
+#battery.critical:not(.Unknown) {
+    color: @orange;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

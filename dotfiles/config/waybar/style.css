@@ -1,0 +1,49 @@
+/* {{@@ header() @@}} */
+@import "styles/color.css";
+
+* {
+  font-family: CaskaydiaCove Nerd Font;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#language,
+#idle_inhibitor,
+#mpd {
+  color: @fg_primary;
+  margin: 0 10px;
+}
+
+#mode {
+  color: @red;
+}
+
+#window {
+  background-color: @bg_primary;
+}
+
+#pulseaudio.muted {
+  color: @grey;
+}
+
+#disk {
+  color: @orange;
+}
+
+
+@import "styles/battery.css";
+@import "styles/cpu.css";
+@import "styles/memory.css";
+@import "styles/workspaces.css";

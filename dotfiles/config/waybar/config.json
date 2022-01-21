@@ -1,0 +1,135 @@
+[
+  {
+    "dotdrop": "{{@@ header() @@}}",
+    "layer": "top",
+    "output": "eDP-1",
+    "modules-left": [
+      "sway/workspaces"
+    ],
+    "modules-center": [
+      "sway/mode",
+      "sway/window"
+    ],
+    "modules-right": [
+      "battery",
+      "pulseaudio",
+      "sway/language",
+      "clock",
+      "tray"
+    ],
+    "sway/window": {
+      "max-length": 70
+    },
+    "sway/language": {
+      "format": " {short}"
+    },
+    "battery": {
+      "format": "{icon} {capacity:2}% {time} {power:0.2f}W",
+      "format-full": "{icon} {capacity:2}%",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "states": {
+        "full": 100,
+        "good": 99,
+        "ok": 50,
+        "warning": 35,
+        "bad": 20,
+        "critical": 10
+      }
+    },
+    "pulseaudio": {
+      "format": "  {volume:2}%",
+      "format-bluetooth": " {volume:2}%",
+      "format-muted": "婢 {volume:2}%",
+      "format-icons": {
+        "headphone": "",
+        "headset": "",
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "on-click": "change-sink.sh"
+    },
+    "clock": {
+      "interval": 5,
+      "format": "{:%D - %H:%M:%S}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "tray": {
+      "icon-size": 16,
+      "spacing": 5
+    }
+  },
+  {
+    "layer": "top",
+    "position": "bottom",
+    "output": "eDP-1",
+    "modules-left": [
+      "disk"
+    ],
+    "modules-center": [],
+    "modules-right": [
+      "network#net-wired",
+      "network#net-wireless",
+      "custom/cpu-temperature",
+      "cpu",
+      "memory"
+    ],
+    "disk": {
+      "interval": 10,
+      "format": " {free}",
+      "path": "/"
+    },
+    "network#net-wired": {
+      "interface": "{{@@ wired_network_interface @@}}",
+      "interval": 1,
+      "format-ethernet": "   {bandwidthDownOctets}  {bandwidthUpOctets}",
+      "format-disconnected": ""
+    },
+    "network#net-wireless": {
+      "interface": "{{@@ wireless_network_interface @@}}",
+      "interval": 1,
+      "format-wifi": " {essid}  {bandwidthDownOctets}  {bandwidthUpOctets}",
+      "format-disconnected": ""
+    },
+    "custom/cpu-temperature": {
+      "exec": "temperature-cpu.sh",
+      "interval": 2,
+      "format": "  {}°C"
+    },
+    "cpu": {
+      "interval": 2,
+      "format": "  {usage:2}%",
+      "states": {
+        "max": 100,
+        "high": 70,
+        "medium": 50,
+        "light": 30,
+        "idle": 10
+      }
+    },
+    "memory": {
+      "interval": 2,
+      "format": " {avail:0.2f}G",
+      "states": {
+        "problem": 100,
+        "full": 98,
+        "half-full": 70,
+        "half": 50,
+        "half-empty": 30,
+        "empty": 10
+      }
+    }
+  }
+]

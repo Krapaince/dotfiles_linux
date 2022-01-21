@@ -1,0 +1,23 @@
+#memory.problem {
+  color: @lbshade4;
+}
+
+#memory.full {
+  color: @yeshade1;
+}
+
+#memory.half-full {
+  color: @yeshade3;
+}
+
+#memory.half {
+  color: @yeshade5;
+}
+
+#memory.half-empty {
+  color: @yeshade6;
+}
+
+#memory.empty {
+  color: @yeshade8;
+}

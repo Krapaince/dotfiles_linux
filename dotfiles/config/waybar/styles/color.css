@@ -1,0 +1,213 @@
+/* {{@@ header() @@}} */
+
+@define-color fg_primary #fdfcdd;
+@define-color bg_primary rgba(32, 32, 40, 0.73);
+
+/* Color */
+@define-color red       #EC7875;
+@define-color pink      #EC407A;
+@define-color purple    #BA68C8;
+@define-color blue      #42A5F5;
+@define-color cyan      #4DD0E1;
+@define-color teal      #00B19F;
+@define-color green     #61C766;
+@define-color lime      #B9C244;
+@define-color yellow    #FDD835;
+@define-color amber     #FBC02D;
+@define-color orange    #E57C46;
+@define-color brown     #AC8476;
+@define-color grey      #8C8C8C;
+@define-color indigo    #6C77BB;
+@define-color blue-gray #6D8895;
+
+/* Material Colors Shades */
+
+/* Amber */
+@define-color amshade1 #FF6F00;
+@define-color amshade2 #FF8F00;
+@define-color amshade3 #FFA000;
+@define-color amshade4 #FFB300;
+@define-color amshade5 #FFC107;
+@define-color amshade6 #FFCA28;
+@define-color amshade7 #FFD54F;
+@define-color amshade8 #FFE082;
+
+/* Blue */
+@define-color blshade1 #0D47A1;
+@define-color blshade2 #1565C0;
+@define-color blshade3 #1976D2;
+@define-color blshade4 #1E88E5;
+@define-color blshade5 #2196F3;
+@define-color blshade6 #42A5F5;
+@define-color blshade7 #64B5F6;
+@define-color blshade8 #90CAF9;
+
+/* Blue-Grey */
+@define-color bgshade1 #263238;
+@define-color bgshade2 #37474F;
+@define-color bgshade3 #455A64;
+@define-color bgshade4 #546E7A;
+@define-color bgshade5 #607D8B;
+@define-color bgshade6 #78909C;
+@define-color bgshade7 #90A4AE;
+@define-color bgshade8 #B0BEC5;
+
+/* Brown */
+@define-color brshade1 #3E2723;
+@define-color brshade2 #4E342E;
+@define-color brshade3 #5D4037;
+@define-color brshade4 #6D4C41;
+@define-color brshade5 #795548;
+@define-color brshade6 #8D6E63;
+@define-color brshade7 #A1887F;
+@define-color brshade8 #BCAAA4;
+
+/* Cyan */
+@define-color cyshade1 #006064;
+@define-color cyshade2 #00838F;
+@define-color cyshade3 #0097A7;
+@define-color cyshade4 #00ACC1;
+@define-color cyshade5 #00BCD4;
+@define-color cyshade6 #26C6DA;
+@define-color cyshade7 #4DD0E1;
+@define-color cyshade8 #80DEEA;
+
+/* Deep-Orange */
+@define-color doshade1 #BF360C;
+@define-color doshade2 #D84315;
+@define-color doshade3 #E64A19;
+@define-color doshade4 #F4511E;
+@define-color doshade5 #FF5722;
+@define-color doshade6 #FF7043;
+@define-color doshade7 #FF8A65;
+@define-color doshade8 #FFAB91;
+
+/* Deep-Purple */
+@define-color dpshade1 #311B92;
+@define-color dpshade2 #4527A0;
+@define-color dpshade3 #512DA8;
+@define-color dpshade4 #5E35B1;
+@define-color dpshade5 #673AB7;
+@define-color dpshade6 #7E57C2;
+@define-color dpshade7 #9575CD;
+@define-color dpshade8 #B39DDB;
+
+/* Green */
+@define-color grshade1 #1B5E20;
+@define-color grshade2 #2E7D32;
+@define-color grshade3 #388E3C;
+@define-color grshade4 #43A047;
+@define-color grshade5 #4CAF50;
+@define-color grshade6 #66BB6A;
+@define-color grshade7 #81C784;
+@define-color grshade8 #A5D6A7;
+
+/* Grey */
+@define-color greshade1 #212121;
+@define-color greshade2 #424242;
+@define-color greshade3 #616161;
+@define-color greshade4 #757575;
+@define-color greshade5 #9E9E9E;
+@define-color greshade6 #BDBDBD;
+@define-color greshade7 #D4D4D4;
+@define-color greshade8 #EEEEEE;
+
+/* Indigo */
+@define-color inshade1 #1A237E;
+@define-color inshade2 #283593;
+@define-color inshade3 #303F9F;
+@define-color inshade4 #3949AB;
+@define-color inshade5 #3F51B5;
+@define-color inshade6 #5C6BC0;
+@define-color inshade7 #7986CB;
+@define-color inshade8 #9FA8DA;
+
+/* Light-Blue */
+@define-color lbshade1 #01579B;
+@define-color lbshade2 #0277BD;
+@define-color lbshade3 #0288D1;
+@define-color lbshade4 #039BE5;
+@define-color lbshade5 #03A9F4;
+@define-color lbshade6 #29B6F6;
+@define-color lbshade7 #4FC3F7;
+@define-color lbshade8 #81D4FA;
+
+/* Light-Green */
+@define-color lgshade1 #33691E;
+@define-color lgshade2 #558B2F;
+@define-color lgshade3 #689F38;
+@define-color lgshade4 #7CB342;
+@define-color lgshade5 #8BC34A;
+@define-color lgshade6 #9CCC65;
+@define-color lgshade7 #AED581;
+@define-color lgshade8 #C5E1A5;
+
+/* Lime */
+@define-color lishade1 #827717;
+@define-color lishade2 #9E9D24;
+@define-color lishade3 #AFB42B;
+@define-color lishade4 #C0CA33;
+@define-color lishade5 #CDDC39;
+@define-color lishade6 #D4E157;
+@define-color lishade7 #DCE775;
+@define-color lishade8 #E6EE9C;
+
+/* Orange */
+@define-color orshade1 #E65100;
+@define-color orshade2 #EF6C00;
+@define-color orshade3 #F57C00;
+@define-color orshade4 #FB8C00;
+@define-color orshade5 #FF9800;
+@define-color orshade6 #FFA726;
+@define-color orshade7 #FFB74D;
+@define-color orshade8 #FFCC80;
+
+/* Pink */
+@define-color pishade1 #880E4F;
+@define-color pishade2 #AD1457;
+@define-color pishade3 #C2185B;
+@define-color pishade4 #D81B60;
+@define-color pishade5 #E91E63;
+@define-color pishade6 #EC407A;
+@define-color pishade7 #F06292;
+@define-color pishade8 #F48FB1;
+
+/* Purple */
+@define-color prshade1 #4A148C;
+@define-color prshade2 #6A1B9A;
+@define-color prshade3 #7B1FA2;
+@define-color prshade4 #8E24AA;
+@define-color prshade5 #9C27B0;
+@define-color prshade6 #AB47BC;
+@define-color prshade7 #BA68C8;
+@define-color prshade8 #CE93D8;
+
+/* Red */
+@define-color reshade1 #B71C1C;
+@define-color reshade2 #C62828;
+@define-color reshade3 #D32F2F;
+@define-color reshade4 #E53935;
+@define-color reshade5 #EE413D;
+@define-color reshade6 #EF5350;
+@define-color reshade7 #E57373;
+@define-color reshade8 #EF9A9A;
+
+/* Teal */
+@define-color teshade1 #004D40;
+@define-color teshade2 #00695C;
+@define-color teshade3 #00796B;
+@define-color teshade4 #00897B;
+@define-color teshade5 #009688;
+@define-color teshade6 #26A69A;
+@define-color teshade7 #4DB6AC;
+@define-color teshade8 #80CBC4;
+
+/* Yellow */
+@define-color yeshade1 #F57F17;
+@define-color yeshade2 #F9A825;
+@define-color yeshade3 #FBC02D;
+@define-color yeshade4 #FDD835;
+@define-color yeshade5 #FFEB3B;
+@define-color yeshade6 #FFEE58;
+@define-color yeshade7 #FFF176;
+@define-color yeshade8 #FFF59D;

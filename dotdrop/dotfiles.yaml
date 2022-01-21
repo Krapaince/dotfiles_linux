@@ -9,11 +9,6 @@ config:
   longkey: true
 profiles:
 dotfiles:
-  f_local_bin_colorbalance2:
-    src: local/bin/colorbalance2
-    dst: ~/.local/bin/colorbalance2
-    chmod: '744'
-
 
   # clang
   f_clang-format_c:
@@ -58,10 +53,12 @@ dotfiles:
     src: config/gitui/key_bindings.ron
     dst: ~/.config/gitui/key_bindings.ron
 
+
   # gtk3.0
   f_config_gtk-3.0_settings.ini:
     src: config/gtk-3.0/settings.ini
     dst: ~/.config/gtk-3.0/settings.ini
+
 
   # i3
   f_config_i3_config:
@@ -71,10 +68,22 @@ dotfiles:
       - download_wallpaper
 
   # i3 scripts
+  f_config_i3_scripts_change_wallpaper.sh:
+    src: config/i3/scripts/change_wallpaper.sh
+    dst: ~/.config/i3/scripts/change_wallpaper.sh
+    chmod: '744'
   f_config_i3_scripts_egnime_notif_answer.sh:
     src: config/i3/scripts/egnime_notif_answer.sh
     dst: ~/.config/i3/scripts/egnime_notif_answer.sh
     chmod: '744'
+  f_config_i3_scripts_generate_wallpapers.sh:
+    src: config/i3/scripts/generate_wallpapers.sh
+    dst: ~/.config/i3/scripts/generate_wallpapers.sh
+    chmod: '700'
+  f_config_i3_scripts_get_current_wallpaper_filepath.sh:
+    src: config/i3/scripts/get_current_wallpaper_filepath.sh
+    dst: ~/.config/i3/scripts/get_current_wallpaper_filepath.sh
+    chmod: '700'
   f_config_i3_scripts_keyboard_switcher.sh:
     src: config/i3/scripts/keyboard_switcher.sh
     dst: ~/.config/i3/scripts/keyboard_switcher.sh
@@ -94,37 +103,6 @@ dotfiles:
   f_config_i3_scripts_monitor_setup_screen.sh:
     src: config/i3/scripts/monitor/setup_screen.sh
     dst: ~/.config/i3/scripts/monitor/setup_screen.sh
-    chmod: '744'
-
-  # i3 wallpaper scripts
-  f_config_i3_scripts_wallpaper_change_wallpaper.sh:
-    src: config/i3/scripts/wallpaper/change_wallpaper.sh
-    dst: ~/.config/i3/scripts/wallpaper/change_wallpaper.sh
-    chmod: '744'
-  f_config_i3_scripts_wallpaper_color_set.json:
-    src: config/i3/scripts/wallpaper/color_set.json
-    dst: ~/.config/i3/scripts/wallpaper/color_set.json
-  f_config_i3_scripts_wallpaper_common.sh:
-    src: config/i3/scripts/wallpaper/common.sh
-    dst: ~/.config/i3/scripts/wallpaper/common.sh
-  f_config_i3_scripts_wallpaper_generate_wallpaper.sh:
-    src: config/i3/scripts/wallpaper/generate_wallpaper.sh
-    dst: ~/.config/i3/scripts/wallpaper/generate_wallpaper.sh
-    chmod: '744'
-  f_config_i3_scripts_wallpaper_generate_wallpapers.sh:
-    src: config/i3/scripts/wallpaper/generate_wallpapers.sh
-    dst: ~/.config/i3/scripts/wallpaper/generate_wallpapers.sh
-    chmod: '744'
-  f_config_i3_scripts_wallpaper_get_current_wallpaper_filepath.sh:
-    src: config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh
-    dst: ~/.config/i3/scripts/wallpaper/get_current_wallpaper_filepath.sh
-    chmod: '744'
-  f_config_i3_scripts_wallpaper_settings.json:
-    src: config/i3/scripts/wallpaper/settings.json
-    dst: ~/.config/i3/scripts/wallpaper/settings.json
-  f_config_i3_scripts_wallpaper_toggle_shifting.sh:
-    src: config/i3/scripts/wallpaper/toggle_shifting.sh
-    dst: ~/.config/i3/scripts/wallpaper/toggle_shifting.sh
     chmod: '744'
 
   f_config_i3_scripts_soundboard.sh:
@@ -266,7 +244,6 @@ dotfiles:
     src: config/nvim/lua/plugins/lspconfig/volar.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/volar.lua
 
-
   f_config_nvim_snippets_c.json:
     src: config/nvim/snippets/c.json
     dst: ~/.config/nvim/snippets/c.json
@@ -283,10 +260,12 @@ dotfiles:
     src: config/picom/config.ini
     dst: ~/.config/picom/config.ini
 
+
   # Pipewire
   f_config_pipewire_media-session.d_bluez-monitor.conf:
     src: config/pipewire/media-session.d/bluez-monitor.conf
     dst: ~/.config/pipewire/media-session.d/bluez-monitor.conf
+
 
   # Polybar
   f_config_polybar_bars.ini:
@@ -374,15 +353,92 @@ dotfiles:
     dst: ~/.config/rofi/soundboard.rasi
 
 
+  # Sway
+  f_config_sway_bindings:
+    src: config/sway/bindings
+    dst: ~/.config/sway/bindings
+  f_config_sway_config:
+    src: config/sway/config
+    dst: ~/.config/sway/config
+  f_config_sway_workspace:
+    src: config/sway/workspace
+    dst: ~/.config/sway/workspace
+
+  # Sway scripts
+  f_config_sway_scripts_change_wallpaper.sh:
+    src: config/sway/scripts/change_wallpaper.sh
+    dst: ~/.config/sway/scripts/change_wallpaper.sh
+    chmod: '700'
+  f_config_sway_scripts_generate_wallpapers.sh:
+    src: config/sway/scripts/generate_wallpapers.sh
+    dst: ~/.config/sway/scripts/generate_wallpapers.sh
+    chmod: '700'
+  f_config_sway_scripts_get_current_wallpaper_filepath.sh:
+    src: config/sway/scripts/get_current_wallpaper_filepath.sh
+    dst: ~/.config/sway/scripts/get_current_wallpaper_filepath.sh
+    chmod: '700'
+  f_config_sway_scripts_lock.sh:
+    src: config/sway/scripts/lock.sh
+    dst: ~/.config/sway/scripts/lock.sh
+    chmod: '700'
+
+
   # Rustfmt
   f_rustfmt.toml:
     src: rustfmt.toml
     dst: ~/.rustfmt.toml
 
+
   # Vifm
   f_config_vifm_vifmrc:
     src: config/vifm/vifmrc
     dst: ~/.config/vifm/vifmrc
+
+
+  # Wallpaper config
+  f_config_wallpaper_color_set.json:
+    src: config/wallpaper/color_set.json
+    dst: ~/.config/wallpaper/color_set.json
+  f_config_monitors.json:
+    src: "config/wallpaper/{{@@ wallpaper_monitors @@}}.json"
+    dst: ~/.config/wallpaper/monitors.json
+  f_config_wallpaper_settings.json:
+    src: config/wallpaper/settings.json
+    dst: ~/.config/wallpaper/settings.json
+
+
+  # Waybar
+  f_config_waybar_styles_battery.css:
+    src: config/waybar/styles/battery.css
+    dst: ~/.config/waybar/styles/battery.css
+  f_config_waybar_styles_color.css:
+    src: config/waybar/styles/color.css
+    dst: ~/.config/waybar/styles/color.css
+  f_config_waybar_styles_cpu.css:
+    src: config/waybar/styles/cpu.css
+    dst: ~/.config/waybar/styles/cpu.css
+  f_config_waybar_styles_memory.css:
+    src: config/waybar/styles/memory.css
+    dst: ~/.config/waybar/styles/memory.css
+  f_config_waybar_styles_workspaces.css:
+    src: config/waybar/styles/workspaces.css
+    dst: ~/.config/waybar/styles/workspaces.css
+  f_config_waybar_config.json:
+    src: config/waybar/config.json
+    dst: ~/.config/waybar/config.json
+  f_config_waybar_style.css:
+    src: config/waybar/style.css
+    dst: ~/.config/waybar/style.css
+
+
+  # Wofi
+  f_config_wofi_config:
+    src: config/wofi/config
+    dst: ~/.config/wofi/config
+  f_config_wofi_style.css:
+    src: config/wofi/style.css
+    dst: ~/.config/wofi/style.css
+
 
   # yt-dlp
   f_config_yt-dlp_config:
@@ -411,6 +467,41 @@ dotfiles:
   f_ignore:
     src: ignore
     dst: ~/.ignore
+
+
+  f_local_bin_colorbalance2:
+    src: local/bin/colorbalance2
+    dst: ~/.local/bin/colorbalance2
+    chmod: '744'
+  f_local_bin_change-sink.sh:
+    src: local/bin/change-sink.sh
+    dst: ~/.local/bin/change-sink.sh
+    chmod: '700'
+  f_local_bin_import-gsettings.sh:
+    src: local/bin/import-gsettings.sh
+    dst: ~/.local/bin/import-gsettings.sh
+    chmod: '700'
+  f_local_bin_sway:
+    src: local/bin/sway
+    dst: ~/.local/bin/sway
+    chmod: '700'
+  f_local_bin_temperature-cpu.sh:
+    src: local/bin/temperature-cpu.sh
+    dst: ~/.local/bin/temperature-cpu.sh
+    chmod: '700'
+
+  # Wallpaper scripts
+  f_local_bin_wallpaper_common.sh:
+    src: local/bin/wallpaper/common.sh
+    dst: ~/.local/bin/wallpaper/common.sh
+  f_local_bin_wallpaper_generate_wallpaper.sh:
+    src: local/bin/wallpaper/generate_wallpaper.sh
+    dst: ~/.local/bin/wallpaper/generate_wallpaper.sh
+    chmod: '700'
+  f_local_bin_wallpaper_toggle_shifting.sh:
+    src: local/bin/wallpaper/toggle_shifting.sh
+    dst: ~/.local/bin/wallpaper/toggle_shifting.sh
+    chmod: '700'
 
 
   # Xorg

@@ -1,0 +1,64 @@
+# {{@@ header() @@}}
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+set $mod Alt
+
+font pango:CaskaydiaCove Nerd Font (monospace) 8
+
+{%@@ if profile == "Krapaince-arch" @@%}
+output eDP-1 background "{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}" fill
+{%@@ endif @@%}
+
+input type:keyboard {
+  repeat_delay 200
+  repeat_rate 50
+
+  xkb_layout "us,fr"
+  xkb_variant ",azerty"
+  xkb_options "grp:win_space_toggle"
+}
+
+exec swayidle \
+  timeout 600 'swaymsg "output * dpms off"' \
+  timeout 600 '~/.config/sway/scripts/lock.sh' \
+  resume 'swaymsg "output * dpms on"'
+
+exec swayidle -w \
+  before-sleep 'playerctl pause' \
+  before-sleep '~/.config/sway/scripts/lock.sh -f'
+
+focus_follows_mouse no
+mouse_warping container
+
+gaps inner 10
+gaps outer 0
+
+smart_borders on
+
+popup_during_fullscreen smart
+
+default_border none
+
+# Fix notification windows
+for_window [title="Microsoft Teams Notification"] floating enable
+for_window [title="Zoom Cloud Meetings"] | floating enable
+for_window [title="zoom"] | floating enable
+
+for_window [title="kitty"] opacity set 0.99
+for_window [class="^.*"] border pixel 0
+
+for_window [class="firefox"] inhibit_idle fullscreen
+for_window [class="vlc"] inhibit_idle fullscreen
+
+exec_always import-gsettings.sh
+
+exec gnome-keyring-daemon --start
+exec waybar -c ~/.config/waybar/config.json
+# exec_always nm-applet https://github.com/swaywm/sway/issues/1357
+# nm-connection-editor as an alternative for now
+exec dunst -config ~/.config/dunst/dunstrc
+exec ~/.config/sway/scripts/change_wallpaper.sh
+
+include ./bindings
+include ./workspace
+
+include /etc/sway/config.d/50-systemd-user.conf

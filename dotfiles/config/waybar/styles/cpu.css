@@ -1,0 +1,23 @@
+#custom-cpu-temperature {
+  color: @amber;
+}
+
+#cpu.max {
+  color: @amshade1;
+}
+
+#cpu.high {
+  color: @amshade3;
+}
+
+#cpu.medium {
+  color: @amshade5;
+}
+
+#cpu.light {
+  color: @amshade7;
+}
+
+#cpu.idle {
+  color: @amshade48
+}

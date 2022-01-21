@@ -28,7 +28,7 @@ exec --no-startup-id ~/.config/i3/scripts/monitor/setup_screen.sh
 {%@@ endif @@%}
 
 # Set background image
-exec --no-startup-id ~/.config/i3/scripts/wallpaper/change_wallpaper.sh
+exec --no-startup-id ~/.config/i3/scripts/change_wallpaper.sh
 
 # Compositor
 exec --no-startup-id picom --config ~/.config/picom/config.ini --experimental-backends -b

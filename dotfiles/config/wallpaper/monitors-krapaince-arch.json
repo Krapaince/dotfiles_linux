@@ -1,0 +1,6 @@
+[
+  {
+    "name": "eDP-1",
+    "path": "{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}"
+  }
+]

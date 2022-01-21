@@ -1,0 +1,69 @@
+# {{@@ header() @@}}
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+
+# Audio
+bindsym --locked XF86AudioRaiseVolume exec --no-startup-id ~/.config/polybar/scripts/pipewire-control.bash up
+bindsym --locked XF86AudioLowerVolume exec --no-startup-id ~/.config/polybar/scripts/pipewire-control.bash down
+bindsym --locked XF86AudioMute exec --no-startup-id ~/.config/polybar/scripts/pipewire-control.bash togmute
+bindsym --locked XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+bindsym --locked XF86AudioNext exec --no-startup-id playerctl next
+bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym --locked XF86AudioPause exec--no-startup-id playerctl play-pause
+
+# Brightness
+Bindsym XF86MonBrightnessDown exec "brightnessctl -d intel_backlight s 10%-"
+Bindsym XF86MonBrightnessUp exec "brightnessctl -d intel_backlight s 10%+"
+
+bindsym Control+space exec dunstctl close
+
+bindsym $mod+Return exec kitty
+# Program launcher
+bindsym $mod+d exec wofi
+bindsym Print exec flameshot gui
+
+bindsym mod4+Up exec systemctl suspend
+bindsym mod4+Right exec ~/.config/sway/scripts/lock.sh
+
+# Sway commands
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Really wabted?' -b 'Yes, exit sway' 'swaymsg exit'
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+bindsym Mod4+shift+s split h
+bindsym Mod4+shift+v split v
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout split
+
+bindsym $mod+f fullscreen toggle
+
+floating_modifier $mod
+bindsym $mod+Shift+space floating toggle
+
+bindsym $mod+a focus parent
+
+mode "resize" {
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # Back to normal
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"

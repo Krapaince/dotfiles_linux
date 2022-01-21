@@ -13,17 +13,19 @@ profiles:
   Krapaince-MASTER-arch:
     variables:
       wallpaper_url: https://www.dropbox.com/s/2s2uu988vrgxzmc/Krapaince-MASTER-arch-reverse.png
-      polybar_wired_network_interface: enp5s0
-      polybar_wireless_network_interface: wlp3s0
+      wired_network_interface: enp5s0
+      wireless_network_interface: wlp3s0
       font: CaskaydiaCove Nerd Font Book
       i3lock_screen_number: 2
       dunst_monitor: 2
+      is_wayland: true
       monitor_01: DP-1-5
       monitor_02: HDMI-0
       monitor_03: DVI-D-0
     include:
     - krapaince_tty
     - krapaince_gui
+    - krapaince_gui_wayland
     dotfiles:
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_reload_screen_setup.sh
@@ -34,12 +36,20 @@ profiles:
     variables:
       wallpaper_url: https://www.dropbox.com/s/zm48ldtbubrc5s0/Krapaince-arch.png
       wallpaper_color_shifter: 'true'
-      polybar_wired_network_interface: enp0s31f6
-      polybar_wireless_network_interface: wlp3s0
+
+      # Waybar / polybar network interfaces
+      wired_network_interface: enp0s31f6
+      wireless_network_interface: wlp3s0
+
       font: CaskaydiaCove Nerd Font Book
+      is_wayland: true
+
+      # Name of json containing screen name & wallpaper path
+      wallpaper_monitors: 'monitors-krapaince-arch'
     include:
     - krapaince_tty
     - krapaince_gui
+    - krapaince_gui_wayland
     dotfiles:
     - f_config_i3_scripts_soundboard.sh
     - f_config_rofi_soundboard.rasi
@@ -122,20 +132,21 @@ profiles:
     - f_ideavimrc
     - f_config_dunst_dunstrc
     - f_config_gtk-3.0_settings.ini
-    - f_config_i3_config
-    - f_config_i3_scripts_keyboard_switcher.sh
-    - f_config_i3_scripts_lock.sh
-    - f_config_i3_scripts_wallpaper_common.sh
-    - f_config_i3_scripts_wallpaper_change_wallpaper.sh
-    - f_config_i3_scripts_wallpaper_color_set.json
-    - f_config_i3_scripts_wallpaper_generate_wallpaper.sh
-    - f_config_i3_scripts_wallpaper_generate_wallpapers.sh
-    - f_config_i3_scripts_wallpaper_get_current_wallpaper_filepath.sh
-    - f_config_i3_scripts_wallpaper_settings.json
-    - f_config_i3_scripts_wallpaper_toggle_shifting.sh
-    - f_config_i3_scripts_suspend.sh
     - f_config_kitty_kitty.conf
     - f_config_pipewire_media-session.d_bluez-monitor.conf
+    - f_config_zathura_zathurarc
+    - f_config_kvantum_kvantum.kvconfig
+
+  krapaince_gui_x:
+    dotfiles:
+    - f_config_i3_config
+    - f_config_i3_scripts_change_wallpaper.sh
+    - f_config_i3_scripts_keyboard_switcher.sh
+    - f_config_i3_scripts_generate_wallpapers.sh
+    - f_config_i3_scripts_get_current_wallpaper_filepath.sh
+    - f_config_i3_scripts_lock.sh
+    - f_config_i3_scripts_suspend.sh
+
     - f_config_polybar_bars.ini
     - f_config_polybar_modules_custom_pipewire-control.ini
     - f_config_polybar_modules_custom_temperature-cpu.ini
@@ -155,8 +166,50 @@ profiles:
     - f_config_polybar_colors.ini
     - f_config_polybar_config.ini
     - f_config_polybar_launch.sh
+
     - f_config_rofi_config.rasi
-    - f_config_zathura_zathurarc
+
     - f_config_picom_config.ini
-    - f_config_kvantum_kvantum.kvconfig
+
+    - f_config_wallpaper_settings.json
+    - f_config_wallpaper_color_set.json
+
+    - f_local_bin_wallpaper_common.sh
+    - f_local_bin_wallpaper_generate_wallpaper.sh
+    - f_local_bin_wallpaper_toggle_shifting.sh
+
     - f_xprofile
+  krapaince_gui_wayland:
+    dotfiles:
+    - f_config_sway_bindings
+    - f_config_sway_config
+    - f_config_sway_workspace
+
+    - f_config_sway_scripts_change_wallpaper.sh
+    - f_config_sway_scripts_generate_wallpapers.sh
+    - f_config_sway_scripts_get_current_wallpaper_filepath.sh
+    - f_config_sway_scripts_lock.sh
+
+    - f_config_wallpaper_settings.json
+    - f_config_monitors.json
+    - f_config_wallpaper_color_set.json
+
+    - f_config_waybar_styles_battery.css
+    - f_config_waybar_styles_color.css
+    - f_config_waybar_styles_cpu.css
+    - f_config_waybar_styles_memory.css
+    - f_config_waybar_styles_workspaces.css
+    - f_config_waybar_config.json
+    - f_config_waybar_style.css
+
+    - f_config_wofi_config
+    - f_config_wofi_style.css
+
+    - f_local_bin_change-sink.sh
+    - f_local_bin_import-gsettings.sh
+    - f_local_bin_colorbalance2
+    - f_local_bin_sway
+    - f_local_bin_temperature-cpu.sh
+    - f_local_bin_wallpaper_common.sh
+    - f_local_bin_wallpaper_generate_wallpaper.sh
+    - f_local_bin_wallpaper_toggle_shifting.sh

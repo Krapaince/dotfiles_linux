@@ -111,10 +111,6 @@ dotfiles:
     dst: ~/.config/i3/scripts/monitor/setup_screen.sh
     chmod: '700'
 
-  f_config_i3_scripts_soundboard.sh:
-    src: config/i3/scripts/soundboard.sh
-    dst: ~/.config/i3/scripts/soundboard.sh
-    chmod: '700'
   f_config_i3_scripts_suspend.sh:
     src: config/i3/scripts/suspend.sh
     dst: ~/.config/i3/scripts/suspend.sh
@@ -354,9 +350,6 @@ dotfiles:
   f_config_rofi_config.rasi:
     src: config/rofi/config.rasi
     dst: ~/.config/rofi/config.rasi
-  f_config_rofi_soundboard.rasi:
-    src: config/rofi/soundboard.rasi
-    dst: ~/.config/rofi/soundboard.rasi
 
 
   # Sway

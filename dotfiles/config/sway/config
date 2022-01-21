@@ -50,6 +50,7 @@ for_window [class="firefox"] inhibit_idle fullscreen
 for_window [class="vlc"] inhibit_idle fullscreen
 
 exec_always import-gsettings.sh
+exec gammastep
 
 exec gnome-keyring-daemon --start
 exec waybar -c ~/.config/waybar/config.json

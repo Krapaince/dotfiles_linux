@@ -28,6 +28,12 @@ dotfiles:
     dst: ~/.config/dunst/dunstrc
 
 
+  # gammastep
+  f_config_gammaconfig_config.ini:
+    src: config/gammastep/config.ini
+    dst: ~/.config/gammastep/config.ini
+
+
   # fish
   f_config_omf_alias.fish:
     src: config/omf/alias.fish

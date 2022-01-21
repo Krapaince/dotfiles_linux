@@ -181,6 +181,8 @@ profiles:
     - f_xprofile
   krapaince_gui_wayland:
     dotfiles:
+    - f_config_gammaconfig_config.ini
+
     - f_config_sway_bindings
     - f_config_sway_config
     - f_config_sway_workspace

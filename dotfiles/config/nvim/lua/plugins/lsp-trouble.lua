@@ -5,5 +5,5 @@ return function ()
     use_diagnostic_signs = true,
   }
 
-  map('n', '<C-d>', ':LspTroubleToggle<CR>')
+  map('n', '<C-d>', ':Trouble document_diagnostics<CR>')
 end

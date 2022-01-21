@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# {{@@ header() @@}}
 #
 # Developed by Fred Weinhaus 6/19/2015 .......... revised 6/19/2015
 # Source: http://www.fmwconcepts.com/imagemagick/colorbalance2/index.php

@@ -22,6 +22,6 @@ set -g REPO_LOCATION "$HOME/Desktop"
 set -x SOUNDBOARD_LOCATION ~/Music/Soundboard/
 {%@@ endif @@%}
 
-set PATH ~/.npm-global/bin ~/.local/bin ~/.config/nvim/scripts/ ~/.cargo/bin $PATH
+fish_add_path -p '{{@@ npm_default_dir @@}}/bin' ~/.local/bin ~/.config/nvim/scripts/ ~/.cargo/bin $PATH
 
 source ~/.config/omf/alias.fish

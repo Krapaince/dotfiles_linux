@@ -1,5 +1,5 @@
 #window {
-  font-family: 'CaskaydiaCove Nerd Font';
+  font-family: '{{@@ font @@}}';
   font-size: 11px;
 }
 

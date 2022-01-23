@@ -3,7 +3,7 @@
 configuration {
     icon-theme: "Papirus";
     show-icons: true;
-    font: "CaskaydiaCove Nerd Font 9";
+    font: "{{@@ font @@}} 9";
     location: 0;
 }
 

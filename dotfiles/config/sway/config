@@ -2,7 +2,7 @@
 # vim:fileencoding=utf-8:ft=conf:foldmethod=marker
 set $mod Alt
 
-font pango:CaskaydiaCove Nerd Font (monospace) 8
+font pango:{{@@ font @@}} 8
 
 {%@@ if profile == "Krapaince-arch" @@%}
 output eDP-1 background "{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}" fill
@@ -54,8 +54,9 @@ exec gammastep
 
 exec gnome-keyring-daemon --start
 exec waybar -c ~/.config/waybar/config.json
-# exec_always nm-applet https://github.com/swaywm/sway/issues/1357
-# nm-connection-editor as an alternative for now
+# nm-connection-editor as an alternative for now https://github.com/swaywm/sway/issues/1357
+exec nm-applet
+exec blueman-applet
 exec dunst -config ~/.config/dunst/dunstrc
 exec ~/.config/sway/scripts/change_wallpaper.sh
 

@@ -41,7 +41,7 @@ profiles:
       wired_network_interface: enp0s31f6
       wireless_network_interface: wlp3s0
 
-      font: CaskaydiaCove Nerd Font Book
+      font: CaskaydiaCove Nerd Font
       is_wayland: true
 
       # Name of json containing screen name & wallpaper path

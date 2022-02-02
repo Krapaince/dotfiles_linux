@@ -20,7 +20,7 @@ return function()
     { name = 'html' },
     { name = 'jsonls' },
     { name = 'yamlls' },
-    { name = 'jedi_language_server' },
+    { name = 'pyright' },
     { name = 'tailwindcss' },
   }
 

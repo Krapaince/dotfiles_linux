@@ -102,6 +102,7 @@ profiles:
     - f_config_nvim_lua_plugins_todo-comments.lua
     - f_config_nvim_lua_plugins_treesitter.lua
     - f_config_nvim_lua_plugins_vim_commentary.lua
+    - f_config_nvim_lua_plugins_vim-better-whitespace.lua
     - f_config_nvim_lua_plugins_vista.lua
     - f_config_nvim_lua_plugins_vsnip.lua
     - f_config_nvim_lua_plugins_cmp.lua

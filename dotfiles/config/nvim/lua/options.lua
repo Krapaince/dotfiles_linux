@@ -10,7 +10,6 @@ opt.smartcase = true                                  -- No ignore case when pat
 opt.syntax = 'enable'                                 -- Enables syntax highlighing
 opt.wrap = false                                      -- Display long lines as just one line
 
-opt.foldmethod = 'syntax'                             -- Use syntax-based folding
 opt.foldlevelstart = 99                               -- Minimum number of screen line below and above the cursor
 
 opt.termguicolors = true                              -- Set colorscheme

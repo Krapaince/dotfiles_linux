@@ -24,7 +24,6 @@ return {
       vim.cmd 'autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()'
     end
 
-    require('folding').on_attach()
   end,
   on_attach_without_format = function(client, bufnr)
     local buf_set_keymap = require('plugins.lspconfig.utils').buf_set_keymap
@@ -43,6 +42,5 @@ return {
     client.resolved_capabilities.document_formatting = false
     client.resolved_capabilities.document_range_formatting = false
 
-    require('folding').on_attach()
   end,
 }

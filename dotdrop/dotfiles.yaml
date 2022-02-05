@@ -184,9 +184,6 @@ dotfiles:
   f_config_nvim_lua_plugins_lsp-trouble.lua:
     src: config/nvim/lua/plugins/lsp-trouble.lua
     dst: ~/.config/nvim/lua/plugins/lsp-trouble.lua
-  f_config_nvim_lua_plugins_lspkind.lua:
-    src: config/nvim/lua/plugins/lspkind.lua
-    dst: ~/.config/nvim/lua/plugins/lspkind.lua
   f_config_nvim_lua_plugins_lualine.lua:
     src: config/nvim/lua/plugins/lualine.lua
     dst: ~/.config/nvim/lua/plugins/lualine.lua

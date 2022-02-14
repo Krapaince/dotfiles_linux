@@ -47,7 +47,6 @@ return require('packer').startup({
   }
 
   -- Autocompletion
-  use { 'onsails/lspkind-nvim', config = require('plugins.lspkind') }
   use {
     'hrsh7th/nvim-cmp',
     requires = {
@@ -55,6 +54,7 @@ return require('packer').startup({
       'hrsh7th/cmp-vsnip',
       'hrsh7th/cmp-buffer',
       'hrsh7th/cmp-nvim-lsp',
+      'onsails/lspkind-nvim',
     },
     config = require('plugins.cmp'),
   }

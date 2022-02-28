@@ -13,7 +13,15 @@ return require('packer').startup({
     use 'kyazdani42/nvim-web-devicons'
 
     -- File Explorer
-    use { 'kyazdani42/nvim-tree.lua', config = require('plugins.nvim-tree') }
+    use { 'nvim-neo-tree/neo-tree.nvim',
+      branch = "v1.x",
+      requires = {
+        "nvim-lua/plenary.nvim",
+        "kyazdani42/nvim-web-devicons",
+        "MunifTanjim/nui.nvim"
+      },
+      config = require('plugins.neo-tree')
+    }
 
     -- Status line
     use { 'hoob3rt/lualine.nvim', config = require('plugins.lualine') }

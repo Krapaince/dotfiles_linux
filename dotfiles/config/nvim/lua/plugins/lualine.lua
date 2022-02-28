@@ -46,6 +46,6 @@ return function ()
     options = {
       theme = theme,
     },
-    extensions = { 'nvim-tree' },
+    extensions = {},
   }
 end

@@ -187,12 +187,12 @@ dotfiles:
   f_config_nvim_lua_plugins_lualine.lua:
     src: config/nvim/lua/plugins/lualine.lua
     dst: ~/.config/nvim/lua/plugins/lualine.lua
+  f_config_nvim_lua_plugins_neo-tree.lua:
+    src: config/nvim/lua/plugins/neo-tree.lua
+    dst: ~/.config/nvim/lua/plugins/neo-tree.lua
   f_config_nvim_lua_plugins_nvim-colorizer.lua:
     src: config/nvim/lua/plugins/nvim-colorizer.lua
     dst: ~/.config/nvim/lua/plugins/nvim-colorizer.lua
-  f_config_nvim_lua_plugins_nvim-tree.lua:
-    src: config/nvim/lua/plugins/nvim-tree.lua
-    dst: ~/.config/nvim/lua/plugins/nvim-tree.lua
   f_config_nvim_lua_plugins_telescope.lua:
     src: config/nvim/lua/plugins/telescope.lua
     dst: ~/.config/nvim/lua/plugins/telescope.lua

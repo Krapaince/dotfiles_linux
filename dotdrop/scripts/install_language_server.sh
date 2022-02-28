@@ -23,3 +23,6 @@ npm install -g @volar/server
 
 # Tailwindcss
 npm install -g @tailwindcss/language-server
+
+# Prettier
+npm install -g @fsouza/prettierd

@@ -23,22 +23,19 @@ nvim_lsp.tsserver.setup ({
     buf_set_keymap(bufnr, 'n', 'g0',        '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
     buf_set_keymap(bufnr, 'n', 'gW',        '<cmd>lua vim.lsp.buf.workspace_symbol()<CR>')
     buf_set_keymap(bufnr, 'n', '<C-c>',     '<cmd>CodeActionMenu<CR>')
-    buf_set_keymap(bufnr, 'n', '<leader>d', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>')
+    buf_set_keymap(bufnr, 'n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
     buf_set_keymap(bufnr, 'n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
   end
 })
 
--- enable null-ls integration (optional)
 require("null-ls").setup({
-  default_timeout = 5000,
   sources = {
-    null_ls.builtins.formatting.prettier.with({
-      timeout = 5000,
-      filetypes = {"html", "javascript", "typescript", "vue"},
-      condition = function(utils)
-        return utils.root_has_file({".prettierrc.json"})
-      end,
-    }),
+    function()
+        local utils = require("null-ls.utils").make_conditional_utils()
+        return utils.root_has_file(".prettierrc.json") and
+          null_ls.builtins.formatting.prettierd.with{ filetypes = {"html", "javascript", "typescript" }} or
+          null_ls.builtins.formatting.eslint_d.with({ filetypes = {"javascript", "typescript"}})
+    end,
   },
   on_attach = function (client, bufnr)
     local buf_set_keymap = require('plugins.lspconfig.utils').buf_set_keymap

@@ -48,6 +48,7 @@ for_window [title="kitty"] opacity set 0.99
 for_window [class="^.*"] border pixel 0
 
 for_window [class="firefox"] inhibit_idle fullscreen
+for_window [app_id="firefox" title="^Picture-in-Picture$"] floating enable, inhibit_idle
 for_window [class="vlc"] inhibit_idle fullscreen
 
 exec_always import-gsettings.sh

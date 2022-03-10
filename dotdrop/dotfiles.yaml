@@ -9,6 +9,11 @@ config:
   longkey: true
 profiles:
 dotfiles:
+  profile_krapaince_tty:
+    src: config/dotdrop/installed
+    dst: ~/.config/dotdrop/krapaince_tty
+    actions:
+      - setup_npm
 
   # clang
   f_clang-format_c:
@@ -141,10 +146,8 @@ dotfiles:
     src: config/nvim/init.lua
     dst: ~/.config/nvim/init.lua
     actions:
-    - setup_npm
     - vim_install_packer
     - vim_install_rustup_components
-    - vim_install_language_server
 
   f_config_nvim_init_krapaince_min.lua:
     src: config/nvim/init.lua

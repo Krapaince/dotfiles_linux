@@ -5,7 +5,6 @@ actions:
     vim_install_packer: git clone https://github.com/wbthomason/packer.nvim --depth 1
       ~/.local/share/nvim/site/pack/packer/start/packer.nvim || echo "Already install packer"
     vim_install_rustup_components: rustup default stable && rustup component add rls rust-analysis rust-src
-    vim_install_language_server: ./dotdrop/scripts/install_language_server.sh
     kitty_install_fonts: ./dotdrop/scripts/install_fonts.sh
     download_wallpaper: mkdir -p {{@@ wallpaper_destination @@}} && curl -L {{@@ wallpaper_url @@}} -o {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
   post:

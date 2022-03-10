@@ -125,6 +125,8 @@ profiles:
     - f_rustfmt.toml
     - f_config_yt-dlp_config
 
+    - profile_krapaince_tty
+
   krapaince_gui:
     dotfiles:
     - f_local_bin_colorbalance2

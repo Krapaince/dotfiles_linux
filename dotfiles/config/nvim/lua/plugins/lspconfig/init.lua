@@ -11,7 +11,7 @@ return function()
     require('plugins.lspconfig.rust-analyzer'),
     require('plugins.lspconfig.sumneko_lua'),
     require('plugins.lspconfig.texlab'),
-    -- require('plugins.lspconfig.eslint'),
+    require('plugins.lspconfig.tsserver'),
 
     -- Require default config:
     { name = 'bashls' },
@@ -25,7 +25,6 @@ return function()
   }
 
   require('plugins.lspconfig.volar')
-  require('plugins.lspconfig.tsserver')
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true
 
@@ -45,8 +44,13 @@ return function()
   vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
   for _, server in ipairs(servers) do
+    local on_attach_fn = utils.set_ls_keymaps
+    if server.custom_on_attach then
+      on_attach_fn = server.on_attach
+    end
+
     lsp[server.name].setup {
-      on_attach = utils.on_attach,
+      on_attach = on_attach_fn,
       cmd = server.cmd,
       settings = server.settings,
       capabilities = capabilities

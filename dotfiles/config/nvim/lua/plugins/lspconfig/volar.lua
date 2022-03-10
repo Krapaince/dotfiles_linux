@@ -5,7 +5,7 @@ local utils = require('plugins.lspconfig.utils')
 require'lspconfig'.volar.setup({
   cmd = { "volar-server", "--stdio" },
   filetypes = { 'vue' },
-  on_attach = utils.on_attach_without_format,
+  on_attach = utils.set_ls_keymaps_without_format,
   root_dir = util.root_pattern('package.json', 'vue.config.js'),
   init_options = {
     typescript = {

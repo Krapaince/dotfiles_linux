@@ -13,14 +13,12 @@ return require('packer').startup({
     use 'kyazdani42/nvim-web-devicons'
 
     -- File Explorer
-    use { 'nvim-neo-tree/neo-tree.nvim',
-      branch = "v2.x",
+    use {
+      'kyazdani42/nvim-tree.lua',
       requires = {
-        "nvim-lua/plenary.nvim",
-        "kyazdani42/nvim-web-devicons",
-        "MunifTanjim/nui.nvim"
+        'kyazdani42/nvim-web-devicons', -- optional, for file icon
       },
-      config = require('plugins.neo-tree')
+      config = require('plugins.nvim-tree')
     }
 
     -- Status line

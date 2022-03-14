@@ -24,6 +24,7 @@ return function()
     { name = 'tailwindcss' },
   }
 
+  require('plugins.lspconfig.null-ls')
   require('plugins.lspconfig.volar')
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -46,7 +47,9 @@ return function()
   for _, server in ipairs(servers) do
     local on_attach_fn = utils.set_ls_keymaps
     if server.custom_on_attach then
-      on_attach_fn = server.on_attach
+      on_attach_fn = function(client, bufnr)
+        server.on_attach(client, bufnr, true)
+      end
     end
 
     lsp[server.name].setup {

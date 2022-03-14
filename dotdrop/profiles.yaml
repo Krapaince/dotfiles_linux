@@ -89,6 +89,7 @@ profiles:
     - f_config_nvim_lua_plugins_lspconfig_clangd.lua
     - f_config_nvim_lua_plugins_lspconfig_eslint.lua
     - f_config_nvim_lua_plugins_lspconfig_init.lua
+    - f_config_nvim_lua_plugins_lspconfig_null-ls.lua
     - f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua
     - f_config_nvim_lua_plugins_lspconfig_sumneko_lua.lua
     - f_config_nvim_lua_plugins_lspconfig_texlab.lua
@@ -120,10 +121,11 @@ profiles:
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf
     - f_config_vifm_vifmrc
-    - f_ignore
-    - f_gitconfig
-    - f_rustfmt.toml
     - f_config_yt-dlp_config
+    - f_gitconfig
+    - f_ignore
+    - f_rustfmt.toml
+    - f_stylua.toml
 
     - profile_krapaince_tty
 

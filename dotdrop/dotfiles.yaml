@@ -228,6 +228,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_init.lua:
     src: config/nvim/lua/plugins/lspconfig/init.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/init.lua
+  f_config_nvim_lua_plugins_lspconfig_null-ls.lua:
+    src: config/nvim/lua/plugins/lspconfig/null-ls.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/null-ls.lua
   f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua:
     src: config/nvim/lua/plugins/lspconfig/rust-analyzer.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/rust-analyzer.lua
@@ -388,6 +391,11 @@ dotfiles:
     src: rustfmt.toml
     dst: ~/.rustfmt.toml
 
+
+  # Stylua
+  f_stylua.toml:
+    src: stylua.toml
+    dst: ~/.stylua.toml
 
   # Vifm
   f_config_vifm_vifmrc:

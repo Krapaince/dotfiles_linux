@@ -1,17 +1,17 @@
 -- {{@@ header() @@}}
-local util = require 'lspconfig.util'
+local util = require('lspconfig.util')
 local utils = require('plugins.lspconfig.utils')
 
-require'lspconfig'.volar.setup({
-  cmd = { "volar-server", "--stdio" },
+require('lspconfig').volar.setup({
+  cmd = { 'volar-server', '--stdio' },
   filetypes = { 'vue' },
   on_attach = function(client, bufnr)
-      utils.set_ls_keymaps(client, bufnr, false)
-    end,
+    utils.set_ls_keymaps(client, bufnr, false)
+  end,
   root_dir = util.root_pattern('package.json', 'vue.config.js'),
   init_options = {
     typescript = {
-      serverPath = '/home/krapaince/.npm-global/lib/node_modules/typescript/lib/tsserverlibrary.js'
+      serverPath = '/home/krapaince/.npm-global/lib/node_modules/typescript/lib/tsserverlibrary.js',
     },
     languageFeatures = {
       references = true,

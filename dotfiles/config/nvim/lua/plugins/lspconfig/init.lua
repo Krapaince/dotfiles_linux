@@ -29,15 +29,13 @@ return function()
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
+  vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
     update_in_insert = false,
     virtual_text = {
-      prefix = ''
+      prefix = '',
     },
-  }
-  )
+  })
 
   vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
   vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
@@ -52,11 +50,11 @@ return function()
       end
     end
 
-    lsp[server.name].setup {
+    lsp[server.name].setup({
       on_attach = on_attach_fn,
       cmd = server.cmd,
       settings = server.settings,
-      capabilities = capabilities
-    }
+      capabilities = capabilities,
+    })
   end
 end

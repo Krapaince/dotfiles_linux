@@ -2,7 +2,7 @@ return function()
   local cmp = require('cmp')
   local lspkind = require('lspkind')
 
-  cmp.setup {
+  cmp.setup({
     snippet = {
       expand = function(args)
         vim.fn['vsnip#anonymous'](args.body)
@@ -18,7 +18,7 @@ return function()
             { name = 'path' },
             { name = 'buffer' },
           },
-        }
+        },
       }),
       ['<C-e>'] = cmp.mapping.close(),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
@@ -39,37 +39,37 @@ return function()
         maxwidth = '50',
 
         symbol_map = {
-          Text = "",
-          Method = "",
-          Function = "",
-          Constructor = "",
-          Field = "ﴲ",
-          Variable = "[]",
-          Class = "",
-          Interface = "ﰮ",
-          Module = "",
-          Property = "襁",
-          Unit = "",
-          Value = "",
-          Enum = "練",
-          Keyword = "",
-          Snippet = "",
-          Color = "",
-          File = "",
-          Reference = "",
-          Folder = "",
-          EnumMember = "",
-          Constant = "ﲀ",
-          Struct = "ﳤ",
-          Event = "",
-          Operator = "",
-          TypeParameter = ""
-        }
-      })
-    }
-  }
+          Text = '',
+          Method = '',
+          Function = '',
+          Constructor = '',
+          Field = 'ﴲ',
+          Variable = '[]',
+          Class = '',
+          Interface = 'ﰮ',
+          Module = '',
+          Property = '襁',
+          Unit = '',
+          Value = '',
+          Enum = '練',
+          Keyword = '',
+          Snippet = '',
+          Color = '',
+          File = '',
+          Reference = '',
+          Folder = '',
+          EnumMember = '',
+          Constant = 'ﲀ',
+          Struct = 'ﳤ',
+          Event = '',
+          Operator = '',
+          TypeParameter = '',
+        },
+      }),
+    },
+  })
 
-  vim.opt.completeopt = { 'menuone' , 'noselect' }
+  vim.opt.completeopt = { 'menuone', 'noselect' }
   -- Remove cmp status display
   vim.opt.shortmess:append('c')
 end

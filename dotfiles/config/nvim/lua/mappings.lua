@@ -1,6 +1,6 @@
 -- {{@@ header() @@}}
 
-local map = require("utils").map
+local map = require('utils').map
 
 -- set leader key
 vim.g.mapleader = ','

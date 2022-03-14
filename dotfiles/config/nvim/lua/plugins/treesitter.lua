@@ -1,7 +1,7 @@
 -- {{@@ header() @@}}
 
-return function ()
-  require('nvim-treesitter.configs').setup {
+return function()
+  require('nvim-treesitter.configs').setup({
     highlight = {
       enable = true,
     },
@@ -22,8 +22,8 @@ return function ()
         goto_node = '<cr>',
         show_help = '?',
       },
-    }
-  }
+    },
+  })
 
   vim.wo.foldmethod = 'expr'
   vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'

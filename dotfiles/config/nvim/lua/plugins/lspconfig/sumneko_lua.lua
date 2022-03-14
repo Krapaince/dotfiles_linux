@@ -1,8 +1,8 @@
 -- {{@@ header() @@}}
 
 local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
+table.insert(runtime_path, 'lua/?.lua')
+table.insert(runtime_path, 'lua/?/init.lua')
 
 return {
   name = 'sumneko_lua',
@@ -20,13 +20,13 @@ return {
       },
       workspace = {
         -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
+        library = vim.api.nvim_get_runtime_file('', true),
       },
       -- Do not send telemetry data containing a randomized but unique identifier
       telemetry = {
         enable = false,
       },
-    }
+    },
   },
-  cmd = { '/usr/bin/lua-language-server' }
+  cmd = { '/usr/bin/lua-language-server' },
 }

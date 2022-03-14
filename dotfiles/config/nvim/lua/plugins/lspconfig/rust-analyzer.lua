@@ -1,24 +1,24 @@
 -- {{@@ header() @@}}
 
-local root_pattern = require'lspconfig/util'.root_pattern
+local root_pattern = require('lspconfig/util').root_pattern
 
 return {
   name = 'rust_analyzer',
-  filetypes = { "rust" },
-  root_dir = root_pattern("Cargo.toml"),
+  filetypes = { 'rust' },
+  root_dir = root_pattern('Cargo.toml'),
   settings = {
-    ["rust-analyzer"] = {
+    ['rust-analyzer'] = {
       checkOnSave = {
-        command = "clippy"
+        command = 'clippy',
       },
       cargo = {
-        autoreload = true
+        autoreload = true,
       },
       diagnostics = {
         enable = true,
-        disabled = {"unresolved-proc-macro"},
+        disabled = { 'unresolved-proc-macro' },
         enableExperimental = true,
       },
-    }
-  }
+    },
+  },
 }

@@ -1,33 +1,41 @@
 -- {{@@ header() @@}}
 return {
   name = 'eslint',
-  cmd = { "vscode-eslint-language-server", "--stdio" },
-  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue" },
+  cmd = { 'vscode-eslint-language-server', '--stdio' },
+  filetypes = {
+    'javascript',
+    'javascriptreact',
+    'javascript.jsx',
+    'typescript',
+    'typescriptreact',
+    'typescript.tsx',
+    'vue',
+  },
   settings = {
     codeAction = {
       disableRuleComment = {
         enable = true,
-        location = "separateLine"
+        location = 'separateLine',
       },
       showDocumentation = {
-        enable = true
-      }
+        enable = true,
+      },
     },
     codeActionOnSave = {
       enable = false,
-      mode = "all"
+      mode = 'all',
     },
     format = false,
-    nodePath = "",
-    onIgnoredFiles = "off",
-    packageManager = "yarn",
+    nodePath = '',
+    onIgnoredFiles = 'off',
+    packageManager = 'yarn',
     quiet = false,
     rulesCustomizations = {},
-    run = "onType",
+    run = 'onType',
     useESLintClass = false,
-    validate = "on",
+    validate = 'on',
     workingDirectory = {
-      mode = "location"
-    }
-  }
+      mode = 'location',
+    },
+  },
 }

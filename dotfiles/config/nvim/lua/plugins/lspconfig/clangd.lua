@@ -2,6 +2,6 @@
 
 return {
   name = 'clangd',
-  cmd = { 'clangd', "--background-index", "-clang-tidy" },
-  filetype = { "c", "cpp", "objc", "objcpp" },
+  cmd = { 'clangd', '--background-index', '-clang-tidy' },
+  filetype = { 'c', 'cpp', 'objc', 'objcpp' },
 }

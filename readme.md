@@ -21,7 +21,7 @@ redump (maybe some day I will switch to nixOS).
 The config installation can then be done with one command at the repository
 root:
 ```
-dotdrop install -p Krapaince-arch -D -c dotdrop/config/yaml
+dotdrop install -p Krapaince-arch -D -c dotdrop/config.yaml
 ```
 
 ## Screenshots

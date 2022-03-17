@@ -1,6 +1,25 @@
+-- {{@@ header() @@}}
+
 return function()
   local cmp = require('cmp')
   local lspkind = require('lspkind')
+  local highlight = require('utils').highlight
+
+  highlight('CmpItemAbbrDeprecated', { style = 'strikethrough', fg = '#808080' })
+
+  highlight('CmpItemAbbrMatch', { bg = 'NONE', fg = '#569CD6' })
+  highlight('CmpItemAbbrMatchFuzzy', { bg = 'NONE', fg = '#569CD6' })
+
+  highlight('CmpItemKindVariable', { bg = 'NONE', fg = '#9CDCFE' })
+  highlight('CmpItemKindInterface', { bg = 'NONE', fg = '#9CDCFE' })
+  highlight('CmpItemKindText', { bg = 'NONE', fg = '#9CDCFE' })
+
+  highlight('CmpItemKindFunction', { bg = 'NONE', fg = '#C586C0' })
+  highlight('CmpItemKindMethod', { bg = 'NONE', fg = '#C586C0' })
+
+  highlight('CmpItemKindKeyword', { bg = 'NONE', fg = '#D4D4D4' })
+  highlight('CmpItemKindProperty', { bg = 'NONE', fg = '#D4D4D4' })
+  highlight('CmpItemKindUnit', { bg = 'NONE', fg = '#D4D4D4' })
 
   cmp.setup({
     snippet = {

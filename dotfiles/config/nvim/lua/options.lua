@@ -27,4 +27,6 @@ opt.autoindent = true -- Take indent for new line from previous line
 opt.number = true -- Print the line number in front of each line
 opt.cursorline = true -- Highligh the screen line of the cursor
 
+opt.signcolumn = 'yes' -- Always display signcolumn
+
 opt.wildignore = opt.wildignore + '*.o,*.gcno,*.gcda' -- Files matching these patterns are not completed

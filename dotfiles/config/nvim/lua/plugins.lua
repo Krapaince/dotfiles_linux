@@ -105,11 +105,19 @@ return require('packer').startup({
     use({ 'vim-scripts/DrawIt' })
     use({ 'junegunn/vim-easy-align' })
 
-    use({ 'rhysd/git-messenger.vim', config = require('plugins.git-messenger') })
     use({
       'folke/todo-comments.nvim',
       requires = 'nvim-lua/plenary.nvim',
       config = require('plugins.todo-comments'),
+    })
+    -- git related plugins
+    use({
+      'lewis6991/gitsigns.nvim',
+      config = require('plugins.gitsigns'),
+      requires = {
+        'nvim-lua/plenary.nvim',
+      },
+      tag = 'release',
     })
     -- {%@@ endif @@%}
     --

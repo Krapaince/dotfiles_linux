@@ -181,9 +181,9 @@ dotfiles:
   f_config_nvim_lua_plugins_cmp.lua:
     src: config/nvim/lua/plugins/cmp.lua
     dst: ~/.config/nvim/lua/plugins/cmp.lua
-  f_config_nvim_lua_plugins_git-messenger.lua:
-    src: config/nvim/lua/plugins/git-messenger.lua
-    dst: ~/.config/nvim/lua/plugins/git-messenger.lua
+  f_config_nvim_lua_plugins_gitsigns.lua:
+    src: config/nvim/lua/plugins/gitsigns.lua
+    dst: ~/.config/nvim/lua/plugins/gitsigns.lua
   f_config_nvim_lua_plugins_lsp-trouble.lua:
     src: config/nvim/lua/plugins/lsp-trouble.lua
     dst: ~/.config/nvim/lua/plugins/lsp-trouble.lua

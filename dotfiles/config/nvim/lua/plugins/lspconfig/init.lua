@@ -42,7 +42,7 @@ return function()
   vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
   vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
-  for _, server in ipairs(servers) do
+  local make_config = function(server)
     local on_attach_fn = utils.set_ls_keymaps
     if server.custom_on_attach then
       on_attach_fn = function(client, bufnr)
@@ -50,11 +50,17 @@ return function()
       end
     end
 
-    lsp[server.name].setup({
+    return {
       on_attach = on_attach_fn,
       cmd = server.cmd,
       settings = server.settings,
       capabilities = capabilities,
-    })
+    }
   end
+
+  for _, server in ipairs(servers) do
+    lsp[server.name].setup(make_config(server))
+  end
+
+  require('rust-tools').setup({ server = make_config(require('plugins.lspconfig.rust-analyzer')) })
 end

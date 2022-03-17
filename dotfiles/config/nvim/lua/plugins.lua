@@ -42,6 +42,7 @@ return require('packer').startup({
         { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' },
         'jose-elias-alvarez/null-ls.nvim',
         'jose-elias-alvarez/nvim-lsp-ts-utils',
+        'simrat39/rust-tools.nvim',
       },
       config = require('plugins.lspconfig'),
     })

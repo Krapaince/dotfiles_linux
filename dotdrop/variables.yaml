@@ -4,7 +4,7 @@ variables:
   wallpaper_filename: avatar.png
   wallpaper_color_shifter: "false"
   git_name: Krapaince
-  git_email: mathieu.pointecouteau@epitech.eu
+  git_email: Krapaince@pm.me
   wired_network_interface:
   wireless_network_interface:
   i3lock_screen_number: 1

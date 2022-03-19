@@ -73,7 +73,7 @@ return require('packer').startup({
     use({ 'hrsh7th/vim-vsnip', config = require('plugins.vsnip') })
 
     -- Symbol tree
-    use({ 'liuchengxu/vista.vim', config = require('plugins.vista') })
+    use({ 'simrat39/symbols-outline.nvim', config = require('plugins.symbols-outline') })
 
     -- Finder
     use({

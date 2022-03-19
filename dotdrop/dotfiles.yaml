@@ -199,6 +199,9 @@ dotfiles:
   f_config_nvim_lua_plugins_nvim-tree.lua:
     src: config/nvim/lua/plugins/nvim-tree.lua
     dst: ~/.config/nvim/lua/plugins/nvim-tree.lua
+  f_config_nvim_lua_plugins_symbols-outline.lua:
+    src: config/nvim/lua/plugins/symbols-outline.lua
+    dst: ~/.config/nvim/lua/plugins/symbols-outline.lua
   f_config_nvim_lua_plugins_telescope.lua:
     src: config/nvim/lua/plugins/telescope.lua
     dst: ~/.config/nvim/lua/plugins/telescope.lua
@@ -214,9 +217,6 @@ dotfiles:
   f_config_nvim_lua_plugins_vim-better-whitespace.lua:
     src: config/nvim/lua/plugins/vim-better-whitespace.lua
     dst: ~/.config/nvim/lua/plugins/vim-better-whitespace.lua
-  f_config_nvim_lua_plugins_vista.lua:
-    src: config/nvim/lua/plugins/vista.lua
-    dst: ~/.config/nvim/lua/plugins/vista.lua
   f_config_nvim_lua_plugins_vsnip.lua:
     src: config/nvim/lua/plugins/vsnip.lua
     dst: ~/.config/nvim/lua/plugins/vsnip.lua

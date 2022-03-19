@@ -62,11 +62,11 @@ profiles:
       - f_config_omf_channel
       - f_config_omf_theme
       - f_config_omf_init.fish
+      - f_config_nvim_lua_plugins_comment.lua
       - f_config_nvim_lua_plugins_lualine.lua
       - f_config_nvim_lua_plugins_nvim-tree.lua
       - f_config_nvim_lua_plugins_treesitter.lua
       - f_config_nvim_lua_plugins_vim-better-whitespace.lua
-      - f_config_nvim_lua_plugins_vim_commentary.lua
       - f_config_nvim_lua_highlights.lua
       - f_config_nvim_lua_mappings.lua
       - f_config_nvim_lua_options.lua
@@ -96,6 +96,7 @@ profiles:
     - f_config_nvim_lua_plugins_lspconfig_tsserver.lua
     - f_config_nvim_lua_plugins_lspconfig_utils.lua
     - f_config_nvim_lua_plugins_lspconfig_volar.lua
+    - f_config_nvim_lua_plugins_comment.lua
     - f_config_nvim_lua_plugins_lualine.lua
     - f_config_nvim_lua_plugins_nvim-colorizer.lua
     - f_config_nvim_lua_plugins_nvim-tree.lua
@@ -103,7 +104,6 @@ profiles:
     - f_config_nvim_lua_plugins_telescope.lua
     - f_config_nvim_lua_plugins_todo-comments.lua
     - f_config_nvim_lua_plugins_treesitter.lua
-    - f_config_nvim_lua_plugins_vim_commentary.lua
     - f_config_nvim_lua_plugins_vim-better-whitespace.lua
     - f_config_nvim_lua_plugins_vsnip.lua
     - f_config_nvim_lua_plugins_cmp.lua

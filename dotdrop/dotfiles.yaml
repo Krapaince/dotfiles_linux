@@ -181,6 +181,9 @@ dotfiles:
   f_config_nvim_lua_plugins_cmp.lua:
     src: config/nvim/lua/plugins/cmp.lua
     dst: ~/.config/nvim/lua/plugins/cmp.lua
+  f_config_nvim_lua_plugins_comment.lua:
+    src: config/nvim/lua/plugins/comment.lua
+    dst: ~/.config/nvim/lua/plugins/comment.lua
   f_config_nvim_lua_plugins_fidget.lua:
     src: config/nvim/lua/plugins/fidget.lua
     dst: ~/.config/nvim/lua/plugins/fidget.lua
@@ -211,9 +214,6 @@ dotfiles:
   f_config_nvim_lua_plugins_treesitter.lua:
     src: config/nvim/lua/plugins/treesitter.lua
     dst: ~/.config/nvim/lua/plugins/treesitter.lua
-  f_config_nvim_lua_plugins_vim_commentary.lua:
-    src: config/nvim/lua/plugins/vim-commentary.lua
-    dst: ~/.config/nvim/lua/plugins/vim-commentary.lua
   f_config_nvim_lua_plugins_vim-better-whitespace.lua:
     src: config/nvim/lua/plugins/vim-better-whitespace.lua
     dst: ~/.config/nvim/lua/plugins/vim-better-whitespace.lua

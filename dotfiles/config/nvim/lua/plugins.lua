@@ -100,7 +100,7 @@ return require('packer').startup({
 
     -- Utility plugins
     use({ 'ntpeters/vim-better-whitespace', config = require('plugins.vim-better-whitespace') }) -- Highlight trailing space
-    use({ 'tpope/vim-commentary', config = require('plugins.vim-commentary') })
+    use({ 'numToStr/Comment.nvim', config = require('plugins.comment') })
     -- {%@@ if profile != "krapaince_min" @@%}
 
     use({ 'norcalli/nvim-colorizer.lua', config = require('plugins.nvim-colorizer') }) -- Color highlighter

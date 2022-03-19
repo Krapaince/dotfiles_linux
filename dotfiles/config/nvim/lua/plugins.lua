@@ -94,6 +94,8 @@ return require('packer').startup({
       ft = { 'markdown' },
     })
 
+    use('nathom/filetype.nvim')
+
     -- {%@@ endif @@%}
 
     -- Utility plugins

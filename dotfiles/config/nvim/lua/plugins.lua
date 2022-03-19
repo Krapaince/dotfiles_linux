@@ -122,6 +122,8 @@ return require('packer').startup({
       },
       tag = 'release',
     })
+
+    use('tweekmonster/startuptime.vim')
     -- {%@@ endif @@%}
     --
   end,

@@ -48,7 +48,7 @@ return require('packer').startup({
     })
 
     -- Lsp progress
-    use({ 'j-hui/fidget.nvim', config = require('fidget').setup({}) })
+    use({ 'j-hui/fidget.nvim', config = require('plugins.fidget') })
 
     -- Lsp Diagnostics window
     use({

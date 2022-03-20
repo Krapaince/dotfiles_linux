@@ -43,10 +43,12 @@ return function()
   vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
   local make_config = function(server)
-    local on_attach_fn = utils.set_ls_keymaps
+    local on_attach_fn = function(client, bufnr)
+      utils.set_ls_keymaps(client, bufnr, true)
+    end
     if server.custom_on_attach then
       on_attach_fn = function(client, bufnr)
-        server.on_attach(client, bufnr, true)
+        server.on_attach(client, bufnr)
       end
     end
 

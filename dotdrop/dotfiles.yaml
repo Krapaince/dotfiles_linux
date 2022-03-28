@@ -467,6 +467,10 @@ dotfiles:
     src: gitconfig
     dst: ~/.gitconfig
     chmod: '600'
+  f_desktop_epitech_gitconfig:
+    src: Desktop/EPITECH/gitconfig
+    dst: ~/Desktop/EPITECH/.gitconfig
+    chmod: '600'
 
 
   # Jetbrain vim plugin

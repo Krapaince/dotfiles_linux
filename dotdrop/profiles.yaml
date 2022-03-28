@@ -124,6 +124,7 @@ profiles:
     - f_config_vifm_vifmrc
     - f_config_yt-dlp_config
     - f_gitconfig
+    - f_desktop_epitech_gitconfig
     - f_ignore
     - f_rustfmt.toml
     - f_stylua.toml

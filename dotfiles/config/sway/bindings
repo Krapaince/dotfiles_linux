@@ -12,8 +12,8 @@ bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym --locked XF86AudioPause exec--no-startup-id playerctl play-pause
 
 # Brightness
-Bindsym XF86MonBrightnessDown exec "brightnessctl -d intel_backlight s 10%-"
-Bindsym XF86MonBrightnessUp exec "brightnessctl -d intel_backlight s 10%+"
+bindsym --locked xf86monbrightnessdown exec "brightnessctl -d intel_backlight s 10%-"
+bindsym --locked XF86MonBrightnessUp exec "brightnessctl -d intel_backlight s 10%+"
 
 bindsym Control+space exec dunstctl close
 

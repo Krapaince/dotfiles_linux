@@ -2,6 +2,7 @@ variables:
   npm_default_dir: "{{@@ env['HOME'] @@}}/.npm-global"
   wallpaper_destination: "{{@@ env['HOME'] @@}}/Pictures/wallpapers"
   wallpaper_filename: avatar.png
+  wallpaper_script: "python {{@@ env['HOME'] @@}}/.local/bin/wallpaper.py"
   wallpaper_color_shifter: "false"
   git_name: Krapaince
   git_email: Krapaince@pm.me

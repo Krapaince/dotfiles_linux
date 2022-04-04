@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 # {{@@ header() @@}}
 
-source ~/.local/bin/wallpaper/common.sh
-
-IMAGES=''
+IMAGES=$({{@@ wallpaper_script @@}} get)
 FLAGS=""
 
 while [[ "$1" =~ ^- ]]; do
@@ -14,13 +12,8 @@ while [[ "$1" =~ ^- ]]; do
     shift;
 done
 
-for monitor in "${MONITORS[@]}"; do
-  wallpaper=$(~/.config/sway/scripts/get_current_wallpaper_filepath.sh "$monitor")
-  IMAGES="$IMAGES -i $monitor:$wallpaper"
-done
-
 dunstctl set-paused true
-~/.local/bin/wallpaper/toggle_shifting.sh
+{{@@ wallpaper_script @@}} toggle
 
 swaylock $FLAGS $IMAGES               \
   --scaling fill                      \
@@ -61,5 +54,5 @@ swaylock $FLAGS $IMAGES               \
   --text-ver-color '00000000'         \
   --text-wrong-color '00000000'
 
-~/.local/bin/wallpaper/toggle_shifting.sh
+{{@@ wallpaper_script @@}} toggle
 dunstctl set-paused false

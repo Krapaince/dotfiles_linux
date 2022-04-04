@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # {{@@ header() @@}}
 
-WALLPAPER=$(~/.local/bin/wallpaper/get_current_wallpaper_filepath.sh)
+WALLPAPER=$({{@@ wallpaper_script @@}} get)
 FORK="-n"
 
 while [[ "$1" =~ ^- ]]; do
@@ -16,9 +16,7 @@ done
 setxkbmap us
 
 dunstctl set-paused true
-
-
-~/.config/i3/scripts/wallpaper/toggle_shifting.sh
+{{@@ wallpaper_script @@}} toggle
 
 i3lock \
     -i $WALLPAPER \
@@ -46,5 +44,5 @@ i3lock \
     --inside-color="00000000" \
     --noinput-text=""
 
-~/.config/i3/scripts/wallpaper/toggle_shifting.sh
+{{@@ wallpaper_script @@}} toggle
 dunstctl set-paused false

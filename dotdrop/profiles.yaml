@@ -18,14 +18,12 @@ profiles:
       font: CaskaydiaCove Nerd Font Book
       i3lock_screen_number: 2
       dunst_monitor: 2
-      is_wayland: true
       monitor_01: DP-1-5
       monitor_02: HDMI-0
       monitor_03: DVI-D-0
     include:
     - krapaince_tty
     - krapaince_gui
-    - krapaince_gui_wayland
     dotfiles:
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_reload_screen_setup.sh
@@ -44,7 +42,7 @@ profiles:
       font: CaskaydiaCove Nerd Font
       is_wayland: true
 
-      # Name of json containing screen name & wallpaper path
+      # Name of json containing monitor name & wallpaper path
       wallpaper_monitors: 'monitors-krapaince-arch'
     include:
     - krapaince_tty
@@ -133,22 +131,21 @@ profiles:
 
   krapaince_gui:
     dotfiles:
-    - f_local_bin_colorbalance2
-    - f_ideavimrc
     - f_config_dunst_dunstrc
     - f_config_gtk-3.0_settings.ini
     - f_config_kitty_kitty.conf
-    - f_config_pipewire_media-session.d_bluez-monitor.conf
-    - f_config_zathura_zathurarc
     - f_config_kvantum_kvantum.kvconfig
+    - f_config_pipewire_media-session.d_bluez-monitor.conf
+    - f_config_wallpaper_color_set.json
+    - f_config_zathura_zathurarc
+    - f_ideavimrc
+    - f_local_bin_colorbalance2
+    - f_local_bin_wallpaper.py
 
   krapaince_gui_x:
     dotfiles:
     - f_config_i3_config
-    - f_config_i3_scripts_change_wallpaper.sh
     - f_config_i3_scripts_keyboard_switcher.sh
-    - f_config_i3_scripts_generate_wallpapers.sh
-    - f_config_i3_scripts_get_current_wallpaper_filepath.sh
     - f_config_i3_scripts_lock.sh
     - f_config_i3_scripts_suspend.sh
 
@@ -176,13 +173,6 @@ profiles:
 
     - f_config_picom_config.ini
 
-    - f_config_wallpaper_settings.json
-    - f_config_wallpaper_color_set.json
-
-    - f_local_bin_wallpaper_common.sh
-    - f_local_bin_wallpaper_generate_wallpaper.sh
-    - f_local_bin_wallpaper_toggle_shifting.sh
-
     - f_xprofile
   krapaince_gui_wayland:
     dotfiles:
@@ -192,14 +182,9 @@ profiles:
     - f_config_sway_config
     - f_config_sway_workspace
 
-    - f_config_sway_scripts_change_wallpaper.sh
-    - f_config_sway_scripts_generate_wallpapers.sh
-    - f_config_sway_scripts_get_current_wallpaper_filepath.sh
     - f_config_sway_scripts_lock.sh
 
-    - f_config_wallpaper_settings.json
-    - f_config_monitors.json
-    - f_config_wallpaper_color_set.json
+    - f_config_wallpaper_monitors.json
 
     - f_config_waybar_styles_battery.css
     - f_config_waybar_styles_color.css
@@ -217,6 +202,3 @@ profiles:
     - f_local_bin_colorbalance2
     - f_local_bin_sway
     - f_local_bin_temperature-cpu.sh
-    - f_local_bin_wallpaper_common.sh
-    - f_local_bin_wallpaper_generate_wallpaper.sh
-    - f_local_bin_wallpaper_toggle_shifting.sh

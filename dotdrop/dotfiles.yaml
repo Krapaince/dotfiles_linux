@@ -79,21 +79,9 @@ dotfiles:
       - download_wallpaper
 
   # i3 scripts
-  f_config_i3_scripts_change_wallpaper.sh:
-    src: config/i3/scripts/change_wallpaper.sh
-    dst: ~/.config/i3/scripts/change_wallpaper.sh
-    chmod: '700'
   f_config_i3_scripts_egnime_notif_answer.sh:
     src: config/i3/scripts/egnime_notif_answer.sh
     dst: ~/.config/i3/scripts/egnime_notif_answer.sh
-    chmod: '700'
-  f_config_i3_scripts_generate_wallpapers.sh:
-    src: config/i3/scripts/generate_wallpapers.sh
-    dst: ~/.config/i3/scripts/generate_wallpapers.sh
-    chmod: '700'
-  f_config_i3_scripts_get_current_wallpaper_filepath.sh:
-    src: config/i3/scripts/get_current_wallpaper_filepath.sh
-    dst: ~/.config/i3/scripts/get_current_wallpaper_filepath.sh
     chmod: '700'
   f_config_i3_scripts_keyboard_switcher.sh:
     src: config/i3/scripts/keyboard_switcher.sh
@@ -371,18 +359,6 @@ dotfiles:
     dst: ~/.config/sway/workspace
 
   # Sway scripts
-  f_config_sway_scripts_change_wallpaper.sh:
-    src: config/sway/scripts/change_wallpaper.sh
-    dst: ~/.config/sway/scripts/change_wallpaper.sh
-    chmod: '700'
-  f_config_sway_scripts_generate_wallpapers.sh:
-    src: config/sway/scripts/generate_wallpapers.sh
-    dst: ~/.config/sway/scripts/generate_wallpapers.sh
-    chmod: '700'
-  f_config_sway_scripts_get_current_wallpaper_filepath.sh:
-    src: config/sway/scripts/get_current_wallpaper_filepath.sh
-    dst: ~/.config/sway/scripts/get_current_wallpaper_filepath.sh
-    chmod: '700'
   f_config_sway_scripts_lock.sh:
     src: config/sway/scripts/lock.sh
     dst: ~/.config/sway/scripts/lock.sh
@@ -410,12 +386,9 @@ dotfiles:
   f_config_wallpaper_color_set.json:
     src: config/wallpaper/color_set.json
     dst: ~/.config/wallpaper/color_set.json
-  f_config_monitors.json:
+  f_config_wallpaper_monitors.json:
     src: "config/wallpaper/{{@@ wallpaper_monitors @@}}.json"
     dst: ~/.config/wallpaper/monitors.json
-  f_config_wallpaper_settings.json:
-    src: config/wallpaper/settings.json
-    dst: ~/.config/wallpaper/settings.json
 
 
   # Waybar
@@ -506,17 +479,9 @@ dotfiles:
     chmod: '700'
 
   # Wallpaper scripts
-  f_local_bin_wallpaper_common.sh:
-    src: local/bin/wallpaper/common.sh
-    dst: ~/.local/bin/wallpaper/common.sh
-  f_local_bin_wallpaper_generate_wallpaper.sh:
-    src: local/bin/wallpaper/generate_wallpaper.sh
-    dst: ~/.local/bin/wallpaper/generate_wallpaper.sh
-    chmod: '700'
-  f_local_bin_wallpaper_toggle_shifting.sh:
-    src: local/bin/wallpaper/toggle_shifting.sh
-    dst: ~/.local/bin/wallpaper/toggle_shifting.sh
-    chmod: '700'
+  f_local_bin_wallpaper.py:
+    src: local/bin/wallpaper.py
+    dst: ~/.local/bin/wallpaper.py
 
 
   # Xorg

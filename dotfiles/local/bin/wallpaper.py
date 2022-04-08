@@ -98,7 +98,7 @@ def set_wallpaper(path: Path, monitor: str):
     if len(maybe_pid):
         pid = int(maybe_pid)
         change_wallpaper()
-        time.sleep(0.1)
+        time.sleep(0.5)
         os.kill(pid, signal.SIGTERM)
     else:
         change_wallpaper()

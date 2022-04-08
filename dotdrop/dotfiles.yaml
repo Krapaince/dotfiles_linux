@@ -440,9 +440,9 @@ dotfiles:
     src: gitconfig
     dst: ~/.gitconfig
     chmod: '600'
-  f_desktop_epitech_gitconfig:
-    src: Desktop/EPITECH/gitconfig
-    dst: ~/Desktop/EPITECH/.gitconfig
+  f_gitconfig-epitech:
+    src: gitconfig-epitech
+    dst: ~/.gitconfig-epitech
     chmod: '600'
 
 

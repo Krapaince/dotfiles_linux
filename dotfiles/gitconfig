@@ -23,5 +23,5 @@
 	name = {{@@ git_name @@}}
 	email = {{@@ git_email @@}}
 
-[includeIf "gitdif:~/Desktop/EPITECH"]
-  path = ~/Desktop/EPITECH
+[includeIf "gitdir:~/Desktop/EPITECH/"]
+  path = ~/.gitconfig-epitech

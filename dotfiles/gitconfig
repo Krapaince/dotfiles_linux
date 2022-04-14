@@ -29,3 +29,6 @@
 
 [includeIf "gitdir:~/Desktop/EPITECH/"]
   path = ~/.gitconfig-epitech
+
+[gpg]
+  program = {{@@ env['HOME'] @@}}/.local/bin/pinentry.sh

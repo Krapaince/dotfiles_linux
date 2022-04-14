@@ -10,6 +10,7 @@ require('null-ls').setup({
           and null_ls.builtins.formatting.prettierd.with({ filetypes = { 'html', 'javascript', 'typescript' } })
         or null_ls.builtins.formatting.eslint_d.with({ filetypes = { 'javascript', 'typescript' } })
     end,
+    null_ls.builtins.formatting.black,
     null_ls.builtins.formatting.stylua,
   },
   on_attach = function(client, bufnr)

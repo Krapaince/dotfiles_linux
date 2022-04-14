@@ -8,9 +8,6 @@ stolen some bits from yours anyway).
 
 The `dotdrop` folder contains config file for dotdrop.
 The `dotfiles` folder contains dotfiles.
-The `fonts` folder contains custom fonts ([Caskaydia
-font](https://github.com/microsoft/cascadia-code) with
-[nerd-font](https://www.nerdfonts.com/)'s glyph inside.).
 The `packages` folder contains files which contain packages that I need when I
 redump (maybe some day I will switch to nixOS).
 

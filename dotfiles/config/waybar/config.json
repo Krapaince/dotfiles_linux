@@ -21,7 +21,7 @@
       "max-length": 70
     },
     "sway/language": {
-      "format": " {short}"
+      "format": " {short}"
     },
     "battery": {
       "format": "{icon} {capacity:2}% {time} {power:0.2f}W",

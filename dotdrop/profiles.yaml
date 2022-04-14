@@ -14,8 +14,6 @@ profiles:
     variables:
       dunst_monitor: 2
 
-      font: CaskaydiaCove Nerd Font Book
-
       i3lock_screen_number: 2
 
       monitor_01: DP-1-5
@@ -46,9 +44,7 @@ profiles:
       wired_network_interface: enp0s31f6
       wireless_network_interface: wlp3s0
 
-      font_bar: CaskaydiaCove Nerd Font
       is_wayland: true
-
       # Name of json containing monitor name & wallpaper path
       wallpaper_monitors: 'monitors-krapaince-arch'
     include:

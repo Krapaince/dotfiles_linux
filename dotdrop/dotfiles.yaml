@@ -119,8 +119,6 @@ dotfiles:
   f_config_kitty_kitty.conf:
     src: config/kitty/kitty.conf
     dst: ~/.config/kitty/kitty.conf
-    actions:
-      - kitty_install_fonts
 
 
   # Kvantum
@@ -213,6 +211,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_clangd.lua:
     src: config/nvim/lua/plugins/lspconfig/clangd.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/clangd.lua
+  f_config_nvim_lua_plugins_lspconfig_grammarly.lua:
+    src: config/nvim/lua/plugins/lspconfig/grammarly.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/grammarly.lua
   f_config_nvim_lua_plugins_lspconfig_eslint.lua:
     src: config/nvim/lua/plugins/lspconfig/eslint.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/eslint.lua

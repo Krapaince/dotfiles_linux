@@ -13,9 +13,7 @@
     set $ogaps 0
 #: }}}
 
-# Font for window titles.
-font pango:monospace 8
-#font pango:DejaVu Sans Mono 8
+font pango:{{@@ font @@}} 8
 
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the

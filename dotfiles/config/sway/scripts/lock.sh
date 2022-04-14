@@ -21,7 +21,7 @@ swaylock $FLAGS $IMAGES               \
   --bs-hl-color 'fc7e7e'              \
   --caps-lock-bs-hl-color 'fc7e7e'    \
   --caps-lock-key-hl-color 'fefedf'   \
-  --font 'CaskaydiaCove Nerd Font'    \
+  --font '{{@@ font @@}}'             \
   --font-size 13                      \
   --indicator-caps-lock               \
   --indicator-radius 74               \

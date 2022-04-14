@@ -50,4 +50,3 @@ for_window [class="TeamSpeak 3"] move container to workspace $ws8
 
 for_window [class="Microsoft Teams - Preview"] move container to workspace $ws10
 for_window [class="teams-for-linux"] move container to workspace $ws10
-

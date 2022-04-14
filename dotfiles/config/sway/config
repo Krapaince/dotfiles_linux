@@ -29,31 +29,35 @@ gaps inner 10
 gaps outer 0
 
 smart_borders on
+default_border none
 
 popup_during_fullscreen smart
 
-default_border none
-
-# Fix notification windows
-for_window [title="Microsoft Teams Notification"] floating enable
-for_window [title="Zoom Cloud Meetings"] | floating enable
-for_window [title="zoom"] | floating enable
-for_window [title="^(?:Coping|Moving) - Dolphin"] floating enable
-
-for_window [title="kitty"] opacity set 0.99
 for_window [class="^.*"] border pixel 0
+
+for_window [title="^(?:Coping|Moving) - Dolphin"] floating enable
 
 for_window [class="firefox"] inhibit_idle fullscreen
 for_window [app_id="firefox" title="^Picture-in-Picture$"] floating enable, inhibit_idle
+
+for_window [title="kitty"] opacity set 0.99
+
+for_window [class="matplotlib"] floating enable
+
+for_window [title="Microsoft Teams Notification"] floating enable
+
 for_window [class="vlc"] inhibit_idle fullscreen
+
+for_window [title="Zoom Cloud Meetings"] floating enable
+for_window [title="zoom"] floating enable
+
 
 exec_always import-gsettings.sh
 exec gammastep
 
 exec gnome-keyring-daemon --start
 exec waybar -c ~/.config/waybar/config.json
-# nm-connection-editor as an alternative for now https://github.com/swaywm/sway/issues/1357
-exec nm-applet
+exec nm-applet --indicator
 exec blueman-applet
 exec dunst -config ~/.config/dunst/dunstrc
 exec {{@@ wallpaper_script @@}} change

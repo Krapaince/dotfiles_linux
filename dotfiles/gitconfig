@@ -22,6 +22,9 @@
 [user]
 	name = {{@@ git_name @@}}
 	email = {{@@ git_email @@}}
+	signingkey = EF86373CA45DE4BC
+[commit]
+	gpgsign = true
 
 [includeIf "gitdir:~/Desktop/EPITECH/"]
   path = ~/.gitconfig-epitech

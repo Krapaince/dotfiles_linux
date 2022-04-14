@@ -28,6 +28,7 @@ profiles:
     include:
     - krapaince_tty
     - krapaince_gui
+    - krapaince_gui_x
     dotfiles:
     - f_config_i3_scripts_monitor_setup_screen.sh
     - f_config_i3_scripts_monitor_reload_screen_setup.sh

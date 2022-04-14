@@ -1,15 +1,16 @@
 variables:
+  dunst_monitor: 0
+
   font: Iosevka Term Extended
   font_bold: Iosevka Term Bold Extended
 
   npm_default_dir: "{{@@ env['HOME'] @@}}/.npm-global"
+
   wallpaper_destination: "{{@@ env['HOME'] @@}}/Pictures/wallpapers"
   wallpaper_filename: avatar.png
   wallpaper_script: "python {{@@ env['HOME'] @@}}/.local/bin/wallpaper.py"
-  wallpaper_color_shifter: "false"
-  git_name: Krapaince
-  git_email: Krapaince@pm.me
+  wallpaper_color_shifter: true
+
+ # Waybar / polybar network interfaces
   wired_network_interface:
   wireless_network_interface:
-  i3lock_screen_number: 1
-  dunst_monitor: 0

@@ -12,15 +12,21 @@ profiles:
 
   Krapaince-MASTER-arch:
     variables:
-      wallpaper_url: https://www.dropbox.com/s/2s2uu988vrgxzmc/Krapaince-MASTER-arch-reverse.png
-      wired_network_interface: enp5s0
-      wireless_network_interface: wlp3s0
-      font: CaskaydiaCove Nerd Font Book
-      i3lock_screen_number: 2
       dunst_monitor: 2
+
+      font: CaskaydiaCove Nerd Font Book
+
+      i3lock_screen_number: 2
+
       monitor_01: DP-1-5
       monitor_02: HDMI-0
       monitor_03: DVI-D-0
+
+      wallpaper_url: https://www.dropbox.com/s/2s2uu988vrgxzmc/Krapaince-MASTER-arch-reverse.png
+
+      # Waybar / polybar network interfaces
+      wired_network_interface: enp5s0
+      wireless_network_interface: wlp3s0
     include:
     - krapaince_tty
     - krapaince_gui
@@ -33,7 +39,8 @@ profiles:
   Krapaince-arch:
     variables:
       wallpaper_url: https://www.dropbox.com/s/zm48ldtbubrc5s0/Krapaince-arch.png
-      wallpaper_color_shifter: 'true'
+      # Name of json containing monitor name & wallpaper path
+      wallpaper_monitors: 'monitors-krapaince-arch'
 
       # Waybar / polybar network interfaces
       wired_network_interface: enp0s31f6

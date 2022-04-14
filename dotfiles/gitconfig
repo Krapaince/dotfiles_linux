@@ -20,9 +20,10 @@
 	rebase = false
 
 [user]
-	name = {{@@ git_name @@}}
-	email = {{@@ git_email @@}}
+	name = Krapaince
+	email = Krapaince@pm.me
 	signingkey = EF86373CA45DE4BC
+
 [commit]
 	gpgsign = true
 

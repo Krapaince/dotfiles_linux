@@ -72,7 +72,7 @@ def load_setting() -> Setting:
         with open(SETTING_PATH, "r") as f:
             return json.load(f)
     else:
-        default = Setting(enable=True, paused=False, sleep=60, index=0)
+        default = Setting(enable={{@@ wallpaper_color_shifter @@}}, paused=False, sleep=60, index=0)
         with open(SETTING_PATH, "w") as f:
             json.dump(default, f)
         return default

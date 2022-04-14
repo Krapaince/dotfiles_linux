@@ -6,6 +6,8 @@ table.insert(runtime_path, 'lua/?/init.lua')
 
 return {
   name = 'sumneko_lua',
+  cmd = { 'lua-language-server' },
+  disable_formatting = true,
   settings = {
     Lua = {
       runtime = {

@@ -1,4 +1,7 @@
 variables:
+  font: Iosevka Term Extended
+  font_bold: Iosevka Term Bold Extended
+
   npm_default_dir: "{{@@ env['HOME'] @@}}/.npm-global"
   wallpaper_destination: "{{@@ env['HOME'] @@}}/Pictures/wallpapers"
   wallpaper_filename: avatar.png

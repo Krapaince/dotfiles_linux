@@ -2,8 +2,8 @@
 @import "styles/color.css";
 
 * {
-  font-family: {{@@ font @@}};
-  font-size: 13px;
+  font-family: {{@@ font_bar @@}};
+  font-size: 12px;
   background-color: rgba(0, 0, 0, 0);
 }
 

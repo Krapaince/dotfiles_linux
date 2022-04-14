@@ -17,6 +17,7 @@ return function()
     },
     extensions = {
       fzf = {
+        fuzzy = true,
         override_generic_sorter = true,
         override_file_sorter = true,
       },
@@ -28,7 +29,7 @@ return function()
     },
   })
 
-  telescope.load_extension('fzy_native')
+  telescope.load_extension('fzf')
 
   map('n', '<C-p>', ':Telescope find_files<CR>')
   map('n', '/', ':Telescope live_grep<CR>')

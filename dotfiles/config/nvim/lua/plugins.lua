@@ -113,6 +113,8 @@ return require('packer').startup({
       requires = 'nvim-lua/plenary.nvim',
       config = require('plugins.todo-comments'),
     })
+    use({ 'JoosepAlviste/nvim-ts-context-commentstring' })
+
     -- git related plugins
     use({
       'lewis6991/gitsigns.nvim',

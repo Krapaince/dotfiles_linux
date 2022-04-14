@@ -12,6 +12,11 @@ return {
           '--keep-intermediates',
         },
       },
+      formatterLineLength = 80,
+      latexFormatter = 'latexindent',
+      latexindent = {
+        modifyLineBreaks = true,
+      },
     },
   },
 }

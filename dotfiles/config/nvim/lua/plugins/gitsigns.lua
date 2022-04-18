@@ -1,7 +1,6 @@
 -- {{@@ header() @@}}
 
 return function()
-  local map = require('utils').map
   local highlight = require('utils').highlight
 
   highlight('GitSignsAddNr', { bg = '#4b5632', fg = 'NONE' })
@@ -26,7 +25,11 @@ return function()
     },
     attach_to_untracked = true,
     current_line_blame = true,
-  })
+    on_attach = function(bufnr)
+      local gs = package.loaded.gitsigns
+      local buf_map = require('utils').buf_map
 
-  map('n', '<Leader>g', ':Gitsigns blame_line<CR>')
+      buf_map(bufnr, 'n', '<Leader>g', gs.diffthis)
+    end,
+  })
 end

@@ -10,6 +10,7 @@ local buf_path_in_workflow_folder = function()
 end
 
 require('null-ls').setup({
+  debug = false,
   sources = {
 
     null_ls.builtins.diagnostics.actionlint.with({

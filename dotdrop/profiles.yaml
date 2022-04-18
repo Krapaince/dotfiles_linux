@@ -125,6 +125,7 @@ profiles:
     - f_config_yt-dlp_config
     - f_gitconfig
     - f_gitconfig-epitech
+    - f_gnupg_gpg-agent.conf
     - f_ignore
     - f_rustfmt.toml
     - f_stylua.toml

@@ -447,6 +447,12 @@ dotfiles:
     chmod: '600'
 
 
+  # gnupg
+  f_gnupg_gpg-agent.conf:
+    src: gnupg/gpg-agent.conf
+    dst: ~/.gnupg/gpg-agent.conf
+
+
   # Jetbrain vim plugin
   f_ideavimrc:
     src: ideavimrc

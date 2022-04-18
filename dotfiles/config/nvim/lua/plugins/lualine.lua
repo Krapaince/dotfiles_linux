@@ -46,6 +46,7 @@ return function()
     options = {
       theme = theme,
       disabled_filetypes = { 'packer', 'NvimTree' },
+      globalstatus = true,
     },
     extensions = {},
   })

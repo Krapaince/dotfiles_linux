@@ -19,6 +19,9 @@
 [pull]
 	rebase = false
 
+[push]
+  default = current
+
 [user]
 	name = Krapaince
 	email = Krapaince@pm.me

@@ -9,11 +9,7 @@ vim.g.mapleader = ','
 map('n', ';', ':')
 
 -- jk to return to normal mode
-map('i', 'jk', '<Esc>')
-map('v', 'jk', '<Esc>')
-
--- Allow window movement from active terminal
-map('t', '<C-w>', '<C-\\><C-n><C-w>')
+map({ 'i', 'v' }, 'jk', '<Esc>')
 
 -- tab navigation
 map('n', 'H', ':tabprevious<CR>')
@@ -25,7 +21,7 @@ map('n', 'C', ':tabclose<CR>')
 map('n', '<C-k>', ':m-2 <CR>==')
 map('n', '<C-j>', ':m+ <CR>==')
 map('v', '<C-k>', ':m \'<-2<CR>gv=gv')
-map('v', '<C-j>', '::m \'>+1<CR>gv=gv')
+map('v', '<C-j>', ':m \'>+1<CR>gv=gv')
 
 -- Resize buffer size
 map('n', '<Up>', '<C-w>2-')

@@ -12,15 +12,17 @@ return {
       options = vim.tbl_extend('force', options, opts)
     end
 
-    vim.api.nvim_set_keymap(mode, keys, action, options)
+    vim.keymap.set(mode, keys, action, options)
   end,
   buf_map = function(buffer, mode, keys, action, opts)
     local options = default_options
+
+    options.buffer = buffer
     if opts then
       options = vim.tbl_extend('force', options, opts)
     end
 
-    vim.api.nvim_buf_set_keymap(buffer, mode, keys, action, options)
+    vim.keymap.set(mode, keys, action, options)
   end,
 
   highlight = function(group, color)

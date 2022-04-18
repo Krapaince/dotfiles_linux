@@ -2,6 +2,26 @@
 
 return function()
   require('nvim-treesitter.configs').setup({
+    ensure_installed = {
+      'bash',
+      'bibtex',
+      'c',
+      'cpp',
+      'css',
+      'dockerfile',
+      'fish',
+      'html',
+      'javascript',
+      'json',
+      'json5',
+      'latex',
+      'lua',
+      'markdown',
+      'python',
+      'rust',
+      'typescript',
+      'yaml',
+    },
     context_commentstring = {
       enable = true,
     },

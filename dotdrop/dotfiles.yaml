@@ -476,6 +476,10 @@ dotfiles:
     src: local/bin/import-gsettings.sh
     dst: ~/.local/bin/import-gsettings.sh
     chmod: '700'
+  f_local_bin_pinentry.sh:
+    src: local/bin/pinentry.sh
+    dst: ~/.local/bin/pinentry.sh
+    chmod: '700'
   f_local_bin_sway:
     src: local/bin/sway
     dst: ~/.local/bin/sway

@@ -355,6 +355,8 @@ dotfiles:
   f_config_sway_config:
     src: config/sway/config
     dst: ~/.config/sway/config
+    actions:
+      - sway_custom_outputs
   f_config_sway_workspace:
     src: config/sway/workspace
     dst: ~/.config/sway/workspace

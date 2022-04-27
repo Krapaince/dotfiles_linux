@@ -5,9 +5,7 @@ return require('packer').startup({
     use('wbthomason/packer.nvim')
 
     -- Colorschemes
-    use('tomasiser/vim-code-dark')
-    -- use 'doums/darcula'
-    use('kjwon15/vim-transparent')
+    use('Mofiqul/vscode.nvim')
 
     -- Icons
     use('kyazdani42/nvim-web-devicons')

@@ -30,3 +30,5 @@ opt.cursorline = true -- Highligh the screen line of the cursor
 opt.signcolumn = 'yes' -- Always display signcolumn
 
 opt.wildignore = opt.wildignore + '*.o,*.gcno,*.gcda' -- Files matching these patterns are not completed
+
+vim.o.shell = '/usr/bin/env bash'

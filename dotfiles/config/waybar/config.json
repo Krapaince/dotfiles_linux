@@ -78,7 +78,9 @@
     "modules-left": [
       "disk"
     ],
-    "modules-center": [],
+    "modules-center": [
+      "custom/media"
+    ],
     "modules-right": [
       "network#net-wired",
       "network#net-wireless",
@@ -90,6 +92,17 @@
       "interval": 10,
       "format": " {free}",
       "path": "/"
+    },
+    "custom/media": {
+      "format": "{icon}{}",
+      "return-type": "json",
+      "format-icons": {
+        "Playing": "‣ ",
+        "Paused": "⏸ "
+      },
+      "max-length": 70,
+      "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+      "on-click": "playerctl play-pause"
     },
     "network#net-wired": {
       "interface": "{{@@ wired_network_interface @@}}",

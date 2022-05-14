@@ -71,3 +71,15 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+mode "media" {
+  bindsym h exec playerctl previous
+  bindsym l exec playerctl next
+
+  # Back to normal
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+r mode "default"
+}
+
+bindsym $mod+m mode "media"

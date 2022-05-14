@@ -69,6 +69,9 @@
     "tray": {
       "icon-size": 16,
       "spacing": 5
+    },
+    "sway/workspaces": {
+      "format": "  {index}  "
     }
   },
   {
@@ -154,6 +157,9 @@
     "modules-center": [
       "sway/mode",
       "sway/window"
-    ]
+    ],
+    "sway/workspaces": {
+      "format": "  {index}  "
+    }
   }
 ]

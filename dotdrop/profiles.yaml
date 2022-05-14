@@ -137,6 +137,7 @@ profiles:
     dotfiles:
     - f_config_dunst_dunstrc
     - f_config_gtk-3.0_settings.ini
+    - f_config_gtk-4.0_settings.ini
     - f_config_kitty_kitty.conf
     - f_config_kvantum_kvantum.kvconfig
     - f_config_pipewire_media-session.d_bluez-monitor.conf

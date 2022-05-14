@@ -17,6 +17,7 @@ dunstctl set-paused true
 
 swaylock $FLAGS $IMAGES               \
   --scaling fill                      \
+  --color '000000'                    \
                                       \
   --bs-hl-color 'fc7e7e'              \
   --caps-lock-bs-hl-color 'fc7e7e'    \

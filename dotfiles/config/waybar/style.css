@@ -7,21 +7,22 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
 #backlight,
+#battery,
+#clock,
+#cpu,
+#custom-media,
+#disk,
+#idle_inhibitor,
+#language,
+#memory,
+#mode,
+#mpd,
 #network,
 #pulseaudio,
-#custom-media,
+#temperature,
 #tray,
-#mode,
-#language,
-#idle_inhibitor,
-#mpd {
+#window {
   color: @fg_primary;
   margin: 0 10px;
 }

@@ -54,12 +54,18 @@ return function()
       end
     end
 
-    return {
+    local config = {
       on_attach = on_attach_fn,
       cmd = server.cmd,
       settings = server.settings,
       capabilities = capabilities,
     }
+
+    if server.filetypes then
+      config.filetypes = server.filetypes
+    end
+
+    return config
   end
 
   for _, server in ipairs(servers) do

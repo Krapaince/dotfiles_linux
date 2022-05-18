@@ -253,6 +253,9 @@ dotfiles:
   f_config_nvim_snippets_cpp.json:
     src: config/nvim/snippets/cpp.json
     dst: ~/.config/nvim/snippets/cpp.json
+  f_config_nvim_snippets_python.json:
+    src: config/nvim/snippets/python.json
+    dst: ~/.config/nvim/snippets/python.json
   f_config_nvim_snippets_yaml.json:
     src: config/nvim/snippets/yaml.json
     dst: ~/.config/nvim/snippets/yaml.json

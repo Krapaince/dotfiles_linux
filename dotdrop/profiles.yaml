@@ -116,8 +116,9 @@ profiles:
     - f_config_nvim_lua_plugins.lua
     - f_config_nvim_lua_utils.lua
     - f_config_nvim_snippets_c.json
-    - f_config_nvim_snippets_yaml.json
     - f_config_nvim_snippets_cpp.json
+    - f_config_nvim_snippets_python.json
+    - f_config_nvim_snippets_yaml.json
     - f_config_nvim_init.lua
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf

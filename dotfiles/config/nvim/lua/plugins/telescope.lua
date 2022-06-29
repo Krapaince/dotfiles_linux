@@ -44,6 +44,8 @@ return function()
       'nodes_modules/.*',
       '.git/.*',
       'target/.*',
+      '.yarn',
+      'documentation/index.html',
     },
   })
 

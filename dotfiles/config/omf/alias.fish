@@ -6,6 +6,7 @@ alias ls="exa --icons"
 
 ## Go to
 alias cdc="cd ~/.config"
+alias cdf="cd (find . -type d | fzf --reverse)"
 
 {%@@ if profile == "Krapaince-arch" or profile == "Krapaince-MASTER-arch" @@%}
 alias cdd="cd $REPO_LOCATION"

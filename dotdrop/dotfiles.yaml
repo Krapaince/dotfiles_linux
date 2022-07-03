@@ -380,6 +380,10 @@ dotfiles:
     src: config/sway/scripts/lock.sh
     dst: ~/.config/sway/scripts/lock.sh
     chmod: '700'
+  f_config_sway_script_pipewire-control.bash:
+    src: config/polybar/scripts/pipewire-control.bash
+    dst: ~/.config/sway/scripts/pipewire-control.bash
+    chmod: '700'
 
 
   # Rustfmt

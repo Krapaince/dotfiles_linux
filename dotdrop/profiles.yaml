@@ -190,6 +190,7 @@ profiles:
     - f_config_sway_workspace
 
     - f_config_sway_scripts_lock.sh
+    - f_config_sway_script_pipewire-control.bash
 
     - f_config_wallpaper_monitors.json
 

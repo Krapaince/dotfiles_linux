@@ -370,6 +370,7 @@ dotfiles:
     src: config/sway/config
     dst: ~/.config/sway/config
     actions:
+      - download_wallpaper
       - sway_custom_outputs
   f_config_sway_workspace:
     src: config/sway/workspace

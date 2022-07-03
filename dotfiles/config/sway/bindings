@@ -26,7 +26,7 @@ bindsym Print exec flameshot gui && wl-paste -t image/png | wl-copy
 bindsym Print exec flameshot gui
 {%@@ endif @@%}
 
-bindsym mod4+Up exec systemctl suspend
+bindsym mod4+Up exec ~/.config/sway/scripts/lock.sh -f && systemctl suspend
 bindsym mod4+Right exec ~/.config/sway/scripts/lock.sh
 
 # Sway commands

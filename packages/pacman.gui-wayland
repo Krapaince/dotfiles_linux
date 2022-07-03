@@ -2,8 +2,10 @@ gammastep
 grim
 slurp
 sway
+swaybg
+swayidle
+swaylock
 waybar
-wdisplays
 wl-clipboard
 wofi
 xdg-desktop-portal

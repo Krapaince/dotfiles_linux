@@ -46,6 +46,7 @@ ueberzug
 unzip
 valgrind
 vifm
+wget
 which
 xterm
 yarn

@@ -3,19 +3,6 @@
 return function()
   local map = require('utils').map
 
-  vim.g.nvim_tree_special_files = {}
-  vim.g.nvim_tree_icons = {
-    git = {
-      unstaged = '',
-      staged = '',
-      unmerged = '',
-      renamed = '➜',
-      untracked = '*',
-      deleted = '',
-      ignored = '',
-    },
-  }
-
   require('nvim-tree').setup({
     open_on_tab = true,
     diagnostics = {
@@ -35,6 +22,22 @@ return function()
       enable = true,
       ignore = true,
       timeout = 500,
+    },
+    renderer = {
+      icons = {
+        glyphs = {
+          git = {
+            unstaged = '',
+            staged = '',
+            unmerged = '',
+            renamed = '➜',
+            untracked = '*',
+            deleted = '',
+            ignored = '',
+          },
+        },
+      },
+      special_files = {},
     },
     view = {
       width = 30,

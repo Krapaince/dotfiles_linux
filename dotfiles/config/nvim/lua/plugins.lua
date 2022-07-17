@@ -5,7 +5,7 @@ return require('packer').startup({
     use('wbthomason/packer.nvim')
 
     -- Colorschemes
-    use('Mofiqul/vscode.nvim')
+    use({ 'Mofiqul/vscode.nvim', config = require('plugins.vscode') })
 
     -- Icons
     use('kyazdani42/nvim-web-devicons')

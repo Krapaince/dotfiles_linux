@@ -67,6 +67,7 @@ profiles:
       - f_config_nvim_lua_plugins_nvim-tree.lua
       - f_config_nvim_lua_plugins_treesitter.lua
       - f_config_nvim_lua_plugins_vim-better-whitespace.lua
+      - f_config_nvim_lua_plugins_vscode.lua
       - f_config_nvim_lua_highlights.lua
       - f_config_nvim_lua_mappings.lua
       - f_config_nvim_lua_options.lua
@@ -106,6 +107,7 @@ profiles:
     - f_config_nvim_lua_plugins_todo-comments.lua
     - f_config_nvim_lua_plugins_treesitter.lua
     - f_config_nvim_lua_plugins_vim-better-whitespace.lua
+    - f_config_nvim_lua_plugins_vscode.lua
     - f_config_nvim_lua_plugins_vsnip.lua
     - f_config_nvim_lua_plugins_cmp.lua
     - f_config_nvim_lua_plugins_fidget.lua

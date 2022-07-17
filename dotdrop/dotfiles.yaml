@@ -214,6 +214,9 @@ dotfiles:
   f_config_nvim_lua_plugins_vim-better-whitespace.lua:
     src: config/nvim/lua/plugins/vim-better-whitespace.lua
     dst: ~/.config/nvim/lua/plugins/vim-better-whitespace.lua
+  f_config_nvim_lua_plugins_vscode.lua:
+    src: config/nvim/lua/plugins/vscode.lua
+    dst: ~/.config/nvim/lua/plugins/vscode.lua
   f_config_nvim_lua_plugins_vsnip.lua:
     src: config/nvim/lua/plugins/vsnip.lua
     dst: ~/.config/nvim/lua/plugins/vsnip.lua

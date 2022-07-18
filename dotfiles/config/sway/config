@@ -55,6 +55,8 @@ for_window [title="zoom"] floating enable
 exec_always import-gsettings.sh
 exec gammastep
 
+exec dbus-monitor --session sender=org.flameshot.Flameshot
+exec flameshot
 exec gnome-keyring-daemon --start
 exec waybar -c ~/.config/waybar/config.json
 exec nm-applet --indicator

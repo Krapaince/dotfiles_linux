@@ -20,11 +20,7 @@ bindsym Control+space exec dunstctl close
 bindsym $mod+Return exec kitty
 # Program launcher
 bindsym $mod+d exec wofi
-{%@@ if is_wayland is defined and is_wayland @@%}
-bindsym Print exec flameshot gui && wl-paste -t image/png | wl-copy
-{%@@ else @@%}
 bindsym Print exec flameshot gui
-{%@@ endif @@%}
 
 bindsym mod4+Up exec ~/.config/sway/scripts/lock.sh -f && systemctl suspend
 bindsym mod4+Right exec ~/.config/sway/scripts/lock.sh

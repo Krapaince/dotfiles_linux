@@ -225,6 +225,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_clangd.lua:
     src: config/nvim/lua/plugins/lspconfig/clangd.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/clangd.lua
+  f_config_nvim_lua_plugins_lspconfig_elixirls.lua:
+    src: config/nvim/lua/plugins/lspconfig/elixirls.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/elixirls.lua
   f_config_nvim_lua_plugins_lspconfig_grammarly.lua:
     src: config/nvim/lua/plugins/lspconfig/grammarly.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/grammarly.lua

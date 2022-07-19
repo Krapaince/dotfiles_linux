@@ -8,6 +8,7 @@ return function()
 
   local servers = {
     require('plugins.lspconfig.clangd'),
+    require('plugins.lspconfig.elixirls'),
     require('plugins.lspconfig.rust-analyzer'),
     require('plugins.lspconfig.sumneko_lua'),
     require('plugins.lspconfig.texlab'),

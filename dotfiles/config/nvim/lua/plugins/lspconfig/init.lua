@@ -45,7 +45,7 @@ return function()
 
   local make_config = function(server)
     local on_attach_fn = function(client, bufnr)
-      formatting = server.disable_formatting == nil
+      local formatting = server.disable_formatting == nil
 
       utils.set_ls_keymaps(client, bufnr, formatting)
     end

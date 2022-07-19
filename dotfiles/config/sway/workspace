@@ -42,6 +42,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Assign app to workspace
 for_window [class="discord"] move container to workspace $ws7
+for_window [class="Slack"] move container to workspace $ws7
 
 for_window [class="blueman-manager"] move container to workspace $ws8
 for_window [class="Pavucontrol"] move container to workspace $ws8

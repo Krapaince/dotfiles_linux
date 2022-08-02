@@ -26,6 +26,8 @@ opt.shiftwidth = 2 -- Number of spaces to use fir (auto)indent step
 opt.expandtab = true -- Use spaces when <Tab> is inserted
 opt.autoindent = true -- Take indent for new line from previous line
 
+opt.fixeol = false
+
 opt.number = true -- Print the line number in front of each line
 opt.cursorline = true -- Highligh the screen line of the cursor
 

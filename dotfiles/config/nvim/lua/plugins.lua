@@ -125,6 +125,13 @@ return require('packer').startup({
     })
 
     use('tweekmonster/startuptime.vim')
+
+    use({
+      'luukvbaal/stabilize.nvim',
+      config = function()
+        require('stabilize').setup()
+      end,
+    })
     -- {%@@ endif @@%}
     --
   end,

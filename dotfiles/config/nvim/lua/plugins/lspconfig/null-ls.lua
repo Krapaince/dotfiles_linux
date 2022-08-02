@@ -21,7 +21,7 @@ require('null-ls').setup({
       local nl_utils = require('null-ls.utils').make_conditional_utils()
       return nl_utils.root_has_file('.prettierrc.json')
           and null_ls.builtins.formatting.prettierd.with({ filetypes = { 'html', 'javascript', 'typescript' } })
-        or null_ls.builtins.formatting.eslint_d.with({ filetypes = { 'javascript', 'typescript' } })
+        or null_ls.builtins.formatting.eslint_d
     end,
     null_ls.builtins.formatting.black,
     null_ls.builtins.formatting.stylua,

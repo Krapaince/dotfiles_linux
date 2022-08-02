@@ -9,5 +9,6 @@ return {
 
     ts_utils.setup({})
     utils.set_ls_keymaps(client, bufnr, false)
+    utils.buf_set_keymap(bufnr, 'n', '<leader>h', '<cmd>TSLspOrganize<CR>')
   end,
 }

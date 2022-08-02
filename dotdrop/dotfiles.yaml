@@ -472,6 +472,7 @@ dotfiles:
     src: gitconfig-epitech
     dst: ~/.gitconfig-epitech
     chmod: '600'
+    ignoreempty: true
 
 
   # gnupg

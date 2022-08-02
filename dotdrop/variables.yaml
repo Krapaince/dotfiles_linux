@@ -4,6 +4,12 @@ variables:
   font: Iosevka Term Extended
   font_bold: Iosevka Term Bold Extended
 
+  git_user_name: Krapaince
+  git_user_email: Krapaince@pm.me
+  git_user_signingkey: EF86373CA45DE4BC
+  git_commit_gpgsign: 'true'
+  git_epitech: true
+
   npm_default_dir: "{{@@ env['HOME'] @@}}/.npm-global"
 
   wallpaper_destination: "{{@@ env['HOME'] @@}}/Pictures/wallpapers"

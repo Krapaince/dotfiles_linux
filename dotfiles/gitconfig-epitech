@@ -1,4 +1,6 @@
+{%@@ if git_epitech @@%}
 [user]
   name = Mathieu Pointecouteau
   email = mathieu.pointecouteau@epitech.eu
-	signingkey = 07DCEE496DCC80D0
+	signingkey = C86C20689275D587
+{%@@ endif @@%}

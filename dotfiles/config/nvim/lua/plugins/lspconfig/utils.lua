@@ -7,9 +7,31 @@ M.buf_set_keymap = function(bufnr, ...)
 end
 
 M.set_ls_formatting_keymaps = function(client, bufnr)
+  local buf_path = vim.api.nvim_buf_get_name(bufnr)
+  local excluded_paths = {}
+  local res, custom = pcall(require, 'custom')
+  if res then
+    excluded_paths = custom.excluded_paths[client.name]
+  end
+  local is_excluded = false
+
+  if excluded_paths ~= nil then
+    for i = 1, #excluded_paths do
+      if buf_path:find('^' .. excluded_paths[i]) ~= nil then
+        is_excluded = true
+        break
+      end
+    end
+  end
+
   if client.resolved_capabilities.document_formatting then
     M.buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>')
-    vim.cmd('autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()')
+    if is_excluded == false then
+      vim.cmd('autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()')
+    end
+  end
+  if client.resolved_capabilities.document_range_formatting then
+    M.buf_set_keymap(bufnr, 'v', '<leader>f', '<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>')
   end
 end
 
@@ -26,7 +48,9 @@ M.set_ls_keymaps = function(client, bufnr, formatting)
   M.buf_set_keymap(bufnr, 'n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
   M.buf_set_keymap(bufnr, 'n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
-  if formatting then
+  local excluded_clients = { html = true }
+
+  if formatting and excluded_clients[client.name] ~= true then
     M.set_ls_formatting_keymaps(client, bufnr)
   else
     client.resolved_capabilities.document_formatting = false

@@ -41,6 +41,7 @@ return require('packer').startup({
         'jose-elias-alvarez/null-ls.nvim',
         'jose-elias-alvarez/nvim-lsp-ts-utils',
         'simrat39/rust-tools.nvim',
+        { 'kevinhwang91/nvim-ufo', requires = { 'kevinhwang91/promise-async' } },
       },
       config = require('plugins.lspconfig'),
     })

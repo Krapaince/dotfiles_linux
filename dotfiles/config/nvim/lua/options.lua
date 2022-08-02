@@ -10,7 +10,9 @@ opt.smartcase = true -- No ignore case when pattern has uppercase
 opt.syntax = 'enable' -- Enables syntax highlighing
 opt.wrap = false -- Display long lines as just one line
 
+opt.foldlevel = 99
 opt.foldlevelstart = 99 -- Minimum number of screen line below and above the cursor
+opt.foldenable = true
 
 opt.termguicolors = true -- Set colorscheme
 

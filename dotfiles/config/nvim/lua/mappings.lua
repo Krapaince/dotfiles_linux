@@ -31,3 +31,6 @@ map('n', '<Right>', '<C-w>2>')
 
 -- Fold
 map('n', '<Space>', 'za')
+
+map('n', 'n', ':cnext<CR>')
+map('n', 'N', ':cprev<CR>')

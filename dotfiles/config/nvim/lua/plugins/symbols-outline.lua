@@ -3,9 +3,9 @@
 return function()
   local map = require('utils').map
 
-  vim.g.symbols_outline = {
-    auto_preview = false,
-  }
+  local opts = {}
 
   map('n', '<Leader>s', ':SymbolsOutlineOpen<CR>')
+
+  require('symbols-outline').setup(opts)
 end

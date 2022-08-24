@@ -87,6 +87,7 @@ profiles:
     - f_clang-tidy
     - f_config_gitui_key_bindings.ron
     - f_config_htop_htoprc
+    - f_iex_exs
     - f_config_nvim_ftplugin_markdown.vim
     - f_config_nvim_lua_plugins_lspconfig_clangd.lua
     - f_config_nvim_lua_plugins_lspconfig_elixirls.lua

@@ -482,6 +482,13 @@ dotfiles:
     chmod: '600'
 
 
+  # iex
+  f_iex_exs:
+    src: iex.exs
+    dst: ~/.iex.exs
+    chmod: '600'
+
+
   # Jetbrain vim plugin
   f_ideavimrc:
     src: ideavimrc

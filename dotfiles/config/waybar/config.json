@@ -158,6 +158,14 @@
       "sway/mode",
       "sway/window"
     ],
+    "modules-right": [
+      "clock"
+    ],
+    "clock": {
+      "interval": 5,
+      "format": "{:%D - %H:%M:%S}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
     "sway/workspaces": {
       "format": "  {index}  "
     }

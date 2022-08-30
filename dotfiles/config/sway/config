@@ -68,5 +68,6 @@ exec {{@@ wallpaper_script @@}} change
 include ./bindings
 include ./workspace
 include ./custom_outputs
+include ./custom_bindings
 
 include /etc/sway/config.d/50-systemd-user.conf

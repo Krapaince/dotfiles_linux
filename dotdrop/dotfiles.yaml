@@ -378,6 +378,7 @@ dotfiles:
     actions:
       - download_wallpaper
       - sway_custom_outputs
+      - sway_custom_bindings
   f_config_sway_workspace:
     src: config/sway/workspace
     dst: ~/.config/sway/workspace

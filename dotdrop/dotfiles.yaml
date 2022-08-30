@@ -9,12 +9,6 @@ config:
   longkey: true
 profiles:
 dotfiles:
-  profile_krapaince_tty:
-    src: config/dotdrop/installed
-    dst: ~/.config/dotdrop/krapaince_tty
-    actions:
-      - setup_npm
-
   # clang
   f_clang-format_c:
     src: clang-format_c
@@ -136,6 +130,14 @@ dotfiles:
   f_config_kvantum_kvantum.kvconfig:
     src: config/Kvantum/kvantum.kvconfig
     dst: ~/.config/Kvantum/kvantum.kvconfig
+
+
+  # npm
+  npm_setup_action:
+    src: config/dotdrop/installed
+    dst: ~/.config/dotdrop/npm_setup_action
+    actions:
+      - setup_npm
 
 
   # Neovim

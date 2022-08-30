@@ -88,6 +88,7 @@ profiles:
     - f_config_gitui_key_bindings.ron
     - f_config_htop_htoprc
     - f_iex_exs
+    - npm_setup_action
     - f_config_nvim_ftplugin_markdown.vim
     - f_config_nvim_lua_plugins_lspconfig_clangd.lua
     - f_config_nvim_lua_plugins_lspconfig_elixirls.lua
@@ -136,8 +137,6 @@ profiles:
     - f_local_bin_pinentry.sh
     - f_rustfmt.toml
     - f_stylua.toml
-
-    - profile_krapaince_tty
 
   krapaince_gui:
     dotfiles:

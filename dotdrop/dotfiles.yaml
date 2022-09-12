@@ -201,6 +201,9 @@ dotfiles:
   f_config_nvim_lua_plugins_nvim-tree.lua:
     src: config/nvim/lua/plugins/nvim-tree.lua
     dst: ~/.config/nvim/lua/plugins/nvim-tree.lua
+  f_config_nvim_lua_plugins_nvim-ufo.lua:
+    src: config/nvim/lua/plugins/nvim-ufo.lua
+    dst: ~/.config/nvim/lua/plugins/nvim-ufo.lua
   f_config_nvim_lua_plugins_symbols-outline.lua:
     src: config/nvim/lua/plugins/symbols-outline.lua
     dst: ~/.config/nvim/lua/plugins/symbols-outline.lua

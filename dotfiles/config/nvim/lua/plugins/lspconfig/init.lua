@@ -29,10 +29,6 @@ return function()
   require('plugins.lspconfig.volar')
 
   capabilities.textDocument.completion.completionItem.snippetSupport = true
-  capabilities.textDocument.foldingRange = {
-    dynamicRegistration = false,
-    lineFoldingOnly = true,
-  }
 
   vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
@@ -78,5 +74,9 @@ return function()
   end
 
   require('rust-tools').setup({ server = make_config(require('plugins.lspconfig.rust-analyzer')) })
-  require('ufo').setup()
+  require('ufo').setup({
+    provider_selector = function(bufnr, filetype, buftype)
+      return { 'treesiter', 'indent' }
+    end,
+  })
 end

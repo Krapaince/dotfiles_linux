@@ -29,7 +29,9 @@ return function()
       local gs = package.loaded.gitsigns
       local buf_map = require('utils').buf_map
 
-      buf_map(bufnr, 'n', '<Leader>g', gs.diffthis)
+      buf_map(bufnr, 'n', '<leader>g', function()
+        gs.blame_line({ full = true })
+      end)
     end,
   })
 end

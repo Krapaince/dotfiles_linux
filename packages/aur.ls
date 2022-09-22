@@ -1,5 +1,4 @@
 actionlint-bin
-bash-language-server
 dockerfile-language-server-bin
 prettierd
 tailwindcss-language-server

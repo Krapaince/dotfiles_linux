@@ -33,7 +33,7 @@ function handler(virt_text, fold_start_line, fold_end_line, width, truncate)
     cur_width = cur_width + chunk_width
   end
   table.insert(new_virt_text, { suffix, 'MoreMsg' })
-  table.insert(new_virt_text, { ' ' .. vim.fn.trim(vim.fn.getline(fold_end_line)), fold_hl_group })
+  table.insert(new_virt_text, { vim.fn.trim(vim.fn.getline(fold_end_line)), fold_hl_group })
 
   return new_virt_text
 end

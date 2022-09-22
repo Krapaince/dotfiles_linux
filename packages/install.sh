@@ -19,7 +19,7 @@ NO_COLOR='\e[0m'
 BOLD='\e[1m'
 CYAN='\e[1;36m'
 
-PROFILES=('Krapaince-MASTER-arch' 'Krapaince-arch', 'krapaince_tty')
+PROFILES=('Krapaince-MASTER-arch' 'Krapaince-arch' 'krapaince_tty')
 COMMON_PKG_FILES='aur aur-ls pacman pacman.ls'
 COMMOON_GUI_PKG_FILES="$COMMON_PKG_FILES, aur.gui pacman.gui"
 

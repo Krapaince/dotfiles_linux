@@ -2,6 +2,8 @@
 
 local opt = vim.opt
 
+vim.o.autochdir = false
+
 opt.wildignorecase = true -- Make filenames autocompletion case-insensitive
 
 opt.ignorecase = true -- Make search case insensitive if all lowercase

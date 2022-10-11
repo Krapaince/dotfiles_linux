@@ -24,13 +24,13 @@ M.set_ls_formatting_keymaps = function(client, bufnr)
     end
   end
 
-  if client.resolved_capabilities.document_formatting then
-    M.buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>')
+  if client.server_capabilities.documentFormattingProvider then
+    M.buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.format({ async = true })<CR>')
     if is_excluded == false then
-      vim.cmd('autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()')
+      vim.cmd('autocmd BufWritePre * lua vim.lsp.buf.format({ async = false })')
     end
   end
-  if client.resolved_capabilities.document_range_formatting then
+  if client.server_capabilities.documentRangeFormattingProvider then
     M.buf_set_keymap(bufnr, 'v', '<leader>f', '<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>')
   end
 end
@@ -53,8 +53,8 @@ M.set_ls_keymaps = function(client, bufnr, formatting)
   if formatting and excluded_clients[client.name] ~= true then
     M.set_ls_formatting_keymaps(client, bufnr)
   else
-    client.resolved_capabilities.document_formatting = false
-    client.resolved_capabilities.document_range_formatting = false
+    client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentRangeFormattingProvider = false
   end
 end
 

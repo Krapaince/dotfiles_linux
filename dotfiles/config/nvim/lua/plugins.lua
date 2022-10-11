@@ -122,8 +122,7 @@ return require('packer').startup({
       config = require('plugins.gitsigns'),
       requires = {
         'nvim-lua/plenary.nvim',
-      },
-      tag = 'release',
+      }
     })
 
     use('tweekmonster/startuptime.vim')

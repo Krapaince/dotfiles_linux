@@ -43,7 +43,18 @@ return require('packer').startup({
     })
 
     -- Status line
-    use({ 'hoob3rt/lualine.nvim', config = require('plugins.lualine') })
+    use({
+      'hoob3rt/lualine.nvim',
+      config = require('plugins.lualine'),
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    })
+    -- Tab libe
+    use({
+      'keklleo/tabline.nvim',
+      branch = 'change-show-tabs-always',
+      config = require('plugins.tabline'),
+      requires = { { 'hoob3rt/lualine.nvim', opt = true }, { 'kyazdani42/nvim-web-devicons', opt = true } },
+    })
 
     -- Treesitter
     use({

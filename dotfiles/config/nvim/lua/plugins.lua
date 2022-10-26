@@ -150,6 +150,7 @@ return require('packer').startup({
     use({ 'JoosepAlviste/nvim-ts-context-commentstring' })
 
     -- git related plugins
+    use({ 'tpope/vim-fugitive' })
     use({
       'lewis6991/gitsigns.nvim',
       config = require('plugins.gitsigns'),

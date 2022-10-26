@@ -57,9 +57,6 @@ return require('packer').startup({
 
     -- {%@@ if profile != "krapaince_min" @@%}
 
-    -- Folding
-    use({ 'kevinhwang91/nvim-ufo', requires = { 'kevinhwang91/promise-async' }, config = require('plugins.nvim-ufo') })
-
     use({
       'neovim/nvim-lspconfig',
       requires = {
@@ -95,6 +92,9 @@ return require('packer').startup({
     })
 
     use({ 'hrsh7th/vim-vsnip', config = require('plugins.vsnip') })
+
+    -- Folding
+    use({ 'kevinhwang91/nvim-ufo', requires = { 'kevinhwang91/promise-async' }, config = require('plugins.nvim-ufo') })
 
     -- Symbol tree
     use({ 'simrat39/symbols-outline.nvim', config = require('plugins.symbols-outline') })

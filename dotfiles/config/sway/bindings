@@ -20,7 +20,7 @@ bindsym Control+space exec dunstctl close
 bindsym $mod+Return exec kitty
 # Program launcher
 bindsym $mod+d exec wofi
-bindsym Print exec flameshot gui | wl-paste -t image/png | wl-copy
+bindsym Print exec slurp | grim -g - - | wl-copy
 
 bindsym mod4+Up exec ~/.config/sway/scripts/lock.sh -f && systemctl suspend
 bindsym mod4+Right exec ~/.config/sway/scripts/lock.sh

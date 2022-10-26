@@ -51,3 +51,15 @@ for_window [class="TeamSpeak 3"] move container to workspace $ws8
 
 for_window [class="Microsoft Teams - Preview"] move container to workspace $ws10
 for_window [class="teams-for-linux"] move container to workspace $ws10
+
+# Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
+for_window [title="FW1.*"] move container to workspace number $ws1
+for_window [title="FW2.*"] move container to workspace number $ws2
+for_window [title="FW3.*"] move container to workspace number $ws3
+for_window [title="FW4.*"] move container to workspace number $ws4
+for_window [title="FW5.*"] move container to workspace number $ws5
+for_window [title="FW6.*"] move container to workspace number $ws6
+for_window [title="FW7.*"] move container to workspace number $ws7
+for_window [title="FW8.*"] move container to workspace number $ws8
+for_window [title="FW9.*"] move container to workspace number $ws9
+for_window [title="FW10.*"] move container to workspace number $ws10

@@ -64,7 +64,7 @@ profiles:
       - f_config_omf_init.fish
       - f_config_nvim_lua_plugins_comment.lua
       - f_config_nvim_lua_plugins_lualine.lua
-      - f_config_nvim_lua_plugins_nvim-tree.lua
+      - f_config_nvim_lua_plugins_neo-tree.lua
       - f_config_nvim_lua_plugins_treesitter.lua
       - f_config_nvim_lua_plugins_vim-better-whitespace.lua
       - f_config_nvim_lua_plugins_vscode.lua
@@ -102,10 +102,11 @@ profiles:
     - f_config_nvim_lua_plugins_lspconfig_volar.lua
     - f_config_nvim_lua_plugins_comment.lua
     - f_config_nvim_lua_plugins_lualine.lua
+    - f_config_nvim_lua_plugins_neo-tree.lua
     - f_config_nvim_lua_plugins_nvim-colorizer.lua
-    - f_config_nvim_lua_plugins_nvim-tree.lua
     - f_config_nvim_lua_plugins_nvim-ufo.lua
     - f_config_nvim_lua_plugins_symbols-outline.lua
+    - f_config_nvim_lua_plugins_tabline.lua
     - f_config_nvim_lua_plugins_telescope.lua
     - f_config_nvim_lua_plugins_todo-comments.lua
     - f_config_nvim_lua_plugins_treesitter.lua

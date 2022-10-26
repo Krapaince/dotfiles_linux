@@ -39,7 +39,8 @@ return function()
 
     options = {
       theme = theme,
-      disabled_filetypes = { 'packer' },
+      disabled_filetypes = { 'packer', 'neo-tree' },
+      ignore_focus = { 'neo-tree' },
       globalstatus = true,
     },
     extensions = {},

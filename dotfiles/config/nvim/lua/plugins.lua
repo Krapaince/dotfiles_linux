@@ -12,11 +12,34 @@ return require('packer').startup({
 
     -- File Explorer
     use({
-      'kyazdani42/nvim-tree.lua',
+      'nvim-neo-tree/neo-tree.nvim',
+      branch = 'v2.x',
       requires = {
-        'kyazdani42/nvim-web-devicons', -- optional, for file icon
+        'nvim-lua/plenary.nvim',
+        'kyazdani42/nvim-web-devicons',
+        'MunifTanjim/nui.nvim',
+        {
+          's1n7ax/nvim-window-picker',
+          tag = 'v1.*',
+          config = function()
+            local colors = require('highlights').colors
+
+            require('window-picker').setup({
+              autoselect_one = true,
+              include_current = false,
+              filter_rules = {
+                bo = {
+                  filetype = { 'neo-tree', 'neo-tree-popup', 'notify' },
+                  buftype = { 'terminal', 'quickfix' },
+                },
+              },
+              fg_color = colors.picton_blue,
+              other_win_hl_color = colors.eclipse,
+            })
+          end,
+        },
       },
-      config = require('plugins.nvim-tree'),
+      config = require('plugins.neo-tree'),
     })
 
     -- Status line

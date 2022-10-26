@@ -129,7 +129,6 @@ return require('packer').startup({
 
     use({ 'norcalli/nvim-colorizer.lua', config = require('plugins.nvim-colorizer') }) -- Color highlighter
     use({ 'wesQ3/vim-windowswap' })
-    use({ 'vim-scripts/DrawIt' })
     use({ 'junegunn/vim-easy-align' })
 
     use({
@@ -145,7 +144,7 @@ return require('packer').startup({
       config = require('plugins.gitsigns'),
       requires = {
         'nvim-lua/plenary.nvim',
-      }
+      },
     })
 
     use('tweekmonster/startuptime.vim')

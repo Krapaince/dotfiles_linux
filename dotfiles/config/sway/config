@@ -39,7 +39,7 @@ for_window [title="^(?:Coping|Moving) - Dolphin"] floating enable
 
 for_window [class="firefox"] inhibit_idle fullscreen
 for_window [app_id="firefox" title="^Picture-in-Picture$"] floating enable, inhibit_idle
-for_window [title="Firefox — Sharing Indicator"] floating enable
+for_window [title="Firefox — Sharing Indicator"] kill
 
 for_window [title="kitty"] opacity set 0.99
 

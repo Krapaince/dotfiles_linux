@@ -4,22 +4,23 @@ return function()
   local cmp = require('cmp')
   local lspkind = require('lspkind')
   local highlight = require('utils').highlight
+  local colors = require('highlights').colors
 
-  highlight('CmpItemAbbrDeprecated', { style = 'strikethrough', fg = '#808080' })
+  highlight('CmpItemAbbrDeprecated', { style = 'strikethrough', fg = colors.grey })
 
-  highlight('CmpItemAbbrMatch', { bg = 'NONE', fg = '#569CD6' })
-  highlight('CmpItemAbbrMatchFuzzy', { bg = 'NONE', fg = '#569CD6' })
+  highlight('CmpItemAbbrMatch', { bg = 'NONE', fg = colors.picton_blue })
+  highlight('CmpItemAbbrMatchFuzzy', { bg = 'NONE', fg = colors.picton_blue })
 
-  highlight('CmpItemKindVariable', { bg = 'NONE', fg = '#9CDCFE' })
-  highlight('CmpItemKindInterface', { bg = 'NONE', fg = '#9CDCFE' })
-  highlight('CmpItemKindText', { bg = 'NONE', fg = '#9CDCFE' })
+  highlight('CmpItemKindVariable', { bg = 'NONE', fg = colors.columbia_blue })
+  highlight('CmpItemKindInterface', { bg = 'NONE', fg = colors.columbia_blue })
+  highlight('CmpItemKindText', { bg = 'NONE', fg = colors.columbia_blue })
 
-  highlight('CmpItemKindFunction', { bg = 'NONE', fg = '#C586C0' })
-  highlight('CmpItemKindMethod', { bg = 'NONE', fg = '#C586C0' })
+  highlight('CmpItemKindFunction', { bg = 'NONE', fg = colors.lilac })
+  highlight('CmpItemKindMethod', { bg = 'NONE', fg = colors.lilac })
 
-  highlight('CmpItemKindKeyword', { bg = 'NONE', fg = '#D4D4D4' })
-  highlight('CmpItemKindProperty', { bg = 'NONE', fg = '#D4D4D4' })
-  highlight('CmpItemKindUnit', { bg = 'NONE', fg = '#D4D4D4' })
+  highlight('CmpItemKindKeyword', { bg = 'NONE', fg = colors.light_grey })
+  highlight('CmpItemKindProperty', { bg = 'NONE', fg = colors.light_grey })
+  highlight('CmpItemKindUnit', { bg = 'NONE', fg = colors.light_grey })
 
   cmp.setup({
     snippet = {

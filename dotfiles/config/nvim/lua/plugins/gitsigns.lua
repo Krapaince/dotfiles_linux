@@ -2,10 +2,11 @@
 
 return function()
   local highlight = require('utils').highlight
+  local colors = require('highlights').colors
 
-  highlight('GitSignsAddNr', { bg = '#4b5632', fg = 'NONE' })
-  highlight('GitSignsChangeNr', { bg = '#6F490B', fg = 'NONE' })
-  highlight('GitSignsDeleteNr', { bg = '#4b1818', fg = 'NONE' })
+  highlight('GitSignsAddNr', { bg = colors.clover, fg = 'NONE' })
+  highlight('GitSignsChangeNr', { bg = colors.raw_umber, fg = 'NONE' })
+  highlight('GitSignsDeleteNr', { bg = colors.bordeaux, fg = 'NONE' })
 
   require('gitsigns').setup({
     signs = {

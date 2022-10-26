@@ -71,6 +71,7 @@ bindsym $mod+r mode "resize"
 mode "media" {
   bindsym h exec playerctl previous
   bindsym l exec playerctl next
+  bindsym p exec playerctl play-pause
 
   # Back to normal
   bindsym Return mode "default"

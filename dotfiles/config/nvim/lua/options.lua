@@ -33,8 +33,6 @@ opt.fixeol = false
 opt.number = true -- Print the line number in front of each line
 opt.cursorline = true -- Highligh the screen line of the cursor
 
-opt.winbar = '%f'
-
 opt.signcolumn = 'yes' -- Always display signcolumn
 
 opt.wildignore = opt.wildignore + '*.o,*.gcno,*.gcda' -- Files matching these patterns are not completed

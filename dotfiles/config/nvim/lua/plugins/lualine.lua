@@ -27,7 +27,15 @@ return function()
     symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' },
   }
 
+  local winbar_filename = {
+    'filename',
+    path = 1,
+    shorting_target = 20,
+  }
+
   require('lualine').setup({
+    winbar = { lualine_c = { winbar_filename } },
+    inactive_winbar = { lualine_c = { winbar_filename } },
     status_line = {
       lualine_a = { 'mode' },
       lualine_b = { 'branch', diagnostics },

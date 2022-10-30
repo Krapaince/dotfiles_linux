@@ -39,7 +39,7 @@ def install_packages(profile_packages_files: List[Path]):
     packages[-1] = packages[-1].removesuffix("\n")
     packages = "".join(packages)
     p = subprocess.Popen(
-        ["paru", "-Syu", "--needed", "--skipreview", "-"],
+        ["paru", "-Syu", "--needed", "--skipreview", "--noconfirm", "-"],
         stdin=subprocess.PIPE,
         text=True,
     )

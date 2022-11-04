@@ -65,6 +65,7 @@ profiles:
       - f_config_nvim_lua_plugins_comment.lua
       - f_config_nvim_lua_plugins_lualine.lua
       - f_config_nvim_lua_plugins_neo-tree.lua
+      - f_config_nvim_lua_plugins_tabline.lua
       - f_config_nvim_lua_plugins_treesitter.lua
       - f_config_nvim_lua_plugins_vim-better-whitespace.lua
       - f_config_nvim_lua_plugins_vscode.lua

@@ -47,7 +47,7 @@ element {
     padding: 12px;
 }
 
-element selected {
+element selected, element-text selected, element-icon selected {
     background-color: #2e343f;
 }
 

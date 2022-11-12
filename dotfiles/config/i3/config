@@ -20,10 +20,7 @@ font pango:{{@@ font @@}} 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock.sh
 
-
-{%@@ if profile == "Krapaince-MASTER-arch" @@%}
 exec --no-startup-id ~/.config/i3/scripts/monitor/setup_screen.sh
-{%@@ endif @@%}
 
 # Set background image
 exec --no-startup-id {{@@ wallpaper_script @@}} change
@@ -34,10 +31,8 @@ exec --no-startup-id picom --config ~/.config/picom/config.ini --experimental-ba
 # NetworkManager
 exec --no-startup-id nm-applet
 
-{%@@ if profile == "Krapaince-MASTER-arch" @@%}
 # Launch blueman applet
 exec --no-startup-id blueman-applet
-{%@@ endif @@%}
 
 # Notification daemon
 exec dunst -config ~/.config/dunst/dunstrc
@@ -47,7 +42,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Set the keyboard rate
 exec "xset r rate 200 50"
-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -98,10 +92,8 @@ bindsym Control+space exec dunstctl close
 # Switch keyboard layout
 bindsym mod4+space exec ~/.config/i3/scripts/keyboard_switcher.sh
 
-{%@@ if profile == "Krapaince-MASTER-arch" @@%}
 # Reload screen setup
 bindsym mod4+Down exec ~/.config/i3/scripts/monitor/reload_screen_setup.sh
-{%@@ endif @@%}
 
 # Start a terminal
 bindsym $mod+Return exec kitty
@@ -208,18 +200,16 @@ bindsym $mod+a focus parent
     bindsym $mod+Shift+9 move container to workspace number $ws9
     bindsym $mod+Shift+0 move container to workspace number $ws10
 
-    {%@@ if profile == "Krapaince-MASTER-arch" @@%}
-    workspace $ws1  output {{@@ monitor_01 @@}}
-    workspace $ws2  output {{@@ monitor_01 @@}}
-    workspace $ws3  output {{@@ monitor_01 @@}}
-    workspace $ws4  output {{@@ monitor_02 @@}}
-    workspace $ws5  output {{@@ monitor_02 @@}}
-    workspace $ws6  output {{@@ monitor_02 @@}}
-    workspace $ws7  output {{@@ monitor_03 @@}}
-    workspace $ws8  output {{@@ monitor_03 @@}}
-    workspace $ws9  output {{@@ monitor_03 @@}}
-    workspace $ws10 output {{@@ monitor_03 @@}}
-    {%@@ endif @@%}
+    workspace $ws1  output {{@@ MON_DP @@}}
+    workspace $ws2  output {{@@ MON_DP @@}}
+    workspace $ws3  output {{@@ MON_DP @@}}
+    workspace $ws4  output {{@@ MON_HDMI @@}}
+    workspace $ws5  output {{@@ MON_HDMI @@}}
+    workspace $ws6  output {{@@ MON_HDMI @@}}
+    workspace $ws7  output {{@@ MON_DVI @@}}
+    workspace $ws8  output {{@@ MON_DVI @@}}
+    workspace $ws9  output {{@@ MON_DVI @@}}
+    workspace $ws10 output {{@@ MON_DVI @@}}
 
     # Assign app to workspace
     for_window [class="discord"] move container to workspace $ws7
@@ -231,27 +221,52 @@ bindsym $mod+a focus parent
 
     for_window [class="Microsoft Teams - Preview"] move container to workspace $ws10
     for_window [class="teams-for-linux"] move container to workspace $ws10
+
+    # Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
+    for_window [title="FW1.*"] move container to workspace number $ws1
+    for_window [title="FW2.*"] move container to workspace number $ws2
+    for_window [title="FW3.*"] move container to workspace number $ws3
+    for_window [title="FW4.*"] move container to workspace number $ws4
+    for_window [title="FW5.*"] move container to workspace number $ws5
+    for_window [title="FW6.*"] move container to workspace number $ws6
+    for_window [title="FW7.*"] move container to workspace number $ws7
+    for_window [title="FW8.*"] move container to workspace number $ws8
+    for_window [title="FW9.*"] move container to workspace number $ws9
+    for_window [title="FW10.*"] move container to workspace number $ws10
 #: }}}
 
 
 # Resize window
 mode "resize" {
 
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
 
-        # Same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # Same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # Back to normal
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+    # Back to normal
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
+
+mode "media" {
+  bindsym h exec playerctl previous
+  bindsym l exec playerctl next
+  bindsym p exec playerctl play-pause
+
+  # Back to normal
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+r mode "default"
+}
+
+bindsym $mod+m mode "media"

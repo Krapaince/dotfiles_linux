@@ -28,8 +28,8 @@ i3lock \
     --date-str="%a %d %Y" \
     --date-color="fefedf" \
     --time-color="fefedf" \
-    --radius 75 \
-    --ind-pos='x+942:y+425' \
+    --radius 65 \
+    --ind-pos='x+910:y+400' \
     --ring-width 4 \
     --ringver-color="00000000" \
     --ringwrong-color="00000000" \

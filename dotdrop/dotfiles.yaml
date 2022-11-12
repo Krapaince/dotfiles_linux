@@ -303,12 +303,12 @@ dotfiles:
     chmod: '700'
 
   # Polybar modules
-  f_config_polybar_modules_battery.ini:
-    src: config/polybar/modules/battery.ini
-    dst: ~/.config/polybar/modules/battery.ini
   f_config_polybar_modules_cpu.ini:
     src: config/polybar/modules/cpu.ini
     dst: ~/.config/polybar/modules/cpu.ini
+  f_config_polybar_modules_custom_media.ini:
+    src: config/polybar/modules/custom/media.ini
+    dst: ~/.config/polybar/modules/custom/media.ini
   f_config_polybar_modules_custom_pipewire-control.ini:
     src: config/polybar/modules/custom/pipewire-control.ini
     dst: ~/.config/polybar/modules/custom/pipewire-control.ini

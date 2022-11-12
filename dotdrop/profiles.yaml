@@ -16,9 +16,9 @@ profiles:
 
       i3lock_screen_number: 2
 
-      monitor_01: DP-1-5
-      monitor_02: HDMI-0
-      monitor_03: DVI-D-0
+      MON_DP: DP2
+      MON_HDMI: HDMI-0
+      MON_DVI: DVI-D-0
 
       wallpaper_url: https://www.dropbox.com/s/2s2uu988vrgxzmc/Krapaince-MASTER-arch-reverse.png
 
@@ -162,10 +162,10 @@ profiles:
     - f_config_i3_scripts_suspend.sh
 
     - f_config_polybar_bars.ini
+    - f_config_polybar_modules_custom_media.ini
     - f_config_polybar_modules_custom_pipewire-control.ini
     - f_config_polybar_modules_custom_temperature-cpu.ini
     - f_config_polybar_modules_custom_temperature-gpu.ini
-    - f_config_polybar_modules_battery.ini
     - f_config_polybar_modules_cpu.ini
     - f_config_polybar_modules_date.ini
     - f_config_polybar_modules_filesystem.ini

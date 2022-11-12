@@ -23,7 +23,7 @@ declare -a SINK_BLACKLIST
 
 SINK_BLACKLIST+=("alsa_output.platform-snd_aloop.0.analog-stereo")
 
-SINK_NICKNAMES["alsa_output.pci-0000_00_1f.3.analog-stereo"]=""
+SINK_NICKNAMES["alsa_output.pci-0000_00_1f.3.analog-stereo"]=""
 SINK_NICKNAMES["bluez_output.CC_98_8B_31_4A_C0.a2dp-sink"]=""
 
 # Environment & global constants for the script

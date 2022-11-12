@@ -17,7 +17,11 @@ def make_packages_files_list(profile: str) -> List[Path]:
 
     profiles_packages_files = {
         PROFILES_LIST[0]: common_gui_pkg_file
-        + [Path("aur.gui-x"), Path("pacman.gui-x")],
+        + [
+            Path("aur.gui-x"),
+            Path("pacman.gui-x"),
+            Path("pacman.Krapaince-MASTER-arch"),
+        ],
         PROFILES_LIST[1]: common_gui_pkg_file
         + [Path("aur.gui-wayland"), Path("pacman.gui-wayland")],
         PROFILES_LIST[2]: [],

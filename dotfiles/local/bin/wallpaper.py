@@ -149,6 +149,8 @@ def generate_wallpaper(wallpaper: Path, color: Color, monitor: str = "") -> None
     if is_original(color) or output.exists():
         return
 
+    print(f"Generating {output.as_posix()}...", end='')
+
     tmp_out_dir = Path("/tmp")
 
     input_file = wallpaper
@@ -183,7 +185,7 @@ def generate_wallpaper(wallpaper: Path, color: Color, monitor: str = "") -> None
                 os.remove(input_file)
             input_file = Path.joinpath(tmp_out_dir, out_filename)
     shutil.move(tmp_out_dir.joinpath(out_filename), output)
-
+    print("done")
 
 ####
 #
@@ -284,6 +286,7 @@ def generate_wallpapers() -> None:
         for color in color_set:
             generate_wallpaper(monitor["path"], color, monitor["name"])
 {%@@ else @@%}
+    os.makedirs(WALLPAPER_CACHE_PATH, exist_ok=True)
     for color in color_set:
         generate_wallpaper(WALLPAPER_PATH, color)
 {%@@ endif @@%}

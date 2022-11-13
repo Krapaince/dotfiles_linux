@@ -24,7 +24,8 @@
 #tray,
 #window {
   color: @fg_primary;
-  margin: 0 10px;
+  margin: 0 0px;
+  padding: 0 4px;
 }
 
 #mode {

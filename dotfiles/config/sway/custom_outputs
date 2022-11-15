@@ -1,0 +1,6 @@
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+
+# output eDP-1 pos 5000 5000 res 1920x1080
+
+# output "make model serial" res 1920x1080 pos 3080 4880
+# output "make model serial" background path fill

@@ -8,7 +8,7 @@ actions:
     download_wallpaper: mkdir -p {{@@ wallpaper_destination @@}} && curl --http1.1 -L {{@@ wallpaper_url @@}} -o {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
   post:
     sway_custom_outputs: >
-      test -e ~/.config/sway/custom_outputs || cat dotfiles/config/sway/custom >> ~/.config/sway/custom_outputs
+      test -e ~/.config/sway/custom_outputs || cat dotfiles/config/sway/custom_outputs >> ~/.config/sway/custom_outputs
     sway_custom_bindings: >
       test -e ~/.config/sway/custom_bindings || cat dotfiles/config/sway/custom >> ~/.config/sway/custom_bindings
     fish_install: >

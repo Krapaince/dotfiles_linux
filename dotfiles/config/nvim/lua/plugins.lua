@@ -29,7 +29,7 @@ return require('packer').startup({
               include_current = false,
               filter_rules = {
                 bo = {
-                  filetype = { 'neo-tree', 'neo-tree-popup', 'notify' },
+                  filetype = { 'neo-tree', 'neo-tree-popup', 'notify', 'Trouble' },
                   buftype = { 'terminal', 'quickfix' },
                 },
               },

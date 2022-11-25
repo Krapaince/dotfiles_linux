@@ -9,6 +9,7 @@ return function()
   local servers = {
     require('plugins.lspconfig.clangd'),
     require('plugins.lspconfig.elixirls'),
+    require('plugins.lspconfig.jsonls'),
     require('plugins.lspconfig.rust-analyzer'),
     require('plugins.lspconfig.sumneko_lua'),
     require('plugins.lspconfig.texlab'),
@@ -19,7 +20,6 @@ return function()
     { name = 'cssls' },
     { name = 'dockerls' },
     { name = 'html' },
-    { name = 'jsonls' },
     { name = 'yamlls' },
     { name = 'pyright' },
     { name = 'tailwindcss' },

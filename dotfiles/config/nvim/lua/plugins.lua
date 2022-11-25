@@ -78,6 +78,7 @@ return require('packer').startup({
       },
       config = require('plugins.lspconfig'),
     })
+    use({ 'b0o/schemastore.nvim' })
 
     -- Lsp progress
     use({ 'j-hui/fidget.nvim', config = require('plugins.fidget') })

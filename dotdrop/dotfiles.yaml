@@ -233,6 +233,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lspconfig_grammarly.lua:
     src: config/nvim/lua/plugins/lspconfig/grammarly.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/grammarly.lua
+  f_config_nvim_lua_plugins_lspconfig_jsonls.lua:
+    src: config/nvim/lua/plugins/lspconfig/jsonls.lua
+    dst: ~/.config/nvim/lua/plugins/lspconfig/jsonls.lua
   f_config_nvim_lua_plugins_lspconfig_eslint.lua:
     src: config/nvim/lua/plugins/lspconfig/eslint.lua
     dst: ~/.config/nvim/lua/plugins/lspconfig/eslint.lua

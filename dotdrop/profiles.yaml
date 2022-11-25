@@ -93,6 +93,7 @@ profiles:
     - f_config_nvim_lua_plugins_lspconfig_clangd.lua
     - f_config_nvim_lua_plugins_lspconfig_elixirls.lua
     - f_config_nvim_lua_plugins_lspconfig_eslint.lua
+    - f_config_nvim_lua_plugins_lspconfig_jsonls.lua
     - f_config_nvim_lua_plugins_lspconfig_init.lua
     - f_config_nvim_lua_plugins_lspconfig_null-ls.lua
     - f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua

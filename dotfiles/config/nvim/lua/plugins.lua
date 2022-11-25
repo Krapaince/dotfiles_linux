@@ -73,10 +73,9 @@ return require('packer').startup({
       requires = {
         { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' },
         'jose-elias-alvarez/null-ls.nvim',
-        'jose-elias-alvarez/nvim-lsp-ts-utils',
+        'jose-elias-alvarez/typescript.nvim',
         'simrat39/rust-tools.nvim',
       },
-      config = require('plugins.lspconfig'),
     })
     use({ 'b0o/schemastore.nvim' })
 

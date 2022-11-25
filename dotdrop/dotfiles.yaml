@@ -224,45 +224,39 @@ dotfiles:
     dst: ~/.config/nvim/lua/plugins/vsnip.lua
 
   # Neovim lsp
-  f_config_nvim_lua_plugins_lspconfig_clangd.lua:
-    src: config/nvim/lua/plugins/lspconfig/clangd.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/clangd.lua
-  f_config_nvim_lua_plugins_lspconfig_elixirls.lua:
-    src: config/nvim/lua/plugins/lspconfig/elixirls.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/elixirls.lua
-  f_config_nvim_lua_plugins_lspconfig_grammarly.lua:
-    src: config/nvim/lua/plugins/lspconfig/grammarly.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/grammarly.lua
-  f_config_nvim_lua_plugins_lspconfig_jsonls.lua:
-    src: config/nvim/lua/plugins/lspconfig/jsonls.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/jsonls.lua
-  f_config_nvim_lua_plugins_lspconfig_eslint.lua:
-    src: config/nvim/lua/plugins/lspconfig/eslint.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/eslint.lua
-  f_config_nvim_lua_plugins_lspconfig_init.lua:
-    src: config/nvim/lua/plugins/lspconfig/init.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/init.lua
-  f_config_nvim_lua_plugins_lspconfig_null-ls.lua:
-    src: config/nvim/lua/plugins/lspconfig/null-ls.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/null-ls.lua
-  f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua:
-    src: config/nvim/lua/plugins/lspconfig/rust-analyzer.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/rust-analyzer.lua
-  f_config_nvim_lua_plugins_lspconfig_sumneko_lua.lua:
-    src: config/nvim/lua/plugins/lspconfig/sumneko_lua.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/sumneko_lua.lua
-  f_config_nvim_lua_plugins_lspconfig_texlab.lua:
-    src: config/nvim/lua/plugins/lspconfig/texlab.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/texlab.lua
-  f_config_nvim_lua_plugins_lspconfig_tsserver.lua:
-    src: config/nvim/lua/plugins/lspconfig/tsserver.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/tsserver.lua
-  f_config_nvim_lua_plugins_lspconfig_utils.lua:
-    src: config/nvim/lua/plugins/lspconfig/utils.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/utils.lua
-  f_config_nvim_lua_plugins_lspconfig_volar.lua:
-    src: config/nvim/lua/plugins/lspconfig/volar.lua
-    dst: ~/.config/nvim/lua/plugins/lspconfig/volar.lua
+  f_config_nvim_lua_lsp_clangd.lua:
+    src: config/nvim/lua/lsp/clangd.lua
+    dst: ~/.config/nvim/lua/lsp/clangd.lua
+  f_config_nvim_lua_lsp_elixirls.lua:
+    src: config/nvim/lua/lsp/elixirls.lua
+    dst: ~/.config/nvim/lua/lsp/elixirls.lua
+  f_config_nvim_lua_lsp_eslint.lua:
+    src: config/nvim/lua/lsp/eslint.lua
+    dst: ~/.config/nvim/lua/lsp/eslint.lua
+  f_config_nvim_lua_lsp_init.lua:
+    src: config/nvim/lua/lsp/init.lua
+    dst: ~/.config/nvim/lua/lsp/init.lua
+  f_config_nvim_lua_lsp_jsonls.lua:
+    src: config/nvim/lua/lsp/jsonls.lua
+    dst: ~/.config/nvim/lua/lsp/jsonls.lua
+  f_config_nvim_lua_lsp_null-ls.lua:
+    src: config/nvim/lua/lsp/null-ls.lua
+    dst: ~/.config/nvim/lua/lsp/null-ls.lua
+  f_config_nvim_lua_lsp_rust-analyzer.lua:
+    src: config/nvim/lua/lsp/rust-analyzer.lua
+    dst: ~/.config/nvim/lua/lsp/rust-analyzer.lua
+  f_config_nvim_lua_lsp_sumneko_lua.lua:
+    src: config/nvim/lua/lsp/sumneko_lua.lua
+    dst: ~/.config/nvim/lua/lsp/sumneko_lua.lua
+  f_config_nvim_lua_lsp_texlab.lua:
+    src: config/nvim/lua/lsp/texlab.lua
+    dst: ~/.config/nvim/lua/lsp/texlab.lua
+  f_config_nvim_lua_lsp_tsserver.lua:
+    src: config/nvim/lua/lsp/tsserver.lua
+    dst: ~/.config/nvim/lua/lsp/tsserver.lua
+  f_config_nvim_lua_lsp_utils.lua:
+    src: config/nvim/lua/lsp/utils.lua
+    dst: ~/.config/nvim/lua/lsp/utils.lua
 
   f_config_nvim_snippets_c.json:
     src: config/nvim/snippets/c.json

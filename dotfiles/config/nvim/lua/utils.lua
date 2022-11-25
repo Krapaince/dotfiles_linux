@@ -25,6 +25,10 @@ return {
     vim.keymap.set(mode, keys, action, options)
   end,
 
+  buf_command = function(bufnr, name, fn, opts)
+    vim.api.nvim_buf_create_user_command(bufnr, name, fn, opts or {})
+  end,
+
   highlight = function(group, color)
     local command = 'hi ' .. group .. ' '
     if color.style then

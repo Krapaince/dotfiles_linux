@@ -90,18 +90,17 @@ profiles:
     - f_iex_exs
     - npm_setup_action
     - f_config_nvim_ftplugin_markdown.vim
-    - f_config_nvim_lua_plugins_lspconfig_clangd.lua
-    - f_config_nvim_lua_plugins_lspconfig_elixirls.lua
-    - f_config_nvim_lua_plugins_lspconfig_eslint.lua
-    - f_config_nvim_lua_plugins_lspconfig_jsonls.lua
-    - f_config_nvim_lua_plugins_lspconfig_init.lua
-    - f_config_nvim_lua_plugins_lspconfig_null-ls.lua
-    - f_config_nvim_lua_plugins_lspconfig_rust-analyzer.lua
-    - f_config_nvim_lua_plugins_lspconfig_sumneko_lua.lua
-    - f_config_nvim_lua_plugins_lspconfig_texlab.lua
-    - f_config_nvim_lua_plugins_lspconfig_tsserver.lua
-    - f_config_nvim_lua_plugins_lspconfig_utils.lua
-    - f_config_nvim_lua_plugins_lspconfig_volar.lua
+    - f_config_nvim_lua_lsp_clangd.lua
+    - f_config_nvim_lua_lsp_elixirls.lua
+    - f_config_nvim_lua_lsp_eslint.lua
+    - f_config_nvim_lua_lsp_init.lua
+    - f_config_nvim_lua_lsp_jsonls.lua
+    - f_config_nvim_lua_lsp_null-ls.lua
+    - f_config_nvim_lua_lsp_rust-analyzer.lua
+    - f_config_nvim_lua_lsp_sumneko_lua.lua
+    - f_config_nvim_lua_lsp_texlab.lua
+    - f_config_nvim_lua_lsp_tsserver.lua
+    - f_config_nvim_lua_lsp_utils.lua
     - f_config_nvim_lua_plugins_comment.lua
     - f_config_nvim_lua_plugins_lualine.lua
     - f_config_nvim_lua_plugins_neo-tree.lua

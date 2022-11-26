@@ -19,7 +19,7 @@ bindsym Control+space exec dunstctl close
 
 bindsym $mod+Return exec kitty
 # Program launcher
-bindsym $mod+d exec wofi
+bindsym $mod+d exec yofi --config-file ~/.config/yofi/config.toml apps
 bindsym Print exec slurp | grim -g - - | wl-copy
 
 bindsym mod4+Up exec ~/.config/sway/scripts/lock.sh -f && systemctl suspend

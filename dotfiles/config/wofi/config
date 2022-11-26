@@ -1,9 +1,0 @@
-mode=drun
-width=250
-height=55%
-prompt=
-allow_images=true
-allow_markup=true
-insensitive=true
-image_size=16
-no_actions=true

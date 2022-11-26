@@ -443,13 +443,10 @@ dotfiles:
     dst: ~/.config/waybar/style.css
 
 
-  # Wofi
-  f_config_wofi_config:
-    src: config/wofi/config
-    dst: ~/.config/wofi/config
-  f_config_wofi_style.css:
-    src: config/wofi/style.css
-    dst: ~/.config/wofi/style.css
+  # Yofi
+  f_config_yofi_config.toml:
+    src: config/yofi/config.toml
+    dst: ~/.config/yofi/config.toml
 
 
   # yt-dlp

@@ -207,8 +207,7 @@ profiles:
     - f_config_waybar_config.json
     - f_config_waybar_style.css
 
-    - f_config_wofi_config
-    - f_config_wofi_style.css
+    - f_config_yofi_config.toml
 
     - f_local_bin_change-sink.sh
     - f_local_bin_import-gsettings.sh

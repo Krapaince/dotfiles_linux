@@ -17,10 +17,9 @@ vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSig
 
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 
-local lsp_formatting = function(bufnr, range)
-  print("toto")
+local lsp_formatting = function(bufnr, async, range)
   vim.lsp.buf.format({
-    async = true,
+    async = async,
     bufnr = bufnr,
     filter = function(client)
       local excluded_clients = { 'html', 'typescript' }
@@ -49,12 +48,8 @@ local on_attach = function(client, bufnr)
   u.buf_map(bufnr, 'n', '<C-d>', ':Trouble document_diagnostics<CR>')
 
   if client.supports_method('textDocument/formatting') then
-    local formatting_cb = function()
-      lsp_formatting(bufnr, nil)
-    end
-
-    u.buf_command(bufnr, 'LspFormatting', formatting_cb)
-    u.buf_map(bufnr, 'n', '<leader>f', formatting_cb)
+    u.buf_command(bufnr, 'LspFormatting', function() lsp_formatting(bufnr, false) end)
+    u.buf_map(bufnr, 'n', '<leader>f', function() lsp_formatting(bufnr, true) end)
     if lsp_utils.is_path_excluded(bufnr, client) == false then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
       vim.api.nvim_create_autocmd('BufWritePre', {
@@ -71,7 +66,7 @@ local on_attach = function(client, bufnr)
       local _end = vim.api.nvim_buf_get_mark(0, '>')
       local range = { start = start, ['end'] = _end }
 
-      lsp_formatting(bufnr, range)
+      lsp_formatting(bufnr, true, range)
     end)
   end
 end
@@ -101,6 +96,6 @@ for _, server_name in ipairs(servers_names) do
     server.setup(on_attach, capabilities)
   else
     -- Load default lsp config
-    require('lspconfig')[server_name].setup({on_attach, capabilities})
+    require('lspconfig')[server_name].setup({ on_attach, capabilities })
   end
 end

@@ -16,9 +16,9 @@ local sources = {
 
   function()
     local nl_utils = require('null-ls.utils').make_conditional_utils()
-    return nl_utils.root_has_file('.prettierrc.json')
-        and b.formatting.prettierd.with({ filetypes = { 'html', 'javascript', 'typescript' } })
-      or b.formatting.eslint_d
+    return nl_utils.root_has_file({ '.prettierrc.json', '.prettierrc' })
+        and b.formatting.prettierd.with({ filetypes = { 'html', 'javascript', 'typescript', 'svelte' } })
+        or b.formatting.eslint_d
   end,
 
   b.formatting.black,

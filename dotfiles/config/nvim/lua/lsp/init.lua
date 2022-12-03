@@ -22,7 +22,7 @@ local lsp_formatting = function(bufnr, async, range)
     async = async,
     bufnr = bufnr,
     filter = function(client)
-      local excluded_clients = { 'html', 'typescript' }
+      local excluded_clients = { 'html', 'tsserver' }
 
       for _, excluded_client in ipairs(excluded_clients) do
         if excluded_client == client.name then
@@ -48,8 +48,12 @@ local on_attach = function(client, bufnr)
   u.buf_map(bufnr, 'n', '<C-d>', ':Trouble document_diagnostics<CR>')
 
   if client.supports_method('textDocument/formatting') then
-    u.buf_command(bufnr, 'LspFormatting', function() lsp_formatting(bufnr, false) end)
-    u.buf_map(bufnr, 'n', '<leader>f', function() lsp_formatting(bufnr, true) end)
+    u.buf_command(bufnr, 'LspFormatting', function()
+      lsp_formatting(bufnr, false)
+    end)
+    u.buf_map(bufnr, 'n', '<leader>f', function()
+      lsp_formatting(bufnr, true)
+    end)
     if lsp_utils.is_path_excluded(bufnr, client) == false then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
       vim.api.nvim_create_autocmd('BufWritePre', {
@@ -81,6 +85,7 @@ local servers_names = {
   'elixirls',
   'html',
   'jsonls',
+  'null-ls',
   'pyright',
   'rust-analyzer',
   'sumneko_lua',

@@ -393,6 +393,11 @@ dotfiles:
     chmod: '700'
 
 
+  f_config_swaync_config.json:
+    src: config/swaync/config.json
+    dst: ~/.config/swaync/config.json
+
+
   # Rustfmt
   f_rustfmt.toml:
     src: rustfmt.toml

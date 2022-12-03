@@ -15,7 +15,8 @@ bindsym --locked XF86AudioPause exec playerctl play-pause
 bindsym --locked xf86monbrightnessdown exec "brightnessctl -d intel_backlight s 10%-"
 bindsym --locked XF86MonBrightnessUp exec "brightnessctl -d intel_backlight s 10%+"
 
-bindsym Control+space exec dunstctl close
+bindsym Control+space exec swaync-client --hide-latest
+bindsym $mod+t exec swaync-client -t
 
 bindsym $mod+Return exec kitty
 # Program launcher

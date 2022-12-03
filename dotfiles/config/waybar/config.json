@@ -13,6 +13,7 @@
     "modules-right": [
       "battery",
       "pulseaudio",
+      "custom/notification",
       "sway/language",
       "clock",
       "tray"
@@ -60,6 +61,17 @@
         ]
       },
       "on-click": "change-sink.sh"
+    },
+    "custom/notification": {
+      "format": " {icon} ",
+      "format-icons": {
+        "dnd-none": "",
+        "none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -d"
     },
     "clock": {
       "interval": 5,

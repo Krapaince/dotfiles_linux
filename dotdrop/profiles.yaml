@@ -142,7 +142,6 @@ profiles:
 
   krapaince_gui:
     dotfiles:
-    - f_config_dunst_dunstrc
     - f_config_gtk-3.0_settings.ini
     - f_config_gtk-4.0_settings.ini
     - f_config_kitty_kitty.conf
@@ -156,6 +155,7 @@ profiles:
 
   krapaince_gui_x:
     dotfiles:
+    - f_config_dunst_dunstrc
     - f_config_i3_config
     - f_config_i3_scripts_keyboard_switcher.sh
     - f_config_i3_scripts_lock.sh
@@ -213,4 +213,5 @@ profiles:
     - f_local_bin_import-gsettings.sh
     - f_local_bin_colorbalance2
     - f_local_bin_sway
+    - f_config_swaync_config.json
     - f_local_bin_temperature-cpu.sh

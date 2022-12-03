@@ -62,7 +62,7 @@ exec gnome-keyring-daemon --start
 exec waybar -c ~/.config/waybar/config.json
 exec nm-applet --indicator
 exec blueman-applet
-exec dunst -config ~/.config/dunst/dunstrc
+exec swaync
 exec {{@@ wallpaper_script @@}} change
 
 include ./bindings

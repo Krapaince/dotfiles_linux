@@ -12,7 +12,6 @@ while [[ "$1" =~ ^- ]]; do
     shift;
 done
 
-dunstctl set-paused true
 {{@@ wallpaper_script @@}} toggle
 
 swaylock $FLAGS $IMAGES               \
@@ -56,4 +55,3 @@ swaylock $FLAGS $IMAGES               \
   --text-wrong-color '00000000'
 
 {{@@ wallpaper_script @@}} toggle
-dunstctl set-paused false

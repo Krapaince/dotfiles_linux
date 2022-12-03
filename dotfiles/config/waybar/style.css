@@ -40,6 +40,10 @@
   color: @grey;
 }
 
+#custom-notification.dnd-none {
+  color: @grey;
+}
+
 #disk {
   color: @orange;
 }

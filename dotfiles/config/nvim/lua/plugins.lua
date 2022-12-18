@@ -89,20 +89,20 @@ return require('packer').startup({
       config = require('plugins.lsp-trouble'),
     })
 
+    use({ 'L3MON4D3/LuaSnip', config = require('plugins.luasnip'), tag = 'v1.*' })
+
     -- Autocompletion
     use({
       'hrsh7th/nvim-cmp',
       requires = {
         'hrsh7th/cmp-path',
-        'hrsh7th/cmp-vsnip',
+        'saadparwaiz1/cmp_luasnip',
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-nvim-lsp',
         'onsails/lspkind-nvim',
       },
       config = require('plugins.cmp'),
     })
-
-    use({ 'hrsh7th/vim-vsnip', config = require('plugins.vsnip') })
 
     -- Folding
     use({ 'kevinhwang91/nvim-ufo', requires = { 'kevinhwang91/promise-async' }, config = require('plugins.nvim-ufo') })

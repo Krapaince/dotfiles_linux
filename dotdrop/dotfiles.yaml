@@ -189,6 +189,9 @@ dotfiles:
   f_config_nvim_lua_plugins_lualine.lua:
     src: config/nvim/lua/plugins/lualine.lua
     dst: ~/.config/nvim/lua/plugins/lualine.lua
+  f_config_nvim_lua_plugins_luasnip.lua:
+    src: config/nvim/lua/plugins/luasnip.lua
+    dst: ~/.config/nvim/lua/plugins/luasnip.lua
   f_config_nvim_lua_plugins_neo-tree.lua:
     src: config/nvim/lua/plugins/neo-tree.lua
     dst: ~/.config/nvim/lua/plugins/neo-tree.lua
@@ -219,9 +222,6 @@ dotfiles:
   f_config_nvim_lua_plugins_vscode.lua:
     src: config/nvim/lua/plugins/vscode.lua
     dst: ~/.config/nvim/lua/plugins/vscode.lua
-  f_config_nvim_lua_plugins_vsnip.lua:
-    src: config/nvim/lua/plugins/vsnip.lua
-    dst: ~/.config/nvim/lua/plugins/vsnip.lua
 
   # Neovim lsp
   f_config_nvim_lua_lsp_clangd.lua:
@@ -258,6 +258,9 @@ dotfiles:
     src: config/nvim/lua/lsp/utils.lua
     dst: ~/.config/nvim/lua/lsp/utils.lua
 
+  f_config_nvim_snippets_package.json:
+    src: config/nvim/snippets/package.json
+    dst: ~/.config/nvim/snippets/package.json
   f_config_nvim_snippets_c.json:
     src: config/nvim/snippets/c.json
     dst: ~/.config/nvim/snippets/c.json

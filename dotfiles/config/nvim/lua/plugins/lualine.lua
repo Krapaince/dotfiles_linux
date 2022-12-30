@@ -34,6 +34,9 @@ return function()
   }
 
   require('lualine').setup({
+    tabline = {
+      lualine_x = { require('tabline').tabline_tabs },
+    },
     winbar = { lualine_c = { winbar_filename } },
     inactive_winbar = { lualine_c = { winbar_filename } },
     status_line = {

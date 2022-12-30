@@ -51,7 +51,6 @@ return require('packer').startup({
     -- Tab libe
     use({
       'keklleo/tabline.nvim',
-      branch = 'change-show-tabs-always',
       config = require('plugins.tabline'),
       requires = { { 'hoob3rt/lualine.nvim', opt = true }, { 'kyazdani42/nvim-web-devicons', opt = true } },
     })

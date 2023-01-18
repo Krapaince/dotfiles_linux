@@ -43,3 +43,5 @@ vim.o.cmdheight = 1
 vim.o.laststatus = 0
 
 vim.o.mouse = '' -- Disable mouse
+
+vim.o.equalalways = false

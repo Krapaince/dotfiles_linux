@@ -139,14 +139,11 @@ dotfiles:
     src: config/nvim/init.lua
     dst: ~/.config/nvim/init.lua
     actions:
-    - vim_install_packer
     - vim_install_rustup_components
 
   f_config_nvim_init_krapaince_min.lua:
     src: config/nvim/init.lua
     dst: ~/.config/nvim/init.lua
-    actions:
-    - vim_install_packer
 
   # Neovim core
   f_config_nvim_lua_highlights.lua:
@@ -158,9 +155,6 @@ dotfiles:
   f_config_nvim_lua_options.lua:
     src: config/nvim/lua/options.lua
     dst: ~/.config/nvim/lua/options.lua
-  f_config_nvim_lua_plugins.lua:
-    src: config/nvim/lua/plugins.lua
-    dst: ~/.config/nvim/lua/plugins.lua
   f_config_nvim_lua_utils.lua:
     src: config/nvim/lua/utils.lua
     dst: ~/.config/nvim/lua/utils.lua
@@ -171,57 +165,21 @@ dotfiles:
     dst: ~/.config/nvim/ftplugin/markdown.vim
 
   # Neovim plugins
-  f_config_nvim_lua_plugins_cmp.lua:
-    src: config/nvim/lua/plugins/cmp.lua
-    dst: ~/.config/nvim/lua/plugins/cmp.lua
-  f_config_nvim_lua_plugins_comment.lua:
-    src: config/nvim/lua/plugins/comment.lua
-    dst: ~/.config/nvim/lua/plugins/comment.lua
-  f_config_nvim_lua_plugins_fidget.lua:
-    src: config/nvim/lua/plugins/fidget.lua
-    dst: ~/.config/nvim/lua/plugins/fidget.lua
-  f_config_nvim_lua_plugins_gitsigns.lua:
-    src: config/nvim/lua/plugins/gitsigns.lua
-    dst: ~/.config/nvim/lua/plugins/gitsigns.lua
-  f_config_nvim_lua_plugins_lsp-trouble.lua:
-    src: config/nvim/lua/plugins/lsp-trouble.lua
-    dst: ~/.config/nvim/lua/plugins/lsp-trouble.lua
-  f_config_nvim_lua_plugins_lualine.lua:
-    src: config/nvim/lua/plugins/lualine.lua
-    dst: ~/.config/nvim/lua/plugins/lualine.lua
-  f_config_nvim_lua_plugins_luasnip.lua:
-    src: config/nvim/lua/plugins/luasnip.lua
-    dst: ~/.config/nvim/lua/plugins/luasnip.lua
-  f_config_nvim_lua_plugins_neo-tree.lua:
-    src: config/nvim/lua/plugins/neo-tree.lua
-    dst: ~/.config/nvim/lua/plugins/neo-tree.lua
-  f_config_nvim_lua_plugins_nvim-colorizer.lua:
-    src: config/nvim/lua/plugins/nvim-colorizer.lua
-    dst: ~/.config/nvim/lua/plugins/nvim-colorizer.lua
-  f_config_nvim_lua_plugins_nvim-ufo.lua:
-    src: config/nvim/lua/plugins/nvim-ufo.lua
-    dst: ~/.config/nvim/lua/plugins/nvim-ufo.lua
-  f_config_nvim_lua_plugins_symbols-outline.lua:
-    src: config/nvim/lua/plugins/symbols-outline.lua
-    dst: ~/.config/nvim/lua/plugins/symbols-outline.lua
-  f_config_nvim_lua_plugins_tabline.lua:
-    src: config/nvim/lua/plugins/tabline.lua
-    dst: ~/.config/nvim/lua/plugins/tabline.lua
-  f_config_nvim_lua_plugins_telescope.lua:
-    src: config/nvim/lua/plugins/telescope.lua
-    dst: ~/.config/nvim/lua/plugins/telescope.lua
-  f_config_nvim_lua_plugins_todo-comments.lua:
-    src: config/nvim/lua/plugins/todo-comments.lua
-    dst: ~/.config/nvim/lua/plugins/todo-comments.lua
+  f_config_nvim_lua_plugins_coding.lua:
+    src: config/nvim/lua/plugins/coding.lua
+    dst: ~/.config/nvim/lua/plugins/coding.lua
+  f_config_nvim_lua_plugins_colorscheme.lua:
+    src: config/nvim/lua/plugins/colorscheme.lua
+    dst: ~/.config/nvim/lua/plugins/colorscheme.lua
+  f_config_nvim_lua_plugins_editor.lua:
+    src: config/nvim/lua/plugins/editor.lua
+    dst: ~/.config/nvim/lua/plugins/editor.lua
   f_config_nvim_lua_plugins_treesitter.lua:
     src: config/nvim/lua/plugins/treesitter.lua
     dst: ~/.config/nvim/lua/plugins/treesitter.lua
-  f_config_nvim_lua_plugins_vim-better-whitespace.lua:
-    src: config/nvim/lua/plugins/vim-better-whitespace.lua
-    dst: ~/.config/nvim/lua/plugins/vim-better-whitespace.lua
-  f_config_nvim_lua_plugins_vscode.lua:
-    src: config/nvim/lua/plugins/vscode.lua
-    dst: ~/.config/nvim/lua/plugins/vscode.lua
+  f_config_nvim_lua_plugins_ui.lua:
+    src: config/nvim/lua/plugins/ui.lua
+    dst: ~/.config/nvim/lua/plugins/ui.lua
 
   # Neovim lsp
   f_config_nvim_lua_lsp_clangd.lua:

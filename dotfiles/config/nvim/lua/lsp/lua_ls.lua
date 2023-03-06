@@ -7,7 +7,7 @@ table.insert(runtime_path, 'lua/?/init.lua')
 local M = {}
 
 M.setup = function(on_attach, capabilities)
-  require('lspconfig').sumneko_lua.setup({
+  require('lspconfig').lua_ls.setup({
     capabilities = capabilities,
     disable_formatting = true,
     on_attach = on_attach,

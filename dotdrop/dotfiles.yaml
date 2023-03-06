@@ -197,15 +197,15 @@ dotfiles:
   f_config_nvim_lua_lsp_jsonls.lua:
     src: config/nvim/lua/lsp/jsonls.lua
     dst: ~/.config/nvim/lua/lsp/jsonls.lua
+  f_config_nvim_lua_lsp_lua_ls.lua:
+    src: config/nvim/lua/lsp/lua_ls.lua
+    dst: ~/.config/nvim/lua/lsp/lua_ls.lua
   f_config_nvim_lua_lsp_null-ls.lua:
     src: config/nvim/lua/lsp/null-ls.lua
     dst: ~/.config/nvim/lua/lsp/null-ls.lua
   f_config_nvim_lua_lsp_rust-analyzer.lua:
     src: config/nvim/lua/lsp/rust-analyzer.lua
     dst: ~/.config/nvim/lua/lsp/rust-analyzer.lua
-  f_config_nvim_lua_lsp_sumneko_lua.lua:
-    src: config/nvim/lua/lsp/sumneko_lua.lua
-    dst: ~/.config/nvim/lua/lsp/sumneko_lua.lua
   f_config_nvim_lua_lsp_texlab.lua:
     src: config/nvim/lua/lsp/texlab.lua
     dst: ~/.config/nvim/lua/lsp/texlab.lua

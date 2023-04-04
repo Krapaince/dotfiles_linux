@@ -2,9 +2,8 @@
 
 local highlight = require('utils').highlight
 
-vim.o.termguicolors = true
-
 highlight('VertSplit', { bg = 'None' })
+require('vscode').load()
 
 return {
   colors = {
@@ -17,12 +16,10 @@ return {
     nero = '#262626',
     picton_blue = '#569CD6',
     straw = '#D7BA7D',
-
     -- Diagnostics
     equator = '#E0AF68',
     mountain_meadow = '#10B981',
     sunset_orange = '#F44747',
-
     -- GitSigns
     bordeaux = '#4b1818',
     clover = '#4b5632',

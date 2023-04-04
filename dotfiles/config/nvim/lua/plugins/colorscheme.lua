@@ -8,5 +8,6 @@ return {
       transparent = true,
       italic_comments = false,
     },
+    lazy = false,
   },
 }

@@ -1,6 +1,7 @@
 -- {{@@ header() @@}}
 
 local utils = require('utils')
+local colors = require('vscode.colors').get_colors()
 
 return {
   {
@@ -15,7 +16,7 @@ return {
         's1n7ax/nvim-window-picker',
         tag = 'v1.5',
         opts = function()
-          local colors = require('highlights').colors
+          local colors = require('vscode.colors').get_colors()
 
           return {
             autoselect_one = true,
@@ -26,8 +27,8 @@ return {
                 buftype = { 'terminal', 'quickfix' },
               },
             },
-            fg_color = colors.picton_blue,
-            other_win_hl_color = colors.eclipse,
+            fg_color = colors.vscBlue,
+            other_win_hl_color = colors.vscLeftMid,
           }
         end,
       },
@@ -41,7 +42,6 @@ return {
           ['o'] = 'open_with_window_picker',
         },
       },
-
       default_component_configs = {
         indent = {
           with_markers = false,
@@ -52,7 +52,6 @@ return {
         git_status = {
           symbols = {
             deleted = '',
-
             untracked = '*',
           },
         },
@@ -137,15 +136,14 @@ return {
     },
     config = function(_, opts)
       local highlight = require('utils').highlight
-      local colors = require('highlights').colors
+      local colors = require('vscode.colors').get_colors()
 
-      highlight('GitSignsAddNr', { bg = colors.clover, fg = 'NONE' })
-      highlight('GitSignsChangeNr', { bg = colors.raw_umber, fg = 'NONE' })
-      highlight('GitSignsDeleteNr', { bg = colors.bordeaux, fg = 'NONE' })
+      highlight('GitSignsAddNr', { bg = colors.vscDiffGreenLight, fg = 'NONE' })
+      highlight('GitSignsChangeNr', { bg = '#6F490B', fg = 'NONE' })
+      highlight('GitSignsDeleteNr', { bg = colors.vscDiffRedDark, fg = 'NONE' })
 
       require('gitsigns').setup(opts)
     end,
-
     opts = {
       signs = {
         add = { numhl = 'GitSignsAddNr' },
@@ -211,11 +209,11 @@ return {
         max_line_len = 400,
       },
       colors = {
-        error = { 'LspDiagnosticsDefaultError', 'ErrorMsg', '#DC2626' },
-        warning = { 'LspDiagnosticsDefaultWarning', 'WarningMsg', '#FBBF24' },
-        info = { 'LspDiagnosticsDefaultInformation', '#2563EB' },
-        hint = { 'LspDiagnosticsDefaultHint', '#10B981' },
-        default = { 'Identifier', '#7C3AED' },
+        error = { 'LspDiagnosticsDefaultError', 'ErrorMsg', colors.vscRed },
+        warning = { 'LspDiagnosticsDefaultWarning', 'WarningMsg', colors.vscDarkYellow },
+        info = { 'LspDiagnosticsDefaultInformation', colors.vscMediumBlue },
+        hint = { 'LspDiagnosticsDefaultHint', colors.vscBlueGreen },
+        default = { 'Identifier', colors.vscGray },
       },
       search = {
         command = 'rg',

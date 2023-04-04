@@ -58,23 +58,23 @@ return {
     },
     init = function(_)
       local highlight = require('utils').highlight
-      local colors = require('highlights').colors
+      local colors = require('vscode.colors').get_colors()
 
-      highlight('CmpItemAbbrDeprecated', { style = 'strikethrough', fg = colors.grey })
+      highlight('CmpItemAbbrDeprecated', { style = 'strikethrough', fg = colors.vscGray })
 
-      highlight('CmpItemAbbrMatch', { bg = 'NONE', fg = colors.picton_blue })
-      highlight('CmpItemAbbrMatchFuzzy', { bg = 'NONE', fg = colors.picton_blue })
+      highlight('CmpItemAbbrMatch', { bg = 'NONE', fg = colors.vscBlue })
+      highlight('CmpItemAbbrMatchFuzzy', { bg = 'NONE', fg = colors.vscBlue })
 
-      highlight('CmpItemKindVariable', { bg = 'NONE', fg = colors.columbia_blue })
-      highlight('CmpItemKindInterface', { bg = 'NONE', fg = colors.columbia_blue })
-      highlight('CmpItemKindText', { bg = 'NONE', fg = colors.columbia_blue })
+      highlight('CmpItemKindVariable', { bg = 'NONE', fg = colors.vscLightBlue })
+      highlight('CmpItemKindInterface', { bg = 'NONE', fg = colors.vscLightBlue })
+      highlight('CmpItemKindText', { bg = 'NONE', fg = colors.vscLightBlue })
 
-      highlight('CmpItemKindFunction', { bg = 'NONE', fg = colors.lilac })
-      highlight('CmpItemKindMethod', { bg = 'NONE', fg = colors.lilac })
+      highlight('CmpItemKindFunction', { bg = 'NONE', fg = colors.vscPink })
+      highlight('CmpItemKindMethod', { bg = 'NONE', fg = colors.vscPink })
 
-      highlight('CmpItemKindKeyword', { bg = 'NONE', fg = colors.light_grey })
-      highlight('CmpItemKindProperty', { bg = 'NONE', fg = colors.light_grey })
-      highlight('CmpItemKindUnit', { bg = 'NONE', fg = colors.light_grey })
+      highlight('CmpItemKindKeyword', { bg = 'NONE', fg = colors.vscFront })
+      highlight('CmpItemKindProperty', { bg = 'NONE', fg = colors.vscFront })
+      highlight('CmpItemKindUnit', { bg = 'NONE', fg = colors.vscFront })
 
       vim.opt.completeopt = { 'menuone', 'noselect' }
       -- Remove cmp status display
@@ -91,7 +91,6 @@ return {
             luasnip.lsp_expand(args.body)
           end,
         },
-
         mapping = {
           ['<C-Space>'] = cmp.mapping.complete({
             config = {
@@ -108,19 +107,16 @@ return {
           ['<Tab>'] = cmp.mapping.select_next_item(),
           ['<S-Tab>'] = cmp.mapping.select_prev_item(),
         },
-
         sources = {
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
           { name = 'buffer' },
         },
-
         formatting = {
           format = lspkind.cmp_format({
             mode = 'symbol',
             maxwidth = '50',
-
             symbol_map = {
               Text = '',
               Method = '',
@@ -155,16 +151,22 @@ return {
   },
 
   -- Symbol tree
-  { 'simrat39/symbols-outline.nvim', keys = { { '<Leader>s', '<cmd>SymbolsOutlineOpen<CR>' } }, opts = {} },
-
+  {
+    'simrat39/symbols-outline.nvim',
+    keys = { { '<Leader>s', '<cmd>SymbolsOutlineOpen<CR>' } },
+    opts = {},
+  },
   { 'JoosepAlviste/nvim-ts-context-commentstring', lazy = true },
 
   -- {%@@ endif @@%}
 
-  { 'numToStr/Comment.nvim', opts = {
-    ignore = '^$',
-    toggler = {
-      line = '<Space>/',
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      ignore = '^$',
+      toggler = {
+        line = '<Space>/',
+      },
     },
-  } },
+  },
 }

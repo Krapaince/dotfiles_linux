@@ -4,29 +4,29 @@ return {
   {
     'hoob3rt/lualine.nvim',
     opts = function()
-      local colors = require('highlights').colors
+      local colors = require('vscode.colors').get_colors()
 
       local mode_highlight = function(highlight)
         return {
-          a = { bg = highlight, fg = colors.eclipse, gui = 'bold' },
-          b = { bg = colors.eclipse, fg = highlight },
-          c = { bg = colors.nero, fg = colors.light_grey },
+          a = { bg = highlight, fg = colors.vscLeftMid, gui = 'bold' },
+          b = { bg = colors.vscLeftMid, fg = highlight },
+          c = { bg = colors.vscLeftDark, fg = colors.vscFront },
         }
       end
 
       local theme = {
-        normal = mode_highlight(colors.picton_blue),
-        insert = mode_highlight(colors.straw),
-        visual = mode_highlight(colors.glabe_green),
+        normal = mode_highlight(colors.vscBlue),
+        insert = mode_highlight(colors.vscYellowOrange),
+        visual = mode_highlight(colors.vscGreen),
       }
 
       local diagnostics = {
         'diagnostics',
         sources = { 'nvim_diagnostic' },
-        color_error = colors.sunset_orange,
-        color_warn = colors.equator,
-        color_info = colors.mountain_meadow,
-        color_hint = colors.light_grey,
+        color_error = colors.vscRed,
+        color_warn = colors.vscOrange,
+        color_info = colors.vscYellow,
+        color_hint = colors.vscFront,
         symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' },
       }
 
@@ -50,7 +50,6 @@ return {
           lualine_y = { 'filetype' },
           lualine_z = { 'location', 'progress' },
         },
-
         options = {
           theme = theme,
           disabled_filetypes = { 'packer', 'neo-tree' },

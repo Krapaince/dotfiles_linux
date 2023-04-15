@@ -1,5 +1,6 @@
 -- {{@@ header() @@}}
 local lsp_utils = require('lsp.utils')
+local navic = require('nvim-navic')
 local u = require('utils')
 
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -72,6 +73,10 @@ local on_attach = function(client, bufnr)
 
       lsp_formatting(bufnr, true, range)
     end)
+  end
+
+  if client.supports_method('textDocument/documentSymbol') then
+    navic.attach(client, bufnr)
   end
 end
 

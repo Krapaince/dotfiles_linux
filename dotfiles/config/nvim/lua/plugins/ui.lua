@@ -36,16 +36,27 @@ return {
         shorting_target = 20,
       }
 
-      require('lualine').setup({
+      local navic = require('nvim-navic')
+      return {
         tabline = {
           lualine_x = { require('tabline').tabline_tabs },
         },
         winbar = { lualine_c = { winbar_filename } },
         inactive_winbar = { lualine_c = { winbar_filename } },
-        status_line = {
+        sections = {
           lualine_a = { 'mode' },
           lualine_b = { 'branch', diagnostics },
-          lualine_c = { 'filename' },
+          lualine_c = {
+            'filename',
+            {
+              function()
+                return navic.get_location()
+              end,
+              cond = function()
+                return navic.is_available()
+              end,
+            },
+          },
           lualine_x = { 'encoding', 'fileformat' },
           lualine_y = { 'filetype' },
           lualine_z = { 'location', 'progress' },
@@ -57,9 +68,12 @@ return {
           globalstatus = true,
         },
         extensions = {},
-      })
+      }
     end,
-    dependencies = { { 'nvim-tree/nvim-web-devicons' } },
+    dependencies = {
+      { 'nvim-tree/nvim-web-devicons' },
+      { 'SmiteshP/nvim-navic', dependencies = 'neovim/nvim-lspconfig' },
+    },
   },
   {
     'keklleo/tabline.nvim',

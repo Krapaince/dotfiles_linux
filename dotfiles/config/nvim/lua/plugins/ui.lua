@@ -39,7 +39,9 @@ return {
       local navic = require('nvim-navic')
       return {
         tabline = {
-          lualine_x = { require('tabline').tabline_tabs },
+          lualine_a = {
+            'tabs',
+          },
         },
         winbar = { lualine_c = { winbar_filename } },
         inactive_winbar = { lualine_c = { winbar_filename } },
@@ -73,14 +75,6 @@ return {
     dependencies = {
       { 'nvim-tree/nvim-web-devicons' },
       { 'SmiteshP/nvim-navic', dependencies = 'neovim/nvim-lspconfig' },
-    },
-  },
-  {
-    'keklleo/tabline.nvim',
-    opts = { enable = false },
-    dependencies = {
-      { 'hoob3rt/lualine.nvim' },
-      { 'nvim-tree/nvim-web-devicons' },
     },
   },
 

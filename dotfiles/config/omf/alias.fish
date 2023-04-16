@@ -31,6 +31,8 @@ alias formatter="/usr/bin/clang-format -style=file -fallback-style=none -assume-
 alias bs="sudo systemctl start bluetooth.service"
 alias sb="sudo systemctl stop bluetooth.service"
 
+alias copy_lazy_lock_file="cp ~/.config/nvim/lazy-lock.json {{@@ cwd @@}}/dotfiles/config/nvim"
+
 if test -f ~/.config/omf/custom_alias.fish
     source ~/.config/omf/custom_alias.fish
 end

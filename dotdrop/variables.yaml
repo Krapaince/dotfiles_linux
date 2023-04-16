@@ -1,5 +1,6 @@
 dynvariables:
   cpu_manufacturer: grep -i "model name" -m 1 /proc/cpuinfo | cut -d ':' -f 2 | cut -d ' ' -f 2
+  cwd: pwd
 
 variables:
   dunst_monitor: 0

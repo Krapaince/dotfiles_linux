@@ -145,6 +145,10 @@ dotfiles:
     src: config/nvim/init.lua
     dst: ~/.config/nvim/init.lua
 
+  f_config_nvim_lazy-lock.json:
+    src: config/nvim/lazy-lock.json
+    dst: ~/.config/nvim/lazy-lock.json
+
   f_config_nvim_lua_user_highlights.lua:
     src: config/nvim/lua/user/highlights.lua
     dst: ~/.config/nvim/lua/{{@@ user @@}}/highlights.lua

@@ -69,6 +69,7 @@ profiles:
       - f_config_nvim_lua_user_plugins_ui.lua
       - f_config_nvim_lua_user_highlights.lua
       - f_config_nvim_lua_user_init.lua
+      - f_config_nvim_lazy-lock.json
       - f_config_nvim_lua_user_mappings.lua
       - f_config_nvim_lua_user_options.lua
       - f_config_nvim_lua_user_utils.lua
@@ -96,6 +97,7 @@ profiles:
     - f_config_nvim_lua_user_plugins_ui.lua
     - f_config_nvim_lua_user_highlights.lua
     - f_config_nvim_lua_user_init.lua
+    - f_config_nvim_lazy-lock.json
     - f_config_nvim_lua_user_mappings.lua
     - f_config_nvim_lua_user_options.lua
     - f_config_nvim_lua_user_utils.lua

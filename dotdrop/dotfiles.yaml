@@ -185,21 +185,9 @@ dotfiles:
     src: config/nvim/lua/user/lsp/
     dst: ~/.config/nvim/lua/{{@@ user @@}}/lsp/
 
-  f_config_nvim_snippets_package.json:
-    src: config/nvim/snippets/package.json
-    dst: ~/.config/nvim/snippets/package.json
-  f_config_nvim_snippets_c.json:
-    src: config/nvim/snippets/c.json
-    dst: ~/.config/nvim/snippets/c.json
-  f_config_nvim_snippets_cpp.json:
-    src: config/nvim/snippets/cpp.json
-    dst: ~/.config/nvim/snippets/cpp.json
-  f_config_nvim_snippets_python.json:
-    src: config/nvim/snippets/python.json
-    dst: ~/.config/nvim/snippets/python.json
-  f_config_nvim_snippets_yaml.json:
-    src: config/nvim/snippets/yaml.json
-    dst: ~/.config/nvim/snippets/yaml.json
+  f_config_nvim_snippets:
+    src: config/nvim/snippets
+    dst: ~/.config/nvim/snippets
 
 
   # Picom

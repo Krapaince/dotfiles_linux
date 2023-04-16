@@ -145,76 +145,45 @@ dotfiles:
     src: config/nvim/init.lua
     dst: ~/.config/nvim/init.lua
 
-  # Neovim core
-  f_config_nvim_lua_highlights.lua:
-    src: config/nvim/lua/highlights.lua
-    dst: ~/.config/nvim/lua/highlights.lua
-  f_config_nvim_lua_mappings.lua:
-    src: config/nvim/lua/mappings.lua
-    dst: ~/.config/nvim/lua/mappings.lua
-  f_config_nvim_lua_options.lua:
-    src: config/nvim/lua/options.lua
-    dst: ~/.config/nvim/lua/options.lua
-  f_config_nvim_lua_utils.lua:
-    src: config/nvim/lua/utils.lua
-    dst: ~/.config/nvim/lua/utils.lua
+  f_config_nvim_lua_user_highlights.lua:
+    src: config/nvim/lua/user/highlights.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/highlights.lua
+  f_config_nvim_lua_user_init.lua:
+    src: config/nvim/lua/user/init.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/init.lua
+  f_config_nvim_lua_user_mappings.lua:
+    src: config/nvim/lua/user/mappings.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/mappings.lua
+  f_config_nvim_lua_user_options.lua:
+    src: config/nvim/lua/user/options.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/options.lua
+  f_config_nvim_lua_user_utils.lua:
+    src: config/nvim/lua/user/utils.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/utils.lua
 
-  # Neovim filetype plugin
   f_config_nvim_ftplugin_markdown.vim:
     src: config/nvim/ftplugin/markdown.vim
     dst: ~/.config/nvim/ftplugin/markdown.vim
 
-  # Neovim plugins
-  f_config_nvim_lua_plugins_coding.lua:
-    src: config/nvim/lua/plugins/coding.lua
-    dst: ~/.config/nvim/lua/plugins/coding.lua
-  f_config_nvim_lua_plugins_colorscheme.lua:
-    src: config/nvim/lua/plugins/colorscheme.lua
-    dst: ~/.config/nvim/lua/plugins/colorscheme.lua
-  f_config_nvim_lua_plugins_editor.lua:
-    src: config/nvim/lua/plugins/editor.lua
-    dst: ~/.config/nvim/lua/plugins/editor.lua
-  f_config_nvim_lua_plugins_treesitter.lua:
-    src: config/nvim/lua/plugins/treesitter.lua
-    dst: ~/.config/nvim/lua/plugins/treesitter.lua
-  f_config_nvim_lua_plugins_ui.lua:
-    src: config/nvim/lua/plugins/ui.lua
-    dst: ~/.config/nvim/lua/plugins/ui.lua
+  f_config_nvim_lua_user_plugins_coding.lua:
+    src: config/nvim/lua/user/plugins/coding.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/plugins/coding.lua
+  f_config_nvim_lua_user_plugins_colorscheme.lua:
+    src: config/nvim/lua/user/plugins/colorscheme.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/plugins/colorscheme.lua
+  f_config_nvim_lua_user_plugins_editor.lua:
+    src: config/nvim/lua/user/plugins/editor.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/plugins/editor.lua
+  f_config_nvim_lua_user_plugins_treesitter.lua:
+    src: config/nvim/lua/user/plugins/treesitter.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/plugins/treesitter.lua
+  f_config_nvim_lua_user_plugins_ui.lua:
+    src: config/nvim/lua/user/plugins/ui.lua
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/plugins/ui.lua
 
-  # Neovim lsp
-  f_config_nvim_lua_lsp_clangd.lua:
-    src: config/nvim/lua/lsp/clangd.lua
-    dst: ~/.config/nvim/lua/lsp/clangd.lua
-  f_config_nvim_lua_lsp_elixirls.lua:
-    src: config/nvim/lua/lsp/elixirls.lua
-    dst: ~/.config/nvim/lua/lsp/elixirls.lua
-  f_config_nvim_lua_lsp_eslint.lua:
-    src: config/nvim/lua/lsp/eslint.lua
-    dst: ~/.config/nvim/lua/lsp/eslint.lua
-  f_config_nvim_lua_lsp_init.lua:
-    src: config/nvim/lua/lsp/init.lua
-    dst: ~/.config/nvim/lua/lsp/init.lua
-  f_config_nvim_lua_lsp_jsonls.lua:
-    src: config/nvim/lua/lsp/jsonls.lua
-    dst: ~/.config/nvim/lua/lsp/jsonls.lua
-  f_config_nvim_lua_lsp_lua_ls.lua:
-    src: config/nvim/lua/lsp/lua_ls.lua
-    dst: ~/.config/nvim/lua/lsp/lua_ls.lua
-  f_config_nvim_lua_lsp_null-ls.lua:
-    src: config/nvim/lua/lsp/null-ls.lua
-    dst: ~/.config/nvim/lua/lsp/null-ls.lua
-  f_config_nvim_lua_lsp_rust-analyzer.lua:
-    src: config/nvim/lua/lsp/rust-analyzer.lua
-    dst: ~/.config/nvim/lua/lsp/rust-analyzer.lua
-  f_config_nvim_lua_lsp_texlab.lua:
-    src: config/nvim/lua/lsp/texlab.lua
-    dst: ~/.config/nvim/lua/lsp/texlab.lua
-  f_config_nvim_lua_lsp_tsserver.lua:
-    src: config/nvim/lua/lsp/tsserver.lua
-    dst: ~/.config/nvim/lua/lsp/tsserver.lua
-  f_config_nvim_lua_lsp_utils.lua:
-    src: config/nvim/lua/lsp/utils.lua
-    dst: ~/.config/nvim/lua/lsp/utils.lua
+  f_config_nvim_lua_user_lsp:
+    src: config/nvim/lua/user/lsp/
+    dst: ~/.config/nvim/lua/{{@@ user @@}}/lsp/
 
   f_config_nvim_snippets_package.json:
     src: config/nvim/snippets/package.json

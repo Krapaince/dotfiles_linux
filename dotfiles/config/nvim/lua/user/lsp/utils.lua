@@ -5,7 +5,7 @@ local M = {}
 M.is_path_excluded = function(bufnr, client)
   local buf_path = vim.api.nvim_buf_get_name(bufnr)
   local excluded_paths = {}
-  local success, custom = pcall(require, 'custom')
+  local success, custom = pcall(require, '{{@@ user @@}}.custom')
   if success then
     excluded_paths = custom.excluded_paths[client.name]
   end

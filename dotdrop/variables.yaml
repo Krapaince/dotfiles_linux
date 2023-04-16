@@ -15,6 +15,8 @@ variables:
 
   npm_default_dir: "{{@@ env['HOME'] @@}}/.npm-global"
 
+  user: krapaince
+
   wallpaper_destination: "{{@@ env['HOME'] @@}}/Pictures/wallpapers"
   wallpaper_filename: avatar.png
   wallpaper_script: "python {{@@ env['HOME'] @@}}/.local/bin/wallpaper.py"

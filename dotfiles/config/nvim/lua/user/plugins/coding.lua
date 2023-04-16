@@ -57,7 +57,7 @@ return {
       'onsails/lspkind-nvim',
     },
     init = function(_)
-      local highlight = require('utils').highlight
+      local highlight = require('{{@@ user @@}}.utils').highlight
       local colors = require('vscode.colors').get_colors()
 
       highlight('CmpItemAbbrDeprecated', { style = 'strikethrough', fg = colors.vscGray })

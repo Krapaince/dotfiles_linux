@@ -13,6 +13,7 @@ local sources = {
   b.diagnostics.actionlint.with({
     runtime_condition = buf_path_in_workflow_folder,
   }),
+  b.diagnostics.eslint_d,
 
   function()
     local nl_utils = require('null-ls.utils').make_conditional_utils()

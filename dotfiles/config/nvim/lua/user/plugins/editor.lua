@@ -1,6 +1,6 @@
 -- {{@@ header() @@}}
 
-local utils = require('utils')
+local utils = require('{{@@ user @@}}.utils')
 local colors = require('vscode.colors').get_colors()
 
 return {
@@ -135,7 +135,7 @@ return {
       'nvim-lua/plenary.nvim',
     },
     config = function(_, opts)
-      local highlight = require('utils').highlight
+      local highlight = require('{{@@ user @@}}.utils').highlight
       local colors = require('vscode.colors').get_colors()
 
       highlight('GitSignsAddNr', { bg = colors.vscDiffGreenLight, fg = 'NONE' })
@@ -164,7 +164,7 @@ return {
       current_line_blame = true,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
-        local buf_map = require('utils').buf_map
+        local buf_map = require('{{@@ user @@}}.utils').buf_map
 
         buf_map(bufnr, 'n', '<leader>g', function()
           gs.blame_line({ full = true })

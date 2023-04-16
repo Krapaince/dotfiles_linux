@@ -1,7 +1,7 @@
 -- {{@@ header() @@}}
-local lsp_utils = require('lsp.utils')
+local lsp_utils = require('{{@@ user @@}}.lsp.utils')
 local navic = require('nvim-navic')
-local u = require('utils')
+local u = require('{{@@ user @@}}.utils')
 
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
@@ -69,7 +69,7 @@ local on_attach = function(client, bufnr)
     u.buf_map(bufnr, 'v', '<leader>f', function()
       local start = vim.api.nvim_buf_get_mark(0, '<')
       local _end = vim.api.nvim_buf_get_mark(0, '>')
-      local range = { start = start, ['end'] = _end }
+      local range = { start = start,['end'] = _end }
 
       lsp_formatting(bufnr, true, range)
     end)
@@ -100,7 +100,7 @@ local servers_names = {
 }
 
 for _, server_name in ipairs(servers_names) do
-  local success, server = pcall(require, 'lsp.' .. server_name)
+  local success, server = pcall(require, '{{@@ user @@}}.lsp.' .. server_name)
 
   if success then
     server.setup(on_attach, capabilities)

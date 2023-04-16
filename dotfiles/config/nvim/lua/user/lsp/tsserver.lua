@@ -1,5 +1,5 @@
 -- {{@@ header() @@}}
-local u = require('utils')
+local u = require('{{@@ user @@}}.utils')
 
 local M = {}
 

@@ -8,6 +8,10 @@ return {
       transparent = true,
       italic_comments = false,
     },
+    config = function(_, opts)
+      require('vscode').setup(opts)
+      require('vscode').load()
+    end,
     lazy = false,
   },
 }

@@ -62,18 +62,9 @@ profiles:
       - f_config_omf_channel
       - f_config_omf_theme
       - f_config_omf_init.fish
-      - f_config_nvim_lua_user_plugins_coding.lua
-      - f_config_nvim_lua_user_plugins_colorscheme.lua
-      - f_config_nvim_lua_user_plugins_editor.lua
-      - f_config_nvim_lua_user_plugins_treesitter.lua
-      - f_config_nvim_lua_user_plugins_ui.lua
-      - f_config_nvim_lua_user_highlights.lua
-      - f_config_nvim_lua_user_init.lua
-      - f_config_nvim_lazy-lock.json
-      - f_config_nvim_lua_user_mappings.lua
-      - f_config_nvim_lua_user_options.lua
-      - f_config_nvim_lua_user_utils.lua
       - f_config_nvim_init_krapaince_min.lua
+      - f_config_nvim_lazy-lock.json
+      - f_config_nvim_user
 
   krapaince_tty:
     dotfiles:
@@ -89,20 +80,11 @@ profiles:
     - f_iex_exs
     - npm_setup_action
     - f_config_nvim_ftplugin_markdown.vim
-    - f_config_nvim_lua_user_lsp
-    - f_config_nvim_lua_user_plugins_coding.lua
-    - f_config_nvim_lua_user_plugins_colorscheme.lua
-    - f_config_nvim_lua_user_plugins_editor.lua
-    - f_config_nvim_lua_user_plugins_treesitter.lua
-    - f_config_nvim_lua_user_plugins_ui.lua
-    - f_config_nvim_lua_user_highlights.lua
-    - f_config_nvim_lua_user_init.lua
-    - f_config_nvim_lazy-lock.json
-    - f_config_nvim_lua_user_mappings.lua
-    - f_config_nvim_lua_user_options.lua
-    - f_config_nvim_lua_user_utils.lua
-    - f_config_nvim_snippets
     - f_config_nvim_init.lua
+    - f_config_nvim_lazy-lock.json
+    - f_config_nvim_snippets
+    - f_config_nvim_user
+    - f_config_nvim_user_plugins_lsp
     - f_config_ranger_rc.conf
     - f_config_ranger_rifle.conf
     - f_config_vifm_vifmrc

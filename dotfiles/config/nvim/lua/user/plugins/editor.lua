@@ -16,8 +16,6 @@ return {
         's1n7ax/nvim-window-picker',
         tag = 'v1.5',
         opts = function()
-          local colors = require('vscode.colors').get_colors()
-
           return {
             autoselect_one = true,
             include_current = false,
@@ -50,10 +48,7 @@ return {
           use_git_status_colors = false,
         },
         git_status = {
-          symbols = {
-            deleted = '',
-            untracked = '*',
-          },
+          symbols = require('{{@@ user @@}}.config.init').icons.git,
         },
       },
     },
@@ -136,7 +131,6 @@ return {
     },
     config = function(_, opts)
       local highlight = require('{{@@ user @@}}.utils').highlight
-      local colors = require('vscode.colors').get_colors()
 
       highlight('GitSignsAddNr', { bg = colors.vscDiffGreenLight, fg = 'NONE' })
       highlight('GitSignsChangeNr', { bg = '#6F490B', fg = 'NONE' })
@@ -233,7 +227,6 @@ return {
     'folke/trouble.nvim',
     dependencies = 'nvim-tree/nvim-web-devicons',
     opts = {
-
       use_diagnostic_signs = true,
     },
   },

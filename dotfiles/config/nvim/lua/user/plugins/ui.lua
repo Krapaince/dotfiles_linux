@@ -20,6 +20,7 @@ return {
         visual = mode_highlight(colors.vscGreen),
       }
 
+      local diag_icons = require('{{@@ user @@}}.config.init').icons.diagnostics
       local diagnostics = {
         'diagnostics',
         sources = { 'nvim_diagnostic' },
@@ -27,7 +28,12 @@ return {
         color_warn = colors.vscOrange,
         color_info = colors.vscYellow,
         color_hint = colors.vscFront,
-        symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' },
+        symbols = {
+          error = diag_icons.Error .. ' ',
+          warn = diag_icons.Warn .. ' ',
+          info = diag_icons.Hint .. ' ',
+          hint = diag_icons.Info .. ' ',
+        },
       }
 
       local winbar_filename = {

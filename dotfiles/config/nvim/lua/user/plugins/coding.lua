@@ -5,18 +5,6 @@ return {
 
   { 'b0o/schemastore.nvim' },
 
-  {
-    'neovim/nvim-lspconfig',
-    event = 'BufReadPre',
-    dependencies = {
-      { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' },
-      'jose-elias-alvarez/null-ls.nvim',
-      'jose-elias-alvarez/typescript.nvim',
-      'simrat39/rust-tools.nvim',
-      'hrsh7th/cmp-nvim-lsp',
-    },
-  },
-
   { 'j-hui/fidget.nvim', event = 'BufReadPre', opts = {} },
 
   {
@@ -54,7 +42,6 @@ return {
       'saadparwaiz1/cmp_luasnip',
       'hrsh7th/cmp-buffer',
       'hrsh7th/cmp-nvim-lsp',
-      'onsails/lspkind-nvim',
     },
     init = function(_)
       local highlight = require('{{@@ user @@}}.utils').highlight
@@ -75,14 +62,9 @@ return {
       highlight('CmpItemKindKeyword', { bg = 'NONE', fg = colors.vscFront })
       highlight('CmpItemKindProperty', { bg = 'NONE', fg = colors.vscFront })
       highlight('CmpItemKindUnit', { bg = 'NONE', fg = colors.vscFront })
-
-      vim.opt.completeopt = { 'menuone', 'noselect' }
-      -- Remove cmp status display
-      vim.opt.shortmess:append('c')
     end,
     opts = function()
       local cmp = require('cmp')
-      local lspkind = require('lspkind')
       local luasnip = require('luasnip')
 
       return {
@@ -113,38 +95,21 @@ return {
           { name = 'path' },
           { name = 'buffer' },
         },
+        window = {
+          completion = {
+            col_offset = -3,
+            side_padding = 0,
+          },
+        },
         formatting = {
-          format = lspkind.cmp_format({
-            mode = 'symbol',
-            maxwidth = '50',
-            symbol_map = {
-              Text = '',
-              Method = '',
-              Function = '',
-              Constructor = '',
-              Field = 'ﴲ',
-              Variable = '[]',
-              Class = '',
-              Interface = 'ﰮ',
-              Module = '',
-              Property = '襁',
-              Unit = '',
-              Value = '',
-              Enum = '練',
-              Keyword = '',
-              Snippet = '',
-              Color = '',
-              File = '',
-              Reference = '',
-              Folder = '',
-              EnumMember = '',
-              Constant = 'ﲀ',
-              Struct = 'ﳤ',
-              Event = '',
-              Operator = '',
-              TypeParameter = '',
-            },
-          }),
+          fields = { 'kind', 'abbr', 'menu' },
+          format = function(_, item)
+            local icons = require('krapaince.config.init').icons.kinds
+            if icons[item.kind] then
+              item.kind = ' ' .. icons[item.kind] .. ' '
+            end
+            return item
+          end,
         },
       }
     end,

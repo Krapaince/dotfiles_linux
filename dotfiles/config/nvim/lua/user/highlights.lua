@@ -1,3 +1,0 @@
--- {{@@ header() @@}}
-
-require('vscode').load()

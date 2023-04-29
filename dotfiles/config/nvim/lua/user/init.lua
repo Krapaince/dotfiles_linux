@@ -13,12 +13,5 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('{{@@ user @@}}.options')
-require('{{@@ user @@}}.mappings')
+require('{{@@ user @@}}.config').setup()
 require('lazy').setup('{{@@ user @@}}.plugins')
-require('{{@@ user @@}}.highlights')
--- {%@@ if profile != "krapaince_min" @@%}
-
-require('{{@@ user @@}}.lsp')
-
--- {%@@ endif @@%}

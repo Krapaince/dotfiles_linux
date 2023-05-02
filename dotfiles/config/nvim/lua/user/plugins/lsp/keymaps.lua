@@ -14,13 +14,13 @@ function M.get()
     M._keys = {
       { 'gd',        vim.lsp.buf.definition },
       { 'gi',        vim.lsp.buf.implementation },
-      { '<K>',       vim.lsp.buf.hover },
+      { 'K',         vim.lsp.buf.hover },
       { '<C-k>',     vim.lsp.buf.signature_help,         has = 'signatureHelp' },
       { 'gt',        vim.lsp.buf.type_definition },
       { '<C-c>',     '<cmd>CodeActionMenu<cr>' },
       { '<leader>d', vim.diagnostic.open_float,          has = 'codeAction' },
       { '<leader>r', vim.lsp.buf.rename,                 has = 'rename' },
-      { '<C-d>',     '<cmd>Trouble document_diagnostics' },
+      { '<C-d>',     '<cmd>Trouble document_diagnostics<cr>' },
       { '<leader>f', format,                             has = 'documentFormatting' },
       { '<Leader>f', format,                             has = 'documentRangeFormatting', mode = 'v' },
     }

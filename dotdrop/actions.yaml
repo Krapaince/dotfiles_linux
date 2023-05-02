@@ -2,7 +2,7 @@ actions:
   pre:
     setup_npm: >
       mkdir -p '{{@@ npm_default_dir @@}}' && npm config set prefix '{{@@ npm_default_dir @@}}'
-    vim_install_rustup_components: rustup default stable && rustup component add rls rust-analysis rust-src
+    vim_install_rustup_components: rustup default stable && rustup component add rls rust-analysis rust-src rust-analyzer
     download_wallpaper: mkdir -p {{@@ wallpaper_destination @@}} && curl --http1.1 -L {{@@ wallpaper_url @@}} -o {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
   post:
     sway_custom_outputs: >

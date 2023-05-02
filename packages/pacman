@@ -35,7 +35,6 @@ pacman-contrib
 pkgconf
 ranger
 ripgrep
-rust-analyzer
 rustup
 sshfs
 sudo

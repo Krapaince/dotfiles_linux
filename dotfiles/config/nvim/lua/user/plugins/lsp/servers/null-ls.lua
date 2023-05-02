@@ -2,17 +2,8 @@
 local null_ls = require('null-ls')
 local b = null_ls.builtins
 
--- https://github.com/jose-elias-alvarez/null-ls.nvim/pull/804
-local buf_path_in_workflow_folder = function()
-  local api = vim.api
-  local path = api.nvim_buf_get_name(api.nvim_get_current_buf())
-  return path:match('github/workflows/') ~= nil
-end
-
 local sources = {
-  b.diagnostics.actionlint.with({
-    runtime_condition = buf_path_in_workflow_folder,
-  }),
+  b.diagnostics.actionlint,
   b.diagnostics.eslint_d,
 
   function()

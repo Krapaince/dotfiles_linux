@@ -68,6 +68,7 @@ profiles:
 
   krapaince_tty:
     dotfiles:
+    - f_cargo_config
     - f_config_omf_alias.fish
     - f_config_omf_bundle
     - f_config_omf_channel

@@ -9,6 +9,10 @@ config:
   longkey: true
 profiles:
 dotfiles:
+  f_cargo_config:
+    src: cargo/config
+    dst: ~/.cargo/config
+
   # clang
   f_clang-format_c:
     src: clang-format_c

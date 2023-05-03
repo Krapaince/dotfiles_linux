@@ -22,21 +22,22 @@
       "max-length": 70
     },
     "sway/language": {
-      "format": " {short}"
+      "format": "󰌌 {short}"
     },
     "battery": {
       "format": "{icon} {capacity:2}% {time} {power:0.2f}W",
       "format-full": "{icon} {capacity:2}%",
       "format-icons": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
       ],
       "states": {
         "full": 100,
@@ -49,11 +50,11 @@
     },
     "pulseaudio": {
       "format": "{icon} {volume:2}%",
-      "format-bluetooth": " {volume:2}%",
+      "format-bluetooth": "󰂰 {volume:2}%",
       "format-muted": "婢{volume:2}%",
       "format-icons": {
-        "headphone": "",
-        "headset": "",
+        "headphone": "󰋋",
+        "headset": "󰋋",
         "default": [
           "",
           "",
@@ -65,8 +66,8 @@
     "custom/notification": {
       "format": " {icon} ",
       "format-icons": {
-        "dnd-none": "",
-        "none": ""
+        "dnd-none": "󰂛",
+        "none": "󰂚"
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
@@ -105,7 +106,7 @@
     ],
     "disk": {
       "interval": 10,
-      "format": " {free}",
+      "format": "🖴 {free}",
       "path": "/"
     },
     "custom/media": {
@@ -122,7 +123,7 @@
     "network#net-wired": {
       "interface": "{{@@ wired_network_interface @@}}",
       "interval": 1,
-      "format-ethernet": "   {bandwidthDownOctets}  {bandwidthUpOctets}",
+      "format-ethernet": "󰈀   {bandwidthDownOctets}  {bandwidthUpOctets}",
       "format-disconnected": ""
     },
     "network#net-wireless": {
@@ -138,7 +139,7 @@
     },
     "cpu": {
       "interval": 2,
-      "format": "  {usage:2}%",
+      "format": " 󰍛 {usage:2}%",
       "states": {
         "max": 100,
         "high": 70,

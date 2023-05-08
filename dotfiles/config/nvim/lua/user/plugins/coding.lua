@@ -1,5 +1,7 @@
 -- {{@@ header() @@}}
 
+local utils = require('{{@@ user @@}}.utils')
+
 return {
   -- {%@@ if profile != "krapaince_min" @@%}
 
@@ -119,7 +121,19 @@ return {
   {
     'simrat39/symbols-outline.nvim',
     keys = { { '<Leader>s', '<cmd>SymbolsOutlineOpen<CR>' } },
-    opts = {},
+    opts = function()
+      local kinds = require('{{@@ user @@}}.config.init').icons.kinds
+      local symbols_outline_list = utils.get_table_keys(require('symbols-outline.config').defaults.symbols)
+      local symbols = {}
+
+      for _, symbol in ipairs(symbols_outline_list) do
+        if kinds[symbol] then
+          symbols[symbol] = { icon = kinds[symbol] }
+        end
+      end
+
+      return { symbols = symbols }
+    end,
   },
   { 'JoosepAlviste/nvim-ts-context-commentstring', lazy = true },
 

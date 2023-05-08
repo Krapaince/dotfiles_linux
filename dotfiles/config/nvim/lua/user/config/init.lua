@@ -30,8 +30,8 @@ local defaults = {
       Color = '󰏘',
       Constant = '',
       Constructor = '',
-      EnumMember = '',
       Enum = '󰕘',
+      EnumMember = '',
       Event = '',
       Field = '',
       File = '',
@@ -40,12 +40,14 @@ local defaults = {
       Interface = '󰜰',
       Key = '󰌋',
       Keyword = '',
+      Macro = '󰉨',
       Method = '󰆧',
       Module = '',
       Namespace = '󰅩',
       Null = '',
       Object = '',
       Operator = '',
+      Package = '',
       Property = '󰖷',
       Reference = '',
       Snippet = '',
@@ -57,8 +59,13 @@ local defaults = {
       Value = '󰎠',
       Variable = '',
     },
+    kinds_with_space = {},
   },
 }
+
+for name, value in pairs(defaults.icons.kinds) do
+  defaults.icons.kinds[name] = value .. ' '
+end
 
 local options
 

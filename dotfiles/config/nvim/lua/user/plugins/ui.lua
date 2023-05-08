@@ -80,7 +80,15 @@ return {
     end,
     dependencies = {
       { 'nvim-tree/nvim-web-devicons' },
-      { 'SmiteshP/nvim-navic', dependencies = 'neovim/nvim-lspconfig' },
+      {
+        'SmiteshP/nvim-navic',
+        dependencies = 'neovim/nvim-lspconfig',
+        opts = function()
+          local icons = require('{{@@ user @@}}.config.init').icons.kinds
+
+          return { icons = icons }
+        end,
+      },
     },
   },
 

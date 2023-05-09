@@ -76,7 +76,7 @@
     },
     "clock": {
       "interval": 5,
-      "format": "{:%D - %H:%M:%S}",
+      "format": "{:%d/%m/%Y - %H:%M:%S}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "tray": {

@@ -49,7 +49,7 @@ return {
 
   fold_handler = function(virt_text, fold_start_line, fold_end_line, width, truncate)
     local new_virt_text = {}
-    local suffix = ('  %d '):format(fold_end_line - fold_start_line)
+    local suffix = (' 󰁂 %d '):format(fold_end_line - fold_start_line)
     local suf_width = vim.fn.strdisplaywidth(suffix)
     local target_width = width - suf_width
     local cur_width = 0

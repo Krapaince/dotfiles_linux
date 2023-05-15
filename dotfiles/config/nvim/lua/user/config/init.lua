@@ -72,7 +72,6 @@ local options
 function M.setup(opts)
   options = vim.tbl_deep_extend('force', defaults, opts or {})
   require('{{@@ user @@}}.config.autocmds')
-  require('{{@@ user @@}}.config.keymaps')
 end
 
 M.did_init = false
@@ -80,6 +79,7 @@ function M.init()
   if not M.did_init then
     M.did_init = true
     require('{{@@ user @@}}.config.options')
+    require('{{@@ user @@}}.config.keymaps')
   end
 end
 

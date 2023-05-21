@@ -16,7 +16,7 @@
 #idle_inhibitor,
 #language,
 #memory,
-#mode,
+#submap,
 #mpd,
 #network,
 #pulseaudio,
@@ -28,7 +28,7 @@
   padding: 0 4px;
 }
 
-#mode {
+#submap {
   color: @red;
 }
 

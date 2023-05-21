@@ -74,6 +74,31 @@ dotfiles:
     dst: ~/.config/gtk-4.0/settings.ini
 
 
+  # Hyperland
+  f_config_hypr:
+    src: config/hypr
+    dst: ~/.config/hypr
+    actions:
+      - install_hypr_custom
+
+  f_config_hypr_scripts_lock.sh:
+    src: config/hypr/scripts/lock.sh
+    dst: ~/.config/hypr/scripts/lock.sh
+    chmod: 700
+  f_config_hypr_script_pipewire-control.bash:
+    src: config/polybar/scripts/pipewire-control.bash
+    dst: ~/.config/hypr/scripts/pipewire-control.bash
+    chmod: 700
+  f_config_hypr_scripts_relaunch.sh:
+    src: config/hypr/scripts/relaunch.sh
+    dst: ~/.config/hypr/scripts/relaunch.sh
+    chmod: 700
+  f_config_hypr_scripts_setup-portal.sh:
+    src: config/hypr/scripts/setup-portal.sh
+    dst: ~/.config/hypr/scripts/setup-portal.sh
+    chmod: 700
+
+
   # i3
   f_config_i3_config:
     src: config/i3/config
@@ -267,32 +292,6 @@ dotfiles:
     dst: ~/.config/rofi/config.rasi
 
 
-  # Sway
-  f_config_sway_bindings:
-    src: config/sway/bindings
-    dst: ~/.config/sway/bindings
-  f_config_sway_config:
-    src: config/sway/config
-    dst: ~/.config/sway/config
-    actions:
-      - download_wallpaper
-      - sway_custom_outputs
-      - sway_custom_bindings
-  f_config_sway_workspace:
-    src: config/sway/workspace
-    dst: ~/.config/sway/workspace
-
-  # Sway scripts
-  f_config_sway_scripts_lock.sh:
-    src: config/sway/scripts/lock.sh
-    dst: ~/.config/sway/scripts/lock.sh
-    chmod: '700'
-  f_config_sway_script_pipewire-control.bash:
-    src: config/polybar/scripts/pipewire-control.bash
-    dst: ~/.config/sway/scripts/pipewire-control.bash
-    chmod: '700'
-
-
   f_config_swaync_config.json:
     src: config/swaync/config.json
     dst: ~/.config/swaync/config.json
@@ -417,10 +416,6 @@ dotfiles:
   f_local_bin_pinentry.sh:
     src: local/bin/pinentry.sh
     dst: ~/.local/bin/pinentry.sh
-    chmod: '700'
-  f_local_bin_sway:
-    src: local/bin/sway
-    dst: ~/.local/bin/sway
     chmod: '700'
   f_local_bin_temperature-cpu.sh:
     src: local/bin/temperature-cpu.sh

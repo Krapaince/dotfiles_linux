@@ -3,9 +3,7 @@ bluez-utils
 breeze-gtk
 breeze-icons
 brightnessctl
-discord
 firefox
-flameshot
 gimp
 gnome-keyring
 imagemagick
@@ -19,6 +17,7 @@ pipewire-alsa
 pipewire-pulse
 playerctl
 qt5ct
+swappy
 teamspeak3
 ttc-iosevka
 ttf-dejavu

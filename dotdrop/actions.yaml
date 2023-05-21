@@ -5,9 +5,7 @@ actions:
     vim_install_rustup_components: rustup default stable && rustup component add rls rust-analysis rust-src rust-analyzer
     download_wallpaper: mkdir -p {{@@ wallpaper_destination @@}} && curl --http1.1 -L {{@@ wallpaper_url @@}} -o {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
   post:
-    sway_custom_outputs: >
-      test -e ~/.config/sway/custom_outputs || cat dotfiles/config/sway/custom_outputs >> ~/.config/sway/custom_outputs
-    sway_custom_bindings: >
-      test -e ~/.config/sway/custom_bindings || cat dotfiles/config/sway/custom >> ~/.config/sway/custom_bindings
+    install_hypr_custom: >
+      test -e ~/.config/hypr/custom.conf || cat dotfiles/config/hypr/custom >> ~/.config/custom/custom.conf
     fish_install: >
       cd /tmp && curl -L https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install && fish install --path=~/.local/share/omf --config=~/.config/omf --noninteractive -y && rm /tmp/install

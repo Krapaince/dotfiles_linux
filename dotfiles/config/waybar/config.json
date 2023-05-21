@@ -4,25 +4,27 @@
     "layer": "top",
     "output": "eDP-1",
     "modules-left": [
-      "sway/workspaces"
+      "wlr/workspaces"
     ],
     "modules-center": [
-      "sway/mode",
-      "sway/window"
+      "hyprland/submap",
+      "hyprland/window"
     ],
     "modules-right": [
       "battery",
       "pulseaudio",
       "custom/notification",
-      "sway/language",
+      "hyprland/language",
       "clock",
       "tray"
     ],
-    "sway/window": {
+    "hyprland/window": {
       "max-length": 70
     },
-    "sway/language": {
-      "format": "󰌌 {short}"
+    "hyprland/language": {
+      "format": "󰌌 {}",
+      "format-en": "us",
+      "format-fr": "fr"
     },
     "battery": {
       "format": "{icon} {capacity:2}% {time} {power:0.2f}W",
@@ -83,8 +85,10 @@
       "icon-size": 16,
       "spacing": 5
     },
-    "sway/workspaces": {
-      "format": "  {index}  "
+    "wlr/workspaces": {
+      "format": "  {name}  ",
+      "on-click": "activate",
+      "sort-by-number": true
     }
   },
   {
@@ -165,11 +169,11 @@
     "layer": "top",
     "output": "!eDP-1",
     "modules-left": [
-      "sway/workspaces"
+      "wlr/workspaces"
     ],
     "modules-center": [
-      "sway/mode",
-      "sway/window"
+      "hyprland/remap",
+      "hyprland/window"
     ],
     "modules-right": [
       "clock"
@@ -179,8 +183,10 @@
       "format": "{:%D - %H:%M:%S}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
-    "sway/workspaces": {
-      "format": "  {index}  "
+    "wlr/workspaces": {
+      "format": "  {name}  ",
+      "on-click": "activate",
+      "sort-by-number": true
     }
   }
 ]

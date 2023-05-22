@@ -80,6 +80,8 @@ dotfiles:
     dst: ~/.config/hypr
     actions:
       - install_hypr_custom
+    instignore:
+      - '*/custom.conf'
 
   f_config_hypr_scripts_lock.sh:
     src: config/hypr/scripts/lock.sh

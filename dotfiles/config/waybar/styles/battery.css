@@ -1,36 +1,41 @@
 /* {{@@ header() @@}} */
+
+#battery {
+  color: @bg_primary_darker;
+}
+
 #battery.full {
-  color: @grshade5;
+  background-color: @grshade5;
 }
 
 #battery.good {
-  color: @green;
+  background-color: @green;
 }
 
 #battery.ok {
-  color: @lime;
+  background-color: @lime;
 }
 
 #battery.warning {
-  color: @yellow;
+  background-color: @yellow;
 }
 
 #battery.bad {
-  color: @amber;
+  background-color: @amber;
 }
 
 #battery.critical {
-  color: @orange;
+  background-color: @orange;
 }
 
 @keyframes blink {
     to {
-        color: transparent;
+        background-color: transparent;
     }
 }
 
 #battery.critical:not(.Unknown) {
-    color: @orange;
+    background-color: @orange;
     animation-name: blink;
     animation-duration: 2s;
     animation-timing-function: linear;

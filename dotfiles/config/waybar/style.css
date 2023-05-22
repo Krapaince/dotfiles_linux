@@ -24,16 +24,19 @@
 #tray,
 #window {
   color: @fg_primary;
-  margin: 0 0px;
-  padding: 0 4px;
+  background: @bg_primary;
+  margin: 2 2px;
+  padding: 1 4px;
+  border-radius: 7px;
+}
+
+#window,
+#custom-media {
+  background: @bg_primary_darker;
 }
 
 #submap {
   color: @red;
-}
-
-#window {
-  background-color: @bg_primary;
 }
 
 #pulseaudio.muted {

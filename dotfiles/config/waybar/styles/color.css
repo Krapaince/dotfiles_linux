@@ -1,7 +1,8 @@
 /* {{@@ header() @@}} */
 
 @define-color fg_primary #fdfcdd;
-@define-color bg_primary rgba(32, 32, 40, 0.73);
+@define-color bg_primary rgba(1, 1, 1, 0.40);
+@define-color bg_primary_darker rgba(1, 1, 1, 0.70);
 
 /* Color */
 @define-color red       #EC7875;

@@ -326,27 +326,9 @@ dotfiles:
 
 
   # Waybar
-  f_config_waybar_styles_battery.css:
-    src: config/waybar/styles/battery.css
-    dst: ~/.config/waybar/styles/battery.css
-  f_config_waybar_styles_color.css:
-    src: config/waybar/styles/color.css
-    dst: ~/.config/waybar/styles/color.css
-  f_config_waybar_styles_cpu.css:
-    src: config/waybar/styles/cpu.css
-    dst: ~/.config/waybar/styles/cpu.css
-  f_config_waybar_styles_memory.css:
-    src: config/waybar/styles/memory.css
-    dst: ~/.config/waybar/styles/memory.css
-  f_config_waybar_styles_workspaces.css:
-    src: config/waybar/styles/workspaces.css
-    dst: ~/.config/waybar/styles/workspaces.css
-  f_config_waybar_config.json:
-    src: config/waybar/config.json
-    dst: ~/.config/waybar/config.json
-  f_config_waybar_style.css:
-    src: config/waybar/style.css
-    dst: ~/.config/waybar/style.css
+  f_config_waybar:
+    src: config/waybar
+    dst: ~/.config/waybar
 
 
   # Yofi

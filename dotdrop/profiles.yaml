@@ -156,13 +156,7 @@ profiles:
 
     - f_config_wallpaper_monitors.json
 
-    - f_config_waybar_styles_battery.css
-    - f_config_waybar_styles_color.css
-    - f_config_waybar_styles_cpu.css
-    - f_config_waybar_styles_memory.css
-    - f_config_waybar_styles_workspaces.css
-    - f_config_waybar_config.json
-    - f_config_waybar_style.css
+    - f_config_waybar
 
     - f_config_yofi_config.toml
 

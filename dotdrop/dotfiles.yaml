@@ -329,6 +329,12 @@ dotfiles:
   f_config_waybar:
     src: config/waybar
     dst: ~/.config/waybar
+    instignore:
+      - '*/scripts/*'
+  f_config_waybar_scripts_temperature-cpu.sh:
+    src: config/waybar/scripts/temperature-cpu.sh
+    dst: ~/.config/waybar/scripts/temperature-cpu.sh
+    chmod: 700
 
 
   # Yofi

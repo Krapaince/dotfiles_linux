@@ -143,7 +143,8 @@
       "format-disconnected": ""
     },
     "custom/cpu-temperature": {
-      "exec": "temperature-cpu.sh",
+      "exec": "~/.config/waybar/scripts/temperature-cpu.sh",
+      "return-type": "json",
       "interval": 2,
       "format": "  {}°C"
     },

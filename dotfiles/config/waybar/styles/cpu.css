@@ -1,24 +1,25 @@
 /* {{@@ header() @@}} */
-#custom-cpu-temperature {
-  color: @amber;
-}
-
+#custom-cpu-temperature.max,
 #cpu.max {
   color: @amshade1;
 }
 
+#custom-cpu-temperature.high,
 #cpu.high {
   color: @amshade3;
 }
 
+#custom-cpu-temperature.medium,
 #cpu.medium {
   color: @amshade5;
 }
 
+#custom-cpu-temperature.light,
 #cpu.light {
   color: @amshade7;
 }
 
+#custom-cpu-temperature.idle,
 #cpu.idle {
   color: @amshade48
 }

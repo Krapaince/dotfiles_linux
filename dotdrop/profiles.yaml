@@ -157,6 +157,7 @@ profiles:
     - f_config_wallpaper_monitors.json
 
     - f_config_waybar
+    - f_config_waybar_scripts_temperature-cpu.sh
 
     - f_config_yofi_config.toml
 

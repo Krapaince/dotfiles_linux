@@ -1,8 +1,11 @@
 [
   {
     "dotdrop": "{{@@ header() @@}}",
+    "name": "top",
     "layer": "top",
     "output": "eDP-1",
+    "margin-top": 2,
+    "margin-bottom": 7,
     "modules-left": [
       "wlr/workspaces"
     ],
@@ -68,8 +71,8 @@
     "custom/notification": {
       "format": " {icon} ",
       "format-icons": {
-        "dnd-none": "󰂛",
-        "none": "󰂚"
+        "notification": "󰂛",
+        "dnd-notification": "󰂚"
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
@@ -92,9 +95,12 @@
     }
   },
   {
+    "name": "bottom",
     "layer": "top",
     "position": "bottom",
     "output": "eDP-1",
+    "margin-bottom": 3,
+    "margin-top": 2,
     "modules-left": [
       "disk"
     ],

@@ -4,35 +4,44 @@
 * {
   font-family: {{@@ font @@}};
   font-size: 12px;
-  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background: transparent;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #backlight,
 #battery,
 #clock,
 #cpu,
+#custom-cpu-temperature,
 #custom-media,
+#custom-notification,
 #disk,
-#idle_inhibitor,
 #language,
 #memory,
-#submap,
+#network
 #mpd,
 #network,
 #pulseaudio,
-#temperature,
+#submap,
 #tray,
-#window {
-  color: @fg_primary;
-  background: @bg_primary;
-  margin: 2 2px;
-  padding: 1 4px;
-  border-radius: 7px;
-}
-
 #window,
-#custom-media {
+#workspaces {
+  margin: 0 4px;
+  padding: 0 12px;
   background: @bg_primary_darker;
+  border-radius: 26px;
+  color: @fg_primary;
 }
 
 #submap {
@@ -44,6 +53,9 @@
 }
 
 #custom-notification.dnd-none {
+  color: @grey;
+}
+#custom-notification.notification {
   color: @grey;
 }
 

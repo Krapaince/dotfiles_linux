@@ -3,7 +3,7 @@
 TEMPRATURE=$(temperature-cpu.sh)
 
 function temperature_to_text() {
-  local TEMPRATURE=$1
+  local TEMPRATURE=$(echo -n "$1" | cut -d '.' -f 1)
 
   if [[ $TEMPRATURE -lt 35 ]]; then
     echo -n "idle"

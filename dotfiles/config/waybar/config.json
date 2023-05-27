@@ -146,11 +146,11 @@
       "exec": "~/.config/waybar/scripts/temperature-cpu.sh",
       "return-type": "json",
       "interval": 2,
-      "format": "  {}°C"
+      "format": " {}°C"
     },
     "cpu": {
       "interval": 2,
-      "format": " 󰍛 {usage:2}%",
+      "format": "󰍛 {usage:2}%",
       "states": {
         "max": 100,
         "high": 70,
@@ -191,7 +191,7 @@
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "wlr/workspaces": {
-      "format": "  {name}  ",
+      "format": "{name}",
       "on-click": "activate",
       "sort-by-number": true
     }

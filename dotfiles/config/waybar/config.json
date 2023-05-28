@@ -71,8 +71,8 @@
     "custom/notification": {
       "format": " {icon} ",
       "format-icons": {
-        "notification": "󰂛",
-        "dnd-notification": "󰂚"
+        "notification": "󰂚",
+        "dnd-notification": "󰂛"
       },
       "return-type": "json",
       "exec-if": "which swaync-client",

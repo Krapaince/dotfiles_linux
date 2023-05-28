@@ -89,7 +89,7 @@
       "spacing": 5
     },
     "wlr/workspaces": {
-      "format": "  {name}  ",
+      "format": "{name}",
       "on-click": "activate",
       "sort-by-number": true
     }

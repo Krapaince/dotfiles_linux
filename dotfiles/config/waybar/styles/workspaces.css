@@ -12,24 +12,12 @@
 	background: transparent;
 	color: @fg_primary;
 	transition: none;
-}
-
-@keyframes workspace-urgent {
-  from {
-    background-color: @bg_primary_darker;
-  }
-  to {
-    background-color: @blue;
-  }
+  padding: 0 10px;
 }
 
 #workspaces button.urgent {
+  border-radius: 26px;
   background-color: @blue;
-  animation-name: workspace-urgent;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 @define-color active_workspace_color #bf8300;
@@ -45,6 +33,7 @@
 #workspaces button.active {
   color: @bg_primary_darker;
   border-radius: 26px;
+  padding: 2 10px;
   font-weight: bold;
   background-color: @active_workspace_color;
   animation-name: workspace-active;

@@ -83,6 +83,13 @@ dotfiles:
     instignore:
       - '*/custom.conf'
 
+  f_config_hypr_scripts_ipc.py:
+    src: config/hypr/scripts/ipc.py
+    dst: ~/.config/hypr/scripts/ipc.py
+  f_config_hypr_scripts_ipc.sh:
+    src: config/hypr/scripts/ipc.sh
+    dst: ~/.config/hypr/scripts/ipc.sh
+    chmod: 700
   f_config_hypr_scripts_lock.sh:
     src: config/hypr/scripts/lock.sh
     dst: ~/.config/hypr/scripts/lock.sh

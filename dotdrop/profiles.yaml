@@ -149,6 +149,8 @@ profiles:
     - f_config_gammaconfig_config.ini
 
     - f_config_hypr
+    - f_config_hypr_scripts_ipc.py
+    - f_config_hypr_scripts_ipc.sh
     - f_config_hypr_script_pipewire-control.bash
     - f_config_hypr_scripts_lock.sh
     - f_config_hypr_scripts_relaunch.sh

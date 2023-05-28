@@ -14,12 +14,9 @@ dotfiles:
     dst: ~/.cargo/config
 
   # clang
-  f_clang-format_c:
-    src: clang-format_c
-    dst: ~/.clang-format_c
-  f_clang-format_cpp:
-    src: clang-format_cpp
-    dst: ~/.clang-format_cpp
+  f_clang-format:
+    src: clang-format
+    dst: ~/.clang-format
   f_clang-tidy:
     src: clang-tidy
     dst: ~/.clang-tidy

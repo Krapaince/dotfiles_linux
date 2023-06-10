@@ -181,7 +181,7 @@
       "wlr/workspaces"
     ],
     "modules-center": [
-      "hyprland/remap",
+      "hyprland/submap",
       "hyprland/window"
     ],
     "modules-right": [

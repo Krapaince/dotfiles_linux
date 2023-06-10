@@ -15,6 +15,12 @@
   padding: 0 10px;
 }
 
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
 #workspaces button.urgent {
   border-radius: 26px;
   background-color: @blue;

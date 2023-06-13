@@ -3,7 +3,13 @@ actions:
     setup_npm: >
       mkdir -p '{{@@ npm_default_dir @@}}' && npm config set prefix '{{@@ npm_default_dir @@}}'
     vim_install_rustup_components: rustup default stable && rustup component add rls rust-analysis rust-src rust-analyzer
-    download_wallpaper: mkdir -p {{@@ wallpaper_destination @@}} && curl --http1.1 -L {{@@ wallpaper_url @@}} -o {{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}
+    download_wallpaper_x11: >
+      mkdir -p {{@@ wallpaper_destination @@}}
+      && curl --http1.1 -L {{@@wallpaper_url@@}} -o "{{@@ wallpaper_destination @@}}/{{@@ wallpaper_filename @@}}"
+    download_wallpaper:
+      mkdir -p {{@@ wallpaper_destination @@}}
+      && curl -L {{@@ wallpaper_url @@}} -o /tmp/wallpapers.zip
+      && unzip -o /tmp/wallpapers.zip -d {{@@ wallpaper_destination @@}}
   post:
     install_hypr_custom: >
       test -e ~/.config/hypr/custom.conf || cat dotfiles/config/hypr/custom >> ~/.config/custom/custom.conf

@@ -110,7 +110,7 @@ dotfiles:
     src: config/i3/config
     dst: ~/.config/i3/config
     actions:
-      - download_wallpaper
+      - download_wallpaper_x11
 
   # i3 scripts
   f_config_i3_scripts_egnime_notif_answer.sh:
@@ -327,6 +327,8 @@ dotfiles:
   f_config_wallpaper_monitors.json:
     src: "config/wallpaper/{{@@ wallpaper_monitors @@}}.json"
     dst: ~/.config/wallpaper/monitors.json
+    actions:
+      - download_wallpaper
 
 
   # Waybar

@@ -37,7 +37,7 @@ profiles:
 
   Krapaince-arch:
     variables:
-      wallpaper_url: https://www.dropbox.com/s/zm48ldtbubrc5s0/Krapaince-arch.png
+      wallpaper_url: https://www.dropbox.com/s/i2r7wsjbdxzer0h/wallpapers.zip?dl=1
       # Name of json containing monitor name & wallpaper path
       wallpaper_monitors: 'monitors-krapaince-arch'
 

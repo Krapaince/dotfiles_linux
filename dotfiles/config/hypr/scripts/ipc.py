@@ -2,6 +2,7 @@
 
 import sys
 import subprocess
+import json
 from typing import List
 
 
@@ -12,6 +13,8 @@ def main():
         match event:
             case "openwindow":
                 run_openwindow_handler(args)
+            case "windowtitle":
+                run_windowtitle_handler(args)
             case _:
                 pass
 
@@ -23,9 +26,34 @@ def run_openwindow_handler(args: str):
         dispatch(["closewindow", f"address:0x{window_addr}"])
 
 
+def run_windowtitle_handler(window_addr):
+    client = hyprctl_get_client_by_address(window_addr)
+
+    if client["initialClass"] == "firefox" and client["title"].startswith("FW"):
+        # Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
+        workspace = client["title"].removeprefix("FW")[:2].strip()
+        dispatch(["movetoworkspacesilent", f"{workspace},address:0x{window_addr}"])
+
+
 def dispatch(args: List[str]):
     args = ["hyprctl", "dispatch"] + args
     subprocess.run(args)
+
+
+def hyprctl_get_client_by_address(address):
+    clients = hyprctl_clients()
+
+    address = f"0x{address}"
+    for client in clients:
+        if client["address"] == address:
+            return client
+
+    raise RuntimeError(f"couldn't find a client with the address {address}")
+
+
+def hyprctl_clients():
+    output = subprocess.check_output(["hyprctl", "clients", "-j"], text=True)
+    return json.loads(output)
 
 
 if __name__ == "__main__":

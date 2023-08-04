@@ -52,7 +52,7 @@ window#waybar {
   color: @grey;
 }
 
-#custom-notification.dnd-notification {
+#custom-notification.dnd-none {
   color: @grey;
 }
 

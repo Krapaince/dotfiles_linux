@@ -80,8 +80,8 @@
       "on-click": "swaync-client -d"
     },
     "clock": {
-      "interval": 5,
-      "format": "{:%d/%m/%Y - %H:%M:%S}",
+      "interval": 60,
+      "format": "{:%d/%m/%Y - %H:%M}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "tray": {
@@ -186,8 +186,8 @@
       "clock"
     ],
     "clock": {
-      "interval": 5,
-      "format": "{:%D - %H:%M:%S}",
+      "interval": 60,
+      "format": "{:%D - %H:%M}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "hyprland/workspaces": {

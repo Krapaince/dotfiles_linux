@@ -7,7 +7,7 @@ return {
 
   { 'b0o/schemastore.nvim' },
 
-  { 'j-hui/fidget.nvim', event = 'BufReadPre', opts = {} },
+  { 'j-hui/fidget.nvim', event = 'BufReadPre', opts = {}, branch = 'legacy' },
 
   {
     'L3MON4D3/LuaSnip',

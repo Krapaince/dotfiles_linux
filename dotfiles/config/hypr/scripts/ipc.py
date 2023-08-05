@@ -4,6 +4,7 @@ import sys
 import subprocess
 import json
 from typing import List
+from itertools import takewhile
 
 
 def main():
@@ -31,7 +32,9 @@ def run_windowtitle_handler(window_addr):
 
     if client["initialClass"] == "firefox" and client["title"].startswith("FW"):
         # Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
-        workspace = client["title"].removeprefix("FW")[:2].strip()
+        title = client["title"].removeprefix("FW")
+        digits = takewhile(lambda char: char.isdigit(), title)
+        workspace = "".join(digits)
         dispatch(["movetoworkspacesilent", f"{workspace},address:0x{window_addr}"])
 
 

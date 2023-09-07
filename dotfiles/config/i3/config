@@ -59,9 +59,6 @@ for_window [class="^.*"] border pixel 0
 # Floating
 for_window [class="Rofi"] floating enable
 
-# Fix teams notifications
-for_window [title="Microsoft Teams Notification"] floating enable
-
 for_window [title="Zoom Cloud Meetings"] | floating enable
 for_window [title="zoom"] | floating enable
 
@@ -218,9 +215,6 @@ bindsym $mod+a focus parent
     for_window [class="Pavucontrol"] move container to workspace $ws8
     for_window [class="Clementine"] move container to workspace $ws8
     for_window [class="TeamSpeak 3"] move container to workspace $ws8
-
-    for_window [class="Microsoft Teams - Preview"] move container to workspace $ws10
-    for_window [class="teams-for-linux"] move container to workspace $ws10
 
     # Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
     for_window [title="FW1.*"] move container to workspace number $ws1

@@ -23,6 +23,7 @@ window#waybar {
 #battery,
 #clock,
 #cpu,
+#custom-audio-idle-inhibitor,
 #custom-cpu-temperature,
 #custom-media,
 #custom-notification,

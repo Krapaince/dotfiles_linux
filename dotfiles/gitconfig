@@ -16,7 +16,12 @@
     reflog = delta
     show = delta
 
+[rebase]
+  autostash = true
+[merge]
+  autostash = true
 [pull]
+  autostash = true
 	rebase = true
 
 [push]

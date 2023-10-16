@@ -7,7 +7,6 @@ firefox
 gimp
 gnome-keyring
 imagemagick
-kitty
 kolourpaint
 krita
 network-manager-applet
@@ -24,5 +23,8 @@ ttf-dejavu
 ttf-droid
 ttf-roboto
 vlc
+wezterm
+wezterm-shell-integration
+wezterm-termingo
 zathura
 zathura-pdf-poppler

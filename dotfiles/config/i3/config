@@ -93,7 +93,7 @@ bindsym mod4+space exec ~/.config/i3/scripts/keyboard_switcher.sh
 bindsym mod4+Down exec ~/.config/i3/scripts/monitor/reload_screen_setup.sh
 
 # Start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec wezterm
 
 # Kill focused window
 bindsym $mod+Shift+q kill

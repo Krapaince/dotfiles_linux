@@ -9,7 +9,7 @@ font_size = 13
 bg_color = 0x282C33FF
 font_color = 0x8ca0aaff
 
-term = "kitty"
+term = "wezterm"
 
 [input_text]
 bg_color = 0x282C33ff

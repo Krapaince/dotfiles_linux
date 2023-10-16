@@ -327,6 +327,12 @@ dotfiles:
       - download_wallpaper
 
 
+  # Wezterm
+  f_config_wezterm:
+    src: config/wezterm
+    dst: ~/.config/wezterm
+
+
   # Waybar
   f_config_waybar:
     src: config/waybar

@@ -12,6 +12,6 @@ actions:
       && unzip -o /tmp/wallpapers.zip -d {{@@ wallpaper_destination @@}}
   post:
     install_hypr_custom: >
-      test -e ~/.config/hypr/custom.conf || cat dotfiles/config/hypr/custom >> ~/.config/custom/custom.conf
+      test -e ~/.config/hypr/custom.conf || cat dotfiles/config/hypr/custom.conf >> ~/.config/hypr/custom.conf
     fish_install: >
       cd /tmp && curl -L https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install && fish install --path=~/.local/share/omf --config=~/.config/omf --noninteractive -y && rm /tmp/install

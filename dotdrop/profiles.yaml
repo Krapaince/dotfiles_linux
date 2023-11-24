@@ -152,6 +152,7 @@ profiles:
     - f_config_hypr_script_pipewire-control.bash
     - f_config_hypr_scripts_lock.sh
     - f_config_hypr_scripts_relaunch.sh
+    - f_config_hypr_scripts_screenshot.sh
     - f_config_hypr_scripts_setup-portal.sh
 
     - f_config_wallpaper_monitors.json

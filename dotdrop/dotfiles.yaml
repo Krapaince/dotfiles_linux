@@ -95,6 +95,10 @@ dotfiles:
     src: config/hypr/scripts/relaunch.sh
     dst: ~/.config/hypr/scripts/relaunch.sh
     chmod: 700
+  f_config_hypr_scripts_screenshot.sh:
+    src: config/hypr/scripts/screenshot.sh
+    dst: ~/.config/hypr/scripts/screenshot.sh
+    chmod: 700
   f_config_hypr_scripts_setup-portal.sh:
     src: config/hypr/scripts/setup-portal.sh
     dst: ~/.config/hypr/scripts/setup-portal.sh

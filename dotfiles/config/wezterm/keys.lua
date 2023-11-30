@@ -10,8 +10,8 @@ local keys = {
   { 'SUPER', 'i', action.ScrollByLine(-1) },
   { 'SUPER', 'U', action.ScrollByPage(1) },
   { 'SUPER', 'I', action.ScrollByPage(-1) },
-  { 'CTRL', 'c', action.CopyTo('ClipboardAndPrimarySelection') },
-  { 'CTRL', 'v', action.PasteFrom('Clipboard') },
+  { 'CTRL', 'C', action.CopyTo('ClipboardAndPrimarySelection') },
+  { 'CTRL', 'V', action.PasteFrom('Clipboard') },
 
   -- Pane
   { mod, 'h', action.ActivatePaneDirection('Left') },

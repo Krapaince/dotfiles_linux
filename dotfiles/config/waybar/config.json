@@ -16,6 +16,7 @@
     "modules-right": [
       "battery",
       "custom/audio-idle-inhibitor",
+      "bluetooth",
       "pulseaudio",
       "custom/notification",
       "hyprland/language",
@@ -65,6 +66,11 @@
         "output-input": "  ",
         "none": ""
       }
+    },
+    "bluetooth" : {
+      "format": "",
+      "format-connected": "󰂰 {device_alias}",
+      "format-connected-battery": "󰂰 {device_alias} {device_battery_percentage}%"
     },
     "pulseaudio": {
       "format": "{icon} {volume:2}%",

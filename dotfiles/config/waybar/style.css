@@ -21,6 +21,7 @@ window#waybar {
 
 #backlight,
 #battery,
+#bluetooth.connected,
 #clock,
 #cpu,
 #custom-audio-idle-inhibitor,

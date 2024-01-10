@@ -71,38 +71,11 @@ dotfiles:
   f_config_hypr:
     src: config/hypr
     dst: ~/.config/hypr
+    chmod: preserve
     actions:
       - install_hypr_custom
     instignore:
       - '*/custom.conf'
-
-  f_config_hypr_scripts_ipc.py:
-    src: config/hypr/scripts/ipc.py
-    dst: ~/.config/hypr/scripts/ipc.py
-  f_config_hypr_scripts_ipc.sh:
-    src: config/hypr/scripts/ipc.sh
-    dst: ~/.config/hypr/scripts/ipc.sh
-    chmod: 700
-  f_config_hypr_scripts_lock.sh:
-    src: config/hypr/scripts/lock.sh
-    dst: ~/.config/hypr/scripts/lock.sh
-    chmod: 700
-  f_config_hypr_script_pipewire-control.bash:
-    src: config/polybar/scripts/pipewire-control.bash
-    dst: ~/.config/hypr/scripts/pipewire-control.bash
-    chmod: 700
-  f_config_hypr_scripts_relaunch.sh:
-    src: config/hypr/scripts/relaunch.sh
-    dst: ~/.config/hypr/scripts/relaunch.sh
-    chmod: 700
-  f_config_hypr_scripts_screenshot.sh:
-    src: config/hypr/scripts/screenshot.sh
-    dst: ~/.config/hypr/scripts/screenshot.sh
-    chmod: 700
-  f_config_hypr_scripts_setup-portal.sh:
-    src: config/hypr/scripts/setup-portal.sh
-    dst: ~/.config/hypr/scripts/setup-portal.sh
-    chmod: 700
 
 
   # i3
@@ -341,12 +314,7 @@ dotfiles:
   f_config_waybar:
     src: config/waybar
     dst: ~/.config/waybar
-    instignore:
-      - '*/scripts/*'
-  f_config_waybar_scripts_temperature-cpu.sh:
-    src: config/waybar/scripts/temperature-cpu.sh
-    dst: ~/.config/waybar/scripts/temperature-cpu.sh
-    chmod: 700
+    chmod: preserve
 
 
   # Yofi

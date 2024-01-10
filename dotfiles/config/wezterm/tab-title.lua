@@ -11,8 +11,6 @@ wezterm.on('format-tab-title', function(tab, tabs, panes, config, hover, max_wid
     background = main_color
   end
 
-  wezterm.log_warn(wezterm.gui.screens().virtual_width)
-
   local title = ' ' .. tab.tab_index .. ' '
   title = wezterm.truncate_right(title, max_width - 2)
 

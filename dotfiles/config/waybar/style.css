@@ -54,7 +54,9 @@ window#waybar {
   color: @grey;
 }
 
-#custom-notification.dnd-none {
+#custom-notification.dnd-none,
+#custom-notification.dnd-notification
+{
   color: @grey;
 }
 

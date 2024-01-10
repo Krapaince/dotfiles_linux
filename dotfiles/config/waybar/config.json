@@ -88,10 +88,12 @@
       "on-click": "change-sink.sh"
     },
     "custom/notification": {
-      "format": " {icon} ",
+      "format": "{} {icon} ",
       "format-icons": {
+        "none": "󰂚",
+        "notification": "󰂚",
         "dnd-none": "󰂛",
-        "none": "󰂚"
+        "dnd-notification": "󰂛"
       },
       "return-type": "json",
       "exec-if": "which swaync-client",

@@ -143,6 +143,11 @@ keymap = [
 
 	# Help
 	{ on = [ "~" ], exec = "help", desc = "Open help" },
+
+  # Custom
+  { on = [ "<C-n>" ], exec = '''
+    shell 'dragon-drop -x -T "$1"' --confirm
+  '''}
 ]
 
 [tasks]

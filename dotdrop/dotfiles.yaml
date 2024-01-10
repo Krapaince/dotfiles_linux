@@ -256,15 +256,6 @@ dotfiles:
     chmod: '700'
 
 
-  # Ranger
-  f_config_ranger_rc.conf:
-    src: config/ranger/rc.conf
-    dst: ~/.config/ranger/rc.conf
-  f_config_ranger_rifle.conf:
-    src: config/ranger/rifle.conf
-    dst: ~/.config/ranger/rifle.conf
-
-
   # Rofi
   f_config_rofi_config.rasi:
     src: config/rofi/config.rasi
@@ -315,6 +306,12 @@ dotfiles:
     src: config/waybar
     dst: ~/.config/waybar
     chmod: preserve
+
+
+  # Yazi
+  f_config_yazi:
+    src: config/yazi
+    dst: ~/.config/yazi
 
 
   # Yofi

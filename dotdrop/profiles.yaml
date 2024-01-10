@@ -84,9 +84,8 @@ profiles:
     - f_config_nvim_snippets
     - f_config_nvim_user
     - f_config_nvim_user_plugins_lsp
-    - f_config_ranger_rc.conf
-    - f_config_ranger_rifle.conf
     - f_config_vifm_vifmrc
+    - f_config_yazi
     - f_config_yt-dlp_config
     - f_gitconfig
     - f_gitconfig-epitech

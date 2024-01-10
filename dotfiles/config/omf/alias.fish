@@ -33,6 +33,15 @@ alias sb="sudo systemctl stop bluetooth.service"
 
 alias copy_lazy_lock_file="cp ~/.config/nvim/lazy-lock.json {{@@ cwd @@}}/dotfiles/config/nvim"
 
+function ya
+	set tmp (mktemp -t "yazi-cwd.XXXXX")
+	yazi $argv --cwd-file="$tmp"
+	if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
+end
+
 if test -f ~/.config/omf/custom_alias.fish
     source ~/.config/omf/custom_alias.fish
 end

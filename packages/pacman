@@ -33,7 +33,6 @@ openvpn
 os-prober
 pacman-contrib
 pkgconf
-ranger
 ripgrep
 rustup
 sshfs
@@ -41,7 +40,6 @@ sudo
 the_silver_searcher
 tree
 ttf-cascadia-code-nerd
-ueberzug
 unzip
 valgrind
 vifm
@@ -49,3 +47,4 @@ wget
 which
 xterm
 yarn
+yazi

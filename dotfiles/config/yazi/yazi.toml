@@ -1,0 +1,18 @@
+# {{@@ header() @@}}
+
+[manager]
+sort_by = "natural"
+sort_sensitive = false
+show_hidden = true
+
+[opener]
+text = [{exec = 'nvim "$@"', block = true}]
+image = [{ exec = 'imv "$@"', orphan = true }]
+pdf = [{exec = 'zathura "$@"', orphan = true}]
+
+[open]
+rules = [
+  { mime = "text/*", use = "text" },
+  { mime = "image/*", use = "image" },
+  { name = "*.pdf", use = "pdf" },
+]

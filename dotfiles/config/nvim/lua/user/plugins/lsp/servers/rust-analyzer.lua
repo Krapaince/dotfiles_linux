@@ -17,7 +17,7 @@ M.setup = function(on_attach, capabilities)
           },
           diagnostics = {
             enable = true,
-            disabled = { 'unresolved-proc-macro' },
+            disabled = {},
             enableExperimental = true,
           },
         },

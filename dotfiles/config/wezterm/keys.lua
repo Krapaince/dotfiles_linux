@@ -34,6 +34,8 @@ local keys = {
   { mod, 'w', action.CloseCurrentTab({ confirm = false }) },
   { mod, '.', action.MoveTabRelative(1) },
   { mod, ',', action.MoveTabRelative(-1) },
+
+  { 'CTRL|SHIFT', 'o', action.EmitEvent('toggle-opacity') },
 }
 
 local function map(tbl, fun)

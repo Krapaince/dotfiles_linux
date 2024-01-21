@@ -40,4 +40,14 @@ wezterm.on('format-tab-title', function(tab, tabs, panes, config, hover, max_wid
   return tab_title
 end)
 
+wezterm.on('toggle-opacity', function(window, _)
+  local overrides = window:get_config_overrides() or {}
+  if not overrides.window_background_opacity then
+    overrides.window_background_opacity = 1
+  else
+    overrides.window_background_opacity = nil
+  end
+  window:set_config_overrides(overrides)
+end)
+
 return {}

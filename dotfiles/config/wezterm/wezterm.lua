@@ -29,6 +29,8 @@ local config = {
 
   keys = require('keys'),
   window_background_opacity = 0.9,
+
+  warn_about_missing_glyphs = false,
 }
 
 return config

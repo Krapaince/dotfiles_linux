@@ -26,6 +26,7 @@ return {
         'mermaid',
         'python',
         'rust',
+        'toml',
         'typescript',
         'yaml',
       },

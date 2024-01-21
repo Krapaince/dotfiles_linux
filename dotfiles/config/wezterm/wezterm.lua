@@ -2,7 +2,7 @@
 
 local wezterm = require('wezterm')
 
-require('tab-title')
+require('events')
 
 local config = {
   automatically_reload_config = true,

@@ -1,0 +1,13 @@
+{
+  "clock": {
+    "interval": 60,
+    "format": "{:%d/%m/%Y - %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "hyprland/window": {
+    "max-length": 70
+  },
+  "hyprland/workspaces": {
+    "format": "{id}"
+  }
+}

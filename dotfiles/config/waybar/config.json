@@ -4,6 +4,9 @@
     "name": "top",
     "layer": "top",
     "output": "eDP-1",
+    "include": [
+      "~/.config/waybar/default-modules.json"
+    ],
     "margin-top": 2,
     "margin-bottom": 7,
     "modules-left": [
@@ -23,9 +26,6 @@
       "clock",
       "tray"
     ],
-    "hyprland/window": {
-      "max-length": 70
-    },
     "hyprland/language": {
       "format": "󰌌 {}",
       "format-en": "us",
@@ -67,7 +67,7 @@
         "none": ""
       }
     },
-    "bluetooth" : {
+    "bluetooth": {
       "format": "",
       "format-connected": "󰂰 {device_alias}",
       "format-connected-battery": "󰂰 {device_alias} {device_battery_percentage}%"
@@ -100,17 +100,9 @@
       "exec": "swaync-client -swb",
       "on-click": "swaync-client -d"
     },
-    "clock": {
-      "interval": 60,
-      "format": "{:%d/%m/%Y - %H:%M}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
     "tray": {
       "icon-size": 16,
       "spacing": 5
-    },
-    "hyprland/workspaces": {
-      "format": "{id}",
     }
   },
   {
@@ -118,6 +110,9 @@
     "layer": "top",
     "position": "bottom",
     "output": "eDP-1",
+    "include": [
+      "~/.config/waybar/default-modules.json"
+    ],
     "margin-bottom": 3,
     "margin-top": 2,
     "modules-left": [
@@ -194,6 +189,9 @@
   {
     "layer": "top",
     "output": "!eDP-1",
+    "include": [
+      "~/.config/waybar/default-modules.json"
+    ],
     "margin-top": 2,
     "margin-bottom": 7,
     "modules-left": [
@@ -205,14 +203,6 @@
     ],
     "modules-right": [
       "clock"
-    ],
-    "clock": {
-      "interval": 60,
-      "format": "{:%D - %H:%M}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "hyprland/workspaces": {
-      "format": "{id}",
-    }
+    ]
   }
 ]

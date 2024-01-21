@@ -26,6 +26,7 @@ local keys = {
   { 'CTRL', 'Enter', action.SplitVertical({ domain = 'CurrentPaneDomain' }) },
   { mod .. '|ALT', 'l', action.RotatePanes('Clockwise') },
   { mod .. '|ALT', 'L', action.RotatePanes('CounterClockwise') },
+  { mod, 'r', action.PaneSelect({ mode = 'SwapWithActive', alphabet = 'fjdksla;cmrueiwoqp' }) },
 
   -- Tab
   { 'WIN|SHIFT', 't', action.SpawnTab('CurrentPaneDomain') },

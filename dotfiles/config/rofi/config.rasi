@@ -5,6 +5,13 @@ configuration {
     show-icons: true;
     font: "{{@@ font @@}} 9";
     location: 0;
+
+    kb-remove-to-eol: "";
+    kb-accept-entry: "Return";
+
+    kb-row-up: "Control+k";
+    kb-row-down: "Control+j";
+
 }
 
 * {

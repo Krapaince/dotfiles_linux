@@ -102,6 +102,7 @@ profiles:
     - f_config_wezterm
     - f_config_kvantum_kvantum.kvconfig
     - f_config_pipewire_media-session.d_bluez-monitor.conf
+    - f_config_rofi
     - f_config_wallpaper_color_set.json
     - f_config_zathura_zathurarc
     - f_ideavimrc
@@ -136,8 +137,6 @@ profiles:
     - f_config_polybar_config.ini
     - f_config_polybar_launch.sh
 
-    - f_config_rofi_config.rasi
-
     - f_config_picom_config.ini
 
     - f_xprofile
@@ -150,8 +149,6 @@ profiles:
     - f_config_wallpaper_monitors.json
 
     - f_config_waybar
-
-    - f_config_yofi_config.toml
 
     - f_local_bin_change-sink.sh
     - f_local_bin_import-gsettings.sh

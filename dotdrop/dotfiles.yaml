@@ -257,9 +257,9 @@ dotfiles:
 
 
   # Rofi
-  f_config_rofi_config.rasi:
-    src: config/rofi/config.rasi
-    dst: ~/.config/rofi/config.rasi
+  f_config_rofi:
+    src: config/rofi/
+    dst: ~/.config/rofi
 
 
   f_config_swaync_config.json:

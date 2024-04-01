@@ -119,11 +119,11 @@ return {
 
   -- Symbol tree
   {
-    'simrat39/symbols-outline.nvim',
-    keys = { { '<Leader>s', '<cmd>SymbolsOutlineOpen<CR>' } },
+    'hedyhli/outline.nvim',
+    keys = { { '<Leader>s', '<cmd>Outline<CR>' } },
     opts = function()
       local kinds = require('{{@@ user @@}}.config.init').icons.kinds
-      local symbols_outline_list = utils.get_table_keys(require('symbols-outline.config').defaults.symbols)
+      local symbols_outline_list = utils.get_table_keys(require('outline.config').defaults.symbols)
       local symbols = {}
 
       for _, symbol in ipairs(symbols_outline_list) do

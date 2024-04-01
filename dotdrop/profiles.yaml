@@ -153,5 +153,6 @@ profiles:
     - f_local_bin_change-sink.sh
     - f_local_bin_import-gsettings.sh
     - f_local_bin_colorbalance2
+    - f_local_bin_screenrecord.sh
     - f_config_swaync_config.json
     - f_local_bin_temperature-cpu.sh

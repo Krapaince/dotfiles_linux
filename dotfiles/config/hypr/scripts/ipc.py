@@ -28,14 +28,18 @@ def run_openwindow_handler(args: str):
 
 
 def run_windowtitle_handler(window_addr):
-    client = hyprctl_get_client_by_address(window_addr)
-
-    if client["initialClass"] == "firefox" and client["title"].startswith("FW"):
-        # Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
-        title = client["title"].removeprefix("FW")
-        digits = takewhile(lambda char: char.isdigit(), title)
-        workspace = "".join(digits)
-        dispatch(["movetoworkspacesilent", f"{workspace},address:0x{window_addr}"])
+    match hyprctl_get_client_by_address(window_addr):
+        case (None, err):
+            pass
+        case (client, None):
+            if client["initialClass"] == "firefox" and client["title"].startswith("FW"):
+                # Used with https://addons.mozilla.org/en-US/firefox/addon/window-titler/
+                title = client["title"].removeprefix("FW")
+                digits = takewhile(lambda char: char.isdigit(), title)
+                workspace = "".join(digits)
+                dispatch(
+                    ["movetoworkspacesilent", f"{workspace},address:0x{window_addr}"]
+                )
 
 
 def dispatch(args: List[str]):
@@ -49,9 +53,9 @@ def hyprctl_get_client_by_address(address):
     address = f"0x{address}"
     for client in clients:
         if client["address"] == address:
-            return client
+            return (client, None)
 
-    raise RuntimeError(f"couldn't find a client with the address {address}")
+    return (None, f"couldn't find a client with the address {address}")
 
 
 def hyprctl_clients():

@@ -91,7 +91,6 @@ profiles:
     - f_gitconfig-epitech
     - f_gnupg_gpg-agent.conf
     - f_ignore
-    - f_local_bin_pinentry.sh
     - f_rustfmt.toml
     - f_stylua.toml
 

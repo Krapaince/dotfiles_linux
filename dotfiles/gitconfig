@@ -45,9 +45,6 @@
 [commit]
 	gpgsign = {{@@ git_commit_gpgsign @@}}
 
-[gpg]
-  program = {{@@ env['HOME'] @@}}/.local/bin/pinentry.sh
-
 {%@@ if git_epitech @@%}
 [includeIf "gitdir:~/Desktop/EPITECH/"]
   path = ~/.gitconfig-epitech

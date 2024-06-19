@@ -18,6 +18,8 @@ set -gx LESS_TERMCAP_us \e'[1;4;31m'
 
 set -g REPO_LOCATION "$HOME/Desktop"
 
+set -gx GPG_TTY (tty)
+
 {%@@ if profile == "Krapaince-arch" @@%}
 set -x SOUNDBOARD_LOCATION ~/Music/Soundboard/
 {%@@ endif @@%}

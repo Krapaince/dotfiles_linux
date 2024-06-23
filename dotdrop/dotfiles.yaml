@@ -123,9 +123,9 @@ dotfiles:
 
 
   # Kitty
-  f_config_kitty_kitty.conf:
-    src: config/kitty/kitty.conf
-    dst: ~/.config/kitty/kitty.conf
+  f_config_kitty:
+    src: config/kitty/
+    dst: ~/.config/kitty/
 
 
   # Kvantum

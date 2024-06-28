@@ -61,7 +61,10 @@ return {
     dependencies = {
       { 'nvim-lua/popup.nvim' },
       { 'nvim-lua/plenary.nvim' },
-      { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+      {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
+      },
     },
     keys = {
       { '<C-p>', '<cmd>Telescope find_files<CR>' },

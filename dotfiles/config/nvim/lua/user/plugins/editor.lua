@@ -148,6 +148,7 @@ return {
       numhl = true,
       linehl = false,
       word_diff = false,
+      signs_staged_enable = false,
       watch_gitdir = {
         interval = 1000,
         follow_files = true,

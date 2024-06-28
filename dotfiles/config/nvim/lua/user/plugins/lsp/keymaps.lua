@@ -20,7 +20,7 @@ function M.get()
       { '<C-c>', '<cmd>CodeActionMenu<cr>' },
       { '<leader>d', vim.diagnostic.open_float },
       { '<leader>r', vim.lsp.buf.rename, has = 'rename' },
-      { '<C-d>', '<cmd>Trouble document_diagnostics<cr>' },
+      { '<C-d>', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>' },
       { '<leader>f', format, has = 'documentFormatting' },
       { '<Leader>f', format, has = 'documentRangeFormatting', mode = 'v' },
     }

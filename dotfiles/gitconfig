@@ -43,7 +43,8 @@
   sort = -committerdate
 
 [commit]
-	gpgsign = {{@@ git_commit_gpgsign @@}}
+  gpgsign = {{@@ git_commit_gpgsign @@}}
+  verbose = true
 
 {%@@ if git_epitech @@%}
 [includeIf "gitdir:~/Desktop/EPITECH/"]

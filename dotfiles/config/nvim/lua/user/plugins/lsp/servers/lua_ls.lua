@@ -20,6 +20,7 @@ M.setup = function(on_attach, capabilities)
         diagnostics = {
           globals = { 'vim', 'use' },
         },
+        format = { enable = false },
         workspace = {
           library = vim.api.nvim_get_runtime_file('', true),
         },

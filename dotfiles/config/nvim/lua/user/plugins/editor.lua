@@ -134,18 +134,13 @@ return {
 
       highlight('GitSignsAddNr', { bg = colors.vscDiffGreenLight, fg = 'NONE' })
       highlight('GitSignsChangeNr', { bg = '#6F490B', fg = 'NONE' })
+      highlight('GitSignsChangedeleteNr', { bg = '#6F490B', fg = 'NONE' })
       highlight('GitSignsDeleteNr', { bg = colors.vscDiffRedDark, fg = 'NONE' })
+      highlight('GitSignsTopdeleteNr', { bg = colors.vscDiffRedDark, fg = 'NONE' })
 
       require('gitsigns').setup(opts)
     end,
     opts = {
-      signs = {
-        add = { numhl = 'GitSignsAddNr' },
-        change = { numhl = 'GitSignsChangeNr' },
-        delete = { numhl = 'GitSignsDeleteNr' },
-        topdelete = { numhl = 'GitSignsDeleteNr' },
-        changedelete = { numhl = 'GitSignsChangeNr' },
-      },
       signcolumn = false,
       numhl = true,
       linehl = false,

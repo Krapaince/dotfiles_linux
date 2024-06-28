@@ -1,6 +1,8 @@
 [manager]
 
 keymap = [
+  { on = [ "<C-n>" ], run = "shell --confirm 'dragon-drop -x -i -T \"$1\"'" },
+
 	{ on = [ "<Esc>" ], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = [ "q" ],     run = "quit",               desc = "Exit the process" },
 	{ on = [ "Q" ],     run = "quit --no-cwd-file", desc = "Exit the process without writing cwd-file" },

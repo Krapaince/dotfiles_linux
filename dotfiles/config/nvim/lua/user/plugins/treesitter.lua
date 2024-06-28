@@ -28,6 +28,7 @@ return {
         'rust',
         'toml',
         'typescript',
+        'vimdoc',
         'yaml',
       },
       sync_install = true,

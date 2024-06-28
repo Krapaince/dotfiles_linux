@@ -6,9 +6,9 @@ sort_sensitive = false
 show_hidden = true
 
 [opener]
-text = [{exec = 'nvim "$@"', block = true}]
-image = [{ exec = 'imv "$@"', orphan = true }]
-pdf = [{exec = 'zathura "$@"', orphan = true}]
+text = [{run = 'nvim "$@"', block = true}]
+image = [{ run = 'imv "$@"', orphan = true }]
+pdf = [{run = 'zathura "$@"', orphan = true}]
 
 [open]
 rules = [

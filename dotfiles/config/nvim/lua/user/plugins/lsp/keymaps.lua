@@ -12,17 +12,17 @@ function M.get()
   if not M._keys then
     -- mapping action
     M._keys = {
-      { 'gd',        vim.lsp.buf.definition },
-      { 'gi',        vim.lsp.buf.implementation },
-      { 'K',         vim.lsp.buf.hover },
-      { '<C-k>',     vim.lsp.buf.signature_help,         has = 'signatureHelp' },
-      { 'gt',        vim.lsp.buf.type_definition },
-      { '<C-c>',     '<cmd>CodeActionMenu<cr>' },
+      { 'gd', vim.lsp.buf.definition },
+      { 'gi', vim.lsp.buf.implementation },
+      { 'K', vim.lsp.buf.hover },
+      { '<C-k>', vim.lsp.buf.signature_help, has = 'signatureHelp' },
+      { 'gt', vim.lsp.buf.type_definition },
+      { '<C-c>', '<cmd>CodeActionMenu<cr>' },
       { '<leader>d', vim.diagnostic.open_float },
-      { '<leader>r', vim.lsp.buf.rename,                 has = 'rename' },
-      { '<C-d>',     '<cmd>Trouble document_diagnostics<cr>' },
-      { '<leader>f', format,                             has = 'documentFormatting' },
-      { '<Leader>f', format,                             has = 'documentRangeFormatting', mode = 'v' },
+      { '<leader>r', vim.lsp.buf.rename, has = 'rename' },
+      { '<C-d>', '<cmd>Trouble document_diagnostics<cr>' },
+      { '<leader>f', format, has = 'documentFormatting' },
+      { '<Leader>f', format, has = 'documentRangeFormatting', mode = 'v' },
     }
   end
   return M._keys

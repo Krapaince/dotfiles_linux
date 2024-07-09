@@ -250,20 +250,15 @@ return {
     'michaelrommel/nvim-silicon',
     lazy = true,
     cmd = 'Silicon',
-    config = function()
-      require('silicon').setup({
-        font = 'Iosevka Term Extended',
-        theme = 'Visual Studio Dark+',
-        pad_horiz = 0,
-        pad_vert = 0,
-        no_window_controls = true,
-        tab_width = 2,
-        to_clipboard = true,
-        -- Self compile version as the upstream version doesn't support Wayland
-        -- Version with support: https://github.com/Krapaince/silicon
-        command = '{{@@ env["HOME"] @@}}/.local/bin/silicon',
-      })
-    end,
+    opts = {
+      font = '{{@@ font @@}}',
+      theme = 'Visual Studio Dark+',
+      pad_horiz = 0,
+      pad_vert = 0,
+      no_window_controls = true,
+      tab_width = 2,
+      to_clipboard = true,
+    },
   },
 
   { 'junegunn/vim-easy-align' },

@@ -17,7 +17,7 @@ function M.get()
       { 'K', vim.lsp.buf.hover },
       { '<C-k>', vim.lsp.buf.signature_help, has = 'signatureHelp' },
       { 'gt', vim.lsp.buf.type_definition },
-      { '<C-c>', '<cmd>CodeActionMenu<cr>' },
+      { '<C-c>', require('actions-preview').code_actions },
       { '<leader>d', vim.diagnostic.open_float },
       { '<leader>r', vim.lsp.buf.rename, has = 'rename' },
       { '<C-d>', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>' },

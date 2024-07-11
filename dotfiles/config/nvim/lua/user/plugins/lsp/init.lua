@@ -64,7 +64,18 @@ return {
     end
   end,
   dependencies = {
-    { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' },
+    {
+      'aznhe21/actions-preview.nvim',
+      config = function()
+        require('actions-preview').setup({
+          highlight_command = {
+            require('actions-preview.highlight').delta(),
+            require('actions-preview.highlight').diff_so_fancy(),
+            require('actions-preview.highlight').diff_highlight(),
+          },
+        })
+      end,
+    },
     'jose-elias-alvarez/null-ls.nvim',
     'jose-elias-alvarez/typescript.nvim',
     'simrat39/rust-tools.nvim',

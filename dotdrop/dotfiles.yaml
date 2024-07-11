@@ -394,6 +394,10 @@ dotfiles:
     src: local/bin/wallpaper.py
     dst: ~/.local/bin/wallpaper.py
 
+  f_local_bin_yt_cutter.sh:
+    src: local/bin/yt-cutter.sh
+    dst: ~/.local/bin/yt-cutter.sh
+    chmod: '700'
 
   # Xorg
   f_xinitrc:

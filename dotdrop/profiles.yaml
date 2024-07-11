@@ -108,6 +108,7 @@ profiles:
     - f_ideavimrc
     - f_local_bin_colorbalance2
     - f_local_bin_wallpaper.py
+    - f_local_bin_yt_cutter.sh
 
   krapaince_gui_x:
     dotfiles:

@@ -17,6 +17,10 @@ function M.on_attach(client, buf)
       group = vim.api.nvim_create_augroup('LspFormat' .. buf, {}),
       buffer = buf,
       callback = function()
+        if vim.g.disable_autoformat or vim.b[buf].disable_autoformat then
+          return
+        end
+
         M.format()
       end,
     })

@@ -11,6 +11,7 @@ NAME="$4"
 
 yt-dlp \
   -f "(bestvideo+bestaudio/best)[protocol!*=dash]" \
+  --force-overwrites \
   --force-keyframes-at-cut \
   --download-sections "*$FROM-$TO" \
   "$URL" \

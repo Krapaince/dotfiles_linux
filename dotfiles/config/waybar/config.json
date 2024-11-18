@@ -18,7 +18,6 @@
     ],
     "modules-right": [
       "battery",
-      "custom/audio-idle-inhibitor",
       "bluetooth",
       "pulseaudio",
       "custom/notification",
@@ -53,18 +52,6 @@
         "warning": 35,
         "bad": 20,
         "critical": 10
-      }
-    },
-    "custom/audio-idle-inhibitor": {
-      "format": "{icon}",
-      "exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
-      "exec-if": "which sway-audio-idle-inhibit",
-      "return-type": "json",
-      "format-icons": {
-        "output": "",
-        "input": "",
-        "output-input": "  ",
-        "none": ""
       }
     },
     "bluetooth": {

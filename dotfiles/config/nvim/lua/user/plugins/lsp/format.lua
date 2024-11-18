@@ -44,7 +44,7 @@ function M.format(opts)
 end
 
 function M.is_client_excluded(client)
-  local excluded_clients = { 'tsserver' }
+  local excluded_clients = { 'ts_ls' }
 
   for _, excluded_client in ipairs(excluded_clients) do
     if excluded_client == client.name then

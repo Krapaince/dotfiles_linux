@@ -69,6 +69,23 @@ return {
     keys = {
       { '<C-p>', '<cmd>Telescope find_files<CR>' },
       { '/', '<cmd>Telescope live_grep<CR>' },
+      {
+        '/',
+        function()
+          vim.cmd('noau normal! "zy"')
+          local text = vim.fn.getreg('z')
+          vim.fn.setreg('z', {})
+
+          text = string.gsub(text, '\n', '')
+
+          if string.len(text) == 0 then
+            text = ''
+          end
+
+          require('telescope.builtin').live_grep({ default_text = text })
+        end,
+        mode = { 'v' },
+      },
       { '<C-s>', '<cmd>Telescope lsp_document_symbols<CR>' },
       { '<C-f>', '<cmd>Telescope current_buffer_fuzzy_find<CR>' },
     },

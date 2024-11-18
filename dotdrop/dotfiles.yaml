@@ -388,6 +388,10 @@ dotfiles:
     src: local/bin/temperature-cpu.sh
     dst: ~/.local/bin/temperature-cpu.sh
     chmod: '700'
+  f_local_bin_toggle-animation.sh:
+    src: local/bin/toggle-animation.sh
+    dst: ~/.local/bin/toggle-animation.sh
+    chmod: '700'
 
   # Wallpaper scripts
   f_local_bin_wallpaper.py:

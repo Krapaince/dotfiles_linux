@@ -157,3 +157,4 @@ profiles:
     - f_local_bin_screenrecord.sh
     - f_config_swaync_config.json
     - f_local_bin_temperature-cpu.sh
+    - f_local_bin_toggle-animation.sh

@@ -17,6 +17,7 @@ return {
         'elixir',
         'fish',
         'html',
+        'hyprlang',
         'javascript',
         'json',
         'json5',

@@ -63,7 +63,7 @@ return {
       { 'nvim-lua/plenary.nvim' },
       {
         'nvim-telescope/telescope-fzf-native.nvim',
-        build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
+        build = 'make',
       },
     },
     keys = {
@@ -152,11 +152,11 @@ return {
     config = function(_, opts)
       local highlight = require('{{@@ user @@}}.utils').highlight
 
-      highlight('GitSignsAddNr', { bg = colors.vscDiffGreenLight, fg = 'NONE' })
-      highlight('GitSignsChangeNr', { bg = '#6F490B', fg = 'NONE' })
-      highlight('GitSignsChangedeleteNr', { bg = '#6F490B', fg = 'NONE' })
-      highlight('GitSignsDeleteNr', { bg = colors.vscDiffRedDark, fg = 'NONE' })
-      highlight('GitSignsTopdeleteNr', { bg = colors.vscDiffRedDark, fg = 'NONE' })
+      highlight('GitSignsAddNr', { bg = colors.vscDiffGreenLight, fg = colors.vscFront })
+      highlight('GitSignsChangeNr', { bg = '#6F490B', fg = colors.vscFront })
+      highlight('GitSignsChangedeleteNr', { bg = '#6F490B', fg = colors.vscFront })
+      highlight('GitSignsDeleteNr', { bg = colors.vscDiffRedDark, fg = colors.vscFront })
+      highlight('GitSignsTopdeleteNr', { bg = colors.vscDiffRedDark, fg = colors.vscFront })
 
       require('gitsigns').setup(opts)
     end,

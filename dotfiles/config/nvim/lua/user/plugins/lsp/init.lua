@@ -47,7 +47,7 @@ return {
       require('{{@@ user @@}}.plugins.lsp.format').on_attach(client, buf)
       require('{{@@ user @@}}.plugins.lsp.keymaps').on_attach(client, buf)
 
-      if client.supports_method('textDocument/documentSymbol') then
+      if client:supports_method('textDocument/documentSymbol', buf) then
         require('nvim-navic').attach(client, buf)
       end
     end
@@ -76,7 +76,7 @@ return {
         })
       end,
     },
-    'jose-elias-alvarez/null-ls.nvim',
+    'nvimtools/none-ls.nvim',
     'simrat39/rust-tools.nvim',
     'hrsh7th/cmp-nvim-lsp',
   },
